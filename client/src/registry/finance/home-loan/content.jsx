@@ -1,31 +1,34 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Content() {
-    return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-calc-black">How to use the Home Loan EMI Calculator?</h2>
-        <p>Buying a home is one of the biggest financial decisions you will ever make. Our advanced Home Loan EMI Calculator helps you plan your finances by providing a clear breakdown of your monthly obligations.</p>
+  return (
+    <div className="space-y-8 text-gray-700 leading-relaxed mt-8">
+      <Helmet>
+        <title>Free Home Loan EMI Calculator | Check Housing Loan Installments | CalcPilot</title>
+        <meta name="description" content="Calculate your Home Loan EMI, total interest payable, and amortization schedule. Plan your dream home purchase accurately with our free housing loan calculator." />
+        <meta name="keywords" content="home loan EMI calculator, housing loan calculator, mortgage calculator, calculate home loan interest, real estate finance" />
+      </Helmet>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">What is a Home Loan EMI?</h2>
+        <p>A Home Loan EMI (Equated Monthly Installment) is the fixed monthly payment you make to your bank or housing finance company to repay your mortgage. Because home loans are usually large amounts taken over long tenures (10-30 years), calculating your EMI beforehand is essential to ensure the monthly payments fit comfortably within your household budget.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">Home Loan Amortization Formula</h2>
+        <p className="mb-4">The calculator determines your monthly payment using the standard reducing-balance loan formula:</p>
         
-        <p>Simply enter your desired <strong>Loan Amount</strong>, the current <strong>Interest Rate</strong> offered by your bank, and the <strong>Loan Tenure</strong> (duration). The calculator will instantly generate your EMI, total interest payable, and a complete amortization schedule.</p>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">What are the Tax Benefits on Home Loans in India?</h3>
-        <p>One of the biggest advantages of taking a home loan in India is the substantial tax savings under the Income Tax Act. Here is how your EMI payments save you money:</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-          <div className="bg-calc-beige/30 p-5 rounded-xl border border-calc-lightGray shadow-sm">
-            <h4 className="font-bold text-calc-green mb-2">Section 80C (Principal Repayment)</h4>
-            <p className="text-sm">The principal portion of your EMI qualifies for a tax deduction of up to <strong>₹1.5 Lakhs</strong> per financial year. Stamp duty and registration charges can also be claimed under this section.</p>
-          </div>
-          <div className="bg-calc-beige/30 p-5 rounded-xl border border-calc-lightGray shadow-sm">
-            <h4 className="font-bold text-calc-green mb-2">Section 24(b) (Interest Payment)</h4>
-            <p className="text-sm">The interest portion of your EMI allows for a deduction of up to <strong>₹2 Lakhs</strong> per annum for a self-occupied property. If the property is rented out, there is no upper limit on the interest deduction!</p>
-          </div>
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center text-lg font-semibold text-calc-black overflow-x-auto">
+          E = P &times; r &times; {`[ (1 + r)`}<sup>n</sup> {` / ((1 + r)`}<sup>n</sup> {`- 1) ]`}
         </div>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">Tips for reducing your Home Loan EMI</h3>
-        <ul className="list-disc pl-6 space-y-2 mt-4 text-calc-darkGray">
-          <li><strong>Increase your Down Payment:</strong> Paying more upfront reduces the principal loan amount, which directly lowers your monthly EMI and total interest.</li>
-          <li><strong>Opt for a Longer Tenure:</strong> If you want a smaller monthly payment, increase the loan duration. However, keep in mind this will increase the total interest paid over time.</li>
-          <li><strong>Make Prepayments:</strong> Use your annual bonuses or surplus income to make partial prepayments toward the principal amount. This dramatically reduces the interest burden.</li>
-          <li><strong>Negotiate the Interest Rate:</strong> Maintain a CIBIL score above 750 to negotiate lower interest rates with banks like SBI, HDFC, or ICICI.</li>
-        </ul>
-      </div>
-    );
-  }
+
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm bg-gray-50 p-4 rounded-lg">
+          <div><strong>E</strong> = Equated Monthly Installment (EMI)</div>
+          <div><strong>P</strong> = Principal Home Loan Amount</div>
+          <div><strong>r</strong> = Monthly Interest Rate (Annual Rate / 12 / 100)</div>
+          <div><strong>n</strong> = Loan Tenure in Months</div>
+        </div>
+      </section>
+    </div>
+  );
+}

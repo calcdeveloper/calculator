@@ -1,36 +1,34 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Content() {
-    return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-calc-black">What is Simple Interest?</h2>
-        <p>Simple Interest (SI) is a quick and easy method of calculating the interest charge on a loan or the return on an investment. Unlike compound interest, simple interest does not compound; meaning, you only earn (or pay) interest on the original principal amount, not on the interest accumulated over time.</p>
+  return (
+    <div className="space-y-8 text-gray-700 leading-relaxed mt-8">
+      <Helmet>
+        <title>Free Simple Interest Calculator | Fast & Accurate | CalcPilot</title>
+        <meta name="description" content="Calculate simple interest on loans or savings instantly. Understand how interest accumulates without compounding over time." />
+        <meta name="keywords" content="simple interest calculator, calculate interest, basic interest formula, loan interest, principal amount" />
+      </Helmet>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">What is Simple Interest?</h2>
+        <p>Simple interest is a quick and easy method of calculating the interest charge on a loan or the return on an investment. Unlike compound interest, simple interest is determined by multiplying the daily, monthly, or annual interest rate strictly by the principal amount. It does not factor in previously accumulated interest.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">Simple Interest Formula</h2>
+        <p className="mb-4">The formula for calculating simple interest is straightforward and linear:</p>
         
-        <h3 className="text-xl font-bold text-calc-black mt-8">The Simple Interest Formula</h3>
-        <p>The mathematical formula used to calculate simple interest is straightforward:</p>
-        
-        <div className="bg-calc-beige/30 p-5 rounded-xl border border-calc-lightGray shadow-sm my-4 text-center">
-          <p className="text-xl font-mono font-bold text-calc-green mb-2">SI = (P × R × T) / 100</p>
-          <p className="text-lg font-mono font-bold text-calc-black">A = P + SI</p>
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center text-lg font-semibold text-calc-black overflow-x-auto">
+          SI = (P &times; R &times; T) / 100
         </div>
-  
-        <ul className="list-disc pl-6 space-y-2 mt-4 text-calc-darkGray">
-          <li><strong>SI</strong> = Simple Interest</li>
-          <li><strong>A</strong> = Total Accrued Amount (Principal + Interest)</li>
-          <li><strong>P</strong> = Principal Amount (Initial investment or loan)</li>
-          <li><strong>R</strong> = Annual Interest Rate (in percentage)</li>
-          <li><strong>T</strong> = Time Period (in years)</li>
-        </ul>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">Simple Interest vs. Compound Interest</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-          <div className="bg-calc-white p-5 rounded-xl border border-calc-lightGray shadow-sm">
-            <h4 className="font-bold text-calc-green mb-2">Simple Interest</h4>
-            <p className="text-sm text-calc-darkGray">Interest is calculated <strong>only on the principal amount</strong>. The interest earned every year remains exactly the same. It is commonly used for short-term personal loans and automobile loans.</p>
-          </div>
-          <div className="bg-calc-white p-5 rounded-xl border border-calc-lightGray shadow-sm">
-            <h4 className="font-bold text-calc-green mb-2">Compound Interest</h4>
-            <p className="text-sm text-calc-darkGray">Interest is calculated on the principal <strong>plus previously accumulated interest</strong>. The interest grows exponentially over time. It is commonly used for Mutual Funds, FDs, and long-term investments.</p>
-          </div>
+
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm bg-gray-50 p-4 rounded-lg">
+          <div><strong>SI</strong> = Simple Interest Amount</div>
+          <div><strong>P</strong> = Principal (Starting Amount)</div>
+          <div><strong>R</strong> = Rate of Interest per annum (%)</div>
+          <div><strong>T</strong> = Time period (in years)</div>
         </div>
-      </div>
-    );
-  }
+      </section>
+    </div>
+  );
+}

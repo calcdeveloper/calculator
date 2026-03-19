@@ -1,24 +1,34 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Content() {
-    return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-calc-black">How does a Personal Loan work?</h2>
-        <p>A Personal Loan is an <strong>unsecured loan</strong>, meaning you do not need to pledge any collateral (like a house or car) to get the funds. Because of this higher risk to the bank, personal loans generally have higher interest rates than home or car loans. Our Personal Loan EMI Calculator helps you find the sweet spot between your loan amount, tenure, and comfortable monthly EMI.</p>
+  return (
+    <div className="space-y-8 text-gray-700 leading-relaxed mt-8">
+      <Helmet>
+        <title>Free Personal Loan EMI Calculator | CalcPilot</title>
+        <meta name="description" content="Easily calculate your Personal Loan EMI. Compare interest rates and repayment tenures to find the most affordable monthly installment for your financial needs." />
+        <meta name="keywords" content="personal loan calculator, personal loan EMI, unsecured loan calculator, monthly installment, personal finance" />
+      </Helmet>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">Planning Your Personal Loan</h2>
+        <p>Personal loans are unsecured loans, meaning you do not need to provide collateral. Because of this, they usually carry higher interest rates and shorter repayment tenures (1-5 years) compared to home loans. Using a calculator helps you minimize the total interest you will pay by finding the optimal balance between a short tenure and an affordable EMI.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">Personal Loan EMI Formula</h2>
+        <p className="mb-4">Personal loans are calculated using the universal monthly installment equation on a reducing balance method:</p>
         
-        <h3 className="text-xl font-bold text-calc-black mt-8">Factors that affect your Personal Loan EMI</h3>
-        <ul className="list-disc pl-6 space-y-2 mt-4 text-calc-darkGray">
-          <li><strong>Your Credit Score (CIBIL):</strong> Since this is an unsecured loan, banks rely heavily on your CIBIL score. A score above 750 can help you negotiate interest rates as low as 10.5%, drastically reducing your EMI.</li>
-          <li><strong>Loan Tenure:</strong> Choosing a shorter tenure (e.g., 2 years) will increase your monthly EMI but significantly reduce the total interest you pay to the bank. A longer tenure (e.g., 5 years) lowers the monthly burden but increases total interest outgo.</li>
-          <li><strong>Principal Amount:</strong> Only borrow what you absolutely need. Use our calculator to see how a ₹50,000 difference in borrowing impacts your overall interest payments.</li>
-        </ul>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">Beware of Pre-closure and Processing Charges</h3>
-        <div className="bg-calc-beige/30 p-5 rounded-xl border border-calc-lightGray shadow-sm my-4">
-          <p className="text-sm mb-2">When taking a personal loan, the EMI isn't the only cost. Always check for:</p>
-          <ul className="list-disc pl-6 space-y-1 text-sm">
-            <li><strong>Processing Fees:</strong> Usually 1% to 2% of the loan amount, deducted upfront.</li>
-            <li><strong>Pre-closure/Foreclosure Penalties:</strong> If you get a bonus and want to clear your loan early, banks may charge a 2% to 4% penalty on the outstanding principal. Always check the bank's lock-in period (usually 6 to 12 months) before making prepayments.</li>
-          </ul>
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center text-lg font-semibold text-calc-black overflow-x-auto">
+          E = P &times; r &times; {`[ (1 + r)`}<sup>n</sup> {` / ((1 + r)`}<sup>n</sup> {`- 1) ]`}
         </div>
-      </div>
-    );
-  }
+
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm bg-gray-50 p-4 rounded-lg">
+          <div><strong>E</strong> = Monthly EMI</div>
+          <div><strong>P</strong> = Total Loan Amount Borrowed</div>
+          <div><strong>r</strong> = Monthly Interest Rate</div>
+          <div><strong>n</strong> = Total Repayment Months</div>
+        </div>
+      </section>
+    </div>
+  );
+}

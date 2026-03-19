@@ -1,36 +1,34 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Content() {
-    return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-calc-black">What is the Public Provident Fund (PPF)?</h2>
-        <p>The Public Provident Fund (PPF) is a highly popular, government-backed long-term savings scheme in India. It is designed to offer a safe, risk-free investment avenue with guaranteed returns. Because it is backed by the sovereign guarantee of the Indian Government, it is considered one of the safest investments available.</p>
+  return (
+    <div className="space-y-8 text-gray-700 leading-relaxed mt-8">
+      <Helmet>
+        <title>Free PPF Calculator: Public Provident Fund Returns | CalcPilot</title>
+        <meta name="description" content="Calculate your Public Provident Fund (PPF) maturity amount. Plan your tax-saving investments and secure your retirement with guaranteed, tax-free returns." />
+        <meta name="keywords" content="PPF calculator, public provident fund, tax saving calculator, PPF maturity, section 80C investment" />
+      </Helmet>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">What is a PPF?</h2>
+        <p>The Public Provident Fund (PPF) is a popular, government-backed long-term saving scheme in India. It offers guaranteed, risk-free returns, and both the interest earned and the maturity amount are completely exempt from income tax (EEE status). A standard PPF account has a mandatory lock-in period of 15 years.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">PPF Calculation Formula</h2>
+        <p className="mb-4">PPF interest is calculated monthly but credited to your account annually. The maturity calculation functions as a yearly annuity:</p>
         
-        <h3 className="text-xl font-bold text-calc-black mt-8">Current PPF Interest Rate (2026)</h3>
-        <p>The interest rate for the PPF is reviewed and set every quarter by the Ministry of Finance. As of the current financial year, the PPF interest rate stands at <strong>7.1% per annum</strong>, compounded annually.</p>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">The PPF Calculation Formula</h3>
-        <p>The PPF operates on an annual compounding basis. If you deposit your annual investment at the beginning of the financial year (before the 5th of April), your investment earns interest for the entire year. The mathematical formula used to calculate the maturity value of a PPF account is:</p>
-        
-        {/* We will leave a placeholder here so the actual LaTeX renders outside the code block in our chat, but you can use standard text representation in your React component */}
-        <div className="bg-calc-beige/30 p-5 rounded-xl border border-calc-lightGray shadow-sm my-4 font-mono text-center text-lg">
-          F = P × (1 + i) × [ ((1 + i)^n - 1) / i ]
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center text-lg font-semibold text-calc-black overflow-x-auto">
+          F = P &times; [ (1 + i)<sup>n</sup> - 1 ] / i
         </div>
-  
-        <ul className="list-disc pl-6 space-y-2 mt-4 text-calc-darkGray">
-          <li><strong>F</strong> = Maturity Value</li>
-          <li><strong>P</strong> = Annual Installment (Investment)</li>
-          <li><strong>i</strong> = Rate of Interest (in percentage / 100)</li>
-          <li><strong>n</strong> = Number of Years (Tenure)</li>
-        </ul>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">The "EEE" Tax Benefit</h3>
-        <p>The biggest advantage of a PPF account is its <strong>Exempt-Exempt-Exempt (EEE)</strong> tax status under the Old Tax Regime:</p>
-        <ul className="list-disc pl-6 space-y-2 mt-4 text-calc-darkGray">
-          <li><strong>Investment is Exempt:</strong> Your annual contributions up to ₹1.5 Lakhs are tax-deductible under Section 80C of the Income Tax Act.</li>
-          <li><strong>Interest is Exempt:</strong> The massive compound interest you accumulate over 15 to 30 years is 100% tax-free.</li>
-          <li><strong>Maturity is Exempt:</strong> When you finally withdraw your entire corpus at the end of your tenure, the entire amount is completely free from any tax obligations.</li>
-        </ul>
-        
-        <p className="mt-4 text-sm text-calc-gray italic">Pro Tip: To maximize your returns, always try to deposit your PPF contribution before the 5th of the month. PPF interest is calculated on the lowest balance between the 5th and the end of the month!</p>
-      </div>
-    );
-  }
+
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm bg-gray-50 p-4 rounded-lg">
+          <div><strong>F</strong> = Final Maturity Amount</div>
+          <div><strong>P</strong> = Annual Investment Amount</div>
+          <div><strong>i</strong> = Annual interest rate (in decimal)</div>
+          <div><strong>n</strong> = Number of years (typically 15)</div>
+        </div>
+      </section>
+    </div>
+  );
+}

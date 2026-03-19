@@ -1,23 +1,58 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Content() {
-    return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-calc-black">What is an EMI?</h2>
-        <p>Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.</p>
+  return (
+    <div className="space-y-8 text-gray-700 leading-relaxed mt-8">
+      {/* --- ENHANCED SEO TAGS --- */}
+      <Helmet>
+        <title>Free EMI Calculator: Home, Car & Personal Loans | CalcPilot</title>
+        <meta 
+          name="description" 
+          content="Calculate your Equated Monthly Installment (EMI) for home loans, car loans, and personal loans instantly. Plan your repayment schedule with our free EMI calculator." 
+        />
+        <meta name="keywords" content="EMI calculator, loan calculator, home loan EMI, personal loan EMI, car loan EMI, calculate EMI, amortization schedule" />
         
-        <h3 className="text-xl font-bold text-calc-black mt-8">How is EMI calculated?</h3>
-        <p>The mathematical formula to calculate EMI is:</p>
-        <blockquote className="bg-calc-beige/30 p-4 border-l-4 border-calc-green rounded-r-lg font-mono text-center my-4">
-          E = P × r × (1 + r)^n / [(1 + r)^n - 1]
-        </blockquote>
-        <ul className="list-disc pl-6 space-y-2 mt-4">
-          <li><strong>E</strong> is the EMI amount</li>
-          <li><strong>P</strong> is the Principal Loan Amount</li>
-          <li><strong>r</strong> is the monthly interest rate (Annual Rate / 12 / 100)</li>
-          <li><strong>n</strong> is the loan duration in months</li>
+        {/* Social Media Sharing Tags */}
+        <meta property="og:title" content="Free EMI Calculator | CalcPilot" />
+        <meta property="og:description" content="Instantly calculate your monthly loan repayments for any loan type." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+      {/* --- SEO RICH CONTENT --- */}
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">What is an EMI?</h2>
+        <p>
+          An Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. Equated monthly installments are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">How is EMI Calculated?</h2>
+        <p className="mb-4">
+          Our calculator uses the universal mathematical formula for calculating the monthly amortization of a loan. It precisely balances your principal amount and the interest applied over the tenure of the loan:
+        </p>
+        
+        {/* Math Formula Box */}
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center text-lg font-semibold text-calc-black overflow-x-auto">
+          E = P &times; r &times; {`[ (1 + r)`}<sup>n</sup> {` / ((1 + r)`}<sup>n</sup> {`- 1) ]`}
+        </div>
+
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm bg-gray-50 p-4 rounded-lg">
+          <div><strong>E</strong> = EMI (Your monthly payment)</div>
+          <div><strong>P</strong> = Principal Loan Amount</div>
+          <div><strong>r</strong> = Monthly Interest Rate (Annual Rate / 12 / 100)</div>
+          <div><strong>n</strong> = Loan Tenure in Months</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-calc-black mb-3">Why Use an EMI Calculator?</h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Financial Planning:</strong> Know exactly how much of your monthly budget will go toward debt repayment before you commit to a loan.</li>
+          <li><strong>Compare Loan Offers:</strong> Easily adjust the interest rates to see how a seemingly small difference in % can save you thousands over the life of the loan.</li>
+          <li><strong>Decide Loan Tenure:</strong> Experiment with different time periods to find the perfect balance between an affordable monthly payment and paying less total interest.</li>
         </ul>
-  
-        <h3 className="text-xl font-bold text-calc-black mt-8">Why use an online EMI Calculator?</h3>
-        <p>Calculating EMI manually is complex and prone to errors. Our online calculator instantly breaks down your payment schedule, showing you exactly how much of your money goes towards the principal versus the interest.</p>
-      </div>
-    );
-  }
+      </section>
+    </div>
+  );
+}
