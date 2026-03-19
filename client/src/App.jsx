@@ -1,4 +1,6 @@
-import { Analytics } from "@vercel/analytics/react"
+import ScrollToTop from "./ScrollToTop"; // Adjust path if you put it in a components folder!
+import { HelmetProvider } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -85,196 +87,199 @@ import BodyFatContent from "./registry/health/body-fat/content";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-calc-beige font-sans text-calc-black flex flex-col">
-        <Navbar />
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/category/:id" element={<Category />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/help" element={<Help />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<TermsAndConditions />} />
-            //Finance Routes
-            <Route
-              path="/calculator/finance/sip"
-              element={
-                <CalculatorLayout
-                  config={sipConfig}
-                  calculateLogic={sipLogic}
-                  ContentComponent={SIPContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/emi"
-              element={
-                <CalculatorLayout
-                  config={emiConfig}
-                  calculateLogic={emiLogic}
-                  ContentComponent={EMIContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/home-loan"
-              element={
-                <CalculatorLayout
-                  config={homeLoanConfig}
-                  calculateLogic={homeLoanLogic}
-                  ContentComponent={HomeLoanContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/fd"
-              element={
-                <CalculatorLayout
-                  config={fdConfig}
-                  calculateLogic={fdLogic}
-                  ContentComponent={FDContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/personal-loan"
-              element={
-                <CalculatorLayout
-                  config={personalLoanConfig}
-                  calculateLogic={personalLoanLogic}
-                  ContentComponent={PersonalLoanContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/rd"
-              element={
-                <CalculatorLayout
-                  config={rdConfig}
-                  calculateLogic={rdLogic}
-                  ContentComponent={RDContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/lumpsum"
-              element={
-                <CalculatorLayout
-                  config={lumpsumConfig}
-                  calculateLogic={lumpsumLogic}
-                  ContentComponent={LumpsumContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/ppf"
-              element={
-                <CalculatorLayout
-                  config={ppfConfig}
-                  calculateLogic={ppfLogic}
-                  ContentComponent={PpfContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/gst"
-              element={
-                <CalculatorLayout
-                  config={gstConfig}
-                  calculateLogic={gstLogic}
-                  ContentComponent={GSTContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/simple-interest"
-              element={
-                <CalculatorLayout
-                  config={simpleInterestConfig}
-                  calculateLogic={simpleInterestLogic}
-                  ContentComponent={SimpleInterestContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/compound-interest"
-              element={
-                <CalculatorLayout
-                  config={compoundInterestConfig}
-                  calculateLogic={compoundInterestLogic}
-                  ContentComponent={CompoundInterestContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/retirement"
-              element={
-                <CalculatorLayout
-                  config={retirementConfig}
-                  calculateLogic={retirementLogic}
-                  ContentComponent={RetirementContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/gratuity"
-              element={
-                <CalculatorLayout
-                  config={gratuityConfig}
-                  calculateLogic={gratuityLogic}
-                  ContentComponent={GratuityContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/finance/car-loan"
-              element={
-                <CalculatorLayout
-                  config={carLoanConfig}
-                  calculateLogic={carLoanLogic}
-                  ContentComponent={CarLoanContent}
-                />
-              }
-            />
-            //HEALTH Routes
-            <Route
-              path="/calculator/health/bmi"
-              element={
-                <CalculatorLayout
-                  config={bmiConfig}
-                  calculateLogic={bmiLogic}
-                  ContentComponent={BmiContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/health/bmr"
-              element={
-                <CalculatorLayout
-                  config={bmrConfig}
-                  calculateLogic={bmrLogic}
-                  ContentComponent={BmrContent}
-                />
-              }
-            />
-            <Route
-              path="/calculator/health/body-fat"
-              element={
-                <CalculatorLayout
-                  config={bodyFatConfig}
-                  calculateLogic={bodyFatLogic}
-                  ContentComponent={BodyFatContent}
-                />
-              }
-            />
-          </Routes>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="min-h-screen bg-calc-beige font-sans text-calc-black flex flex-col">
+          <Navbar />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/category/:id" element={<Category />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/help" element={<Help />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<TermsAndConditions />} />
+              //Finance Routes
+              <Route
+                path="/calculator/finance/sip"
+                element={
+                  <CalculatorLayout
+                    config={sipConfig}
+                    calculateLogic={sipLogic}
+                    ContentComponent={SIPContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/emi"
+                element={
+                  <CalculatorLayout
+                    config={emiConfig}
+                    calculateLogic={emiLogic}
+                    ContentComponent={EMIContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/home-loan"
+                element={
+                  <CalculatorLayout
+                    config={homeLoanConfig}
+                    calculateLogic={homeLoanLogic}
+                    ContentComponent={HomeLoanContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/fd"
+                element={
+                  <CalculatorLayout
+                    config={fdConfig}
+                    calculateLogic={fdLogic}
+                    ContentComponent={FDContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/personal-loan"
+                element={
+                  <CalculatorLayout
+                    config={personalLoanConfig}
+                    calculateLogic={personalLoanLogic}
+                    ContentComponent={PersonalLoanContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/rd"
+                element={
+                  <CalculatorLayout
+                    config={rdConfig}
+                    calculateLogic={rdLogic}
+                    ContentComponent={RDContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/lumpsum"
+                element={
+                  <CalculatorLayout
+                    config={lumpsumConfig}
+                    calculateLogic={lumpsumLogic}
+                    ContentComponent={LumpsumContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/ppf"
+                element={
+                  <CalculatorLayout
+                    config={ppfConfig}
+                    calculateLogic={ppfLogic}
+                    ContentComponent={PpfContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/gst"
+                element={
+                  <CalculatorLayout
+                    config={gstConfig}
+                    calculateLogic={gstLogic}
+                    ContentComponent={GSTContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/simple-interest"
+                element={
+                  <CalculatorLayout
+                    config={simpleInterestConfig}
+                    calculateLogic={simpleInterestLogic}
+                    ContentComponent={SimpleInterestContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/compound-interest"
+                element={
+                  <CalculatorLayout
+                    config={compoundInterestConfig}
+                    calculateLogic={compoundInterestLogic}
+                    ContentComponent={CompoundInterestContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/retirement"
+                element={
+                  <CalculatorLayout
+                    config={retirementConfig}
+                    calculateLogic={retirementLogic}
+                    ContentComponent={RetirementContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/gratuity"
+                element={
+                  <CalculatorLayout
+                    config={gratuityConfig}
+                    calculateLogic={gratuityLogic}
+                    ContentComponent={GratuityContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/finance/car-loan"
+                element={
+                  <CalculatorLayout
+                    config={carLoanConfig}
+                    calculateLogic={carLoanLogic}
+                    ContentComponent={CarLoanContent}
+                  />
+                }
+              />
+              //HEALTH Routes
+              <Route
+                path="/calculator/health/bmi"
+                element={
+                  <CalculatorLayout
+                    config={bmiConfig}
+                    calculateLogic={bmiLogic}
+                    ContentComponent={BmiContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/health/bmr"
+                element={
+                  <CalculatorLayout
+                    config={bmrConfig}
+                    calculateLogic={bmrLogic}
+                    ContentComponent={BmrContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/health/body-fat"
+                element={
+                  <CalculatorLayout
+                    config={bodyFatConfig}
+                    calculateLogic={bodyFatLogic}
+                    ContentComponent={BodyFatContent}
+                  />
+                }
+              />
+            </Routes>
+          </div>
+          <Footer />
+          <Analytics />
         </div>
-        <Footer />
-        <Analytics />
-      </div>
-    </Router>
+      </Router>
+    </HelmetProvider>
   );
 }
 
