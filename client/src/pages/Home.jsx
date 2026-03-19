@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Calculator, HeartPulse, Sigma, RefreshCw, Wrench, GraduationCap, Briefcase, Cpu } from 'lucide-react';
 import { calculators, getCategoryCount } from '../utils/calculatorData';
+// 1. ADDED: Import Helmet for injecting our Schema Markup and meta tags into the <head>
+import { Helmet } from 'react-helmet-async';
 
 const categories = [
   { name: 'Finance', icon: <Calculator size={24} />, path: 'finance' },
@@ -26,6 +28,21 @@ export default function Home() {
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
 
+  // 2. ADDED: Define the Schema Object for Google Rich Results
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CalcPilot",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "A comprehensive suite of smart, free calculators for finance, health, math, and everyday utility."
+  };
+
   const handleSearch = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
@@ -41,6 +58,16 @@ export default function Home() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      {/* 3. ADDED: Inject Schema and basic SEO tags into the document head */}
+      <Helmet>
+        <title>CalcPilot | Free Smart Calculators</title>
+        <meta name="description" content="500+ free calculators for finance, health, math and daily life." />
+        <script type="application/ld+json">
+          {JSON.stringify(softwareSchema)}
+        </script>
+      </Helmet>
+
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-calc-black mb-4">Smart Calculators for Everyday Problems</h1>
         <p className="text-lg text-calc-gray mb-8">500+ free calculators for finance, health, math and daily life.</p>
