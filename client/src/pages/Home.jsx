@@ -10,14 +10,14 @@ const categories = [
   { name: 'Health', icon: <HeartPulse size={24} />, path: 'health' },
   { name: 'Maths', icon: <Sigma size={24} />, path: 'math' },
   { name: 'Conversion', icon: <RefreshCw size={24} />, path: 'conversion' },
-  { name: 'Everyday Utility', icon: <Wrench size={24} />, path: 'utility' },
+  { name: 'Everyday Utility', icon: <Wrench size={24} />, path: 'everyday' },
   { name: 'Education', icon: <GraduationCap size={24} />, path: 'education' },
   { name: 'Business', icon: <Briefcase size={24} />, path: 'business' },
   { name: 'Engineering', icon: <Cpu size={24} />, path: 'engineering' },
 ];
 
 const trendingCalculators = [
-  { name: 'Age Calculator', desc: 'Calculate your exact age in years, months, and days.', path: '/calculator/utility/age' },
+  { name: 'Age Calculator', desc: 'Calculate your exact age in years, months, and days.', path: '/calculator/everyday/age' },
   { name: 'BMI Calculator', desc: 'Check your Body Mass Index to monitor your health.', path: '/calculator/health/bmi' },
   { name: 'SIP Calculator', desc: 'Calculate returns on your mutual fund SIP investments.', path: '/calculator/finance/sip' },
   { name: 'EMI Calculator', desc: 'Calculate your monthly loan EMI payments easily.', path: '/calculator/finance/emi' },

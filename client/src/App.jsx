@@ -196,7 +196,139 @@ import { calculateLogic as averageLogic } from "./registry/math/average/logic";
 import averageContent from "./registry/math/average/content";
 
 
+// Conversion Calculators
 
+import { config as unitConfig } from "./registry/conversion/unit/config";
+import { calculateLogic as unitLogic } from "./registry/conversion/unit/logic";
+import unitContent from "./registry/conversion/unit/content";
+
+import { config as weightConfig } from "./registry/conversion/weight/config";
+import { calculateLogic as weightLogic } from "./registry/conversion/weight/logic";
+import weightContent from "./registry/conversion/weight/content";
+
+import { config as temperatureConfig } from "./registry/conversion/temperature/config";
+import { calculateLogic as temperatureLogic } from "./registry/conversion/temperature/logic";
+import temperatureContent from "./registry/conversion/temperature/content";
+
+import { config as volumeConfig } from "./registry/conversion/volume/config";
+import { calculateLogic as volumeLogic } from "./registry/conversion/volume/logic";
+import volumeContent from "./registry/conversion/volume/content";
+
+import { config as areaConfig } from "./registry/conversion/area/config";
+import { calculateLogic as areaLogic } from "./registry/conversion/area/logic";
+import areaContent from "./registry/conversion/area/content";
+
+import { config as timeConfig } from "./registry/conversion/time/config";
+import { calculateLogic as timeLogic } from "./registry/conversion/time/logic";
+import timeContent from "./registry/conversion/time/content";
+
+import { config as cookingConfig } from "./registry/conversion/cooking/config";
+import { calculateLogic as cookingLogic } from "./registry/conversion/cooking/logic";
+import cookingContent from "./registry/conversion/cooking/content";
+
+import { config as speedConfig } from "./registry/conversion/speed/config";
+import { calculateLogic as speedLogic } from "./registry/conversion/speed/logic";
+import speedContent from "./registry/conversion/speed/content";
+
+import { config as digitalStorageConfig } from "./registry/conversion/digital-storage/config";
+import { calculateLogic as digitalStorageLogic } from "./registry/conversion/digital-storage/logic";
+import digitalStorageContent from "./registry/conversion/digital-storage/content";
+
+import { config as dataTransferConfig } from "./registry/conversion/data-transfer/config";
+import { calculateLogic as dataTransferLogic } from "./registry/conversion/data-transfer/logic";
+import dataTransferContent from "./registry/conversion/data-transfer/content";
+
+import { config as fractionDecimalConfig } from "./registry/conversion/fraction-decimal/config";
+import { calculateLogic as fractionDecimalLogic } from "./registry/conversion/fraction-decimal/logic";
+import fractionDecimalContent from "./registry/conversion/fraction-decimal/content";
+
+import { config as numberBaseConfig } from "./registry/conversion/number-base/config";
+import { calculateLogic as numberBaseLogic } from "./registry/conversion/number-base/logic";
+import numberBaseContent from "./registry/conversion/number-base/content";
+
+import { config as romanConfig } from "./registry/conversion/roman/config";
+import { calculateLogic as romanLogic } from "./registry/conversion/roman/logic";
+import romanContent from "./registry/conversion/roman/content";
+
+import { config as pressureConfig } from "./registry/conversion/pressure/config";
+import { calculateLogic as pressureLogic } from "./registry/conversion/pressure/logic";
+import pressureContent from "./registry/conversion/pressure/content";
+
+import { config as powerConfig } from "./registry/conversion/power/config";
+import { calculateLogic as powerLogic } from "./registry/conversion/power/logic";
+import powerContent from "./registry/conversion/power/content";
+
+import { config as energyConfig } from "./registry/conversion/energy/config";
+import { calculateLogic as energyLogic } from "./registry/conversion/energy/logic";
+import energyContent from "./registry/conversion/energy/content";
+
+import { config as angleConfig } from "./registry/conversion/angle/config";
+import { calculateLogic as angleLogic } from "./registry/conversion/angle/logic";
+import angleContent from "./registry/conversion/angle/content";
+
+import { config as torqueConfig } from "./registry/conversion/torque/config";
+import { calculateLogic as torqueLogic } from "./registry/conversion/torque/logic";
+import torqueContent from "./registry/conversion/torque/content";
+
+// Everyday Utility Calculators
+
+import { config as ageConfig } from "./registry/everyday/age/config";
+import { calculateLogic as ageLogic } from "./registry/everyday/age/logic";
+import ageContent from "./registry/everyday/age/content";
+
+import { config as groceryPriceConfig } from "./registry/everyday/grocery-price/config";
+import { calculateLogic as groceryPriceLogic } from "./registry/everyday/grocery-price/logic";
+import groceryPriceContent from "./registry/everyday/grocery-price/content";
+
+import { config as mileageConfig } from "./registry/everyday/mileage/config";
+import { calculateLogic as mileageLogic } from "./registry/everyday/mileage/logic";
+import mileageContent from "./registry/everyday/mileage/content";
+
+import { config as electricityConfig } from "./registry/everyday/electricity/config";
+import { calculateLogic as electricityLogic } from "./registry/everyday/electricity/logic";
+import electricityContent from "./registry/everyday/electricity/content";
+
+import { config as discountConfig } from "./registry/everyday/discount/config";
+import { calculateLogic as discountLogic } from "./registry/everyday/discount/logic";
+import discountContent from "./registry/everyday/discount/content";
+
+import { config as dateConfig } from "./registry/everyday/date/config";
+import { calculateLogic as dateLogic } from "./registry/everyday/date/logic";
+import dateContent from "./registry/everyday/date/content";
+
+import { config as timeDurationConfig } from "./registry/everyday/time-duration/config";
+import { calculateLogic as timeDurationLogic } from "./registry/everyday/time-duration/logic";
+import timeDurationContent from "./registry/everyday/time-duration/content";
+
+//Education Calculators
+
+import { config as cgpaConfig } from "./registry/education/cgpa/config";
+import { calculateLogic as cgpaLogic } from "./registry/education/cgpa/logic";
+import cgpaContent from "./registry/education/cgpa/content";
+
+import { config as cgpaSgpaConfig } from "./registry/education/cgpa-sgpa/config";
+import { calculateLogic as cgpaSgpaLogic } from "./registry/education/cgpa-sgpa/logic";
+import cgpaSgpaContent from "./registry/education/cgpa-sgpa/content";
+
+import { config as attendanceConfig } from "./registry/education/attendance/config";
+import { calculateLogic as attendanceLogic } from "./registry/education/attendance/logic";
+import attendanceContent from "./registry/education/attendance/content";
+
+import { config as educationLoanConfig } from "./registry/education/education-loan/config";
+import { calculateLogic as educationLoanLogic } from "./registry/education/education-loan/logic";
+import educationLoanContent from "./registry/education/education-loan/content";
+
+import { config as typingConfig } from "./registry/education/typing/config";
+import { calculateLogic as typingLogic } from "./registry/education/typing/logic";
+import typingContent from "./registry/education/typing/content";
+
+import { config as typingTestConfig } from "./registry/education/typing-test/config";
+import { calculateLogic as typingTestLogic } from "./registry/education/typing-test/logic";
+import typingTestContent from "./registry/education/typing-test/content";
+
+import { config as wordCounterConfig } from "./registry/education/word-counter/config";
+import { calculateLogic as wordCounterLogic } from "./registry/education/word-counter/logic";
+import wordCounterContent from "./registry/education/word-counter/content";
 
 function App() {
   return (
@@ -653,6 +785,326 @@ function App() {
                     config={averageConfig}
                     calculateLogic={averageLogic}
                     ContentComponent={averageContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/unit"
+                element={
+                  <CalculatorLayout
+                    config={unitConfig}
+                    calculateLogic={unitLogic}
+                    ContentComponent={unitContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/weight"
+                element={
+                  <CalculatorLayout
+                    config={weightConfig}
+                    calculateLogic={weightLogic}
+                    ContentComponent={weightContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/temperature"
+                element={
+                  <CalculatorLayout
+                    config={temperatureConfig}
+                    calculateLogic={temperatureLogic}
+                    ContentComponent={temperatureContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/volume"
+                element={
+                  <CalculatorLayout
+                    config={volumeConfig}
+                    calculateLogic={volumeLogic}
+                    ContentComponent={volumeContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/area"
+                element={
+                  <CalculatorLayout
+                    config={areaConfig}
+                    calculateLogic={areaLogic}
+                    ContentComponent={areaContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/time"
+                element={
+                  <CalculatorLayout
+                    config={timeConfig}
+                    calculateLogic={timeLogic}
+                    ContentComponent={timeContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/cooking"
+                element={
+                  <CalculatorLayout
+                    config={cookingConfig}
+                    calculateLogic={cookingLogic}
+                    ContentComponent={cookingContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/speed"
+                element={
+                  <CalculatorLayout
+                    config={speedConfig}
+                    calculateLogic={speedLogic}
+                    ContentComponent={speedContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/digital-storage"
+                element={
+                  <CalculatorLayout
+                    config={digitalStorageConfig}
+                    calculateLogic={digitalStorageLogic}
+                    ContentComponent={digitalStorageContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/data-transfer"
+                element={
+                  <CalculatorLayout
+                    config={dataTransferConfig}
+                    calculateLogic={dataTransferLogic}
+                    ContentComponent={dataTransferContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/fraction-decimal"
+                element={
+                  <CalculatorLayout
+                    config={fractionDecimalConfig}
+                    calculateLogic={fractionDecimalLogic}
+                    ContentComponent={fractionDecimalContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/number-base"
+                element={
+                  <CalculatorLayout
+                    config={numberBaseConfig}
+                    calculateLogic={numberBaseLogic}
+                    ContentComponent={numberBaseContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/roman"
+                element={
+                  <CalculatorLayout
+                    config={romanConfig}
+                    calculateLogic={romanLogic}
+                    ContentComponent={romanContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/pressure"
+                element={
+                  <CalculatorLayout
+                    config={pressureConfig}
+                    calculateLogic={pressureLogic}
+                    ContentComponent={pressureContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/power"
+                element={
+                  <CalculatorLayout
+                    config={powerConfig}
+                    calculateLogic={powerLogic}
+                    ContentComponent={powerContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/energy"
+                element={
+                  <CalculatorLayout
+                    config={energyConfig}
+                    calculateLogic={energyLogic}
+                    ContentComponent={energyContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/angle"
+                element={
+                  <CalculatorLayout
+                    config={angleConfig}
+                    calculateLogic={angleLogic}
+                    ContentComponent={angleContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/conversion/torque"
+                element={
+                  <CalculatorLayout
+                    config={torqueConfig}
+                    calculateLogic={torqueLogic}
+                    ContentComponent={torqueContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/age"
+                element={
+                  <CalculatorLayout
+                    config={ageConfig}
+                    calculateLogic={ageLogic}
+                    ContentComponent={ageContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/grocery-price"
+                element={
+                  <CalculatorLayout
+                    config={groceryPriceConfig}
+                    calculateLogic={groceryPriceLogic}
+                    ContentComponent={groceryPriceContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/mileage"
+                element={
+                  <CalculatorLayout
+                    config={mileageConfig}
+                    calculateLogic={mileageLogic}
+                    ContentComponent={mileageContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/electricity"
+                element={
+                  <CalculatorLayout
+                    config={electricityConfig}
+                    calculateLogic={electricityLogic}
+                    ContentComponent={electricityContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/discount"
+                element={
+                  <CalculatorLayout
+                    config={discountConfig}
+                    calculateLogic={discountLogic}
+                    ContentComponent={discountContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/date"
+                element={
+                  <CalculatorLayout
+                    config={dateConfig}
+                    calculateLogic={dateLogic}
+                    ContentComponent={dateContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/everyday/time-duration"
+                element={
+                  <CalculatorLayout
+                    config={timeDurationConfig}
+                    calculateLogic={timeDurationLogic}
+                    ContentComponent={timeDurationContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/cgpa"
+                element={
+                  <CalculatorLayout
+                    config={cgpaConfig}
+                    calculateLogic={cgpaLogic}
+                    ContentComponent={cgpaContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/cgpa-sgpa"
+                element={
+                  <CalculatorLayout
+                    config={cgpaSgpaConfig}
+                    calculateLogic={cgpaSgpaLogic}
+                    ContentComponent={cgpaSgpaContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/attendance"
+                element={
+                  <CalculatorLayout
+                    config={attendanceConfig}
+                    calculateLogic={attendanceLogic}
+                    ContentComponent={attendanceContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/education-loan"
+                element={
+                  <CalculatorLayout
+                    config={educationLoanConfig}
+                    calculateLogic={educationLoanLogic}
+                    ContentComponent={educationLoanContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/typing"
+                element={
+                  <CalculatorLayout
+                    config={typingConfig}
+                    calculateLogic={typingLogic}
+                    ContentComponent={typingContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/typing-test"
+                element={
+                  <CalculatorLayout
+                    config={typingTestConfig}
+                    calculateLogic={typingTestLogic}
+                    ContentComponent={typingTestContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/word-counter"
+                element={
+                  <CalculatorLayout
+                    config={wordCounterConfig}
+                    calculateLogic={wordCounterLogic}
+                    ContentComponent={wordCounterContent}
                   />
                 }
               />

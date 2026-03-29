@@ -48,13 +48,52 @@ export const calculators = [
     { name: 'Permutation and Combination Calculator', path: '/calculator/math/permutation-combination', category: 'math' },
     { name: 'Average Calculator', path: '/calculator/math/average', category: 'math' }, 
 
-
-    { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
+    // Conversion Calculators
     { name: 'Unit Converter', path: '/calculator/conversion/unit', category: 'conversion' },
-    { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },
-    { name: 'CGPA Calculator', path: '/calculator/education/cgpa', category: 'education' },
-    { name: 'Margin Calculator', path: '/calculator/business/margin', category: 'business' },
-    { name: 'Ohm Law Calculator', path: '/calculator/engineering/ohm', category: 'engineering' },
+    { name: 'Weight Converter', path: '/calculator/conversion/weight', category: 'conversion' },
+    { name: 'Temperature Converter', path: '/calculator/conversion/temperature', category: 'conversion' },
+    { name: 'Volume & Capacity Converter', path: '/calculator/conversion/volume', category: 'conversion' },
+    { name: 'Area Converter', path: '/calculator/conversion/area', category: 'conversion' },
+    { name: 'Time Converter', path: '/calculator/conversion/time', category: 'conversion' },
+    { name: 'Cooking Measurement Converter', path: '/calculator/conversion/cooking', category: 'conversion' },
+    { name: 'Speed Converter', path: '/calculator/conversion/speed', category: 'conversion' },
+    { name: 'Digital Storage Converter', path: '/calculator/conversion/digital-storage', category: 'conversion' },
+    { name: 'Data Transfer & Network Speed Converter', path: '/calculator/conversion/data-transfer', category: 'conversion' },
+    { name: 'Fraction & Decimal Converter', path: '/calculator/conversion/fraction-decimal', category: 'conversion' },
+    { name: 'Number Base Converter', path: '/calculator/conversion/number-base', category: 'conversion' },
+    { name: 'Roman Numeral Converter', path: '/calculator/conversion/roman', category: 'conversion' },
+    { name: 'Pressure Converter', path: '/calculator/conversion/pressure', category: 'conversion' },
+    { name: 'Power Converter', path: '/calculator/conversion/power', category: 'conversion' },
+    { name: 'Energy Converter', path: '/calculator/conversion/energy', category: 'conversion' },
+    { name: 'Angle Converter', path: '/calculator/conversion/angle', category: 'conversion' },
+    { name: 'Torque Converter', path: '/calculator/conversion/torque', category: 'conversion' },
+
+    // Everyday Utility Calculators
+
+    { name: 'Age Calculator', path: '/calculator/everyday/age', category: 'everyday' },
+    { name: 'Grocery Price Calculator', path: '/calculator/everyday/grocery-price', category: 'everyday' },
+    { name: 'Fuel Cost & Mileage Calculator', path: '/calculator/everyday/mileage', category: 'everyday' },
+    { name: 'Electricity Bill Calculator', path: '/calculator/everyday/electricity', category: 'everyday' },
+    { name: 'Discount Calculator', path: '/calculator/everyday/discount', category: 'everyday' },
+    { name: 'Date Calculator', path: '/calculator/everyday/date', category: 'everyday' },
+    { name: 'Time Calculator', path: '/calculator/everyday/time-duration', category: 'everyday' },
+    
+
+    //Education Calculators
+    { name: 'CGPA to Percentage Calculator', path: '/calculator/education/cgpa', category: 'education' },
+    { name: 'CGPA to SGPA Calculator', path: '/calculator/education/cgpa-sgpa', category: 'education' },
+    { name: 'Attendance Calculator', path: '/calculator/education/attendance', category: 'education' },
+    { name: 'Education Loan Calculator', path: '/calculator/education/education-loan', category: 'education' },
+    { name: 'Typing Speed Calculator (WPM)', path: '/calculator/education/typing', category: 'education' }, 
+    { name: 'Typing Speed Test', path: '/calculator/education/typing-test', category: 'education' },
+    { name: 'Word & Character Counter', path: '/calculator/education/word-counter', category: 'education' },
+
+
+    // { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
+    // { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },
+    // { name: 'CGPA Calculator', path: '/calculator/education/cgpa', category: 'education' },
+    // { name: 'Margin Calculator', path: '/calculator/business/margin', category: 'business' },
+    // { name: 'Ohm Law Calculator', path: '/calculator/engineering/ohm', category: 'engineering' },
   ];
   
   export const getCategoryCount = (categoryId) => {
