@@ -572,7 +572,6 @@ export default function CalculatorLayout({
                         </table>
                       </div>
                     )}
-
                     {results.chartData && results.chartData.length > 0 && (
                       <div className="h-64 w-full min-h-[256px]">
                         <ResponsiveContainer width="99%" height="100%">
@@ -611,7 +610,6 @@ export default function CalculatorLayout({
             </div>
           </div>
         )}
-
         {/* SEO Content Section */}
         {ContentComponent && (
           <div className="prose max-w-none text-calc-darkGray bg-calc-white p-8 rounded-2xl border border-calc-lightGray mt-8">

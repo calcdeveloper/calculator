@@ -300,6 +300,14 @@ import { config as timeDurationConfig } from "./registry/everyday/time-duration/
 import { calculateLogic as timeDurationLogic } from "./registry/everyday/time-duration/logic";
 import timeDurationContent from "./registry/everyday/time-duration/content";
 
+// Remove the old config, logic, and content imports, and add this:
+import BasicCalculator from "./registry/everyday/basic-calculator/index";
+import { config as basicCalculatorConfig } from "./registry/everyday/basic-calculator/config";
+
+import { config as expenseConfig } from "./registry/everyday/expense/config";
+import { calculateLogic as expenseLogic } from "./registry/everyday/expense/logic";
+import expenseContent from "./registry/everyday/expense/content";
+
 //Education Calculators
 
 import { config as cgpaConfig } from "./registry/education/cgpa/config";
@@ -329,6 +337,32 @@ import typingTestContent from "./registry/education/typing-test/content";
 import { config as wordCounterConfig } from "./registry/education/word-counter/config";
 import { calculateLogic as wordCounterLogic } from "./registry/education/word-counter/logic";
 import wordCounterContent from "./registry/education/word-counter/content";
+
+import { config as marksPercentageConfig } from "./registry/education/marks-percentage/config";
+import { calculateLogic as marksPercentageLogic } from "./registry/education/marks-percentage/logic";
+import marksPercentageContent from "./registry/education/marks-percentage/content";
+
+import { config as timeWorkConfig } from "./registry/education/time-work/config";
+import { calculateLogic as timeWorkLogic } from "./registry/education/time-work/logic";
+import timeWorkContent from "./registry/education/time-work/content";
+
+import { config as gateScoreConfig } from "./registry/education/gate-score/config";
+import { calculateLogic as gateScoreLogic } from "./registry/education/gate-score/logic";
+import gateScoreContent from "./registry/education/gate-score/content";
+
+import { config as studyPlanConfig } from "./registry/education/study-plan/config";
+import { calculateLogic as studyPlanLogic } from "./registry/education/study-plan/logic";
+import studyPlanContent from "./registry/education/study-plan/content";
+
+import { config as neetRankConfig } from "./registry/education/neet-rank/config";
+import { calculateLogic as neetRankLogic } from "./registry/education/neet-rank/logic";
+import neetRankContent from "./registry/education/neet-rank/content";
+
+//Construction Calculators
+
+import { config as concreteConfig } from "./registry/construction/concrete/config";
+import { calculateLogic as concreteLogic } from "./registry/construction/concrete/logic";
+import ConcreteContent from "./registry/construction/concrete/content";
 
 function App() {
   return (
@@ -1038,6 +1072,20 @@ function App() {
                   />
                 }
               />
+             <Route
+                path="/calculator/everyday/basic-calculator"
+                element={<BasicCalculator config={basicCalculatorConfig} />}
+              />
+              <Route
+                path="/calculator/everyday/expense"
+                element={
+                  <CalculatorLayout
+                    config={expenseConfig}
+                    calculateLogic={expenseLogic}
+                    ContentComponent={expenseContent}
+                  />
+                }
+              />
               <Route
                 path="/calculator/education/cgpa"
                 element={
@@ -1105,6 +1153,66 @@ function App() {
                     config={wordCounterConfig}
                     calculateLogic={wordCounterLogic}
                     ContentComponent={wordCounterContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/marks-percentage"
+                element={
+                  <CalculatorLayout
+                    config={marksPercentageConfig}
+                    calculateLogic={marksPercentageLogic}
+                    ContentComponent={marksPercentageContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/time-work"
+                element={
+                  <CalculatorLayout
+                    config={timeWorkConfig}
+                    calculateLogic={timeWorkLogic}
+                    ContentComponent={timeWorkContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/gate-score"
+                element={
+                  <CalculatorLayout
+                    config={gateScoreConfig}
+                    calculateLogic={gateScoreLogic}
+                    ContentComponent={gateScoreContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/study-plan"
+                element={
+                  <CalculatorLayout
+                    config={studyPlanConfig}
+                    calculateLogic={studyPlanLogic}
+                    ContentComponent={studyPlanContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/education/neet-rank"
+                element={
+                  <CalculatorLayout
+                    config={neetRankConfig}
+                    calculateLogic={neetRankLogic}
+                    ContentComponent={neetRankContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/concrete"
+                element={
+                  <CalculatorLayout
+                    config={concreteConfig}
+                    calculateLogic={concreteLogic}
+                    ContentComponent={ConcreteContent}
                   />
                 }
               />

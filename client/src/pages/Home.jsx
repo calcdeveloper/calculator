@@ -12,7 +12,7 @@ const categories = [
   { name: 'Conversion', icon: <RefreshCw size={24} />, path: 'conversion' },
   { name: 'Everyday Utility', icon: <Wrench size={24} />, path: 'everyday' },
   { name: 'Education', icon: <GraduationCap size={24} />, path: 'education' },
-  { name: 'Business', icon: <Briefcase size={24} />, path: 'business' },
+  { name: 'Construction', icon: <Briefcase size={24} />, path: 'construction' },
   { name: 'Engineering', icon: <Cpu size={24} />, path: 'engineering' },
 ];
 

@@ -1,0 +1,35 @@
+export const config = {
+    id: "gate-score",
+    name: "GATE Score Calculator",
+    description: "Calculate your normalized GATE score out of 1000 based on your marks and category.",
+    category: "education",
+    seoTitle: "GATE Score Calculator | Calculate Normalized GATE Score",
+    seoDescription: "Calculate your official GATE score using your actual marks. Understand the normalization formula, qualifying marks, and how to predict your score for IIT admissions.",
+    seoKeywords: "gate score calculator, gate marks vs score, gate normalization formula, calculate gate score, gate 2026 score predictor",
+    inputs: [
+      {
+        id: "marks",
+        label: "Your Marks (out of 100)",
+        type: "number",
+        min: -33,
+        max: 100,
+        defaultValue: 65,
+      },
+      {
+        id: "qualifyingMarks",
+        label: "Qualifying Marks (Mq)",
+        type: "number",
+        min: 1,
+        defaultValue: 25,
+        helperText: "Determined by the organizing IIT for your category.",
+      },
+      {
+        id: "meanTop",
+        label: "Mean Marks of Top 0.1% (Mt)",
+        type: "number",
+        min: 1,
+        defaultValue: 85,
+        helperText: "Average marks of the top 0.1% or top 10 candidates.",
+      },
+    ],
+  };

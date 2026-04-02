@@ -77,6 +77,8 @@ export const calculators = [
     { name: 'Discount Calculator', path: '/calculator/everyday/discount', category: 'everyday' },
     { name: 'Date Calculator', path: '/calculator/everyday/date', category: 'everyday' },
     { name: 'Time Calculator', path: '/calculator/everyday/time-duration', category: 'everyday' },
+    { name: 'Basic Calculator', path: '/calculator/everyday/basic-calculator', category: 'everyday' },
+    { name: 'Monthly Expense Calculator', path: '/calculator/everyday/expense', category: 'everyday' },
     
 
     //Education Calculators
@@ -87,7 +89,14 @@ export const calculators = [
     { name: 'Typing Speed Calculator (WPM)', path: '/calculator/education/typing', category: 'education' }, 
     { name: 'Typing Speed Test', path: '/calculator/education/typing-test', category: 'education' },
     { name: 'Word & Character Counter', path: '/calculator/education/word-counter', category: 'education' },
+    { name: 'Marks Percentage Calculator', path: '/calculator/education/marks-percentage', category: 'education' },
+    { name: 'Time & Work Calculator', path: '/calculator/education/time-work', category: 'education' },
+    { name: 'GATE Score Calculator', path: '/calculator/education/gate-score', category: 'education' },
+    { name: 'Study Plan Calculator', path: '/calculator/education/study-plan', category: 'education' },
+    { name: 'NEET Rank Predictor', path: '/calculator/education/neet-rank', category: 'education' },
 
+    //Construction Calculators
+    { name: 'Concrete Calculator', path: '/calculator/construction/concrete', category: 'construction' },
 
     // { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
     // { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },

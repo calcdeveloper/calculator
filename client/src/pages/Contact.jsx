@@ -6,7 +6,7 @@ export default function Contact() {
         <form className="bg-calc-white p-8 rounded-xl border border-calc-lightGray shadow-sm space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div>
             <label className="block text-sm font-medium mb-2">Name</label>
-            <input type="text" className="w-full border border-calc-lightGray p-3 rounded-md outline-none focus:border-calc-green" placeholder="John Doe" required />
+            <input type="text" className="w-full border border-calc-lightGray p-3 rounded-md outline-none focus:border-calc-green" placeholder="Full Name" required />
           </div>
           <div>
             <label className="block text-sm font-medium mb-2">Email Address</label>

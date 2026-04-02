@@ -1,0 +1,40 @@
+export const config = {
+    id: "study-plan",
+    name: "Study Plan Calculator",
+    description: "Break down your syllabus into a daily schedule based on your exam date.",
+    category: "education",
+    seoTitle: "Study Plan Calculator | Create a Daily Study Schedule",
+    seoDescription: "Free online Study Plan Calculator. Calculate how many chapters or pages you need to study daily to finish your syllabus before the exam. Includes revision time planning.",
+    seoKeywords: "study plan calculator, exam preparation planner, daily study goal, syllabus tracker, how to plan study for exams",
+    inputs: [
+      {
+        id: "totalUnits",
+        label: "Total Units/Chapters to Cover",
+        type: "number",
+        min: 1,
+        defaultValue: 20,
+      },
+      {
+        id: "daysLeft",
+        label: "Days Remaining Until Exam",
+        type: "number",
+        min: 1,
+        defaultValue: 30,
+      },
+      {
+        id: "revisionDays",
+        label: "Days Reserved for Revision",
+        type: "number",
+        min: 0,
+        defaultValue: 5,
+      },
+      {
+        id: "hoursPerDay",
+        label: "Study Hours Available Per Day",
+        type: "number",
+        min: 1,
+        max: 24,
+        defaultValue: 6,
+      },
+    ],
+  };
