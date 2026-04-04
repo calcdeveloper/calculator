@@ -24,6 +24,8 @@ export const calculators = [
     { name: 'Macro Calculator', path: '/calculator/health/macros', category: 'health' },
     { name: 'Water Intake Calculator', path: '/calculator/health/water-intake', category: 'health' },
     { name: 'Ideal Weight Calculator', path: '/calculator/health/ideal-weight', category: 'health' },
+    { name: 'TDEE Calculator', path: '/calculator/health/tdee', category: 'health' },
+    { name: 'Period & Menstrual Cycle Calculator', path: '/calculator/health/period-cycle', category: 'health' },
 
     //Math Calculators
     { name: 'Percentage Calculator', path: '/calculator/math/percentage', category: 'math' },
@@ -97,6 +99,27 @@ export const calculators = [
 
     //Construction Calculators
     { name: 'Concrete Calculator', path: '/calculator/construction/concrete', category: 'construction' },
+    { name: 'Partition and Framing Calculator', path: '/calculator/construction/framing-stud', category: 'construction' },
+    { name: 'Brick Calculator', path: '/calculator/construction/brick', category: 'construction' },
+    { name: 'AAC Block & Adhesive Calculator', path: '/calculator/construction/aac-block', category: 'construction' },
+    { name: 'Plastering Material Calculator', path: '/calculator/construction/plastering', category: 'construction' },
+    { name: 'Wall Putty & Primer Calculator', path: '/calculator/construction/putty-primer', category: 'construction' },
+    { name: 'Brass Volume Calculator (Sand & Aggregate)', path: '/calculator/construction/brass-volume', category: 'construction' },
+    { name: 'Concrete Mix Calculator (Cement, Sand, Aggregate)', path: '/calculator/construction/concrete-mix', category: 'construction' },
+    { name: 'TMT Steel Bar (Sariya) Weight Calculator', path: '/calculator/construction/tmt-steel-weight', category: 'construction' },
+    { name: 'Roof Slab Concrete & Steel Estimator', path: '/calculator/construction/roof-slab-estimator', category: 'construction' },
+    { name: 'Column & Footing Concrete Calculator', path: '/calculator/construction/column-footing', category: 'construction' },
+    { name: 'Earthwork & Excavation Calculator (Soil Volume)', path: '/calculator/construction/earthwork-excavation', category: 'construction' },
+    { name: 'Water Tank Capacity Calculator', path: '/calculator/construction/water-tank-capacity', category: 'construction' },
+    { name: 'Tile Calculator (Floor & Wall)', path: '/calculator/construction/tile', category: 'construction' },
+    { name: 'Marble & Granite Flooring Estimator', path: '/calculator/construction/marble-granite', category: 'construction' },
+    { name: 'Paint Calculator', path: '/calculator/construction/paint', category: 'construction' },
+    { name: 'False Ceiling & POP Calculator', path: '/calculator/construction/false-ceiling', category: 'construction' },
+    { name: 'Plywood & Sunmica (Laminate) Calculator', path: '/calculator/construction/plywood', category: 'construction' },
+    { name: 'Gaj to Square Feet / Sq Meter Converter', path: '/calculator/construction/gaj-converter', category: 'construction' },
+    { name: 'Cent, Guntha & Bigha Land Converter', path: '/calculator/construction/regional-land', category: 'construction' },
+    { name: 'House Construction Cost Estimator', path: '/calculator/construction/construction-cost', category: 'construction' },
+    { name: 'Staircase Step & Concrete Calculator', path: '/calculator/construction/staircase-step', category: 'construction' },
 
     // { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
     // { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },

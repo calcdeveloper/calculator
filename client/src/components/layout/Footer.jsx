@@ -32,7 +32,7 @@ export default function Footer() {
                 <li><Link to="/category/health" className="hover:text-calc-green transition">Health</Link></li>
                 <li><Link to="/category/math" className="hover:text-calc-green transition">Math</Link></li>
                 <li><Link to="/category/conversion" className="hover:text-calc-green transition">Conversion</Link></li>
-                <li><Link to="/category/utility" className="hover:text-calc-green transition">Everyday Utility</Link></li>
+                <li><Link to="/category/everyday" className="hover:text-calc-green transition">Everyday Utility</Link></li>
                 <li><Link to="/category/education" className="hover:text-calc-green transition">Education</Link></li>
               </ul>
             </div>

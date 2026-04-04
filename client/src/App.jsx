@@ -109,6 +109,14 @@ import { config as idealWeightConfig } from "./registry/health/ideal-weight/conf
 import { calculateLogic as idealWeightLogic } from "./registry/health/ideal-weight/logic";
 import idealWeightContent from "./registry/health/ideal-weight/content";
 
+import { config as tdeeConfig } from "./registry/health/tdee/config";
+import { calculateLogic as tdeeLogic } from "./registry/health/tdee/logic";
+import tdeeContent from "./registry/health/tdee/content";
+
+import { config as periodCycleConfig } from "./registry/health/period-cycle/config";
+import { calculateLogic as periodCycleLogic } from "./registry/health/period-cycle/logic";
+import periodCycleContent from "./registry/health/period-cycle/content";
+
 //Math Calculators
 
 import { config as percentageConfig } from "./registry/math/percentage/config";
@@ -364,6 +372,90 @@ import { config as concreteConfig } from "./registry/construction/concrete/confi
 import { calculateLogic as concreteLogic } from "./registry/construction/concrete/logic";
 import ConcreteContent from "./registry/construction/concrete/content";
 
+import { config as framingStudConfig } from "./registry/construction/framing-stud/config";
+import { calculateLogic as framingStudLogic } from "./registry/construction/framing-stud/logic";
+import FramingStudContent from "./registry/construction/framing-stud/content";
+
+import { config as brickConfig } from "./registry/construction/brick/config";
+import { calculateLogic as brickLogic } from "./registry/construction/brick/logic";
+import BrickContent from "./registry/construction/brick/content";
+
+import { config as aacBlockConfig } from "./registry/construction/aac-block/config";
+import { calculateLogic as aacBlockLogic } from "./registry/construction/aac-block/logic";
+import AacBlockContent from "./registry/construction/aac-block/content";
+
+import { config as plasteringConfig } from "./registry/construction/plastering/config";
+import { calculateLogic as plasteringLogic } from "./registry/construction/plastering/logic";
+import PlasteringContent from "./registry/construction/plastering/content";
+
+import { config as puttyPrimerConfig } from "./registry/construction/putty-primer/config";
+import { calculateLogic as puttyPrimerLogic } from "./registry/construction/putty-primer/logic";
+import PuttyPrimerContent from "./registry/construction/putty-primer/content";
+
+import { config as brassVolumeConfig } from "./registry/construction/brass-volume/config";
+import { calculateLogic as brassVolumeLogic } from "./registry/construction/brass-volume/logic";
+import BrassVolumeContent from "./registry/construction/brass-volume/content";
+
+import { config as concreteMixConfig } from "./registry/construction/concrete-mix/config";
+import { calculateLogic as concreteMixLogic } from "./registry/construction/concrete-mix/logic";
+import ConcreteMixContent from "./registry/construction/concrete-mix/content";
+
+import { config as tmtSteelWeightConfig } from "./registry/construction/tmt-steel-weight/config";
+import { calculateLogic as tmtSteelWeightLogic } from "./registry/construction/tmt-steel-weight/logic";
+import TmtSteelWeightContent from "./registry/construction/tmt-steel-weight/content";
+
+import { config as roofSlabEstimatorConfig } from "./registry/construction/roof-slab-estimator/config";
+import { calculateLogic as roofSlabEstimatorLogic } from "./registry/construction/roof-slab-estimator/logic";
+import RoofSlabEstimatorContent from "./registry/construction/roof-slab-estimator/content";
+
+import { config as columnFootingConfig } from "./registry/construction/column-footing/config";
+import { calculateLogic as columnFootingLogic } from "./registry/construction/column-footing/logic";
+import ColumnFootingContent from "./registry/construction/column-footing/content";
+
+import { config as earthworkConfig } from "./registry/construction/earthwork-excavation/config";
+import { calculateLogic as earthworkLogic } from "./registry/construction/earthwork-excavation/logic";
+import EarthworkContent from "./registry/construction/earthwork-excavation/content";
+
+import { config as waterTankCapacityConfig } from "./registry/construction/water-tank-capacity/config";
+import { calculateLogic as waterTankCapacityLogic } from "./registry/construction/water-tank-capacity/logic";
+import WaterTankCapacityContent from "./registry/construction/water-tank-capacity/content";
+
+import { config as tileConfig } from "./registry/construction/tile/config";
+import { calculateLogic as tileLogic } from "./registry/construction/tile/logic";
+import TileContent from "./registry/construction/tile/content";
+
+import { config as marbleGraniteConfig } from "./registry/construction/marble-granite/config";
+import { calculateLogic as marbleGraniteLogic } from "./registry/construction/marble-granite/logic";
+import MarbleGraniteContent from "./registry/construction/marble-granite/content";
+
+import { config as paintConfig } from "./registry/construction/paint/config";
+import { calculateLogic as paintLogic } from "./registry/construction/paint/logic";
+import PaintContent from "./registry/construction/paint/content";
+
+import { config as falseCeilingConfig } from "./registry/construction/false-ceiling/config";
+import { calculateLogic as falseCeilingLogic } from "./registry/construction/false-ceiling/logic";
+import FalseCeilingContent from "./registry/construction/false-ceiling/content";
+
+import { config as plywoodConfig } from "./registry/construction/plywood/config";
+import { calculateLogic as plywoodLogic } from "./registry/construction/plywood/logic";
+import PlywoodContent from "./registry/construction/plywood/content";
+
+import { config as gajConverterConfig } from "./registry/construction/gaj-converter/config";
+import { calculateLogic as gajConverterLogic } from "./registry/construction/gaj-converter/logic";
+import GajConverterContent from "./registry/construction/gaj-converter/content"; 
+
+import { config as regionalLandConfig } from "./registry/construction/regional-land/config";
+import { calculateLogic as regionalLandLogic } from "./registry/construction/regional-land/logic";
+import RegionalLandContent from "./registry/construction/regional-land/content";
+
+import { config as constructionCostConfig } from "./registry/construction/construction-cost/config";
+import { calculateLogic as constructionCostLogic } from "./registry/construction/construction-cost/logic";
+import ConstructionCostContent from "./registry/construction/construction-cost/content";
+
+import { config as staircaseStepConfig } from "./registry/construction/staircase-step/config";
+import { calculateLogic as staircaseStepLogic } from "./registry/construction/staircase-step/logic";
+import StaircaseStepContent from "./registry/construction/staircase-step/content";
+
 function App() {
   return (
     <HelmetProvider>
@@ -612,6 +704,27 @@ function App() {
                   />
                 }
               />
+              <Route
+                path="/calculator/health/tdee"
+                element={
+                  <CalculatorLayout
+                    config={tdeeConfig}
+                    calculateLogic={tdeeLogic}
+                    ContentComponent={tdeeContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/health/period-cycle"
+                element={
+                  <CalculatorLayout
+                    config={periodCycleConfig}
+                    calculateLogic={periodCycleLogic}
+                    ContentComponent={periodCycleContent}
+                  />
+                }
+              />
+              //Math Routes
               <Route
                 path="/calculator/math/percentage"
                 element={
@@ -1216,6 +1329,216 @@ function App() {
                   />
                 }
               />
+              <Route
+                path="/calculator/construction/framing-stud"
+                element={
+                  <CalculatorLayout
+                    config={framingStudConfig}
+                    calculateLogic={framingStudLogic}
+                    ContentComponent={FramingStudContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/brick"
+                element={
+                  <CalculatorLayout
+                    config={brickConfig}
+                    calculateLogic={brickLogic}
+                    ContentComponent={BrickContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/aac-block"
+                element={
+                  <CalculatorLayout
+                    config={aacBlockConfig}
+                    calculateLogic={aacBlockLogic}
+                    ContentComponent={AacBlockContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/plastering"
+                element={
+                  <CalculatorLayout
+                    config={plasteringConfig}
+                    calculateLogic={plasteringLogic}
+                    ContentComponent={PlasteringContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/putty-primer"
+                element={
+                  <CalculatorLayout
+                    config={puttyPrimerConfig}
+                    calculateLogic={puttyPrimerLogic}
+                    ContentComponent={PuttyPrimerContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/brass-volume"
+                element={
+                  <CalculatorLayout
+                    config={brassVolumeConfig}
+                    calculateLogic={brassVolumeLogic}
+                    ContentComponent={BrassVolumeContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/concrete-mix"
+                element={
+                  <CalculatorLayout
+                    config={concreteMixConfig}
+                    calculateLogic={concreteMixLogic}
+                    ContentComponent={ConcreteMixContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/tmt-steel-weight"
+                element={
+                  <CalculatorLayout
+                    config={tmtSteelWeightConfig}
+                    calculateLogic={tmtSteelWeightLogic}
+                    ContentComponent={TmtSteelWeightContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/roof-slab-estimator"
+                element={
+                  <CalculatorLayout
+                    config={roofSlabEstimatorConfig}
+                    calculateLogic={roofSlabEstimatorLogic}
+                    ContentComponent={RoofSlabEstimatorContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/column-footing"
+                element={
+                  <CalculatorLayout
+                    config={columnFootingConfig}
+                    calculateLogic={columnFootingLogic}
+                    ContentComponent={ColumnFootingContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/earthwork-excavation"
+                element={
+                  <CalculatorLayout
+                    config={earthworkConfig}
+                    calculateLogic={earthworkLogic}
+                    ContentComponent={EarthworkContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/water-tank-capacity"
+                element={
+                  <CalculatorLayout
+                    config={waterTankCapacityConfig}
+                    calculateLogic={waterTankCapacityLogic}
+                    ContentComponent={WaterTankCapacityContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/tile"
+                element={
+                  <CalculatorLayout
+                    config={tileConfig}
+                    calculateLogic={tileLogic}
+                    ContentComponent={TileContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/marble-granite"
+                element={
+                  <CalculatorLayout
+                    config={marbleGraniteConfig}
+                    calculateLogic={marbleGraniteLogic}
+                    ContentComponent={MarbleGraniteContent}
+                  />
+                }
+               />
+               <Route
+                path="/calculator/construction/paint"
+                element={
+                  <CalculatorLayout
+                    config={paintConfig}
+                    calculateLogic={paintLogic}
+                    ContentComponent={PaintContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/false-ceiling"
+                element={
+                  <CalculatorLayout
+                    config={falseCeilingConfig}
+                    calculateLogic={falseCeilingLogic}
+                    ContentComponent={FalseCeilingContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/plywood"
+                element={
+                  <CalculatorLayout
+                    config={plywoodConfig}
+                    calculateLogic={plywoodLogic}
+                    ContentComponent={PlywoodContent}
+                  />
+                }
+               />
+               <Route
+                path="/calculator/construction/gaj-converter"
+                element={
+                  <CalculatorLayout
+                    config={gajConverterConfig}
+                    calculateLogic={gajConverterLogic}
+                    ContentComponent={GajConverterContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/construction/regional-land"
+                element={
+                  <CalculatorLayout
+                    config={regionalLandConfig}
+                    calculateLogic={regionalLandLogic}
+                    ContentComponent={RegionalLandContent}
+                  />
+                }
+               />
+               <Route
+                path="/calculator/construction/construction-cost"
+                element={
+                  <CalculatorLayout
+                    config={constructionCostConfig}
+                    calculateLogic={constructionCostLogic}
+                    ContentComponent={ConstructionCostContent}
+                  />
+                }
+               />
+               <Route
+                path="/calculator/construction/staircase-step"
+                element={
+                  <CalculatorLayout
+                    config={staircaseStepConfig}
+                    calculateLogic={staircaseStepLogic}
+                    ContentComponent={StaircaseStepContent}
+                  />
+                }
+               />
             </Routes>
           </div>
           <Footer />
