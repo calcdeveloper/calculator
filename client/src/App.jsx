@@ -153,7 +153,7 @@ import areaPerimeterContent from "./registry/math/area-perimeter/content";
 
 import { config as volumeSurfaceAreaConfig } from "./registry/math/volume-surface-area/config";
 import { calculateLogic as volumeSurfaceAreaLogic } from "./registry/math/volume-surface-area/logic";
-import volumeSurfaceAreaContent from "./registry/math/volume-surface-area/content"; 
+import volumeSurfaceAreaContent from "./registry/math/volume-surface-area/content";
 
 import { config as pythagoreanConfig } from "./registry/math/pythagorean/config";
 import { calculateLogic as pythagoreanLogic } from "./registry/math/pythagorean/logic";
@@ -168,7 +168,7 @@ import { calculateLogic as exponentLogic } from "./registry/math/exponent/logic"
 import exponentContent from "./registry/math/exponent/content";
 
 import { config as matrixConfig } from "./registry/math/matrix/config";
-import { calculateLogic as matrixLogic } from "./registry/math/matrix/logic"; 
+import { calculateLogic as matrixLogic } from "./registry/math/matrix/logic";
 import matrixContent from "./registry/math/matrix/content";
 
 import { config as probabilityConfig } from "./registry/math/probability/config";
@@ -202,7 +202,6 @@ import permutationCombinationContent from "./registry/math/permutation-combinati
 import { config as averageConfig } from "./registry/math/average/config";
 import { calculateLogic as averageLogic } from "./registry/math/average/logic";
 import averageContent from "./registry/math/average/content";
-
 
 // Conversion Calculators
 
@@ -442,7 +441,7 @@ import PlywoodContent from "./registry/construction/plywood/content";
 
 import { config as gajConverterConfig } from "./registry/construction/gaj-converter/config";
 import { calculateLogic as gajConverterLogic } from "./registry/construction/gaj-converter/logic";
-import GajConverterContent from "./registry/construction/gaj-converter/content"; 
+import GajConverterContent from "./registry/construction/gaj-converter/content";
 
 import { config as regionalLandConfig } from "./registry/construction/regional-land/config";
 import { calculateLogic as regionalLandLogic } from "./registry/construction/regional-land/logic";
@@ -455,6 +454,68 @@ import ConstructionCostContent from "./registry/construction/construction-cost/c
 import { config as staircaseStepConfig } from "./registry/construction/staircase-step/config";
 import { calculateLogic as staircaseStepLogic } from "./registry/construction/staircase-step/logic";
 import StaircaseStepContent from "./registry/construction/staircase-step/content";
+
+//Engineering Calculators
+
+import { config as ohmsLawPowerConfig } from "./registry/engineering/ohms-law-power/config";
+import { calculateLogic as ohmsLawPowerLogic } from "./registry/engineering/ohms-law-power/logic";
+import OhmsLawPowerContent from "./registry/engineering/ohms-law-power/content";
+
+import { config as capacitorConfig } from "./registry/engineering/capacitor/config";
+import { calculateLogic as capacitorLogic } from "./registry/engineering/capacitor/logic";
+import CapacitorContent from "./registry/engineering/capacitor/content";
+
+import { config as torqueConfigEngineering } from "./registry/engineering/torque/config";
+import { calculateLogic as torqueLogicEngineering } from "./registry/engineering/torque/logic";
+import TorqueContent from "./registry/engineering/torque/content";
+
+import { config as stressStrainConfig } from "./registry/engineering/stress-strain/config";
+import { calculateLogic as stressStrainLogic } from "./registry/engineering/stress-strain/logic";
+import StressStrainContent from "./registry/engineering/stress-strain/content";
+
+import { config as beamDeflectionConfig } from "./registry/engineering/beam-deflection/config";
+import { calculateLogic as beamDeflectionLogic } from "./registry/engineering/beam-deflection/logic";
+import BeamDeflectionContent from "./registry/engineering/beam-deflection/content";
+
+import { config as concreteVolumeConfigEngineering } from "./registry/engineering/concrete-volume/config";
+import { calculateLogic as concreteVolumeLogicEngineering } from "./registry/engineering/concrete-volume/logic";
+import ConcreteVolumeContent from "./registry/engineering/concrete-volume/content";
+
+import { config as structuralLoadConfig } from "./registry/engineering/structural-load/config";
+import { calculateLogic as structuralLoadLogic } from "./registry/engineering/structural-load/logic";
+import StructuralLoadContent from "./registry/engineering/structural-load/content";
+
+import { config as fluidMechanicsReynoldsConfig } from "./registry/engineering/fluid-mechanics-reynolds/config";
+import { calculateLogic as fluidMechanicsReynoldsLogic } from "./registry/engineering/fluid-mechanics-reynolds/logic";
+import FluidMechanicsReynoldsContent from "./registry/engineering/fluid-mechanics-reynolds/content";
+
+import { config as thermodynamicsIdealGasConfig } from "./registry/engineering/thermodynamics-ideal-gas/config";
+import { calculateLogic as thermodynamicsIdealGasLogic } from "./registry/engineering/thermodynamics-ideal-gas/logic";
+import ThermodynamicsIdealGasContent from "./registry/engineering/thermodynamics-ideal-gas/content";
+
+import { config as electricalPowerLossConfig } from "./registry/engineering/electrical-power-loss/config";
+import { calculateLogic as electricalPowerLossLogic } from "./registry/engineering/electrical-power-loss/logic";
+import ElectricalPowerLossContent from "./registry/engineering/electrical-power-loss/content";
+
+import { config as rcCircuitConfig } from "./registry/engineering/rc-circuit/config";
+import { calculateLogic as rcCircuitLogic } from "./registry/engineering/rc-circuit/logic";
+import RcCircuitContent from "./registry/engineering/rc-circuit/content";
+
+import { config as frequencyWavelengthConfig } from "./registry/engineering/frequency-wavelength/config";
+import { calculateLogic as frequencyWavelengthLogic } from "./registry/engineering/frequency-wavelength/logic";
+import FrequencyWavelengthContent from "./registry/engineering/frequency-wavelength/content";
+
+import { config as gearRatioSpeedConfig } from "./registry/engineering/gear-ratio-speed/config";
+import { calculateLogic as gearRatioSpeedLogic } from "./registry/engineering/gear-ratio-speed/logic";
+import GearRatioSpeedContent from "./registry/engineering/gear-ratio-speed/content";
+
+import { config as transformerTurnsRatioConfig } from "./registry/engineering/transformer-turns-ratio/config";
+import { calculateLogic as transformerTurnsRatioLogic } from "./registry/engineering/transformer-turns-ratio/logic";
+import TransformerTurnsRatioContent from "./registry/engineering/transformer-turns-ratio/content";
+
+import { config as beltLengthPulleySpeedConfig } from "./registry/engineering/belt-length-pulley-speed/config";
+import { calculateLogic as beltLengthPulleySpeedLogic } from "./registry/engineering/belt-length-pulley-speed/logic";
+import BeltLengthPulleySpeedContent from "./registry/engineering/belt-length-pulley-speed/content";
 
 function App() {
   return (
@@ -801,7 +862,7 @@ function App() {
                   <CalculatorLayout
                     config={areaPerimeterConfig}
                     calculateLogic={areaPerimeterLogic}
-                    ContentComponent={areaPerimeterContent} 
+                    ContentComponent={areaPerimeterContent}
                   />
                 }
               />
@@ -835,7 +896,7 @@ function App() {
                   />
                 }
               />
-               <Route
+              <Route
                 path="/calculator/math/exponent"
                 element={
                   <CalculatorLayout
@@ -1185,7 +1246,7 @@ function App() {
                   />
                 }
               />
-             <Route
+              <Route
                 path="/calculator/everyday/basic-calculator"
                 element={<BasicCalculator config={basicCalculatorConfig} />}
               />
@@ -1468,8 +1529,8 @@ function App() {
                     ContentComponent={MarbleGraniteContent}
                   />
                 }
-               />
-               <Route
+              />
+              <Route
                 path="/calculator/construction/paint"
                 element={
                   <CalculatorLayout
@@ -1498,8 +1559,8 @@ function App() {
                     ContentComponent={PlywoodContent}
                   />
                 }
-               />
-               <Route
+              />
+              <Route
                 path="/calculator/construction/gaj-converter"
                 element={
                   <CalculatorLayout
@@ -1518,8 +1579,8 @@ function App() {
                     ContentComponent={RegionalLandContent}
                   />
                 }
-               />
-               <Route
+              />
+              <Route
                 path="/calculator/construction/construction-cost"
                 element={
                   <CalculatorLayout
@@ -1528,8 +1589,8 @@ function App() {
                     ContentComponent={ConstructionCostContent}
                   />
                 }
-               />
-               <Route
+              />
+              <Route
                 path="/calculator/construction/staircase-step"
                 element={
                   <CalculatorLayout
@@ -1538,7 +1599,157 @@ function App() {
                     ContentComponent={StaircaseStepContent}
                   />
                 }
-               />
+              />
+              <Route
+                path="/calculator/engineering/ohms-law-power"
+                element={
+                  <CalculatorLayout
+                    config={ohmsLawPowerConfig}
+                    calculateLogic={ohmsLawPowerLogic}
+                    ContentComponent={OhmsLawPowerContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/capacitor"
+                element={
+                  <CalculatorLayout
+                    config={capacitorConfig}
+                    calculateLogic={capacitorLogic}
+                    ContentComponent={CapacitorContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/torque"
+                element={
+                  <CalculatorLayout
+                    config={torqueConfigEngineering}
+                    calculateLogic={torqueLogicEngineering}
+                    ContentComponent={TorqueContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/stress-strain"
+                element={
+                  <CalculatorLayout
+                    config={stressStrainConfig}
+                    calculateLogic={stressStrainLogic}
+                    ContentComponent={StressStrainContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/beam-deflection"
+                element={
+                  <CalculatorLayout
+                    config={beamDeflectionConfig}
+                    calculateLogic={beamDeflectionLogic}
+                    ContentComponent={BeamDeflectionContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/concrete-volume"
+                element={
+                  <CalculatorLayout
+                    config={concreteVolumeConfigEngineering}
+                    calculateLogic={concreteVolumeLogicEngineering}
+                    ContentComponent={ConcreteVolumeContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/structural-load"
+                element={
+                  <CalculatorLayout
+                    config={structuralLoadConfig}
+                    calculateLogic={structuralLoadLogic}
+                    ContentComponent={StructuralLoadContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/fluid-mechanics-reynolds"
+                element={
+                  <CalculatorLayout
+                    config={fluidMechanicsReynoldsConfig}
+                    calculateLogic={fluidMechanicsReynoldsLogic}
+                    ContentComponent={FluidMechanicsReynoldsContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/thermodynamics-ideal-gas"
+                element={
+                  <CalculatorLayout
+                    config={thermodynamicsIdealGasConfig}
+                    calculateLogic={thermodynamicsIdealGasLogic}
+                    ContentComponent={ThermodynamicsIdealGasContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/electrical-power-loss"
+                element={
+                  <CalculatorLayout
+                    config={electricalPowerLossConfig}
+                    calculateLogic={electricalPowerLossLogic}
+                    ContentComponent={ElectricalPowerLossContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/rc-circuit"
+                element={
+                  <CalculatorLayout
+                    config={rcCircuitConfig}
+                    calculateLogic={rcCircuitLogic}
+                    ContentComponent={RcCircuitContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/frequency-wavelength"
+                element={
+                  <CalculatorLayout
+                    config={frequencyWavelengthConfig}
+                    calculateLogic={frequencyWavelengthLogic}
+                    ContentComponent={FrequencyWavelengthContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/gear-ratio-speed"
+                element={
+                  <CalculatorLayout
+                    config={gearRatioSpeedConfig}
+                    calculateLogic={gearRatioSpeedLogic}
+                    ContentComponent={GearRatioSpeedContent}
+                  />
+                }
+              />
+              <Route 
+                path="/calculator/engineering/transformer-turns-ratio"
+                element={
+                  <CalculatorLayout
+                    config={transformerTurnsRatioConfig}
+                    calculateLogic={transformerTurnsRatioLogic}
+                    ContentComponent={TransformerTurnsRatioContent}
+                  />
+                }
+              />
+              <Route
+                path="/calculator/engineering/belt-length-pulley-speed"
+                element={
+                  <CalculatorLayout
+                    config={beltLengthPulleySpeedConfig}
+                    calculateLogic={beltLengthPulleySpeedLogic}
+                    ContentComponent={BeltLengthPulleySpeedContent}
+                  />
+                }
+              />
             </Routes>
           </div>
           <Footer />

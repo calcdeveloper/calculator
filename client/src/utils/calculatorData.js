@@ -121,6 +121,24 @@ export const calculators = [
     { name: 'House Construction Cost Estimator', path: '/calculator/construction/construction-cost', category: 'construction' },
     { name: 'Staircase Step & Concrete Calculator', path: '/calculator/construction/staircase-step', category: 'construction' },
 
+    //Engineering Calculators
+    { name: ' Ohm\'s Law & Power Calculator', path: '/calculator/engineering/ohms-law-power', category: 'engineering' },
+    { name: 'Capacitor Calculator', path: '/calculator/engineering/capacitor', category: 'engineering' },
+    { name: 'Torque Calculator', path: '/calculator/engineering/torque', category: 'engineering' },
+    { name: 'Stress & Strain Calculator', path: '/calculator/engineering/stress-strain', category: 'engineering' },
+    { name: 'Beam Deflection Calculator', path: '/calculator/engineering/beam-deflection', category: 'engineering' },
+    { name: 'Concrete Volume Calculator', path: '/calculator/engineering/concrete-volume', category: 'engineering' },
+    { name: 'Structural Load Calculator', path: '/calculator/engineering/structural-load', category: 'engineering' },
+    
+    { name: 'Reynolds Number Calculator (Fluid Mechanics)', path: '/calculator/engineering/fluid-mechanics-reynolds', category: 'engineering' },
+    { name: 'Ideal Gas Law Calculator (Thermodynamics)', path: '/calculator/engineering/thermodynamics-ideal-gas', category: 'engineering' },
+    { name: 'Electrical Power Loss & Voltage Drop Calculator', path: '/calculator/engineering/electrical-power-loss', category: 'engineering' },
+    { name: 'RC Circuit Calculator', path: '/calculator/engineering/rc-circuit', category: 'engineering' },
+    { name: 'Frequency & Wavelength Calculator', path: '/calculator/engineering/frequency-wavelength', category: 'engineering' },
+    { name: 'Gear Ratio & RPM Calculator (Mechanical)', path: '/calculator/engineering/gear-ratio-speed', category: 'engineering' },
+    { name: 'Transformer Turns Ratio Calculator', path: '/calculator/engineering/transformer-turns-ratio', category: 'engineering' },
+    { name: 'Belt Length & Pulley Speed Calculator', path: '/calculator/engineering/belt-length-pulley-speed', category: 'engineering' },
+
     // { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
     // { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },
     // { name: 'CGPA Calculator', path: '/calculator/education/cgpa', category: 'education' },

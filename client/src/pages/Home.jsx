@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Calculator, HeartPulse, Sigma, RefreshCw, Wrench, GraduationCap, Briefcase, Cpu } from 'lucide-react';
 import { calculators, getCategoryCount } from '../utils/calculatorData';
@@ -26,6 +26,13 @@ const trendingCalculators = [
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  
+  // NEW: State to track if the dropdown should be visible
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
+  // NEW: Reference to the search container to detect outside clicks
+  const searchContainerRef = useRef(null);
+  
   const navigate = useNavigate();
 
   // 2. ADDED: Define the Schema Object for Google Rich Results
@@ -43,9 +50,31 @@ export default function Home() {
     "description": "A comprehensive suite of smart, free calculators for finance, health, math, and everyday utility."
   };
 
+  // NEW: useEffect to handle the "click outside" logic
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If the dropdown is open, and the click happened outside the searchContainerRef, close it
+      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    // Listen for mousedown events globally
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const handleSearch = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
+    
+    // Ensure dropdown opens when typing
+    setIsDropdownOpen(true); 
+
     if (query.length > 0) {
       const filtered = calculators.filter(calc => 
         calc.name.toLowerCase().includes(query.toLowerCase())
@@ -72,8 +101,8 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-bold text-calc-black mb-4">Smart Calculators for Everyday Problems</h1>
         <p className="text-lg text-calc-gray mb-8">500+ free calculators for finance, health, math and daily life.</p>
         
-        {/* Live Search Bar */}
-        <div className="relative max-w-2xl mx-auto z-10">
+        {/* Live Search Bar - ADDED ref to this container */}
+        <div ref={searchContainerRef} className="relative max-w-2xl mx-auto z-10">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search className="h-5 w-5 text-calc-gray" />
           </div>
@@ -81,16 +110,20 @@ export default function Home() {
             type="text"
             value={searchQuery}
             onChange={handleSearch}
+            onClick={() => setIsDropdownOpen(true)} // Re-open dropdown if user clicks back into the input
             className="block w-full pl-10 pr-3 py-4 border border-calc-lightGray rounded-lg leading-5 bg-calc-white placeholder-calc-gray focus:outline-none focus:ring-2 focus:ring-calc-green transition-all shadow-sm text-lg"
             placeholder="Search calculator (e.g., SIP, BMI)..."
           />
-          {/* Search Suggestions Dropdown */}
-          {suggestions.length > 0 && (
+          {/* Search Suggestions Dropdown - ADDED isDropdownOpen condition */}
+          {isDropdownOpen && suggestions.length > 0 && (
             <div className="absolute mt-2 w-full bg-calc-white border border-calc-lightGray rounded-lg shadow-lg overflow-hidden text-left">
               {suggestions.map((calc, idx) => (
                 <button
                   key={idx}
-                  onClick={() => navigate(calc.path)}
+                  onClick={() => {
+                    setIsDropdownOpen(false); // Close dropdown upon making a selection
+                    navigate(calc.path);
+                  }}
                   className="w-full block px-4 py-3 text-calc-black hover:bg-calc-beige hover:text-calc-green transition border-b border-calc-lightGray last:border-0 text-left"
                 >
                   {calc.name} <span className="text-sm text-calc-gray ml-2">in {calc.category}</span>

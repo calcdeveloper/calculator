@@ -12,10 +12,8 @@ import { Helmet } from "react-helmet-async";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
-// 👇 1. IMPORT YOUR CUSTOM TYPING TEST HERE
-// (Make sure this path is correct relative to where CalculatorLayout.jsx is located)
 import TypingTest from "../../registry/education/typing-test/TypingTest";
-import WordCounter from "../../registry/education/word-counter/WordCounter"; // Add this!
+import WordCounter from "../../registry/education/word-counter/WordCounter";
 
 export default function CalculatorLayout({
   config,
@@ -26,6 +24,10 @@ export default function CalculatorLayout({
     const initialState = {};
     config.inputs.forEach((input) => {
       initialState[input.id] = input.defaultValue;
+      // SAFELY ADDED: Initialize default units if they exist in config
+      if (input.unitOptions && input.defaultUnit) {
+        initialState[`${input.id}Unit`] = input.defaultUnit;
+      }
     });
     return initialState;
   });
@@ -34,7 +36,6 @@ export default function CalculatorLayout({
   const [showTable, setShowTable] = useState(false);
 
   useEffect(() => {
-    // Upgraded Validation: Allows strings for select/radio, and ignores hidden inputs
     const allValid = config.inputs.every((baseInput) => {
       const input = baseInput.dynamicProps
         ? { ...baseInput, ...baseInput.dynamicProps(inputs) }
@@ -45,9 +46,7 @@ export default function CalculatorLayout({
       const val = inputs[input.id];
       if (val === "" || val === undefined || val === null) return false;
 
-      // Allow text and JSON strings for matrix_grid to pass validation
       if (input.type === "text" || input.type === "matrix_grid") return true;
-      // Added "date" to the allowed string inputs list
 
       if (
         input.type === "select" ||
@@ -75,22 +74,22 @@ export default function CalculatorLayout({
     const inputConfig = config.inputs.find((i) => i.id === id);
     let finalValue = value;
 
+    // SAFELY ADDED: Allow custom unit dropdown strings to pass through without turning to NaN
+    const isUnitInput = id.endsWith('Unit');
+
     if (
       inputConfig &&
       (inputConfig.type === "text" || inputConfig.type === "matrix_grid")
     ) {
-      finalValue = value; // Keep the string/JSON exactly as typed
-    }
-
-    // Do not force strings into Numbers if they are dropdowns or radio buttons!
-    else if (
-      inputConfig &&
+      finalValue = value; 
+    } else if (
+      (inputConfig &&
       (inputConfig.type === "select" ||
         inputConfig.type === "radio" ||
-        inputConfig.type === "date")
+        inputConfig.type === "date")) || isUnitInput // Prevent NaN on Unit string values
     ) {
       finalValue =
-        inputConfig.type === "date"
+        (inputConfig && inputConfig.type === "date") || isUnitInput
           ? value
           : isNaN(value)
           ? value
@@ -101,7 +100,6 @@ export default function CalculatorLayout({
 
     setInputs((prev) => {
       const newInputs = { ...prev, [id]: finalValue };
-      // Trigger onChangeEffect for unit conversions (like cm to feet/inches)
       if (inputConfig && inputConfig.onChangeEffect) {
         return inputConfig.onChangeEffect(finalValue, prev, newInputs);
       }
@@ -190,7 +188,6 @@ export default function CalculatorLayout({
           <p className="text-lg text-calc-gray">{config.description}</p>
         </div>
 
-        {/* 👇 2. BYPASS STANDARD LAYOUT FOR CUSTOM COMPONENTS 👇 */}
         {config.id === "typing-test" ? (
           <TypingTest />
         ) : config.id === "word-counter" ? (
@@ -198,7 +195,6 @@ export default function CalculatorLayout({
         ) : (
           <div className="bg-calc-white rounded-2xl border border-calc-lightGray shadow-sm overflow-hidden mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              {/* --- INPUTS SECTION --- */}
               <div className="p-8 border-b lg:border-b-0 lg:border-r border-calc-lightGray space-y-8">
                 {config.inputs.map((baseInput) => {
                   const input = baseInput.dynamicProps
@@ -241,18 +237,8 @@ export default function CalculatorLayout({
                             ))}
                           </select>
                           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-calc-green">
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M19 9l-7 7-7-7"
-                              ></path>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                           </div>
                         </div>
@@ -277,14 +263,10 @@ export default function CalculatorLayout({
                                 name={input.id}
                                 value={opt.value}
                                 checked={inputs[input.id] === opt.value}
-                                onChange={(e) =>
-                                  handleInputChange(input.id, e.target.value)
-                                }
+                                onChange={(e) => handleInputChange(input.id, e.target.value)}
                                 className="w-4 h-4 text-calc-green focus:ring-calc-green accent-calc-green cursor-pointer"
                               />
-                              <span className="text-calc-black font-medium">
-                                {opt.label}
-                              </span>
+                              <span className="text-calc-black font-medium">{opt.label}</span>
                             </label>
                           ))}
                         </div>
@@ -294,10 +276,7 @@ export default function CalculatorLayout({
 
                   if (input.type === "date") {
                     return (
-                      <div
-                        key={input.id}
-                        className="flex justify-between items-center mb-6"
-                      >
+                      <div key={input.id} className="flex justify-between items-center mb-6">
                         <label className="font-semibold text-calc-black text-sm sm:text-base">
                           {input.label}
                         </label>
@@ -306,9 +285,7 @@ export default function CalculatorLayout({
                             type="date"
                             id={input.id}
                             value={inputs[input.id] || ""}
-                            onChange={(e) =>
-                              handleInputChange(input.id, e.target.value)
-                            }
+                            onChange={(e) => handleInputChange(input.id, e.target.value)}
                             className="bg-transparent text-calc-black font-bold outline-none w-full cursor-pointer"
                           />
                         </div>
@@ -327,9 +304,7 @@ export default function CalculatorLayout({
                             type="text"
                             id={input.id}
                             value={inputs[input.id] || ""}
-                            onChange={(e) =>
-                              handleInputChange(input.id, e.target.value)
-                            }
+                            onChange={(e) => handleInputChange(input.id, e.target.value)}
                             placeholder={input.placeholder || ""}
                             className="bg-transparent text-calc-black font-medium outline-none w-full"
                           />
@@ -338,6 +313,7 @@ export default function CalculatorLayout({
                     );
                   }
 
+                  // Default Number + Range Slider input renderer
                   return (
                     <div key={input.id}>
                       <div className="flex justify-between items-center mb-3">
@@ -346,40 +322,34 @@ export default function CalculatorLayout({
                         </label>
                         <div className="flex items-center bg-calc-green/10 rounded-lg px-3 py-1.5 border border-calc-green/20 focus-within:ring-2 focus-within:ring-calc-green transition-all">
                           {input.prefix && (
-                            <span className="text-calc-green font-bold mr-1">
-                              {input.prefix}
-                            </span>
+                            <span className="text-calc-green font-bold mr-1">{input.prefix}</span>
                           )}
                           <input
                             type="number"
-                            value={
-                              inputs[input.id] !== undefined
-                                ? inputs[input.id]
-                                : ""
-                            }
-                            onChange={(e) =>
-                              handleInputChange(input.id, e.target.value)
-                            }
-                            onBlur={(e) =>
-                              handleInputBlur(
-                                input.id,
-                                e.target.value,
-                                input.min,
-                                input.max,
-                                input.defaultValue
-                              )
-                            }
+                            value={inputs[input.id] !== undefined ? inputs[input.id] : ""}
+                            onChange={(e) => handleInputChange(input.id, e.target.value)}
+                            onBlur={(e) => handleInputBlur(input.id, e.target.value, input.min, input.max, input.defaultValue)}
                             className="bg-transparent text-calc-green font-bold focus:outline-none w-20 text-right appearance-none"
-                            style={{
-                              WebkitAppearance: "none",
-                              MozAppearance: "textfield",
-                            }}
+                            style={{ WebkitAppearance: "none", MozAppearance: "textfield" }}
                           />
-                          {input.suffix && (
-                            <span className="text-calc-green font-bold ml-1">
-                              {input.suffix}
-                            </span>
+                          
+                          {/* SAFELY ADDED: The new inline dropdown unit renderer */}
+                          {input.unitOptions ? (
+                            <select
+                              value={inputs[`${input.id}Unit`] || input.defaultUnit}
+                              onChange={(e) => handleInputChange(`${input.id}Unit`, e.target.value)}
+                              className="bg-transparent text-calc-green font-bold focus:outline-none ml-2 cursor-pointer outline-none"
+                            >
+                              {input.unitOptions.map((opt) => (
+                                <option key={opt.value} value={opt.value}>
+                                  {opt.label}
+                                </option>
+                              ))}
+                            </select>
+                          ) : input.suffix && (
+                            <span className="text-calc-green font-bold ml-1">{input.suffix}</span>
                           )}
+
                         </div>
                       </div>
                       <input
@@ -388,9 +358,7 @@ export default function CalculatorLayout({
                         max={input.max || 100}
                         step={input.step || 1}
                         value={inputs[input.id] || 0}
-                        onChange={(e) =>
-                          handleInputChange(input.id, e.target.value)
-                        }
+                        onChange={(e) => handleInputChange(input.id, e.target.value)}
                         className="w-full h-2 bg-calc-lightGray rounded-lg appearance-none cursor-pointer accent-calc-green"
                       />
                     </div>
@@ -417,25 +385,11 @@ export default function CalculatorLayout({
                                 : "bg-calc-white border-calc-lightGray text-calc-black"
                             } p-4 rounded-xl border text-center flex flex-col justify-center overflow-hidden`}
                           >
-                            <p
-                              className={`text-sm mb-1 ${
-                                item.isHighlight
-                                  ? "opacity-90"
-                                  : "text-calc-gray"
-                              }`}
-                            >
+                            <p className={`text-sm mb-1 ${item.isHighlight ? "opacity-90" : "text-calc-gray"}`}>
                               {item.label}
                             </p>
-                            <p
-                              className={`font-bold break-words ${
-                                item.isHighlight
-                                  ? "text-2xl sm:text-3xl lg:text-4xl"
-                                  : "text-lg sm:text-xl"
-                              }`}
-                            >
-                              {item.isCurrency
-                                ? formatCurrency(item.value)
-                                : item.value}
+                            <p className={`font-bold break-words ${item.isHighlight ? "text-2xl sm:text-3xl lg:text-4xl" : "text-lg sm:text-xl"}`}>
+                              {item.isCurrency ? formatCurrency(item.value) : item.value}
                             </p>
                           </div>
                         ))}
@@ -445,41 +399,15 @@ export default function CalculatorLayout({
                     {results.schedule && results.schedule.length > 0 && (
                       <div className="w-full flex flex-col gap-4 mb-8">
                         <div className="w-full flex flex-wrap justify-center gap-4">
-                          <button
-                            onClick={() => setShowTable(!showTable)}
-                            className="flex items-center gap-2 bg-calc-green text-calc-white px-6 py-3 rounded-xl font-bold hover:bg-opacity-90 transition-colors shadow-sm"
-                          >
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                              ></path>
+                          <button onClick={() => setShowTable(!showTable)} className="flex items-center gap-2 bg-calc-green text-calc-white px-6 py-3 rounded-xl font-bold hover:bg-opacity-90 transition-colors shadow-sm">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                             </svg>
                             {showTable ? "Hide Schedule" : "View Schedule"}
                           </button>
-                          <button
-                            onClick={handleDownloadPDF}
-                            className="flex items-center gap-2 bg-calc-black text-calc-white px-6 py-3 rounded-xl font-bold hover:bg-calc-gray transition-colors shadow-sm"
-                          >
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                              ></path>
+                          <button onClick={handleDownloadPDF} className="flex items-center gap-2 bg-calc-black text-calc-white px-6 py-3 rounded-xl font-bold hover:bg-calc-gray transition-colors shadow-sm">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                             </svg>
                             Download PDF
                           </button>
@@ -492,35 +420,18 @@ export default function CalculatorLayout({
                                 <thead className="text-xs text-calc-white uppercase bg-calc-green sticky top-0 z-10 shadow-sm">
                                   <tr>
                                     <th className="px-6 py-4">Period</th>
-                                    <th className="px-6 py-4 text-right">
-                                      Principal
-                                    </th>
-                                    <th className="px-6 py-4 text-right">
-                                      Interest
-                                    </th>
-                                    <th className="px-6 py-4 text-right">
-                                      Balance
-                                    </th>
+                                    <th className="px-6 py-4 text-right">Principal</th>
+                                    <th className="px-6 py-4 text-right">Interest</th>
+                                    <th className="px-6 py-4 text-right">Balance</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   {results.schedule.map((row, i) => (
-                                    <tr
-                                      key={i}
-                                      className="bg-calc-white border-b border-calc-lightGray hover:bg-calc-beige/30 transition-colors"
-                                    >
-                                      <td className="px-6 py-3 font-medium text-calc-black">
-                                        {row.month}
-                                      </td>
-                                      <td className="px-6 py-3 text-right">
-                                        {formatCurrency(row.principal)}
-                                      </td>
-                                      <td className="px-6 py-3 text-right">
-                                        {formatCurrency(row.interest)}
-                                      </td>
-                                      <td className="px-6 py-3 text-right font-semibold">
-                                        {formatCurrency(row.balance)}
-                                      </td>
+                                    <tr key={i} className="bg-calc-white border-b border-calc-lightGray hover:bg-calc-beige/30 transition-colors">
+                                      <td className="px-6 py-3 font-medium text-calc-black">{row.month}</td>
+                                      <td className="px-6 py-3 text-right">{formatCurrency(row.principal)}</td>
+                                      <td className="px-6 py-3 text-right">{formatCurrency(row.interest)}</td>
+                                      <td className="px-6 py-3 text-right font-semibold">{formatCurrency(row.balance)}</td>
                                     </tr>
                                   ))}
                                 </tbody>
@@ -537,37 +448,22 @@ export default function CalculatorLayout({
                           <thead className="text-xs text-calc-black uppercase bg-calc-lightGray/50">
                             <tr>
                               {results.referenceTable.headers.map((h) => (
-                                <th key={h} className="px-6 py-3">
-                                  {h}
-                                </th>
+                                <th key={h} className="px-6 py-3">{h}</th>
                               ))}
                             </tr>
                           </thead>
                           <tbody>
-                            {results.referenceTable.rows.map(
-                              (row, rowIndex) => (
-                                <tr
-                                  key={rowIndex}
-                                  className="border-b border-calc-lightGray last:border-0 hover:bg-calc-beige/30 transition-colors"
-                                >
-                                  {row.map((cell, cellIndex) => {
-                                    let tdClass = "px-6 py-3 ";
-                                    if (cellIndex === 0)
-                                      tdClass +=
-                                        "font-semibold text-calc-black";
-                                    else if (cellIndex === 1)
-                                      tdClass += "text-calc-green font-bold";
-                                    else tdClass += "text-gray-600 text-sm";
-
-                                    return (
-                                      <td key={cellIndex} className={tdClass}>
-                                        {cell}
-                                      </td>
-                                    );
-                                  })}
-                                </tr>
-                              )
-                            )}
+                            {results.referenceTable.rows.map((row, rowIndex) => (
+                              <tr key={rowIndex} className="border-b border-calc-lightGray last:border-0 hover:bg-calc-beige/30 transition-colors">
+                                {row.map((cell, cellIndex) => {
+                                  let tdClass = "px-6 py-3 ";
+                                  if (cellIndex === 0) tdClass += "font-semibold text-calc-black";
+                                  else if (cellIndex === 1) tdClass += "text-calc-green font-bold";
+                                  else tdClass += "text-gray-600 text-sm";
+                                  return <td key={cellIndex} className={tdClass}>{cell}</td>;
+                                })}
+                              </tr>
+                            ))}
                           </tbody>
                         </table>
                       </div>
@@ -576,29 +472,12 @@ export default function CalculatorLayout({
                       <div className="h-64 w-full min-h-[256px]">
                         <ResponsiveContainer width="99%" height="100%">
                           <PieChart>
-                            <Pie
-                              data={results.chartData}
-                              cx="50%"
-                              cy="50%"
-                              innerRadius={60}
-                              outerRadius={90}
-                              paddingAngle={2}
-                              dataKey="value"
-                            >
+                            <Pie data={results.chartData} cx="50%" cy="50%" innerRadius={60} outerRadius={90} paddingAngle={2} dataKey="value">
                               {results.chartData.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                               ))}
                             </Pie>
-                            <Tooltip
-                              formatter={(value) =>
-                                config.category === "finance"
-                                  ? formatCurrency(value)
-                                  : value
-                              }
-                            />
+                            <Tooltip formatter={(value) => config.category === "finance" ? formatCurrency(value) : value} />
                             <Legend verticalAlign="bottom" height={36} />
                           </PieChart>
                         </ResponsiveContainer>
@@ -610,7 +489,6 @@ export default function CalculatorLayout({
             </div>
           </div>
         )}
-        {/* SEO Content Section */}
         {ContentComponent && (
           <div className="prose max-w-none text-calc-darkGray bg-calc-white p-8 rounded-2xl border border-calc-lightGray mt-8">
             <ContentComponent />
