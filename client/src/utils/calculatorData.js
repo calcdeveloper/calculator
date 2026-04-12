@@ -20,6 +20,7 @@ export const calculators = [
     { name: 'BMR Calculator', path: '/calculator/health/bmr', category: 'health' },
     { name: 'Body Fat Precentage Calculator', path: '/calculator/health/body-fat', category: 'health' },
     { name: 'Calorie Calculator', path: '/calculator/health/calorie', category: 'health' },
+    { name: 'Calories Burned Calculator', path: '/calculator/health/calories-burned', category: 'health' },
     { name: 'Pregnancy Calculator', path: '/calculator/health/pregnancy', category: 'health' },
     { name: 'Macro Calculator', path: '/calculator/health/macros', category: 'health' },
     { name: 'Water Intake Calculator', path: '/calculator/health/water-intake', category: 'health' },
