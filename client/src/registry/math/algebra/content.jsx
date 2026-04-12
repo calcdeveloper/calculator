@@ -246,7 +246,7 @@ export default function AlgebraSolverContent() {
           <a href="/calculator/math/proportion" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Proportion</a>
           <a href="/calculator/math/pythagorean" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Pythagorean Theorem</a>
           <a href="/calculator/math/quadratic" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Quadratic Equation</a>
-          <a href="/calculator/math/ration" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Ratio</a>
+          <a href="/calculator/math/ratio" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Ratio</a>
           <a href="/calculator/math/scientific" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Scientific Calculator</a>
           <a href="/calculator/math/standard-deviation" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Standard Deviation</a>
           <a href="/calculator/math/volume-surface-area" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Volume & Surface Area</a>
