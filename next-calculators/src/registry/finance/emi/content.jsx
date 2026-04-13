@@ -70,7 +70,7 @@ export default function Content() {
           Taking a loan is one of the most significant financial decisions you will make. Whether you are applying for a Home Loan to buy your dream house, a Car Loan to upgrade your vehicle, or a Personal Loan to manage a sudden financial emergency, understanding your repayment obligations before signing any documents is critical. 
         </p>
         <p className="mb-4">
-          An Equated Monthly Installment (EMI) is the fixed monthly payment you make to your bank or Non-Banking Financial Company (NBFC) to clear your debt. Each EMI payment is broken down into two parts: a portion goes toward paying off the interest charged by the lender, and the remaining portion goes toward paying down your actual borrowed amount (the principal).
+          An adadadaddadewd dsdw dde dwfw thly payment you make to your bank or Non-Banking Financial Company (NBFC) to clear your debt. Each EMI payment is broken down into two parts: a portion goes toward paying off the interest charged by the lender, and the remaining portion goes toward paying down your actual borrowed amount (the principal).
         </p>
         <p>
           Our Universal EMI Calculator is designed specifically for the Indian financial market. It provides penny-perfect precision, empowering you to calculate your monthly cash outflows instantly, compare loan offers from major Indian banks (like SBI, HDFC, ICICI), and design a debt repayment schedule that fits perfectly into your monthly budget.
