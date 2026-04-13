@@ -1,21 +1,34 @@
-cat << 'EOF' > README.md
 # CalcPilot - Advanced All-in-One Calculator Platform
 
-CalcPilot is a highly scalable, SEO-optimized, mobile-first calculator platform designed to host 500+ calculators (Finance, Health, Math, Engineering, etc.). 
+CalcPilot is a highly scalable, SEO-optimized, mobile-first calculator platform designed to host 500+ calculators across finance, health, math, engineering, construction, education, and everyday utilities.
 
 ## Tech Stack
-* **Frontend:** React (Vite), Tailwind CSS, React Router
-* **Backend:** Node.js, Express (Architecture prepared for future database integration)
-* **Architecture:** Feature-Sliced Design (FSD) for modularity and maintainability.
+
+* **Framework:** Next.js App Router
+* **Rendering:** Static Site Generation with `output: "export"`
+* **Styling:** Tailwind CSS
+* **Interactivity:** Client-side React islands for calculators and search
 
 ## Key Features
-* Lightning-fast global search with live suggestions.
-* SEO-optimized individual calculator pages with dynamically injected meta tags.
-* Reusable, pure-math formula functions separated from UI components.
-* Custom design system implemented via Tailwind configuration.
+
+* Static HTML pages for categories and calculator routes.
+* SEO metadata, sitemap, and robots output for crawler discovery.
+* Reusable calculator registry with formula logic separated from page generation.
+* High-traffic friendly deployment through static hosting/CDN.
 
 ## Setup Instructions
-**(Add your `npm install` and `npm run dev` instructions here as the project progresses)**
-EOF
 
-echo "✅ CalcPilot project structure successfully created!"
+```bash
+cd next-calculators
+npm install
+npm run dev
+```
+
+## Static Production Build
+
+```bash
+cd next-calculators
+npm run build
+```
+
+The generated static site is written to `next-calculators/out/`.

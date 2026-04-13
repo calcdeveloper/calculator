@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* 1. Updated Font Family */
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: var(--font-geist-mono);
+  
+  /* 2. Your Exact Old Theme Colors */
+  --color-calc-beige: #f6f3ee;
+  --color-calc-white: #ffffff;
+  --color-calc-green: #15803d;
+  --color-calc-darkGreen: #166534;
+  --color-calc-orange: #f97316;
+  --color-calc-indigo: #6366f1;
+  --color-calc-lightGray: #e5e7eb;
+  --color-calc-gray: #6b7280;
+  --color-calc-darkGray: #374151;
+  --color-calc-black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--color-calc-beige); /* Set default background to your beige */
+  color: var(--foreground);
+  font-family: var(--font-sans); /* Use the Inter font */
+}
