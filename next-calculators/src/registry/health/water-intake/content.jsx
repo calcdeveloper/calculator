@@ -247,16 +247,16 @@ export default function WaterIntakeContent() {
           Hydration is just one aspect of a healthy lifestyle. Once you have your water intake optimized, use our other free tools to master your nutrition and fitness goals:
         </p>
         <div className="flex flex-wrap gap-3">
-          <a href="/calculator/health/bmi" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">BMI Calculator</a>
-          <a href="/calculator/health/bmr" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">BMR Calculator</a>
-          <a href="/calculator/health/body-fat" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Body Fat Calculator</a>
-          <a href="/calculator/health/calorie" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Daily Calorie Calculator</a>
-          <a href="/calculator/health/calories-burned" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Calories Burned Calculator</a>
-          <a href="/calculator/health/ideal-weight" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Ideal Weight Calculator</a>
-          <a href="/calculator/health/macros" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Macros Calculator</a>
-          <a href="/calculator/health/period-cycle" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Period Cycle Tracker</a>
-          <a href="/calculator/health/pregnancy" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Pregnancy Due Date</a>
-          <a href="/calculator/health/tdee" className="text-sm text-blue-600 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">TDEE Calculator</a>
+          <a href="/calculator/health/bmi" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">BMI Calculator</a>
+          <a href="/calculator/health/bmr" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">BMR Calculator</a>
+          <a href="/calculator/health/body-fat" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Body Fat Calculator</a>
+          <a href="/calculator/health/calorie" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Daily Calorie Calculator</a>
+          <a href="/calculator/health/calories-burned" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Calories Burned Calculator</a>
+          <a href="/calculator/health/ideal-weight" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Ideal Weight Calculator</a>
+          <a href="/calculator/health/macros" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Macros Calculator</a>
+          <a href="/calculator/health/period-cycle" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Period Cycle Tracker</a>
+          <a href="/calculator/health/pregnancy" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">Pregnancy Due Date</a>
+          <a href="/calculator/health/tdee" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-300">TDEE Calculator</a>
         </div>
       </section>
 

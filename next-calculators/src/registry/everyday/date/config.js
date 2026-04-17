@@ -2,7 +2,7 @@ export const config = {
     id: 'date-calculator',
     name: 'Date Calculator',
     description: 'Calculate the exact number of days between two dates, or add/subtract time from a specific date.',
-    category: 'calculators',
+    category: 'everyday',
     inputs: [
       {
         id: 'calcMode',

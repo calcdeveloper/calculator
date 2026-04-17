@@ -34,6 +34,8 @@ export default function Footer() {
               <li><Link href="/category/conversion" className="hover:text-calc-green transition">Conversion</Link></li>
               <li><Link href="/category/everyday" className="hover:text-calc-green transition">Everyday Utility</Link></li>
               <li><Link href="/category/education" className="hover:text-calc-green transition">Education</Link></li>
+              <li><Link href="/category/construction" className="hover:text-calc-green transition">Construction</Link></li>
+              <li><Link href="/category/engineering" className="hover:text-calc-green transition">Engineering</Link></li>
             </ul>
           </div>
 

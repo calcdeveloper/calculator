@@ -5,6 +5,7 @@ import { useCallback, useState, useEffect } from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
+import { ArrowLeft } from "lucide-react";
 
 // Note: If you don't use TypingTest/WordCounter globally, you can safely remove these imports
 // import TypingTest from "../../registry/education/typing-test/TypingTest";
@@ -76,7 +77,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
       if (!isInputVisible(input)) return true;
       const val = inputs[input.id];
       if (val === "" || val === undefined || val === null) return false;
-      if (input.type === "text" || input.type === "matrix_grid") return true;
+      if (input.type === "text" || input.type === "matrix_grid" || input.type === "time" || input.type === "date") return true;
       if (input.type === "select" || input.type === "radio" || input.type === "date") return true;
       return !isNaN(val);
     });
@@ -98,7 +99,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
     let finalValue = value;
     const isUnitInput = id.endsWith('Unit');
 
-    if (inputConfig && (inputConfig.type === "text" || inputConfig.type === "matrix_grid")) {
+    if (inputConfig && (inputConfig.type === "text" || inputConfig.type === "matrix_grid" || inputConfig.type === "time" || inputConfig.type === "date")) {
       finalValue = value; 
     } else if ((inputConfig && (inputConfig.type === "select" || inputConfig.type === "radio" || inputConfig.type === "date")) || isUnitInput) {
       finalValue = (inputConfig && inputConfig.type === "date") || isUnitInput ? value : isNaN(value) ? value : Number(value);
@@ -145,17 +146,35 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
 
   const COLORS = ["#D1D5DB", "#10B981", "#3B82F6", "#F59E0B"];
 
+  const handleBack = () => {
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      window.history.back();
+    } else {
+      // Fallback to category page if no history
+      window.location.href = `/category/${category}`;
+    }
+  };
+
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
-      <div className="mb-10 border-b border-calc-lightGray pb-6">
-        <h1 className="text-4xl font-bold text-calc-black mb-4">{config.name}</h1>
-        <p className="text-lg text-calc-gray">{config.description}</p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 min-h-screen">
+      <div className="mb-8 sm:mb-10 border-b border-calc-lightGray pb-6">
+        <div className="flex items-center gap-4 mb-4">
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-calc-green/10 text-calc-green border border-calc-green/20 rounded-lg hover:bg-calc-green hover:text-calc-white transition-all duration-200 font-medium text-sm sm:text-base"
+          >
+            <ArrowLeft size={18} className="sm:w-5 sm:h-5" />
+            Back
+          </button>
+        </div>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-calc-black mb-4 break-words">{config.name}</h1>
+        <p className="text-base sm:text-lg text-calc-gray leading-relaxed">{config.description}</p>
       </div>
 
-      <div className="bg-calc-white rounded-2xl border border-calc-lightGray shadow-sm overflow-hidden mb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="bg-calc-white rounded-2xl border border-calc-lightGray shadow-sm overflow-hidden mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* INPUTS SECTION */}
-          <div className="p-8 border-b lg:border-b-0 lg:border-r border-calc-lightGray space-y-8">
+          <div className="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-calc-lightGray space-y-6 sm:space-y-8">
             {config.inputs.map((baseInput) => {
               const input = baseInput.dynamicProps ? { ...baseInput, ...baseInput.dynamicProps(inputs) } : baseInput;
               if (!isInputVisible(input)) return null;
@@ -188,19 +207,45 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                   </div>
                 );
               }
+              if (input.type === "time") {
+                return (
+                  <div key={input.id} className="relative mb-6">
+                    <label className="font-semibold text-calc-black text-sm sm:text-base block mb-3">{input.label}</label>
+                    <input 
+                      type="time" 
+                      value={inputs[input.id] || input.defaultValue} 
+                      onChange={(e) => handleInputChange(input.id, e.target.value)} 
+                      className="w-full bg-calc-green/10 border border-calc-green/20 rounded-lg px-4 py-3 text-calc-black font-bold focus:outline-none focus:ring-2 focus:ring-calc-green"
+                    />
+                  </div>
+                );
+              }
+              if (input.type === "date") {
+                return (
+                  <div key={input.id} className="relative mb-6">
+                    <label className="font-semibold text-calc-black text-sm sm:text-base block mb-3">{input.label}</label>
+                    <input 
+                      type="date" 
+                      value={inputs[input.id] || input.defaultValue} 
+                      onChange={(e) => handleInputChange(input.id, e.target.value)} 
+                      className="w-full bg-calc-green/10 border border-calc-green/20 rounded-lg px-4 py-3 text-calc-black font-bold focus:outline-none focus:ring-2 focus:ring-calc-green"
+                    />
+                  </div>
+                );
+              }
               // Number Input
               return (
                 <div key={input.id} className="mb-6">
                   <div className="flex justify-between items-center mb-3">
                     <label className="font-semibold text-calc-black text-sm sm:text-base">{input.label}</label>
-                    <div className="flex items-center bg-calc-green/10 rounded-lg px-3 py-1.5 border border-calc-green/20 focus-within:ring-2 focus-within:ring-calc-green">
-                      {input.prefix && <span className="text-calc-green font-bold mr-1">{input.prefix}</span>}
-                      <input type="number" value={inputs[input.id] !== undefined ? inputs[input.id] : ""} onChange={(e) => handleInputChange(input.id, e.target.value)} onBlur={(e) => handleInputBlur(input.id, e.target.value, input.min, input.max, input.defaultValue)} className="bg-transparent text-calc-green font-bold focus:outline-none w-20 text-right" />
+                    <div className="flex items-center bg-calc-green/10 rounded-lg px-3 py-1.5 border border-calc-green/20 focus-within:ring-2 focus-within:ring-calc-green min-w-0">
+                      {input.prefix && <span className="text-calc-green font-bold mr-1 flex-shrink-0">{input.prefix}</span>}
+                      <input type="number" value={inputs[input.id] !== undefined ? inputs[input.id] : ""} onChange={(e) => handleInputChange(input.id, e.target.value)} onBlur={(e) => handleInputBlur(input.id, e.target.value, input.min, input.max, input.defaultValue)} className="bg-transparent text-calc-green font-bold focus:outline-none w-20 text-right min-w-0" />
                       {input.unitOptions ? (
-                        <select value={inputs[`${input.id}Unit`] || input.defaultUnit} onChange={(e) => handleInputChange(`${input.id}Unit`, e.target.value)} className="bg-transparent text-calc-green font-bold focus:outline-none ml-2 cursor-pointer outline-none">
+                        <select value={inputs[`${input.id}Unit`] || input.defaultUnit} onChange={(e) => handleInputChange(`${input.id}Unit`, e.target.value)} className="bg-transparent text-calc-green font-bold focus:outline-none ml-2 cursor-pointer outline-none flex-shrink-0">
                           {input.unitOptions.map((opt) => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
                         </select>
-                      ) : input.suffix && <span className="text-calc-green font-bold ml-1">{input.suffix}</span>}
+                      ) : input.suffix && <span className="text-calc-green font-bold ml-1 flex-shrink-0">{input.suffix}</span>}
                     </div>
                   </div>
                   <input type="range" min={input.min || 0} max={input.max || 100} step={input.step || 1} value={inputs[input.id] || 0} onChange={(e) => handleInputChange(input.id, e.target.value)} className="w-full h-2 bg-calc-lightGray rounded-lg appearance-none cursor-pointer accent-calc-green" />
@@ -210,7 +255,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
           </div>
 
           {/* RESULTS SECTION */}
-          <div className="p-8 bg-calc-beige/30 flex min-w-0 flex-col items-center">
+          <div className="p-6 sm:p-8 bg-calc-beige/30 flex min-w-0 flex-col items-center">
             {!calculateLogic ? (
               <div className="text-calc-gray text-center font-medium my-auto min-h-[300px] flex items-center">Loading logic...</div>
             ) : !results ? (
@@ -218,13 +263,29 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
             ) : (
               <>
                 {results.summary && (
-                  <div className="w-full grid grid-cols-2 gap-4 mb-8">
+                  <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                     {results.summary.map((item, idx) => (
-                      <div key={idx} className={`${item.isHighlight ? "col-span-2 bg-calc-green text-calc-white shadow-md" : "bg-calc-white border-calc-lightGray text-calc-black"} p-4 rounded-xl border text-center flex flex-col justify-center`}>
+                      <div key={idx} className={`${item.isHighlight ? "sm:col-span-2 bg-calc-green text-calc-white shadow-md" : "bg-calc-white border-calc-lightGray text-calc-black"} p-4 rounded-xl border text-center flex flex-col justify-center min-w-0`}>
                         <p className={`text-sm mb-1 ${item.isHighlight ? "opacity-90" : "text-calc-gray"}`}>{item.label}</p>
-                        <p className={`font-bold break-words ${item.isHighlight ? "text-2xl sm:text-3xl" : "text-lg"}`}>{item.isCurrency ? formatCurrency(item.value) : item.value}</p>
+                        <p className={`font-bold break-words ${item.isHighlight ? "text-xl sm:text-2xl md:text-3xl" : "text-base sm:text-lg"}`}>{item.isCurrency ? formatCurrency(item.value) : item.value}</p>
                       </div>
                     ))}
+                  </div>
+                )}
+                {results.schedule && results.schedule.length > 0 && (
+                  <div className="w-full mb-8 flex flex-col sm:flex-row gap-3 justify-center">
+                    <button
+                      onClick={() => setShowTable(!showTable)}
+                      className="w-full sm:w-auto px-6 py-3 bg-calc-green text-calc-white rounded-lg font-bold hover:bg-calc-darkGreen transition-colors duration-200 shadow-sm"
+                    >
+                      {showTable ? 'Hide Schedule' : 'View Schedule'}
+                    </button>
+                    <button
+                      onClick={handleDownloadPDF}
+                      className="w-full sm:w-auto px-6 py-3 bg-calc-black text-calc-white rounded-lg font-bold hover:bg-calc-gray transition-colors duration-200 shadow-sm"
+                    >
+                      Download PDF
+                    </button>
                   </div>
                 )}
                 {results.chartData && results.chartData.length > 0 && (
@@ -240,6 +301,32 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                     </ResponsiveContainer>
                   </div>
                 )}
+                {showTable && results.schedule && results.schedule.length > 0 && (
+                  <div className="w-full bg-calc-white rounded-xl border border-calc-lightGray overflow-hidden">
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead className="bg-calc-green text-calc-white">
+                          <tr>
+                            <th className="px-4 py-3 text-left font-semibold">Month</th>
+                            <th className="px-4 py-3 text-right font-semibold">Principal</th>
+                            <th className="px-4 py-3 text-right font-semibold">Interest</th>
+                            <th className="px-4 py-3 text-right font-semibold">Balance</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-calc-lightGray">
+                          {results.schedule.map((row, index) => (
+                            <tr key={index} className="hover:bg-calc-beige/30">
+                              <td className="px-4 py-3 text-calc-black font-medium">{row.month}</td>
+                              <td className="px-4 py-3 text-calc-black text-right">{row.principal.toLocaleString("en-IN")}</td>
+                              <td className="px-4 py-3 text-calc-black text-right">{row.interest.toLocaleString("en-IN")}</td>
+                              <td className="px-4 py-3 text-calc-black text-right font-semibold">{row.balance.toLocaleString("en-IN")}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -247,7 +334,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
       </div>
 
       {children && (
-        <div className="prose max-w-none text-calc-darkGray bg-calc-white p-8 rounded-2xl border border-calc-lightGray mt-8">
+        <div className="prose max-w-none text-calc-darkGray bg-calc-white p-6 sm:p-8 rounded-2xl border border-calc-lightGray mt-6 sm:mt-8">
           {children}
         </div>
       )}

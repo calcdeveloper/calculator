@@ -215,7 +215,7 @@ export default function PercentageCalculatorContent() {
             <details key={index} className="group border border-gray-200 rounded-lg bg-white open:shadow-md transition-all duration-200">
               <summary className="font-semibold px-5 py-4 cursor-pointer text-gray-900 list-none flex justify-between items-center">
                 {faq.name}
-                <span className="text-green-600 group-open:rotate-180 transition-transform">▼</span>
+                <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
                 {faq.acceptedAnswer.text}

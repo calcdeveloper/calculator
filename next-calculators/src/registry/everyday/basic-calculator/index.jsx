@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as math from "mathjs";
 import Content from "./content";
 
@@ -8,6 +8,114 @@ export default function BasicCalculator({ config }) {
   const [isDegree, setIsDegree] = useState(true);
   const [isInv, setIsInv] = useState(false);
   const [ans, setAns] = useState("0");
+
+  // Handle keyboard input
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const key = event.key;
+      event.preventDefault();
+      
+      // Number keys
+      if (key >= '0' && key <= '9') {
+        handlePress(key);
+      }
+      // Decimal point
+      else if (key === '.') {
+        handlePress('.');
+      }
+      // Basic operators
+      else if (key === '+') {
+        handlePress('+');
+      }
+      else if (key === '-') {
+        handlePress('-');
+      }
+      else if (key === '*') {
+        handlePress('×');
+      }
+      else if (key === '/') {
+        handlePress('÷');
+      }
+      // Enter key for calculation
+      else if (key === 'Enter') {
+        handleEqual();
+      }
+      // Escape for clear
+      else if (key === 'Escape') {
+        handleClear();
+      }
+      // Backspace
+      else if (key === 'Backspace') {
+        if (display !== "0" && display !== "Error") {
+          setDisplay(display.slice(0, -1));
+        }
+      }
+      // Parentheses
+      else if (key === '(') {
+        handlePress('(');
+      }
+      else if (key === ')') {
+        handlePress(')');
+      }
+      // Functions
+      else if (key.toLowerCase() === 's') {
+        handleFunction(isInv ? "asin" : "sin");
+      }
+      else if (key.toLowerCase() === 'c') {
+        handleFunction(isInv ? "acos" : "cos");
+      }
+      else if (key.toLowerCase() === 't') {
+        handleFunction(isInv ? "atan" : "tan");
+      }
+      else if (key.toLowerCase() === 'l') {
+        handleFunction("ln");
+      }
+      else if (key.toLowerCase() === 'o') {
+        handleFunction("log");
+      }
+      else if (key.toLowerCase() === 'r') {
+        handleFunction("sqrt");
+      }
+      else if (key.toLowerCase() === 'p') {
+        handlePress('π');
+      }
+      else if (key.toLowerCase() === 'e') {
+        handlePress('e');
+      }
+      else if (key.toLowerCase() === '%') {
+        handlePress('%');
+      }
+      else if (key.toLowerCase() === '!') {
+        handlePress('!');
+      }
+      // Degree toggle
+      else if (key.toLowerCase() === 'd') {
+        setIsDegree(!isDegree);
+      }
+      // Inverse toggle
+      else if (key.toLowerCase() === 'i') {
+        setIsInv(!isInv);
+      }
+      // Answer key
+      else if (key.toLowerCase() === 'a') {
+        handlePress('Ans');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [display, isDegree, isInv, ans]);
+
+  // Focus on calculator display for keyboard input
+  useEffect(() => {
+    const displayElement = document.querySelector('.calculator-display');
+    if (displayElement) {
+      displayElement.focus();
+    }
+  }, []);
 
   // Appends numbers or basic symbols to the display
   const handlePress = (val) => {
@@ -88,7 +196,7 @@ export default function BasicCalculator({ config }) {
           <div className="text-gray-500 text-sm flex justify-between w-full">
             <span className="font-semibold">{isDegree ? "Deg" : "Rad"}</span>
           </div>
-          <div className="text-right text-5xl text-gray-800 font-normal tracking-wide whitespace-nowrap overflow-x-auto overflow-y-hidden no-scrollbar">
+          <div className="calculator-display text-right text-5xl text-gray-800 font-normal tracking-wide whitespace-nowrap overflow-x-auto overflow-y-hidden no-scrollbar">
             {display}
           </div>
         </div>

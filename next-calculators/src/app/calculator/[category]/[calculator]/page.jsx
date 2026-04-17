@@ -82,14 +82,34 @@ export default async function CalculatorPage({ params }) {
   }
 
   let ContentComponent = null;
-  try {
-    const ContentModule = await import(`@/registry/${category}/${calculator}/content.jsx`);
-    ContentComponent = ContentModule.default;
-  } catch (error) {
-    // Content is optional, so we don't trigger notFound here
-    console.warn(`Optional content.jsx not found for: ${category}/${calculator}`);
+  let CustomComponent = null;
+
+  // Handle custom components (like basic-calculator)
+  if (config.customComponent) {
+    try {
+      const CustomModule = await import(`@/registry/${category}/${calculator}/index.jsx`);
+      CustomComponent = CustomModule.default;
+    } catch (error) {
+      console.error(`Failed to load custom component for: ${category}/${calculator}`, error);
+      notFound();
+    }
+  } else {
+    // Load regular content component
+    try {
+      const ContentModule = await import(`@/registry/${category}/${calculator}/content.jsx`);
+      ContentComponent = ContentModule.default;
+    } catch (error) {
+      // Content is optional, so we don't trigger notFound here
+      console.warn(`Optional content.jsx not found for: ${category}/${calculator}`);
+    }
   }
 
+  // If it's a custom component, render it directly with config
+  if (CustomComponent) {
+    return <CustomComponent config={config} />;
+  }
+
+  // Otherwise, use the standard CalculatorLayout
   return (
     <CalculatorLayout
       category={category}

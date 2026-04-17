@@ -1,5 +1,8 @@
 // This acts as our temporary database for search and counts
 export const calculators = [
+
+  // Finance Calculators
+  
     { name: 'SIP Calculator', path: '/calculator/finance/sip', category: 'finance' },
     { name: 'EMI Calculator', path: '/calculator/finance/emi', category: 'finance' },
     { name: 'FD Calculator', path: '/calculator/finance/fd', category: 'finance' },
@@ -82,6 +85,7 @@ export const calculators = [
     { name: 'Time Calculator', path: '/calculator/everyday/time-duration', category: 'everyday' },
     { name: 'Basic Calculator', path: '/calculator/everyday/basic-calculator', category: 'everyday' },
     { name: 'Monthly Expense Calculator', path: '/calculator/everyday/expense', category: 'everyday' },
+    
     
 
     //Education Calculators

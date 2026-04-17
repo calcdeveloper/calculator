@@ -8,7 +8,7 @@ export default function AlgebraSolverContent() {
   // URL SLUG: /algebra-solver-calculator
   // PRIMARY KEYWORD: Algebra solver calculator
   // SECONDARY KEYWORDS: solve for x calculator, linear equation solver, quadratic equation calculator, step-by-step algebra calculator, variables on both sides, math problem solver, basic algebra calculator, algebra formula solver, equation calculator online, find unknown variable calculator
-  // LONG-TAIL KEYWORDS: how to solve linear equations step by step, online algebra calculator for CBSE students, find the value of x in an equation, step by step quadratic equation solver, algebra calculator with working out
+  // LONG-TAIL KEYWORDS: how to solve linear equations, online algebra calculator for CBSE students, find the value of x in an equation, step by step quadratic equation solver, algebra calculator with working out
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -216,26 +216,26 @@ export default function AlgebraSolverContent() {
           Math doesn't stop at solving for x. Check out our other comprehensive calculators to help with geometry, statistics, and advanced mathematics:
         </p>
         <div className="flex flex-wrap gap-3">
-          <a href="/calculator/math/area-perimeter" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Area & Perimeter</a>
-          <a href="/calculator/math/average" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Average</a>
-          <a href="/calculator/math/exponent" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Exponent</a>
-          <a href="/calculator/math/fraction" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Fraction</a>
-          <a href="/calculator/math/lcm" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">LCM</a>
-          <a href="/calculator/math/logarithm" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Logarithm</a>
-          <a href="/calculator/math/matrix" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Matrix</a>
-          <a href="/calculator/math/mean-median-mode" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Mean, Median, Mode</a>
-          <a href="/calculator/math/percentage" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Percentage</a>
-          <a href="/calculator/math/percentage-inc-dec" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Percentage Increase/Decrease</a>
-          <a href="/calculator/math/permutation-combination" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Permutation & Combination</a>
-          <a href="/calculator/math/probability" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Probability</a>
-          <a href="/calculator/math/profitloss" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Profit & Loss</a>
-          <a href="/calculator/math/proportion" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Proportion</a>
-          <a href="/calculator/math/pythagorean" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Pythagorean Theorem</a>
-          <a href="/calculator/math/quadratic" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Quadratic Equation</a>
-          <a href="/calculator/math/ratio" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Ratio</a>
-          <a href="/calculator/math/scientific" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Scientific Calculator</a>
-          <a href="/calculator/math/standard-deviation" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Standard Deviation</a>
-          <a href="/calculator/math/volume-surface-area" className="text-sm text-blue-600 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Volume & Surface Area</a>
+          <a href="/calculator/math/area-perimeter" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Area & Perimeter</a>
+          <a href="/calculator/math/average" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Average</a>
+          <a href="/calculator/math/exponent" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Exponent</a>
+          <a href="/calculator/math/fraction" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Fraction</a>
+          <a href="/calculator/math/lcm" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">LCM</a>
+          <a href="/calculator/math/logarithm" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Logarithm</a>
+          <a href="/calculator/math/matrix" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Matrix</a>
+          <a href="/calculator/math/mean-median-mode" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Mean, Median, Mode</a>
+          <a href="/calculator/math/percentage" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Percentage</a>
+          <a href="/calculator/math/percentage-inc-dec" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Percentage Increase/Decrease</a>
+          <a href="/calculator/math/permutation-combination" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Permutation & Combination</a>
+          <a href="/calculator/math/probability" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Probability</a>
+          <a href="/calculator/math/profitloss" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Profit & Loss</a>
+          <a href="/calculator/math/proportion" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Proportion</a>
+          <a href="/calculator/math/pythagorean" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Pythagorean Theorem</a>
+          <a href="/calculator/math/quadratic" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Quadratic Equation</a>
+          <a href="/calculator/math/ratio" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Ratio</a>
+          <a href="/calculator/math/scientific" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Scientific Calculator</a>
+          <a href="/calculator/math/standard-deviation" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Standard Deviation</a>
+          <a href="/calculator/math/volume-surface-area" className="text-sm text-blue-700 font-medium hover:underline bg-white px-3 py-1.5 rounded border border-gray-200 shadow-sm">Volume & Surface Area</a>
         </div>
       </section>
 
