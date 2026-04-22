@@ -1,33 +1,79 @@
 import Link from 'next/link';
-import { Calculator, HeartPulse, Sigma, RefreshCw, Wrench, GraduationCap, Briefcase, Cpu } from 'lucide-react';
-import HomeSearch from '../components/home/HomeSearch';
-import { calculators, getCategoryCount } from '../utils/calculatorData';
+import { Calculator, Zap, FileText, Type, Database, Key, RefreshCw, Code, Palette } from 'lucide-react';
 
 export const dynamic = "force-static";
 
-const categories = [
-  { name: 'Finance', icon: <Calculator size={24} />, path: 'finance' },
-  { name: 'Health', icon: <HeartPulse size={24} />, path: 'health' },
-  { name: 'Maths', icon: <Sigma size={24} />, path: 'math' },
-  { name: 'Conversion', icon: <RefreshCw size={24} />, path: 'conversion' },
-  { name: 'Everyday Utility', icon: <Wrench size={24} />, path: 'everyday' },
-  { name: 'Education', icon: <GraduationCap size={24} />, path: 'education' },
-  { name: 'Construction', icon: <Briefcase size={24} />, path: 'construction' },
-  { name: 'Engineering', icon: <Cpu size={24} />, path: 'engineering' },
-];
-
-const trendingCalculators = [
-  { name: 'Age Calculator', desc: 'Calculate your exact age in years, months, and days.', path: '/calculator/everyday/age' },
-  { name: 'BMI Calculator', desc: 'Check your Body Mass Index to monitor your health.', path: '/calculator/health/bmi' },
-  { name: 'SIP Calculator', desc: 'Calculate returns on your mutual fund SIP investments.', path: '/calculator/finance/sip' },
-  { name: 'EMI Calculator', desc: 'Calculate your monthly loan EMI payments easily.', path: '/calculator/finance/emi' },
+const toolCategories = [
+  {
+    name: 'Calculator Tools',
+    description: 'Math, finance, health, and everyday calculators',
+    icon: <Calculator size={32} />,
+    color: 'bg-blue-500',
+    path: '/calculator'
+  },
+  {
+    name: 'Generator Tools',
+    description: 'Create content, codes, and random data',
+    icon: <Zap size={32} />,
+    color: 'bg-green-500',
+    path: '/tools/generators'
+  },
+  {
+    name: 'PDF Tools',
+    description: 'PDF creation, manipulation, and conversion',
+    icon: <FileText size={32} />,
+    color: 'bg-red-500',
+    path: '#'
+  },
+  {
+    name: 'Text Tools',
+    description: 'Text manipulation and formatting utilities',
+    icon: <Type size={32} />,
+    color: 'bg-purple-500',
+    path: '#'
+  },
+  {
+    name: 'JSON Tools',
+    description: 'JSON formatting, validation, and conversion',
+    icon: <Database size={32} />,
+    color: 'bg-yellow-500',
+    path: '#'
+  },
+  {
+    name: 'Encoder/Decoder',
+    description: 'Encoding and decoding utilities',
+    icon: <Key size={32} />,
+    color: 'bg-indigo-500',
+    path: '#'
+  },
+  {
+    name: 'Converter Tools',
+    description: 'Unit and format conversion tools',
+    icon: <RefreshCw size={32} />,
+    color: 'bg-orange-500',
+    path: '#'
+  },
+  {
+    name: 'Developer Tools',
+    description: 'Programming and web development utilities',
+    icon: <Code size={32} />,
+    color: 'bg-gray-700',
+    path: '#'
+  },
+  {
+    name: 'Design Tools',
+    description: 'Color, image, and design utilities',
+    icon: <Palette size={32} />,
+    color: 'bg-pink-500',
+    path: '#'
+  }
 ];
 
 export default function Home() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "CalcPilot",
+    "name": "CalcPilot - Multi-Tool Platform",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
     "offers": {
@@ -35,52 +81,46 @@ export default function Home() {
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "A comprehensive suite of smart, free calculators for finance, health, math, and everyday utility."
+    "description": "A comprehensive platform with calculators, generators, PDF tools, text tools, JSON tools, encoder/decoder, converters, and developer utilities."
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="min-h-screen bg-white">
       
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-calc-black mb-4">Smart Calculators for Everyday Problems</h1>
-        <p className="text-lg text-calc-gray mb-8">500+ free calculators for finance, health, math and daily life.</p>
-        
-        <HomeSearch calculators={calculators} />
+      {/* Hero Section */}
+      <div className="text-center py-16 px-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          CalcPilot Tools
+        </h1>
+        <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+          Free online tools for calculators, generators, converters, and more
+        </p>
       </div>
 
-      <div className="mb-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {categories.map((cat, index) => (
-            <Link href={`/category/${cat.path}`} key={index} className="bg-calc-white p-6 rounded-xl border border-calc-lightGray hover:border-calc-green hover:shadow-md transition-all flex flex-col items-center text-center">
-              <div className="text-calc-green mb-3">{cat.icon}</div>
-              <h3 className="font-semibold text-calc-black text-lg">{cat.name}</h3>
-              <p className="text-calc-gray text-sm mt-1">{getCategoryCount(cat.path)} Calculators</p> 
+      {/* Tool Categories Grid */}
+      <div className="max-w-6xl mx-auto px-4 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {toolCategories.map((category, index) => (
+            <Link 
+              key={category.name}
+              href={category.path}
+              className="bg-gray-50 hover:bg-gray-100 p-8 rounded-xl text-center transition-all hover:shadow-md group"
+            >
+              <div className={`inline-flex p-4 rounded-lg ${category.color} text-white mb-4 group-hover:scale-110 transition-transform`}>
+                {category.icon}
+              </div>
+              <h3 className="font-bold text-gray-900 text-xl mb-2">{category.name}</h3>
+              <p className="text-gray-600 text-sm">{category.description}</p>
             </Link>
           ))}
         </div>
       </div>
 
-      <div id="trending" className="scroll-mt-24">
-        <h2 className="text-2xl font-bold text-calc-black mb-6 border-b border-calc-lightGray pb-2">Trending Calculators</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {trendingCalculators.map((calc, index) => (
-            <div key={index} className="bg-calc-white p-6 rounded-xl border border-calc-lightGray flex flex-col justify-between h-full hover:shadow-md transition-shadow">
-              <div>
-                <h3 className="font-bold text-calc-black text-xl mb-2">{calc.name}</h3>
-                <p className="text-calc-darkGray text-sm mb-6">{calc.desc}</p>
-              </div>
-              <Link href={calc.path} className="w-full bg-calc-green text-calc-white py-2 px-4 rounded-md font-medium hover:bg-calc-darkGreen transition-colors text-center">
-                Click to open
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
-    </main>
+          </main>
   );
 }

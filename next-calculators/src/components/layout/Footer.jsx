@@ -26,16 +26,16 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1 md:col-span-4">
-            <h3 className="font-bold text-calc-black mb-4">Calculator Categories</h3>
+            <h3 className="font-bold text-calc-black mb-4">Tools</h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-calc-gray">
-              <li><Link href="/category/finance" className="hover:text-calc-green transition">Finance</Link></li>
-              <li><Link href="/category/health" className="hover:text-calc-green transition">Health</Link></li>
-              <li><Link href="/category/math" className="hover:text-calc-green transition">Math</Link></li>
-              <li><Link href="/category/conversion" className="hover:text-calc-green transition">Conversion</Link></li>
-              <li><Link href="/category/everyday" className="hover:text-calc-green transition">Everyday Utility</Link></li>
-              <li><Link href="/category/education" className="hover:text-calc-green transition">Education</Link></li>
-              <li><Link href="/category/construction" className="hover:text-calc-green transition">Construction</Link></li>
-              <li><Link href="/category/engineering" className="hover:text-calc-green transition">Engineering</Link></li>
+              <li><Link href="/calculator" className="hover:text-calc-green transition">Calculator Tools</Link></li>
+              <li><Link href="/tools/generators" className="hover:text-calc-green transition">Generator Tools</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">PDF Tools</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">Text Tools</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">JSON Tools</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">Encoder/Decoder</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">Converter Tools</Link></li>
+              <li><Link href="#" className="hover:text-calc-green transition">Developer Tools</Link></li>
             </ul>
           </div>
 
