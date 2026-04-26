@@ -1,8 +1,16 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 
-export default function TypingTest() {
-  const referenceText = "Typing tests help improve your speed, accuracy, and overall efficiency. Practice often to enhance your typing skills.";
+export default function TypingTest({ config }) {
+  // Import and render the content component
+  const ContentComponent = React.lazy(() => import('./content.jsx'));
+  // Array of text prompts to cycle through upon restart
+  const referenceTexts = [
+    "Typing tests help improve your speed, accuracy, and overall efficiency. Practice often to enhance your typing skills and build muscle memory.",
+    "Technology has transformed how we communicate, work, and learn. Developing strong keyboarding skills is essential in the modern digital age.",
+    "The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet and is often used for typing practice."
+  ];
+  const [referenceText, setReferenceText] = useState(referenceTexts[0]);
   
   const [timeLeft, setTimeLeft] = useState(60);
   const [isActive, setIsActive] = useState(false);
@@ -44,6 +52,7 @@ export default function TypingTest() {
     let currentCpm = 0;
     let currentWpm = 0;
     
+    // FIX: Prevent division by zero (NaN) when timeSpent is 0
     if (timeSpent > 0) {
       currentCpm = Math.round(correctChars / timeSpentMin);
       currentWpm = Math.round((correctChars / 5) / timeSpentMin);
@@ -54,10 +63,12 @@ export default function TypingTest() {
 
   const handleInputChange = (e) => {
     const val = e.target.value;
+    
     // Auto-start timer on first keystroke
     if (!isActive && timeLeft === 60 && val.length > 0) {
       setIsActive(true);
     }
+    
     // Prevent typing if time is up or max length reached
     if (timeLeft > 0 && val.length <= referenceText.length) {
       setTypedText(val);
@@ -77,71 +88,134 @@ export default function TypingTest() {
     setTimeLeft(60);
     setTypedText("");
     setStats({ wpm: 0, cpm: 0, accuracy: 0 });
+    // Pick a new random text on restart
+    const randomText = referenceTexts[Math.floor(Math.random() * referenceTexts.length)];
+    setReferenceText(randomText);
+  };
+
+  // Visual helper: Colors the text green for correct, red for incorrect
+  const renderReferenceText = () => {
+    return referenceText.split('').map((char, index) => {
+      let colorClass = "text-gray-500";
+      if (index < typedText.length) {
+        colorClass = typedText[index] === char 
+          ? "text-green-600 bg-green-50" 
+          : "text-red-600 bg-red-100 underline decoration-red-400";
+      } else if (index === typedText.length && isActive) {
+        colorClass = "text-gray-900 bg-blue-100 border-b-2 border-blue-500"; // Current cursor position
+      }
+      return (
+        <span key={index} className={colorClass}>
+          {char}
+        </span>
+      );
+    });
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-8 font-sans">
-      {/* Header matching the screenshot */}
-      <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Typing Speed Test</h1>
-        <p className="text-gray-600">Type the text below as fast and accurately as you can.</p>
+    <div className="max-w-4xl mx-auto my-10 p-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+      <div className="text-center mb-8">
+        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#000', marginBottom: '0.5rem' }}>Interactive Typing Test</h2>
+        <p style={{ color: '#6b7280' }}>Type the text below as fast and accurately as you can to determine your WPM.</p>
       </div>
 
-      {/* Main Calculator Card */}
-      <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-4">
+      <div style={{ backgroundColor: '#ffffff', border: '1px solid #e5e7eb', borderRadius: '1rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)', padding: '2rem', marginBottom: '1.5rem' }}>
         
-        {/* Reference Text Box */}
-        <div className="border border-gray-300 rounded-xl p-4 bg-white text-gray-900 text-lg leading-relaxed select-none">
-          {referenceText}
+        {/* Dynamic Reference Text Box */}
+        <div className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-lg leading-relaxed select-none font-mono tracking-wide break-words shadow-inner">
+          {renderReferenceText()}
         </div>
 
         {/* Typing Input Area */}
-        <textarea
-          ref={textAreaRef}
-          value={typedText}
-          onChange={handleInputChange}
-          disabled={timeLeft === 0}
-          placeholder="Start typing here..."
-          className="w-full border border-gray-300 rounded-xl p-4 text-gray-800 text-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono transition-shadow disabled:bg-gray-50"
-        ></textarea>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: '500', color: '#374151', marginBottom: '0.5rem' }}>Your Typing Test</label>
+          <textarea
+            ref={textAreaRef}
+            value={typedText}
+            onChange={handleInputChange}
+            disabled={timeLeft === 0}
+            placeholder="Start typing here to begin the 60-second test..."
+            style={{
+              width: '100%',
+              border: '1px solid #d1d5db',
+              borderRadius: '0.75rem',
+              padding: '1.25rem',
+              color: '#1f2937',
+              fontSize: '1.125rem',
+              height: '8rem',
+              resize: 'none',
+              fontFamily: 'monospace',
+              backgroundColor: timeLeft === 0 ? '#f9fafb' : '#ffffff',
+              cursor: timeLeft === 0 ? 'not-allowed' : 'text'
+            }}
+            spellCheck="false"
+          ></textarea>
+        </div>
 
-        {/* 2x2 Stats Grid */}
-        <div className="grid grid-cols-2 gap-4 my-4">
-          <div className="bg-[#f3f4f6] rounded-xl p-6 flex flex-col items-center justify-center">
-            <span className="text-3xl font-bold text-blue-600 mb-1">{timeLeft}</span>
-            <span className="text-sm text-gray-600 font-medium">Seconds Left</span>
+        {/* 2x2 / 4x1 Stats Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
+          <div style={{ backgroundColor: '#eef2ff', border: '1px solid #e0e7ff', borderRadius: '0.75rem', padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontSize: '2rem', fontWeight: 'bold', color: '#4f46e5', marginBottom: '0.25rem' }}>{timeLeft}</span>
+            <span style={{ fontSize: '0.875rem', color: '#4338ca', fontWeight: '500' }}>Seconds Left</span>
           </div>
-          <div className="bg-[#f3f4f6] rounded-xl p-6 flex flex-col items-center justify-center">
-            <span className="text-3xl font-bold text-blue-600 mb-1">{stats.wpm}</span>
-            <span className="text-sm text-gray-600 font-medium">WPM</span>
+          <div style={{ backgroundColor: '#eff6ff', border: '1px solid #dbeafe', borderRadius: '0.75rem', padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontSize: '2rem', fontWeight: 'bold', color: '#2563eb', marginBottom: '0.25rem' }}>{stats.wpm}</span>
+            <span style={{ fontSize: '0.875rem', color: '#1d4ed8', fontWeight: '500' }}>WPM (Words/Min)</span>
           </div>
-          <div className="bg-[#f3f4f6] rounded-xl p-6 flex flex-col items-center justify-center">
-            <span className="text-3xl font-bold text-blue-600 mb-1">{stats.cpm}</span>
-            <span className="text-sm text-gray-600 font-medium">CPM</span>
+          <div style={{ backgroundColor: '#ecfdf5', border: '1px solid #d1fae5', borderRadius: '0.75rem', padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontSize: '2rem', fontWeight: 'bold', color: '#059669', marginBottom: '0.25rem' }}>{stats.cpm}</span>
+            <span style={{ fontSize: '0.875rem', color: '#047857', fontWeight: '500' }}>CPM (Chars/Min)</span>
           </div>
-          <div className="bg-[#f3f4f6] rounded-xl p-6 flex flex-col items-center justify-center">
-            <span className="text-3xl font-bold text-blue-600 mb-1">{stats.accuracy}%</span>
-            <span className="text-sm text-gray-600 font-medium">Accuracy</span>
+          <div style={{ backgroundColor: '#faf5ff', border: '1px solid #f3e8ff', borderRadius: '0.75rem', padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontSize: '2rem', fontWeight: 'bold', color: '#9333ea', marginBottom: '0.25rem' }}>{stats.accuracy}%</span>
+            <span style={{ fontSize: '0.875rem', color: '#7e22ce', fontWeight: '500' }}>Accuracy</span>
           </div>
         </div>
 
         {/* Action Buttons */}
-        <div className="space-y-3 mt-4">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <button 
             onClick={handleStart}
             disabled={isActive || timeLeft < 60}
-            className="w-full bg-[#3b62db] hover:bg-blue-700 disabled:opacity-50 text-white font-semibold py-4 rounded-xl transition-colors text-lg"
+            style={{
+              flex: 1,
+              backgroundColor: (isActive || timeLeft < 60) ? '#d1d5db' : '#2563eb',
+              color: (isActive || timeLeft < 60) ? '#6b7280' : '#ffffff',
+              fontWeight: '600',
+              padding: '1rem',
+              borderRadius: '0.75rem',
+              fontSize: '1.125rem',
+              cursor: (isActive || timeLeft < 60) ? 'not-allowed' : 'pointer',
+              border: 'none',
+              transition: 'all 0.2s ease'
+            }}
           >
-            Start Test
+            Start Test Automatically
           </button>
           <button 
             onClick={handleRestart}
-            className="w-full bg-[#198031] hover:bg-green-800 text-white font-semibold py-4 rounded-xl transition-colors text-lg"
+            style={{
+              flex: 1,
+              backgroundColor: '#1f2937',
+              color: '#ffffff',
+              fontWeight: '600',
+              padding: '1rem',
+              borderRadius: '0.75rem',
+              fontSize: '1.125rem',
+              cursor: 'pointer',
+              border: 'none',
+              transition: 'all 0.2s ease'
+            }}
           >
-            Restart
+            Restart & Change Text
           </button>
         </div>
       </div>
+      
+      {/* Content Section */}
+      <React.Suspense fallback={<div>Loading content...</div>}>
+        <ContentComponent />
+      </React.Suspense>
     </div>
   );
 }

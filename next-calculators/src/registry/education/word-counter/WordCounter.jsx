@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
 
-export default function WordCounter() {
+export default function WordCounter({ config }) {
+  // Import and render the content component
+  const ContentComponent = React.lazy(() => import('./content.jsx'));
   const [text, setText] = useState("");
   const [copied, setCopied] = useState(false);
   const textAreaRef = useRef(null);
@@ -101,6 +103,11 @@ export default function WordCounter() {
           </button>
         </div>
       </div>
+      
+      {/* Content Section */}
+      <React.Suspense fallback={<div>Loading content...</div>}>
+        <ContentComponent />
+      </React.Suspense>
     </div>
   );
 }
