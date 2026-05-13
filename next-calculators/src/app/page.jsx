@@ -23,49 +23,49 @@ const toolCategories = [
     description: 'PDF creation, manipulation, and conversion',
     icon: <FileText size={32} />,
     color: 'bg-red-500',
-    path: '#'
+    path: '/tools/pdf-tools'
   },
   {
     name: 'Text Tools',
     description: 'Text manipulation and formatting utilities',
     icon: <Type size={32} />,
     color: 'bg-purple-500',
-    path: '#'
+    path: '/tools/text-tools'
   },
   {
     name: 'JSON Tools',
     description: 'JSON formatting, validation, and conversion',
     icon: <Database size={32} />,
     color: 'bg-yellow-500',
-    path: '#'
+    path: '/tools/json-tools'
   },
   {
     name: 'Encoder/Decoder',
     description: 'Encoding and decoding utilities',
     icon: <Key size={32} />,
     color: 'bg-indigo-500',
-    path: '#'
+    path: '/tools/encoder-decoder'
   },
   {
     name: 'Converter Tools',
     description: 'Unit and format conversion tools',
     icon: <RefreshCw size={32} />,
     color: 'bg-orange-500',
-    path: '#'
+    path: '/tools/converter'
   },
   {
     name: 'Developer Tools',
     description: 'Programming and web development utilities',
     icon: <Code size={32} />,
     color: 'bg-gray-700',
-    path: '#'
+    path: '/tools/developer'
   },
   {
     name: 'Design Tools',
     description: 'Color, image, and design utilities',
     icon: <Palette size={32} />,
     color: 'bg-pink-500',
-    path: '#'
+    path: '/tools/design'
   }
 ];
 

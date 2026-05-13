@@ -30,7 +30,7 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-calc-gray">
               <li><Link href="/calculator" className="hover:text-calc-green transition">Calculator Tools</Link></li>
               <li><Link href="/tools/generators" className="hover:text-calc-green transition">Generator Tools</Link></li>
-              <li><Link href="#" className="hover:text-calc-green transition">PDF Tools</Link></li>
+              <li><Link href="/tools/pdf-tools" className="hover:text-calc-green transition">PDF Tools</Link></li>
               <li><Link href="#" className="hover:text-calc-green transition">Text Tools</Link></li>
               <li><Link href="#" className="hover:text-calc-green transition">JSON Tools</Link></li>
               <li><Link href="#" className="hover:text-calc-green transition">Encoder/Decoder</Link></li>

@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 export default function HomeSearch({ calculators }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const [isRouterReady, setIsRouterReady] = useState(false);
   const featuredCalculators = calculators.slice(0, 8);
+
+  useEffect(() => {
+    setIsRouterReady(true);
+  }, []);
 
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -19,7 +24,7 @@ export default function HomeSearch({ calculators }) {
   }, [calculators, query]);
 
   const navigateTo = (calc) => {
-    if (!calc?.path) return;
+    if (!calc?.path || !isRouterReady) return;
     router.push(calc.path);
     setQuery("");
   };

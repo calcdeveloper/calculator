@@ -13,7 +13,7 @@
   --font-sans: 'Inter', sans-serif;
   --font-mono: var(--font-geist-mono);
   
-  /* 2. Your Exact Old Theme Colors */
+  /* 2. Calculator Tool Colors */
   --color-calc-beige: #f6f3ee;
   --color-calc-white: #ffffff;
   --color-calc-green: #15803d;
@@ -24,6 +24,78 @@
   --color-calc-gray: #6b7280;
   --color-calc-darkGray: #374151;
   --color-calc-black: #000000;
+  
+  /* 3. Generator Tools Colors */
+  --color-gen-primary: #10b981;
+  --color-gen-primaryDark: #059669;
+  --color-gen-secondary: #3b82f6;
+  --color-gen-bg: #f0fdf4;
+  --color-gen-white: #ffffff;
+  --color-gen-gray: #6b7280;
+  --color-gen-dark: #1f2937;
+  
+  /* 4. PDF Tools Colors */
+  --color-pdf-primary: #dc2626;
+  --color-pdf-primaryDark: #b91c1c;
+  --color-pdf-secondary: #ef4444;
+  --color-pdf-bg: #fef2f2;
+  --color-pdf-white: #ffffff;
+  --color-pdf-gray: #6b7280;
+  --color-pdf-dark: #1f2937;
+  
+  /* 5. Text Tools Colors */
+  --color-text-primary: #8b5cf6;
+  --color-text-primaryDark: #7c3aed;
+  --color-text-secondary: #a78bfa;
+  --color-text-bg: #f5f3ff;
+  --color-text-white: #ffffff;
+  --color-text-gray: #6b7280;
+  --color-text-dark: #1f2937;
+  
+  /* 6. JSON Tools Colors */
+  --color-json-primary: #eab308;
+  --color-json-primaryDark: #ca8a04;
+  --color-json-secondary: #f59e0b;
+  --color-json-bg: #fefce8;
+  --color-json-white: #ffffff;
+  --color-json-gray: #6b7280;
+  --color-json-dark: #1f2937;
+  
+  /* 7. Encoder/Decoder Tools Colors */
+  --color-enc-primary: #6366f1;
+  --color-enc-primaryDark: #4f46e5;
+  --color-enc-secondary: #818cf8;
+  --color-enc-bg: #eef2ff;
+  --color-enc-white: #ffffff;
+  --color-enc-gray: #6b7280;
+  --color-enc-dark: #1f2937;
+  
+  /* 8. Converter Tools Colors */
+  --color-conv-primary: #f97316;
+  --color-conv-primaryDark: #ea580c;
+  --color-conv-secondary: #fb923c;
+  --color-conv-bg: #fff7ed;
+  --color-conv-white: #ffffff;
+  --color-conv-gray: #6b7280;
+  --color-conv-dark: #1f2937;
+  
+  /* 9. Developer Tools Colors */
+  --color-dev-primary: #374151;
+  --color-dev-primaryDark: #1f2937;
+  --color-dev-secondary: #4b5563;
+  --color-dev-bg: #f9fafb;
+  --color-dev-white: #ffffff;
+  --color-dev-gray: #6b7280;
+  --color-dev-dark: #111827;
+  
+  /* 10. Design Tools Colors */
+  --color-design-primary: #ec4899;
+  --color-design-primaryDark: #db2777;
+  --color-design-secondary: #f472b6;
+  --color-design-bg: #fdf2f8;
+  --color-design-white: #ffffff;
+  --color-design-gray: #6b7280;
+  --color-design-dark: #1f2937;
 }
 
 @media (prefers-color-scheme: dark) {
