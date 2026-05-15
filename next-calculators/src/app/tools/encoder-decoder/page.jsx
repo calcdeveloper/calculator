@@ -41,7 +41,7 @@ const encoderDecoderTools = [
     icon: <Code className="w-6 h-6" />,
     iconBg: "bg-indigo-100 text-indigo-600",
     link: "/tools/encoder-decoder/base64-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "URL Encoder",

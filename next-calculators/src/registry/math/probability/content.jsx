@@ -152,7 +152,7 @@ export default function ProbabilityCalculatorContent() {
           </div>
         </div>
 
-        <div className="bg-calc-beige/30 p-6 rounded-xl border border-calc-lightGray mt-6">
+        <div className="bg-calc-white/30 p-6 rounded-xl border border-calc-lightGray mt-6">
           <h3 className="text-lg font-bold text-gray-900 mb-2">Series of Events (Repeated Trials)</h3>
           <p className="text-sm mb-4 text-gray-700">
             When you are dealing with a series of repeated, identical trials (like tossing a coin $n$ times or pulling a card with replacement), the formulas adapt:

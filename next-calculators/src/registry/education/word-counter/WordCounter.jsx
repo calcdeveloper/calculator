@@ -62,19 +62,19 @@ export default function WordCounter({ config }) {
 
         {/* 2x2 Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-calc-beige/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
+          <div className="bg-calc-white/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
             <span className="text-4xl font-bold text-calc-green mb-1">{words}</span>
             <span className="text-sm text-calc-gray font-medium uppercase tracking-wide">Words</span>
           </div>
-          <div className="bg-calc-beige/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
+          <div className="bg-calc-white/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
             <span className="text-4xl font-bold text-calc-green mb-1">{characters}</span>
             <span className="text-sm text-calc-gray font-medium uppercase tracking-wide">Characters</span>
           </div>
-          <div className="bg-calc-beige/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm text-center">
+          <div className="bg-calc-white/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm text-center">
             <span className="text-4xl font-bold text-calc-green mb-1">{charactersNoSpaces}</span>
             <span className="text-sm text-calc-gray font-medium uppercase tracking-wide">Chars (No Spaces)</span>
           </div>
-          <div className="bg-calc-beige/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
+          <div className="bg-calc-white/30 border border-calc-lightGray rounded-xl p-6 flex flex-col items-center justify-center shadow-sm">
             <span className="text-4xl font-bold text-calc-green mb-1">{lines}</span>
             <span className="text-sm text-calc-gray font-medium uppercase tracking-wide">Lines</span>
           </div>

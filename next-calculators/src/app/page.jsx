@@ -58,7 +58,7 @@ const toolCategories = [
     description: 'Programming and web development utilities',
     icon: <Code size={32} />,
     color: 'bg-gray-700',
-    path: '/tools/developer'
+    path: '/tools/developer-tools'
   },
   {
     name: 'Design Tools',
@@ -85,7 +85,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white scroll-smooth">
       
       <script
         type="application/ld+json"
@@ -104,6 +104,9 @@ export default function Home() {
 
       {/* Tool Categories Grid */}
       <div className="max-w-6xl mx-auto px-4 pb-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">All Tools</h2>
+        <p className="text-gray-600 mb-8 text-center">Explore our complete collection of online tools</p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {toolCategories.map((category, index) => (
             <Link 
@@ -118,6 +121,60 @@ export default function Home() {
               <p className="text-gray-600 text-sm">{category.description}</p>
             </Link>
           ))}
+        </div>
+      </div>
+
+      {/* Trending Tools Section */}
+      <div id="trending" className="bg-gradient-to-r from-blue-50 to-purple-50 py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">Trending Tools</h2>
+          <p className="text-gray-600 mb-8 text-center">Most popular tools used by our community</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link 
+              href="/calculator"
+              className="bg-white hover:bg-blue-50 p-6 rounded-xl text-center transition-all hover:shadow-lg border border-gray-200 group"
+            >
+              <div className="inline-flex p-3 rounded-lg bg-blue-500 text-white mb-4 group-hover:scale-110 transition-transform">
+                <Calculator size={28} />
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Calculator Tools</h3>
+              <p className="text-gray-600 text-sm">Math, finance, and health calculators</p>
+            </Link>
+
+            <Link 
+              href="/tools/pdf-tools"
+              className="bg-white hover:bg-red-50 p-6 rounded-xl text-center transition-all hover:shadow-lg border border-gray-200 group"
+            >
+              <div className="inline-flex p-3 rounded-lg bg-red-500 text-white mb-4 group-hover:scale-110 transition-transform">
+                <FileText size={28} />
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">PDF Tools</h3>
+              <p className="text-gray-600 text-sm">PDF creation and manipulation</p>
+            </Link>
+
+            <Link 
+              href="/tools/converter"
+              className="bg-white hover:bg-orange-50 p-6 rounded-xl text-center transition-all hover:shadow-lg border border-gray-200 group"
+            >
+              <div className="inline-flex p-3 rounded-lg bg-orange-500 text-white mb-4 group-hover:scale-110 transition-transform">
+                <RefreshCw size={28} />
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Converter Tools</h3>
+              <p className="text-gray-600 text-sm">Unit and format conversion</p>
+            </Link>
+
+            <Link 
+              href="/tools/developer-tools"
+              className="bg-white hover:bg-gray-100 p-6 rounded-xl text-center transition-all hover:shadow-lg border border-gray-200 group"
+            >
+              <div className="inline-flex p-3 rounded-lg bg-gray-700 text-white mb-4 group-hover:scale-110 transition-transform">
+                <Code size={28} />
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Developer Tools</h3>
+              <p className="text-gray-600 text-sm">Code formatting and utilities</p>
+            </Link>
+          </div>
         </div>
       </div>
 

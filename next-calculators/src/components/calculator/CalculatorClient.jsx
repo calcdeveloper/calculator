@@ -255,7 +255,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
           </div>
 
           {/* RESULTS SECTION */}
-          <div className="p-6 sm:p-8 bg-calc-beige/30 flex min-w-0 flex-col items-center">
+          <div className="p-6 sm:p-8 bg-calc-white/30 flex min-w-0 flex-col items-center">
             {!calculateLogic ? (
               <div className="text-calc-gray text-center font-medium my-auto min-h-[300px] flex items-center">Loading logic...</div>
             ) : !results ? (
@@ -315,7 +315,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                         </thead>
                         <tbody className="divide-y divide-calc-lightGray">
                           {results.schedule.map((row, index) => (
-                            <tr key={index} className="hover:bg-calc-beige/30">
+                            <tr key={index} className="hover:bg-calc-white/30">
                               <td className="px-4 py-3 text-calc-black font-medium">{row.month}</td>
                               <td className="px-4 py-3 text-calc-black text-right">{row.principal.toLocaleString("en-IN")}</td>
                               <td className="px-4 py-3 text-calc-black text-right">{row.interest.toLocaleString("en-IN")}</td>

@@ -38,7 +38,7 @@ export default function Navbar() {
               href="/#trending"
               className="bg-calc-green/10 text-calc-green border border-calc-green/20 px-6 py-2.5 rounded-full font-bold hover:bg-calc-green hover:text-calc-white transition-all duration-300 shadow-sm"
             >
-              Explore Trending Calculators
+              Explore Trending Tools
             </Link>
           </div>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-3 rounded-lg text-lg font-medium text-calc-gray hover:bg-calc-beige hover:text-calc-black transition-colors"
+                  className="block px-4 py-3 rounded-lg text-lg font-medium text-calc-gray hover:bg-calc-white hover:text-calc-black transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
                   href="/#trending"
                   className="block w-full text-center bg-calc-green text-calc-white px-6 py-3 rounded-lg font-bold hover:bg-calc-darkGreen transition-colors"
                 >
-                  Explore Trending Calculators
+                  Explore Trending Tools
                 </Link>
               </div>
             </div>

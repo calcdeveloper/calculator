@@ -106,7 +106,7 @@
 }
 
 body {
-  background: var(--color-calc-beige); /* Set default background to your beige */
+  background: var(--color-calc-white); /* Set default background to white */
   color: var(--foreground);
   font-family: var(--font-sans); /* Use the Inter font */
 }
