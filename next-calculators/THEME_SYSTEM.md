@@ -12,7 +12,7 @@ All theme and color codes are centralized in the `@theme inline` section of the 
 
 ### **1. Calculator Tool Colors**
 ```css
---color-calc-beige: #ffffff;
+--color-calc-beige: #f6f3ee;
 --color-calc-white: #ffffff;
 --color-calc-green: #15803d;
 --color-calc-darkGreen: #166534;
