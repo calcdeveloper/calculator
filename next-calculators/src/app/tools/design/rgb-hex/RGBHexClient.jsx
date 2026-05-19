@@ -354,7 +354,7 @@ export default function RGBHexClient() {
       </main>
 
       <footer className="bg-design-white border-t border-design-gray py-8 px-6">
-        <p className="text-sm text-design-gray text-center">© 2026 CalcPilot - Privacy-First Design Utilities.</p>
+        <p className="text-sm text-design-gray text-center">© 2026 ToolsWizard - Privacy-First Design Utilities.</p>
       </footer>
     </div>
   );

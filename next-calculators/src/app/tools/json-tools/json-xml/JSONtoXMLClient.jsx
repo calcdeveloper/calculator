@@ -108,7 +108,7 @@ export default function JSONtoXMLClient() {
               <textarea 
                 value={jsonInput}
                 onChange={(e) => setJsonInput(e.target.value)}
-                placeholder='Paste your JSON here (e.g. { "name": "CalcPilot", "status": "online" })'
+                placeholder='Paste your JSON here (e.g. { "name": "ToolsWizard", "status": "online" })'
                 className="w-full h-[400px] p-4 bg-slate-50 border border-slate-200 rounded-2xl font-mono text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all resize-none"
               />
             </div>
@@ -213,7 +213,7 @@ export default function JSONtoXMLClient() {
 
           <h3 className="text-2xl font-bold mt-10">How Our Secure Converter Works</h3>
           <p>
-            Most online converters require you to upload your data. At <strong>CalcPilot</strong>, we believe your data belongs to you. Our tool utilizes the modern JavaScript <code>JSON.parse()</code> and a custom recursive mapping function that operates entirely within your browser's sandboxed environment.
+            Most online converters require you to upload your data. At <strong>ToolsWizard</strong>, we believe your data belongs to you. Our tool utilizes the modern JavaScript <code>JSON.parse()</code> and a custom recursive mapping function that operates entirely within your browser's sandboxed environment.
           </p>
           <ol className="space-y-4 text-slate-700">
             <li><strong>Input:</strong> You paste your raw JSON into the editor. We perform a real-time syntax check to ensure the JSON is valid.</li>
@@ -224,10 +224,10 @@ export default function JSONtoXMLClient() {
           <h3 className="text-2xl font-bold mt-10">Frequently Asked Questions</h3>
           <div className="not-prose space-y-4 mt-6">
             {[
-              { q: "Is my JSON data saved on your servers?", a: "No. CalcPilot is a client-side platform. Your data never touches our server; it is processed locally in your browser's memory and cleared when you close the tab." },
+              { q: "Is my JSON data saved on your servers?", a: "No. ToolsWizard is a client-side platform. Your data never touches our server; it is processed locally in your browser's memory and cleared when you close the tab." },
               { q: "Can it handle large JSON files?", a: "Yes, our converter is optimized for performance. It can handle large datasets (up to several MBs) efficiently without slowing down your browser." },
               { q: "What happens to JSON arrays?", a: "JSON arrays are converted into repetitive XML tags. For example, a list of 'users' in JSON will become multiple '<item>' tags (or custom tags) within the XML structure." },
-              { q: "Is there a limit on conversions?", a: "No. CalcPilot provides unlimited, free conversions for all users without any registration required." }
+              { q: "Is there a limit on conversions?", a: "No. ToolsWizard provides unlimited, free conversions for all users without any registration required." }
             ].map((faq, i) => (
               <details key={i} className="group border border-slate-200 rounded-xl p-5 bg-slate-50/50 transition-all hover:bg-white hover:border-indigo-300">
                 <summary className="font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
@@ -241,8 +241,8 @@ export default function JSONtoXMLClient() {
         </article>
       </main>
 
-      <footer className="bg-slate-900 text-slate-400 py-12 px-4 text-center">
-        <p className="text-sm">© 2026 CalcPilot - Privacy-First Developer Utilities.</p>
+      <footer className="bg-json-white border-t border-json-gray py-8 px-6">
+        <p className="text-sm text-json-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
       </footer>
     </div>
   );

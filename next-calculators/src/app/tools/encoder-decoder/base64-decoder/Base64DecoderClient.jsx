@@ -292,7 +292,7 @@ export default function Base64DecoderClient() {
       </main>
 
       <footer className="bg-enc-white border-t border-enc-gray py-8 px-6">
-        <p className="text-sm text-enc-gray text-center">© 2026 CalcPilot - Privacy-First Developer Utilities.</p>
+        <p className="text-sm text-enc-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
       </footer>
     </div>
   );

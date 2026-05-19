@@ -13,12 +13,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-calc-green text-calc-white p-2.5 rounded-xl group-hover:bg-calc-darkGreen transition-colors shadow-sm">
-              <Calculator size={24} />
-            </div>
-            <span className="text-2xl font-extrabold text-calc-black tracking-tight">
-              Calc<span className="text-calc-green">Pilot</span>
-            </span>
+            <img src="/logo.png" alt="ToolsWizard" className="h-20 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

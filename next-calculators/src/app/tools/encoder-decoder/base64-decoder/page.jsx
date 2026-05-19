@@ -3,7 +3,7 @@ import Base64DecoderClient from './Base64DecoderClient';
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'Base64 Decoder - Free Online Base64 to Text Converter | CalcPilot',
+  title: 'Base64 Decoder - Free Online Base64 to Text Converter | ToolsWizard',
   description: 'Decode Base64 strings to original text instantly. Free, secure, and private browser-side Base64 decoder. No signup required.',
   keywords: [
     'base64 decoder',

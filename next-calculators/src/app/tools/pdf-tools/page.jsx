@@ -4,7 +4,7 @@ import { FileText, RotateCw, Trash2, Download, Image, Lock, Hash, ChevronRight, 
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'PDF Tools - Free Online PDF Editor & Manipulation | CalcPilot',
+  title: 'PDF Tools - Free Online PDF Editor & Manipulation | ToolsWizard',
   description: 'Rotate, delete pages, extract, protect, and manipulate PDF files with our free online PDF tools. Secure, fast, and private browser-side processing.',
   keywords: ['pdf editor', 'rotate pdf', 'delete pdf pages', 'extract pdf pages', 'password protect pdf', 'pdf tools free'],
 };

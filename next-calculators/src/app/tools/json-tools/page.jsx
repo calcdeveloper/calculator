@@ -27,7 +27,7 @@ import {
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'JSON Tools - Online JSON Formatter, Validator & Converter | CalcPilot',
+  title: 'JSON Tools - Online JSON Formatter, Validator & Converter | ToolsWizard',
   description: 'Clean, validate, and convert JSON data with our suite of free online JSON tools. Format, minify, and transform JSON to CSV, XML, or YAML instantly.',
   keywords: ['json formatter', 'json validator', 'json to csv', 'json to xml', 'json minifier', 'json diff checker', 'json path tester'],
 };
@@ -194,7 +194,7 @@ export default function JsonToolsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-json-gray leading-relaxed">
             <div>
               <p className="mb-4">
-                JSON (JavaScript Object Notation) has become the universal language for data exchange on the web. However, working with raw, unformatted JSON can be a challenge. At CalcPilot, we provide a complete ecosystem of <strong>JSON Tools</strong> designed to simplify your development workflow.
+                JSON (JavaScript Object Notation) has become the universal language for data exchange on the web. However, working with raw, unformatted JSON can be a challenge. At ToolsWizard, we provide a complete ecosystem of <strong>JSON Tools</strong> designed to simplify your development workflow.
               </p>
               <p>
                 Whether you need to <strong>validate JSON</strong> against a schema, <strong>prettify</strong> messy API responses, or <strong>convert JSON to CSV</strong> for data analysis, our tools handle it all with zero latency and 100% privacy.

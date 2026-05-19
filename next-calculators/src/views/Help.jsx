@@ -1,8 +1,8 @@
 export default function Help() {
     const faqs = [
-      { q: "Are the calculators free to use?", a: "Yes, all 500+ calculators on CalcPilot are completely free forever." },
+      { q: "Are the calculators free to use?", a: "Yes, all 500+ calculators on ToolsWizard are completely free forever." },
       { q: "How accurate are the financial calculators?", a: "Our calculators use standard mathematical formulas used by banks, but you should always consult a financial advisor for final decisions." },
-      { q: "Can I use this on my mobile phone?", a: "Absolutely! CalcPilot is fully optimized for all mobile devices." },
+      { q: "Can I use this on my mobile phone?", a: "Absolutely! ToolsWizard is fully optimized for all mobile devices." },
     ];
     return (
       <main className="max-w-4xl mx-auto px-4 py-12">

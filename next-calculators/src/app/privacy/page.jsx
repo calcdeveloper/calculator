@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "Read the CalcPilot privacy policy.",
+  description: "Read the ToolsWizard privacy policy.",
 };
 
 export default function PrivacyPage() {

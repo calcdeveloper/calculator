@@ -4,22 +4,22 @@ export const dynamic = "force-static";
 
 // SEO Metadata
 export const metadata = {
-  title: 'Delete PDF Pages Online - Free, Fast & Secure | CalcPilot',
+  title: 'Delete PDF Pages Online - Free, Fast & Secure | ToolsWizard',
   description: 'Remove unwanted pages from your PDF documents instantly. 100% secure browser-side processing—your files never leave your device. No signup required.',
   keywords: [
     'delete pdf pages', 'remove pages from pdf', 'pdf page remover', 
     'delete pages in pdf online', 'free pdf page editor', 'secure pdf page deletion'
   ],
-  alternates: { canonical: 'https://calcpilot.com/pdf-tools/delete-pages' },
+  alternates: { canonical: 'https://toolswizard.in/pdf-tools/delete-pages' },
   openGraph: {
     title: 'Delete PDF Pages Online - Free & Secure',
     description: 'The fastest way to remove pages from PDF. Local browser processing for total privacy.',
-    url: 'https://calcpilot.com/pdf-tools/delete-pages',
+    url: 'https://toolswizard.in/pdf-tools/delete-pages',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Delete PDF Pages Online | CalcPilot',
+    title: 'Delete PDF Pages Online | ToolsWizard',
     description: 'Delete unwanted PDF pages in seconds. Fast and private.',
   },
 };

@@ -229,7 +229,7 @@ export default function Content() {
       <section className="bg-gray-50 p-6 rounded-xl border border-gray-200 mt-10">
         <h3 className="font-bold text-xl mb-4 text-gray-900">Explore Related Calculators</h3>
         <p className="text-sm mb-5 text-gray-600">
-          Make complex physics, math, and daily life conversions easier with our suite of free online calculators:
+          Make complex physics, math, and daily life conversions easier with our suite of Smart Online Utility Tools:
         </p>
         <div className="flex flex-wrap gap-3">
           <Link href="/calculator/conversion/power" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition-colors hover:bg-blue-50">Power Converter (Watts/HP)</Link>

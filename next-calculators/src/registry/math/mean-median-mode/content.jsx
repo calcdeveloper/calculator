@@ -263,7 +263,7 @@ export default function MeanMedianModeCalculatorContent() {
       <section className="bg-gray-50 p-6 rounded-xl border border-gray-200 mt-10">
         <h3 className="font-bold text-xl mb-4 text-gray-900">Explore More Math & Statistics Calculators</h3>
         <p className="text-sm mb-5 text-gray-600">
-          Statistics is just one branch of mathematics. Expand your analytical skills by trying out our other free online calculators:
+          Statistics is just one branch of mathematics. Expand your analytical skills by trying out our other Smart Online Utility Tools:
         </p>
         <div className="flex flex-wrap gap-3">
           <a href="/calculator/math/algebra" className="text-sm text-blue-700 font-medium hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition-colors hover:bg-blue-50">Algebra Solver</a>

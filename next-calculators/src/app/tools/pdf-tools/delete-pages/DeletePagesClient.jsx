@@ -223,7 +223,7 @@ export default function DeletePagesClient() {
             <div className="bg-pdf-bg p-6 rounded-2xl border border-pdf-gray">
               <h4 className="font-bold text-pdf-primary flex items-center gap-2 mb-4"><Lock size={20}/> Security First Architecture</h4>
               <p className="text-pdf-gray text-sm leading-relaxed">
-                Most online PDF tools upload your file to their cloud servers. This exposes your data to potential breaches. <strong>CalcPilot</strong> uses client-side processing, meaning the "deletion" logic runs inside your RAM, and the file never touches our storage.
+                Most online PDF tools upload your file to their cloud servers. This exposes your data to potential breaches. <strong>ToolsWizard</strong> uses client-side processing, meaning the "deletion" logic runs inside your RAM, and the file never touches our storage.
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function DeletePagesClient() {
       </main>
 
       <footer className="bg-pdf-dark text-pdf-gray py-12 px-4 text-center">
-        <p className="text-sm">© 2026 CalcPilot - The Private PDF Toolkit. No data collection, ever.</p>
+        <p className="text-sm">© 2026 ToolsWizard - The Private PDF Toolkit. No data collection, ever.</p>
       </footer>
     </div>
   );

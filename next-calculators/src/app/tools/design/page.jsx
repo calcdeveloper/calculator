@@ -18,7 +18,7 @@ import {
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'Design Tools - Color & Palette Utilities | CalcPilot',
+  title: 'Design Tools - Color & Palette Utilities | ToolsWizard',
   description: 'Free online design tools for color conversion, palette generation, contrast checking, and more. Fast, secure, and private browser-side design utilities.',
   keywords: ['rgb to hex', 'color converter', 'palette generator', 'contrast checker', 'color picker', 'gradient generator'],
 };
@@ -201,7 +201,7 @@ export default function DesignToolsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-conv-gray leading-relaxed">
             <div>
               <p className="mb-4">
-                <strong>Design Tools</strong> are essential utilities for modern web designers, UI/UX professionals, and developers. Whether you need to convert color formats for CSS, generate accessible color palettes, or extract colors from images, CalcPilot provides comprehensive design utilities that streamline your workflow and save valuable time.
+                <strong>Design Tools</strong> are essential utilities for modern web designers, UI/UX professionals, and developers. Whether you need to convert color formats for CSS, generate accessible color palettes, or extract colors from images, ToolsWizard provides comprehensive design utilities that streamline your workflow and save valuable time.
               </p>
               <p>
                 Our color tools support all major formats including RGB, HEX, HSL, and CMYK. Convert between formats instantly, check accessibility compliance, and generate beautiful palettes that work harmoniously with your design systems. Whether you're building a personal project or enterprise application, our tools scale to meet your needs.

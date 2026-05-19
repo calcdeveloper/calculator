@@ -23,7 +23,7 @@ import {
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'Converter Tools - Free Online Format Transformers | CalcPilot',
+  title: 'Converter Tools - Free Online Format Transformers | ToolsWizard',
   description: 'Convert between JSON, CSV, XML, Markdown, Base64, and more. Fast, secure, and private browser-side conversion tools for developers and creators.',
   keywords: ['json to csv', 'csv to json', 'html to markdown', 'image to base64', 'timestamp converter', 'unit converter online'],
 };
@@ -190,10 +190,10 @@ export default function ConverterToolsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-conv-gray leading-relaxed">
             <div>
               <p className="mb-4">
-                In a digital landscape filled with fragmented data formats, <strong>Converter Tools</strong> are the essential bridge for developers, designers, and data scientists. Whether you are transforming a complex <strong>JSON response to CSV</strong> for a stakeholder report or converting raw <strong>Binary to Text</strong> to debug a system log, CalcPilot offers a seamless, high-speed solution.
+                In a digital landscape filled with fragmented data formats, <strong>Converter Tools</strong> are the essential bridge for developers, designers, and data scientists. Whether you are transforming a complex <strong>JSON response to CSV</strong> for a stakeholder report or converting raw <strong>Binary to Text</strong> to debug a system log, ToolsWizard offers a seamless, high-speed solution.
               </p>
               <p>
-                Our philosophy is simple: conversion should be instant and private. Many online converters require you to upload files to their servers, creating a security risk for sensitive business data. CalcPilot converters run 100% on the client side, meaning your data never leaves your device.
+                Our philosophy is simple: conversion should be instant and private. Many online converters require you to upload files to their servers, creating a security risk for sensitive business data. ToolsWizard converters run 100% on the client side, meaning your data never leaves your device.
               </p>
             </div>
             <div>

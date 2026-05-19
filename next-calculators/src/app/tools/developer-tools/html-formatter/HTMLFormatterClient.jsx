@@ -336,7 +336,7 @@ export default function HTMLFormatterClient() {
       </main>
 
       <footer className="bg-dev-white border-t border-dev-gray py-8 px-6">
-        <p className="text-sm text-dev-gray text-center">© 2026 CalcPilot - Privacy-First Developer Utilities.</p>
+        <p className="text-sm text-dev-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
       </footer>
     </div>
   );

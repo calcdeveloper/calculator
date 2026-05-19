@@ -4,7 +4,7 @@ import { Zap, Hash, Key, FileText, RefreshCw, ChevronRight, Barcode, User, Dices
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'Generator Tools - Free Online Content & Code Generators | CalcPilot',
+  title: 'Generator Tools - Free Online Content & Code Generators | ToolsWizard',
   description: 'Generate UUIDs, passwords, QR codes, random numbers, and more with our free online generator tools. Fast, secure, and private browser-side generation.',
   keywords: ['uuid generator', 'password generator', 'qr code generator', 'random number generator', 'lorem ipsum generator', 'secure generator'],
 };

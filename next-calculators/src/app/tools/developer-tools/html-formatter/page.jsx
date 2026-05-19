@@ -3,7 +3,7 @@ import HTMLFormatterClient from './HTMLFormatterClient';
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'HTML Formatter - Free Online HTML Beautifier & Prettier | CalcPilot',
+  title: 'HTML Formatter - Free Online HTML Beautifier & Prettier | ToolsWizard',
   description: 'Format and beautify HTML code instantly with proper indentation and structure. Free, secure, and private browser-side HTML formatter.',
   keywords: [
     'html formatter',

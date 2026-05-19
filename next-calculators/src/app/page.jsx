@@ -73,7 +73,7 @@ export default function Home() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "CalcPilot - Multi-Tool Platform",
+    "name": "ToolsWizard - Multi-Tool Platform",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
     "offers": {
@@ -95,7 +95,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center py-16 px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          CalcPilot Tools
+          ToolsWizard
         </h1>
         <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
           Free online tools for calculators, generators, converters, and more

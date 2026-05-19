@@ -215,10 +215,10 @@ export default function Content() {
         </div>
       </section>
 
-      {/* --- INTERNAL LINKING / RELATED CALCULATORS --- */}
+      {/* INTERNAL LINKING */}
       <section className="bg-gray-50 p-6 rounded-xl border border-gray-200 mt-10">
         <h3 className="font-bold text-xl mb-4 text-gray-900">Explore Related Everyday Calculators</h3>
-        <p className="text-sm mb-5 text-gray-600">Need help managing your daily tasks and budgets? Check out our suite of free online calculators:</p>
+        <p className="text-sm mb-5 text-gray-600">Need help managing your daily tasks and budgets? Check out our suite of Smart Online Utility Tools:</p>
         <div className="flex flex-wrap gap-3">
           <a href="/calculator/everyday/age" className="text-sm text-blue-700 hover:text-blue-800 hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-700">Age Calculator</a>
           <a href="/calculator/everyday/basic-calculator" className="text-sm text-blue-700 hover:text-blue-800 hover:underline bg-white px-4 py-2 rounded-md border border-gray-200 shadow-sm transition hover:border-blue-700">Basic Calculator</a>

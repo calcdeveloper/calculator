@@ -25,7 +25,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Text Tools - Free Online Text Manipulation Utilities | CalcPilot',
+  title: 'Text Tools - Free Online Text Processing Utilities | ToolsWizard',
   description: 'A comprehensive suite of free text tools including word counters, case converters, text cleaners, and generators. Process your text instantly and securely in your browser.',
   keywords: ['word counter', 'character counter', 'case converter', 'text diff checker', 'remove duplicate lines', 'lorem ipsum generator', 'text tools online'],
 };
@@ -185,7 +185,7 @@ export default function TextToolsPage() {
           <h2 className="text-3xl font-bold text-text-dark mb-6">About Text Tools</h2>
           <div className="space-y-6 text-text-gray leading-relaxed max-w-5xl">
             <p>
-              Our comprehensive suite of Text Tools helps you manipulate, optimize, and clean your content with ease. Whether you need to count words for an essay, convert the case of a professional document, or strip away duplicate lines from a developer log, CalcPilot provides browser-based solutions that are fast and private.
+              Our comprehensive suite of Text Tools helps you manipulate, optimize, and clean your content with ease. Whether you need to count words for an essay, convert the case of a professional document, or strip away duplicate lines from a developer log, ToolsWizard provides browser-based solutions that are fast and private.
             </p>
             <p>
               Unlike other platforms, we prioritize a "No-Friction" philosophy. All our text utilities run locally in your browser, meaning your sensitive text data is never uploaded to our servers. From simple formatting to complex find-and-replace operations, our tools are designed to save you time and improve your workflow efficiency.

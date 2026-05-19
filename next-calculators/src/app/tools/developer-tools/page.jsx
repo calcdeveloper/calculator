@@ -25,7 +25,7 @@ import {
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'Developer Tools - Free Online Code Formatters & Validators | CalcPilot',
+  title: 'Developer Tools - Free Online Code Formatters & Validators | ToolsWizard',
   description: 'Format, minify, validate, and beautify HTML, CSS, JavaScript, JSON, SQL, XML, and more with our free online developer tools. Fast, secure, and private.',
   keywords: [
     'html formatter',

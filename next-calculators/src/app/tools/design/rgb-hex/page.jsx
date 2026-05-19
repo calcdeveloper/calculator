@@ -3,7 +3,7 @@ import RGBHexClient from './RGBHexClient';
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: 'RGB to Hex Converter - Free Online Color Converter | CalcPilot',
+  title: 'RGB to Hex Converter - Free Online Color Converter | ToolsWizard',
   description: 'Convert RGB colors to Hex format instantly. Free, secure, and private browser-side RGB to Hex converter for designers and developers.',
   keywords: [
     'rgb to hex',
@@ -15,11 +15,11 @@ export const metadata = {
     'color picker',
     'free rgb converter'
   ],
-  alternates: { canonical: 'https://calcpilot.com/tools/design/rgb-hex' },
+  alternates: { canonical: 'https://toolswizard.in/tools/design/rgb-hex' },
   openGraph: {
     title: 'RGB to Hex Converter - 100% Private & Free',
     description: 'Convert RGB colors to Hex format locally in your browser. Fast, secure, and free.',
-    url: 'https://calcpilot.com/tools/design/rgb-hex',
+    url: 'https://toolswizard.in/tools/design/rgb-hex',
     type: 'website',
   },
 };
