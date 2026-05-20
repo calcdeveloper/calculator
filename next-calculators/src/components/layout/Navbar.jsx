@@ -14,8 +14,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-24">
           <Link href="/" className="flex items-center shrink-0 group py-1">
             <img
-              src="/logo.png"
+              src="/logo.png?v=2"
               alt="ToolsWizard"
+              width={280}
+              height={80}
               className="h-[4.5rem] sm:h-[5rem] w-auto max-w-[min(100%,280px)] object-contain"
             />
           </Link>

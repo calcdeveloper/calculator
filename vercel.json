@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd next-calculators && npm ci && npm run build",
+  "outputDirectory": "next-calculators/out",
+  "installCommand": "cd next-calculators && npm ci",
+  "framework": null,
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "https://toolswizard.in"
+  }
+}

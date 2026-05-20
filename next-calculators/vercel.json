@@ -40,6 +40,15 @@
           "value": "public, max-age=86400, s-maxage=86400"
         }
       ]
+    },
+    {
+      "source": "/(favicon.ico|icon-48.png|icon-96.png|apple-touch-icon.png|logo.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, must-revalidate"
+        }
+      ]
     }
   ]
 }
