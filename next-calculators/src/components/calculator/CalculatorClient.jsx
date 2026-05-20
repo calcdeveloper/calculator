@@ -151,7 +151,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
       window.history.back();
     } else {
       // Fallback to category page if no history
-      window.location.href = `/category/${category}`;
+      window.location.href = `/calculator/${category}`;
     }
   };
 

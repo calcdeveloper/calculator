@@ -11,9 +11,13 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-calc-white/85 backdrop-blur-md border-b border-calc-lightGray shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center space-x-2 group">
-            <img src="/logo.png" alt="ToolsWizard" className="h-20 w-auto" />
+        <div className="flex justify-between items-center h-24">
+          <Link href="/" className="flex items-center shrink-0 group py-1">
+            <img
+              src="/logo.png"
+              alt="ToolsWizard"
+              className="h-[4.5rem] sm:h-[5rem] w-auto max-w-[min(100%,280px)] object-contain"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

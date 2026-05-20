@@ -2,6 +2,13 @@
   "env": {
     "NEXT_PUBLIC_SITE_URL": "https://toolswizard.in"
   },
+  "redirects": [
+    {
+      "source": "/category/:category",
+      "destination": "/calculator/:category",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

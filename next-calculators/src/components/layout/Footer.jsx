@@ -45,7 +45,7 @@ export default function Footer() {
             <ul className="space-y-2 text-calc-gray">
               <li><Link href="/contact" className="hover:text-calc-green transition">Contact us</Link></li>
               <li><Link href="/help" className="hover:text-calc-green transition">Help Center</Link></li>
-              <li><a href="mailto:rishikeshchauhan222@gmail.com?subject=ToolsWizard%20Feedback" className="hover:text-calc-green transition">Feedback</a></li>
+              <li><a href="mailto:support@toolswizard.in?subject=ToolsWizard%20Feedback" className="hover:text-calc-green transition">Feedback</a></li>
             </ul>
           </div>
         </div>

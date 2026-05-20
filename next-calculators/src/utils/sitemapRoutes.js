@@ -51,7 +51,7 @@ export function getToolRoutes() {
 export function getCategoryRoutes() {
   return [...new Set(calculators.map((calc) => calc.category))]
     .filter(Boolean)
-    .map((category) => `/category/${category.toLowerCase()}`);
+    .map((category) => `/calculator/${category.toLowerCase()}`);
 }
 
 export function getAllPublicRoutes() {
@@ -74,12 +74,14 @@ export function getAllPublicRoutes() {
 }
 
 export function getRoutePriority(route) {
+  const segments = route.split("/").filter(Boolean);
+
   if (route === "/") return 1;
   if (route === "/calculator") return 0.9;
-  if (route.startsWith("/tools/") && route.split("/").length === 3) return 0.85;
-  if (route.startsWith("/calculator/")) return 0.8;
+  if (route.startsWith("/tools/") && segments.length === 2) return 0.85;
+  if (route.startsWith("/calculator/") && segments.length === 2) return 0.75;
+  if (route.startsWith("/calculator/") && segments.length === 3) return 0.8;
   if (route.startsWith("/tools/")) return 0.8;
-  if (route.startsWith("/category/")) return 0.75;
   return 0.6;
 }
 

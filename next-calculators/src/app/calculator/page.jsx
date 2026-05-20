@@ -52,7 +52,7 @@ export default function CalculatorPage() {
       <div className="mb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((cat, index) => (
-            <Link href={`/category/${cat.path}`} key={index} className="bg-calc-white p-6 rounded-xl border border-calc-lightGray hover:border-calc-green hover:shadow-md transition-all flex flex-col items-center text-center">
+            <Link href={`/calculator/${cat.path}`} key={index} className="bg-calc-white p-6 rounded-xl border border-calc-lightGray hover:border-calc-green hover:shadow-md transition-all flex flex-col items-center text-center">
               <div className="text-calc-green mb-3">{cat.icon}</div>
               <h3 className="font-semibold text-calc-black text-lg">{cat.name}</h3>
               <p className="text-calc-gray text-sm mt-1">{getCategoryCount(cat.path)} Calculators</p> 
