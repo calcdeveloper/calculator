@@ -41,7 +41,7 @@ export default function About() {
 
         <h2 className="text-2xl font-bold text-calc-black mt-8">Corporate Engagement</h2>
         <p>
-          We continuous adapt and grow our technical assets. For integration requests, functional enhancements, or platform support, connect directly with our engineering panel at <strong>calcdeveloper@outlook.com</strong>.
+          We continuous adapt and grow our technical assets. For integration requests, functional enhancements, or platform support, connect directly with our engineering panel at <strong>support@toolswizard.in</strong>.
         </p>
       </div>
     </main>

@@ -1,7 +1,24 @@
 import Link from 'next/link';
 import { Calculator, Zap, FileText, Type, Database, Key, RefreshCw, Code, Palette } from 'lucide-react';
+import { SITE_URL } from '@/config/site';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
+
+export const metadata = createPageMetadata({
+  title: 'ToolsWizard - Free Online Calculators & Utility Tools',
+  description:
+    'Free online calculators, generators, PDF tools, JSON utilities, encoders, and developer tools. Fast, private, and mobile-friendly.',
+  path: '/',
+  keywords: [
+    'online tools',
+    'free calculator',
+    'pdf tools',
+    'uuid generator',
+    'developer tools',
+    'json to xml',
+  ],
+});
 
 const toolCategories = [
   {
@@ -74,12 +91,13 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "ToolsWizard - Multi-Tool Platform",
+    "url": SITE_URL,
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "USD"
+      "priceCurrency": "INR"
     },
     "description": "A comprehensive platform with calculators, generators, PDF tools, text tools, JSON tools, encoder/decoder, converters, and developer utilities."
   };

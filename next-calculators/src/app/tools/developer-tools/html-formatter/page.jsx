@@ -1,10 +1,13 @@
 import HTMLFormatterClient from './HTMLFormatterClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'HTML Formatter - Free Online HTML Beautifier & Prettier | ToolsWizard',
-  description: 'Format and beautify HTML code instantly with proper indentation and structure. Free, secure, and private browser-side HTML formatter.',
+export const metadata = createPageMetadata({
+  title: 'HTML Formatter - Free Online HTML Beautifier & Prettier',
+  description:
+    'Format and beautify HTML code instantly with proper indentation and structure. Free, secure, and private browser-side HTML formatter.',
+  path: '/tools/developer-tools/html-formatter',
   keywords: [
     'html formatter',
     'html beautifier',
@@ -13,16 +16,14 @@ export const metadata = {
     'format html online',
     'html indentation tool',
     'html code beautifier',
-    'free html formatter'
+    'free html formatter',
   ],
-  alternates: { canonical: 'https://calcpilot.com/tools/developer-tools/html-formatter' },
   openGraph: {
     title: 'HTML Formatter - 100% Private & Free',
-    description: 'Format and beautify HTML code locally in your browser. Fast, secure, and free.',
-    url: 'https://calcpilot.com/tools/developer-tools/html-formatter',
-    type: 'website',
+    description:
+      'Format and beautify HTML code locally in your browser. Fast, secure, and free.',
   },
-};
+});
 
 const jsonLd = {
   "@context": "https://schema.org",

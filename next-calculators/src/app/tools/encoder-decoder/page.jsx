@@ -17,14 +17,17 @@ import {
   Braces,
   ArrowRightLeft
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Encoder/Decoder Tools - Free Online Encoding & Decoding | ToolsWizard',
-  description: 'Encode and decode Base64, URL, HTML, JWT, MD5, SHA, binary, hex, and more with our free online encoder/decoder tools. Fast, secure, and private browser-side processing.',
+export const metadata = createPageMetadata({
+  title: 'Encoder/Decoder Tools - Free Online Encoding & Decoding',
+  description:
+    'Encode and decode Base64, URL, HTML, JWT, MD5, SHA, binary, hex, and more with our free online encoder/decoder tools. Fast, secure, and private browser-side processing.',
+  path: '/tools/encoder-decoder',
   keywords: ['base64 encoder', 'base64 decoder', 'url encoder', 'url decoder', 'jwt decoder', 'md5 generator', 'sha256 generator', 'hex encoder', 'binary encoder'],
-};
+});
 
 const encoderDecoderTools = [
   {

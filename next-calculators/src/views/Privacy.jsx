@@ -61,7 +61,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl font-bold text-calc-black mt-6">7. Contact Infrastructure</h2>
         <p>
-          If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through our official support channel at <strong>calcdeveloper@outlook.com</strong>.
+          If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through our official support channel at <strong>support@toolswizard.in</strong>.
         </p>
       </div>
     </main>

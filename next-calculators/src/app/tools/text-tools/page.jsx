@@ -23,12 +23,17 @@ import {
   Rows3,
   ChevronRight
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
-export const metadata = {
-  title: 'Text Tools - Free Online Text Processing Utilities | ToolsWizard',
-  description: 'A comprehensive suite of free text tools including word counters, case converters, text cleaners, and generators. Process your text instantly and securely in your browser.',
+export const dynamic = "force-static";
+
+export const metadata = createPageMetadata({
+  title: 'Text Tools - Free Online Text Processing Utilities',
+  description:
+    'A comprehensive suite of free text tools including word counters, case converters, text cleaners, and generators. Process your text instantly and securely in your browser.',
+  path: '/tools/text-tools',
   keywords: ['word counter', 'character counter', 'case converter', 'text diff checker', 'remove duplicate lines', 'lorem ipsum generator', 'text tools online'],
-};
+});
 
 const textTools = [
   {

@@ -1,28 +1,31 @@
 import DeletePagesClient from './DeletePagesClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-// SEO Metadata
-export const metadata = {
-  title: 'Delete PDF Pages Online - Free, Fast & Secure | ToolsWizard',
-  description: 'Remove unwanted pages from your PDF documents instantly. 100% secure browser-side processing—your files never leave your device. No signup required.',
+export const metadata = createPageMetadata({
+  title: 'Delete PDF Pages Online - Free, Fast & Secure',
+  description:
+    'Remove unwanted pages from your PDF documents instantly. 100% secure browser-side processing—your files never leave your device. No signup required.',
+  path: '/tools/pdf-tools/delete-pages',
   keywords: [
-    'delete pdf pages', 'remove pages from pdf', 'pdf page remover', 
-    'delete pages in pdf online', 'free pdf page editor', 'secure pdf page deletion'
+    'delete pdf pages',
+    'remove pages from pdf',
+    'pdf page remover',
+    'delete pages in pdf online',
+    'free pdf page editor',
+    'secure pdf page deletion',
   ],
-  alternates: { canonical: 'https://toolswizard.in/pdf-tools/delete-pages' },
   openGraph: {
     title: 'Delete PDF Pages Online - Free & Secure',
-    description: 'The fastest way to remove pages from PDF. Local browser processing for total privacy.',
-    url: 'https://toolswizard.in/pdf-tools/delete-pages',
-    type: 'website',
+    description:
+      'The fastest way to remove pages from PDF. Local browser processing for total privacy.',
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Delete PDF Pages Online | ToolsWizard',
+    title: 'Delete PDF Pages Online',
     description: 'Delete unwanted PDF pages in seconds. Fast and private.',
   },
-};
+});
 
 // Structured Data
 const jsonLd = {

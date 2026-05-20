@@ -21,12 +21,15 @@ import {
   FileText,
   Bug
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Developer Tools - Free Online Code Formatters & Validators | ToolsWizard',
-  description: 'Format, minify, validate, and beautify HTML, CSS, JavaScript, JSON, SQL, XML, and more with our free online developer tools. Fast, secure, and private.',
+export const metadata = createPageMetadata({
+  title: 'Developer Tools - Free Online Code Formatters & Validators',
+  description:
+    'Format, minify, validate, and beautify HTML, CSS, JavaScript, JSON, SQL, XML, and more with our free online developer tools. Fast, secure, and private.',
+  path: '/tools/developer-tools',
   keywords: [
     'html formatter',
     'css formatter',
@@ -37,9 +40,9 @@ export const metadata = {
     'regex tester',
     'sql formatter',
     'xml formatter',
-    'yaml validator'
+    'yaml validator',
   ],
-};
+});
 
 const developerTools = [
   {

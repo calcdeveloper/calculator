@@ -4,12 +4,12 @@ export default function Contact() {
       <h1 className="text-3xl font-bold mb-2 text-calc-black">Contact Us</h1>
       <p className="text-calc-gray mb-8">
         Have a question, feedback, or a request for a new utility tools? Let us know. 
-        You can reach our administration desk directly at <strong className="text-calc-green">calcdeveloper@outlook.com</strong> or submit your message below. We prioritize user feedback and aim to respond within 24–48 business hours.
+        You can reach our administration desk directly at <strong className="text-calc-green">support@toolswizard.in</strong> or submit your message below. We prioritize user feedback and aim to respond within 24–48 business hours.
       </p>
       
       {/* <form 
         className="bg-calc-white p-8 rounded-xl border border-calc-lightGray shadow-sm space-y-6" 
-        action="mailto:calcdeveloper@outlook.com" 
+        action="mailto:support@toolswizard.in" 
         method="post" 
         encType="text/plain"
       >

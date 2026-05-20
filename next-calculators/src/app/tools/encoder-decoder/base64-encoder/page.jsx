@@ -1,10 +1,13 @@
 import Base64EncoderClient from './Base64EncoderClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Base64 Encoder - Free Online Text to Base64 Converter | ToolsWizard',
-  description: 'Convert text or binary data to Base64 format instantly. Free, secure, and private browser-side Base64 encoder. No signup required.',
+export const metadata = createPageMetadata({
+  title: 'Base64 Encoder - Free Online Text to Base64 Converter',
+  description:
+    'Convert text or binary data to Base64 format instantly. Free, secure, and private browser-side Base64 encoder. No signup required.',
+  path: '/tools/encoder-decoder/base64-encoder',
   keywords: [
     'base64 encoder',
     'text to base64',
@@ -13,16 +16,14 @@ export const metadata = {
     'free base64 encoder',
     'base64 encoding tool',
     'string to base64',
-    'base64 converter free'
+    'base64 converter free',
   ],
-  alternates: { canonical: 'https://calcpilot.com/tools/encoder-decoder/base64-encoder' },
   openGraph: {
     title: 'Base64 Encoder - 100% Private & Free',
-    description: 'Convert text to Base64 format locally in your browser. Fast, secure, and free.',
-    url: 'https://calcpilot.com/tools/encoder-decoder/base64-encoder',
-    type: 'website',
+    description:
+      'Convert text to Base64 format locally in your browser. Fast, secure, and free.',
   },
-};
+});
 
 const jsonLd = {
   "@context": "https://schema.org",

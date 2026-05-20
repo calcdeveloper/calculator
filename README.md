@@ -1,6 +1,6 @@
-# CalcPilot - Advanced All-in-One Calculator Platform
+# ToolsWizard - Advanced All-in-One Calculator Platform
 
-CalcPilot is a highly scalable, SEO-optimized, mobile-first calculator platform designed to host 500+ calculators across finance, health, math, engineering, construction, education, and everyday utilities.
+ToolsWizard (`https://toolswizard.in`) is a highly scalable, SEO-optimized, mobile-first platform for calculators and online utility tools across finance, health, math, engineering, construction, education, and everyday utilities.
 
 ## Tech Stack
 

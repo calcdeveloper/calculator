@@ -2,8 +2,24 @@ import Link from 'next/link';
 import { Calculator, HeartPulse, Sigma, RefreshCw, Wrench, GraduationCap, Briefcase, Cpu } from 'lucide-react';
 import HomeSearch from '../../components/home/HomeSearch';
 import { calculators, getCategoryCount } from '../../utils/calculatorData';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
+
+export const metadata = createPageMetadata({
+  title: 'Free Online Calculators - Finance, Health, Math & More',
+  description:
+    'Browse 120+ free online calculators for finance, health, math, engineering, construction, education, and everyday use. Fast, accurate, and mobile-friendly.',
+  path: '/calculator',
+  keywords: [
+    'online calculator',
+    'free calculator',
+    'finance calculator',
+    'bmi calculator',
+    'emi calculator',
+    'math calculator',
+  ],
+});
 
 const categories = [
   { name: 'Finance', icon: <Calculator size={24} />, path: 'finance' },

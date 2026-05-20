@@ -19,14 +19,17 @@ import {
   CodeXml,
   Languages
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Converter Tools - Free Online Format Transformers | ToolsWizard',
-  description: 'Convert between JSON, CSV, XML, Markdown, Base64, and more. Fast, secure, and private browser-side conversion tools for developers and creators.',
+export const metadata = createPageMetadata({
+  title: 'Converter Tools - Free Online Format Transformers',
+  description:
+    'Convert between JSON, CSV, XML, Markdown, Base64, and more. Fast, secure, and private browser-side conversion tools for developers and creators.',
+  path: '/tools/converter',
   keywords: ['json to csv', 'csv to json', 'html to markdown', 'image to base64', 'timestamp converter', 'unit converter online'],
-};
+});
 
 const converterTools = [
   {

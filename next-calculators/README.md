@@ -1,6 +1,6 @@
-# CalcPilot
+# ToolsWizard
 
-CalcPilot is a static-exported Next.js calculator platform. The production build is optimized for search crawling and high-traffic hosting by generating pages as static HTML at build time.
+ToolsWizard (`https://toolswizard.in`) is a static-exported Next.js platform for calculators and online utility tools. The production build is optimized for search crawling and high-traffic hosting by generating pages as static HTML at build time.
 
 ## Rendering Model
 
@@ -44,7 +44,7 @@ The app generates static SEO assets:
 Set the public site URL before production builds if your domain is different from the default:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.com npm run build
+NEXT_PUBLIC_SITE_URL=https://toolswizard.in npm run build
 ```
 
 Deploy the `out/` directory to any static host or CDN.

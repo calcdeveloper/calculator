@@ -1,10 +1,13 @@
 import RGBHexClient from './RGBHexClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'RGB to Hex Converter - Free Online Color Converter | ToolsWizard',
-  description: 'Convert RGB colors to Hex format instantly. Free, secure, and private browser-side RGB to Hex converter for designers and developers.',
+export const metadata = createPageMetadata({
+  title: 'RGB to Hex Converter - Free Online Color Converter',
+  description:
+    'Convert RGB colors to Hex format instantly. Free, secure, and private browser-side RGB to Hex converter for designers and developers.',
+  path: '/tools/design/rgb-hex',
   keywords: [
     'rgb to hex',
     'rgb hex converter',
@@ -13,16 +16,14 @@ export const metadata = {
     'hex color converter',
     'rgb to hex calculator',
     'color picker',
-    'free rgb converter'
+    'free rgb converter',
   ],
-  alternates: { canonical: 'https://toolswizard.in/tools/design/rgb-hex' },
   openGraph: {
     title: 'RGB to Hex Converter - 100% Private & Free',
-    description: 'Convert RGB colors to Hex format locally in your browser. Fast, secure, and free.',
-    url: 'https://toolswizard.in/tools/design/rgb-hex',
-    type: 'website',
+    description:
+      'Convert RGB colors to Hex format locally in your browser. Fast, secure, and free.',
   },
-};
+});
 
 const jsonLd = {
   "@context": "https://schema.org",

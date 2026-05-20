@@ -1,9 +1,22 @@
 import Link from 'next/link';
-// Navigating up 3 folders to reach the utils folder
-import { calculators } from '../../../utils/calculatorData'; 
+import { calculators } from '../../../utils/calculatorData';
+import { absoluteUrl } from '@/config/site';
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
+
+export async function generateMetadata({ params }) {
+  const { categoryId } = await params;
+  const title = `${categoryId.charAt(0).toUpperCase()}${categoryId.slice(1)} Calculators`;
+  const path = `/category/${categoryId}`;
+
+  return {
+    title,
+    description: `Browse free ${categoryId} calculators on ToolsWizard. Fast, accurate, and mobile-friendly.`,
+    alternates: { canonical: absoluteUrl(path) },
+    robots: { index: true, follow: true },
+  };
+}
 
 export function generateStaticParams() {
   const uniqueCategories = [...new Set(calculators.map(calc => calc.category))];

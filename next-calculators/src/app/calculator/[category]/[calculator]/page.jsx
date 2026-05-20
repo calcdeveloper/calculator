@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import CalculatorLayout from "@/components/calculator/CalculatorLayout";
+import { absoluteUrl } from "@/config/site";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -53,9 +54,18 @@ export async function generateMetadata({ params }) {
     // Handle both default and named exports
     const config = configModule.default || configModule.config;
     
+    const path = `/calculator/${category}/${calculator}`;
     return {
       title: config.seoTitle || config.name,
       description: config.seoDescription || config.description,
+      alternates: { canonical: absoluteUrl(path) },
+      openGraph: {
+        title: config.seoTitle || config.name,
+        description: config.seoDescription || config.description,
+        url: absoluteUrl(path),
+        type: "website",
+      },
+      robots: { index: true, follow: true },
     };
   } catch (error) {
     return { title: "Calculator" };

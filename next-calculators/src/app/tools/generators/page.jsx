@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import { Zap, Hash, Key, FileText, RefreshCw, ChevronRight, Barcode, User, Dices, Sparkles } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Generator Tools - Free Online Content & Code Generators | ToolsWizard',
-  description: 'Generate UUIDs, passwords, QR codes, random numbers, and more with our free online generator tools. Fast, secure, and private browser-side generation.',
+export const metadata = createPageMetadata({
+  title: 'Generator Tools - Free Online Content & Code Generators',
+  description:
+    'Generate UUIDs, passwords, QR codes, random numbers, and more with our free online generator tools. Fast, secure, and private browser-side generation.',
+  path: '/tools/generators',
   keywords: ['uuid generator', 'password generator', 'qr code generator', 'random number generator', 'lorem ipsum generator', 'secure generator'],
-};
+});
 
 const generators = [
   { 

@@ -1,22 +1,27 @@
 import JSONtoXMLClient from './JSONtoXMLClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'JSON to XML Converter Online - Free & Secure | ToolsWizard',
-  description: 'Convert JSON to XML instantly with our free online tool. Secure browser-side processing ensures your data never leaves your computer. No signup required.',
+export const metadata = createPageMetadata({
+  title: 'JSON to XML Converter Online - Free & Secure',
+  description:
+    'Convert JSON to XML instantly with our free online tool. Secure browser-side processing ensures your data never leaves your computer. No signup required.',
+  path: '/tools/json-tools/json-xml',
   keywords: [
-    'json to xml converter', 'convert json to xml online', 'json to xml free', 
-    'secure json to xml', 'json to xml formatter', 'developer tools'
+    'json to xml converter',
+    'convert json to xml online',
+    'json to xml free',
+    'secure json to xml',
+    'json to xml formatter',
+    'developer tools',
   ],
-  alternates: { canonical: 'https://toolswizard.in/tools/json-tools/json-xml' },
   openGraph: {
     title: 'JSON to XML Converter - 100% Private & Fast',
-    description: 'Transform JSON data into structured XML documents locally in your browser.',
-    url: 'https://toolswizard.in/tools/json-tools/json-xml',
-    type: 'website',
+    description:
+      'Transform JSON data into structured XML documents locally in your browser.',
   },
-};
+});
 
 const jsonLd = {
   "@context": "https://schema.org",

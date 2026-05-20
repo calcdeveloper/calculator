@@ -1,11 +1,13 @@
 import UUIDGeneratorClient from './UUIDGeneratorClient';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-// SEO Metadata - This will be used by Next.js for page optimization
-export const metadata = {
+export const metadata = createPageMetadata({
   title: 'Free UUID Generator Online | Generate Unique UUIDs v4 Instantly',
-  description: 'Generate unique UUID v4 identifiers instantly. Free online UUID generator for developers, database keys, and unique IDs. No registration required.',
+  description:
+    'Generate unique UUID v4 identifiers instantly. Free online UUID generator for developers, database keys, and unique IDs. No registration required.',
+  path: '/tools/generators/uuid-generator',
   keywords: [
     'UUID generator',
     'generate UUID online',
@@ -21,23 +23,19 @@ export const metadata = {
     'UUID generator API',
     'bulk UUID generator',
     'UUID generator with timestamp',
-    'cryptographically secure UUID'
+    'cryptographically secure UUID',
   ],
   openGraph: {
     title: 'Free UUID Generator Online - Generate Unique Identifiers',
-    description: 'Generate secure UUID v4 identifiers instantly. Perfect for developers, database keys, and unique IDs.',
-    type: 'website',
-    url: 'https://calcpilot.com/tools/generators/uuid-generator',
+    description:
+      'Generate secure UUID v4 identifiers instantly. Perfect for developers, database keys, and unique IDs.',
   },
   twitter: {
-    card: 'summary_large_image',
     title: 'Free UUID Generator Online',
-    description: 'Generate secure UUID v4 identifiers instantly. No registration required.',
+    description:
+      'Generate secure UUID v4 identifiers instantly. No registration required.',
   },
-  alternates: {
-    canonical: 'https://calcpilot.com/tools/generators/uuid-generator',
-  },
-};
+});
 
 // FAQ Structured Data for Google Rich Snippets
 const faqSchema = {

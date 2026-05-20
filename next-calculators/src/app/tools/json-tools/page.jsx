@@ -23,14 +23,17 @@ import {
   Table,
   ChevronRight
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'JSON Tools - Online JSON Formatter, Validator & Converter | ToolsWizard',
-  description: 'Clean, validate, and convert JSON data with our suite of free online JSON tools. Format, minify, and transform JSON to CSV, XML, or YAML instantly.',
+export const metadata = createPageMetadata({
+  title: 'JSON Tools - Online JSON Formatter, Validator & Converter',
+  description:
+    'Clean, validate, and convert JSON data with our suite of free online JSON tools. Format, minify, and transform JSON to CSV, XML, or YAML instantly.',
+  path: '/tools/json-tools',
   keywords: ['json formatter', 'json validator', 'json to csv', 'json to xml', 'json minifier', 'json diff checker', 'json path tester'],
-};
+});
 
 const jsonTools = [
   {

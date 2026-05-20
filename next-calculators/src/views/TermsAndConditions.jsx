@@ -72,7 +72,7 @@ export default function TermsAndConditions() {
         <section>
           <h2 className="text-2xl font-semibold text-calc-black mb-3">8. Contact Channel</h2>
           <p>
-            For legal inquiries, formal data assertions, or suggestions regarding our terms, please route communications directly to our administrative team at <strong>calcdeveloper@outlook.com</strong>.
+            For legal inquiries, formal data assertions, or suggestions regarding our terms, please route communications directly to our administrative team at <strong>support@toolswizard.in</strong>.
           </p>
         </section>
       </div>

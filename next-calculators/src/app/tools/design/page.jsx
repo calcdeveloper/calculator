@@ -14,14 +14,17 @@ import {
   ChevronRight,
   Contrast
 } from 'lucide-react';
+import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
-export const metadata = {
-  title: 'Design Tools - Color & Palette Utilities | ToolsWizard',
-  description: 'Free online design tools for color conversion, palette generation, contrast checking, and more. Fast, secure, and private browser-side design utilities.',
+export const metadata = createPageMetadata({
+  title: 'Design Tools - Color & Palette Utilities',
+  description:
+    'Free online design tools for color conversion, palette generation, contrast checking, and more. Fast, secure, and private browser-side design utilities.',
+  path: '/tools/design',
   keywords: ['rgb to hex', 'color converter', 'palette generator', 'contrast checker', 'color picker', 'gradient generator'],
-};
+});
 
 const designTools = [
   {
