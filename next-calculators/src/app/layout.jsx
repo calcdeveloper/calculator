@@ -31,12 +31,15 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "any" },
-      { url: "/icon-96.png?v=2", type: "image/png", sizes: "96x96" },
-      { url: "/icon-48.png?v=2", type: "image/png", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "256x256" },  // Increased from 192x192
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon.png", type: "image/png", sizes: "128x128" },
+      { url: "/icon.png", type: "image/png", sizes: "96x96" },
+      { url: "/icon.png", type: "image/png", sizes: "64x64" },
     ],
-    shortcut: "/favicon.ico?v=2",
-    apple: "/apple-touch-icon.png?v=2",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
   openGraph: {
     title: `${SITE_NAME} - Free Online Calculators & Utility Tools`,
@@ -45,6 +48,14 @@ export const metadata = {
     siteName: SITE_NAME,
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/icon.png",
+        width: 256,  // Increased from 192
+        height: 256,  // Increased from 192
+        alt: SITE_NAME,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -88,7 +99,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
       </body>
     </html>

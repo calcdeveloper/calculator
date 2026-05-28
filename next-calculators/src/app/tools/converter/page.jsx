@@ -37,7 +37,15 @@ const converterTools = [
     description: "Transform JSON data into structured XML documents instantly.",
     icon: <CodeXml className="w-6 h-6" />,
     iconBg: "bg-blue-100 text-blue-600",
-    link: "/tools/json-tools/json-xml",
+    link: "/tools/developer-tools/json-xml",
+    status: "active"
+  },
+  {
+    title: "XML to JSON",
+    description: "Transform XML documents into structured JSON data instantly.",
+    icon: <CodeXml className="w-6 h-6" />,
+    iconBg: "bg-blue-100 text-blue-600",
+    link: "/tools/converter/xml-json",
     status: "active"
   },
   {
@@ -134,7 +142,7 @@ export default function ConverterToolsPage() {
   return (
     <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
       {/* Hero Header */}
-      <header className="bg-gradient-to-r from-conv-primary to-conv-primaryDark pt-16 pb-32 px-4">
+      <header className="bg-linear-to-r from-conv-primary to-conv-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-conv-white/70 text-sm mb-6 max-w-4xl mx-auto">
           <span>Tools</span> <ChevronRight size={14} /> <span>Converter Tools</span>
         </nav>

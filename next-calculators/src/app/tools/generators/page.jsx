@@ -27,7 +27,7 @@ const generators = [
     icon: <Barcode className="w-6 h-6" />,
     iconBg: 'bg-blue-100 text-blue-600',
     link: '/tools/generators/qr-generator',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Password Generator', 

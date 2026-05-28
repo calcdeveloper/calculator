@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Calculator, Zap, FileText, Type, Database, Key, RefreshCw, Code, Palette } from 'lucide-react';
+import { Calculator, Zap, FileText, Type, Sparkles, Key, RefreshCw, Code, Palette } from 'lucide-react';
 import { SITE_URL } from '@/config/site';
 import { createPageMetadata } from '@/utils/seo';
 
@@ -16,7 +16,9 @@ export const metadata = createPageMetadata({
     'pdf tools',
     'uuid generator',
     'developer tools',
-    'json to xml',
+    'love percentage calculator',
+    'coin flip online',
+    'fun tools',
   ],
 });
 
@@ -50,11 +52,11 @@ const toolCategories = [
     path: '/tools/text-tools'
   },
   {
-    name: 'JSON Tools',
-    description: 'JSON formatting, validation, and conversion',
-    icon: <Database size={32} />,
-    color: 'bg-yellow-500',
-    path: '/tools/json-tools'
+    name: 'Fun Tools',
+    description: 'Love calculator, coin flip, games, and randomizers',
+    icon: <Sparkles size={32} />,
+    color: 'bg-rose-500',
+    path: '/tools/fun-tools'
   },
   {
     name: 'Encoder/Decoder',
@@ -143,7 +145,7 @@ export default function Home() {
       </div>
 
       {/* Trending Tools Section */}
-      <div id="trending" className="bg-gradient-to-r from-blue-50 to-purple-50 py-16 px-4 scroll-mt-24">
+      <div id="trending" className="bg-linear-to-r from-blue-50 to-purple-50 py-16 px-4 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">Trending Tools</h2>
           <p className="text-gray-600 mb-8 text-center">Most popular tools used by our community</p>

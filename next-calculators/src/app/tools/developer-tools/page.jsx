@@ -1,25 +1,31 @@
 import Link from 'next/link';
-import { 
-  Code, 
-  Minimize2, 
-  FileCode, 
-  Search, 
-  Database, 
-  FileJson, 
-  GitCompare, 
-  Sparkles, 
-  Shield, 
-  CheckCircle2, 
-  Globe, 
-  Clock, 
-  Hash, 
-  Key, 
+import {
+  Code,
+  Minimize2,
+  FileCode,
+  Search,
+  Database,
+  FileJson,
+  GitCompare,
+  Sparkles,
+  Shield,
+  ShieldCheck,
+  CheckCircle2,
+  Globe,
+  Clock,
+  Hash,
+  Key,
   ChevronRight,
   Terminal,
   Layout,
   Braces,
   FileText,
-  Bug
+  FileSpreadsheet,
+  Settings2,
+  Network,
+  Layers,
+  Table,
+  Eraser,
 } from 'lucide-react';
 import { createPageMetadata } from '@/utils/seo';
 
@@ -28,19 +34,19 @@ export const dynamic = "force-static";
 export const metadata = createPageMetadata({
   title: 'Developer Tools - Free Online Code Formatters & Validators',
   description:
-    'Format, minify, validate, and beautify HTML, CSS, JavaScript, JSON, SQL, XML, and more with our free online developer tools. Fast, secure, and private.',
+    'Format, minify, validate, and beautify code plus JSON formatters, validators, and converters. Free online developer tools—fast, secure, and private.',
   path: '/tools/developer-tools',
   keywords: [
     'html formatter',
     'css formatter',
     'javascript formatter',
     'json formatter',
+    'json to xml',
+    'json validator',
     'code beautifier',
-    'code minifier',
     'regex tester',
     'sql formatter',
-    'xml formatter',
-    'yaml validator',
+    'developer tools online',
   ],
 });
 
@@ -59,7 +65,7 @@ const developerTools = [
     icon: <Minimize2 className="w-6 h-6" />,
     iconBg: "bg-red-100 text-red-600",
     link: "/tools/developer-tools/html-minifier",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "CSS Formatter",
@@ -204,7 +210,103 @@ const developerTools = [
     iconBg: "bg-emerald-100 text-emerald-600",
     link: "/tools/developer-tools/password-generator",
     status: "coming-soon"
-  }
+  },
+  {
+    title: "JSON Formatter",
+    description: "Make your JSON data readable with beautiful, customizable indentation.",
+    icon: <Code className="w-6 h-6" />,
+    iconBg: "bg-blue-100 text-blue-600",
+    link: "/tools/developer-tools/json-formatter",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Validator",
+    description: "Validate your JSON code against RFC standards and find syntax errors.",
+    icon: <ShieldCheck className="w-6 h-6" />,
+    iconBg: "bg-emerald-100 text-emerald-600",
+    link: "/tools/developer-tools/json-validator",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON to CSV",
+    description: "Convert nested JSON data into a flat CSV format for spreadsheet apps.",
+    icon: <FileSpreadsheet className="w-6 h-6" />,
+    iconBg: "bg-green-100 text-green-600",
+    link: "/tools/developer-tools/json-to-csv",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Minifier",
+    description: "Remove whitespace and comments to reduce JSON file size for production.",
+    icon: <Minimize2 className="w-6 h-6" />,
+    iconBg: "bg-orange-100 text-orange-600",
+    link: "/tools/developer-tools/json-minifier",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON to XML",
+    description: "Transform JSON objects into structured XML documents instantly.",
+    icon: <FileCode className="w-6 h-6" />,
+    iconBg: "bg-indigo-100 text-indigo-600",
+    link: "/tools/developer-tools/json-xml",
+    status: "active"
+  },
+  {
+    title: "JSON to YAML",
+    description: "Convert JSON configuration files into clean, readable YAML format.",
+    icon: <Settings2 className="w-6 h-6" />,
+    iconBg: "bg-purple-100 text-purple-600",
+    link: "/tools/developer-tools/json-to-yaml",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Diff Checker",
+    description: "Compare two JSON objects side-by-side to highlight differences.",
+    icon: <GitCompare className="w-6 h-6" />,
+    iconBg: "bg-rose-100 text-rose-600",
+    link: "/tools/developer-tools/json-diff-checker",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Tree Viewer",
+    description: "Navigate through complex JSON structures with an interactive tree view.",
+    icon: <Network className="w-6 h-6" />,
+    iconBg: "bg-cyan-100 text-cyan-600",
+    link: "/tools/developer-tools/json-tree-viewer",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Path Tester",
+    description: "Extract specific data points using JSONPath expressions.",
+    icon: <Search className="w-6 h-6" />,
+    iconBg: "bg-amber-100 text-amber-600",
+    link: "/tools/developer-tools/json-path-tester",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Flatten",
+    description: "Convert deeply nested JSON into a single-level key-value pair object.",
+    icon: <Layers className="w-6 h-6" />,
+    iconBg: "bg-slate-100 text-slate-600",
+    link: "/tools/developer-tools/json-flatten",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON to Table",
+    description: "Visualize your JSON arrays as a clean, sortable HTML table.",
+    icon: <Table className="w-6 h-6" />,
+    iconBg: "bg-lime-100 text-lime-600",
+    link: "/tools/developer-tools/json-to-table",
+    status: "coming-soon"
+  },
+  {
+    title: "JSON Cleaner",
+    description: "Fix common JSON issues like trailing commas or unquoted keys.",
+    icon: <Eraser className="w-6 h-6" />,
+    iconBg: "bg-pink-100 text-pink-600",
+    link: "/tools/developer-tools/json-cleaner",
+    status: "coming-soon"
+  },
 ];
 
 export default function DeveloperToolsPage() {

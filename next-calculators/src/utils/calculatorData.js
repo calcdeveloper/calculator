@@ -3,7 +3,7 @@ export const calculators = [
 
   // Finance Calculators
   
-    { name: 'SIP Calculator', path: '/calculator/finance/sip', category: 'finance' },
+    { name: 'SIP Calculator with Inflation', path: '/calculator/finance/sip', category: 'finance' },
     { name: 'EMI Calculator', path: '/calculator/finance/emi', category: 'finance' },
     { name: 'FD Calculator', path: '/calculator/finance/fd', category: 'finance' },
     { name: 'Home Loan Calculator', path: '/calculator/finance/home-loan', category: 'finance' },

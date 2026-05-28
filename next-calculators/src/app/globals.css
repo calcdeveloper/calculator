@@ -88,7 +88,16 @@
   --color-dev-gray: #6b7280;
   --color-dev-dark: #111827;
   
-  /* 10. Design Tools Colors */
+  /* 10. Fun Tools Colors */
+  --color-fun-primary: #f43f5e;
+  --color-fun-primaryDark: #e11d48;
+  --color-fun-secondary: #fb7185;
+  --color-fun-bg: #fff1f2;
+  --color-fun-white: #ffffff;
+  --color-fun-gray: #6b7280;
+  --color-fun-dark: #1f2937;
+
+  /* 11. Design Tools Colors */
   --color-design-primary: #ec4899;
   --color-design-primaryDark: #db2777;
   --color-design-secondary: #f472b6;

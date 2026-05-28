@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { calculators } from "./calculatorData";
+const registryDir = path.join(process.cwd(), "src", "registry");
+const toolsDir = path.join(process.cwd(), "src", "app", "tools");
 
 export function getCalculatorRoutes() {
-  const registryDir = path.join(process.cwd(), "src", "registry");
   if (!fs.existsSync(registryDir)) return [];
 
   return fs.readdirSync(registryDir).flatMap((category) => {
@@ -19,9 +19,18 @@ export function getCalculatorRoutes() {
   });
 }
 
+export function getCategoryRoutes() {
+  if (!fs.existsSync(registryDir)) return [];
+
+  return fs
+    .readdirSync(registryDir)
+    .filter((name) => fs.statSync(path.join(registryDir, name)).isDirectory())
+    .map((category) => `/calculator/${category}`)
+    .sort();
+}
+
 /** Discover all `/tools/...` routes from the App Router filesystem. */
 export function getToolRoutes() {
-  const toolsDir = path.join(process.cwd(), "src", "app", "tools");
   if (!fs.existsSync(toolsDir)) return [];
 
   const routes = [];
@@ -48,14 +57,8 @@ export function getToolRoutes() {
   return [...new Set(routes)].sort();
 }
 
-export function getCategoryRoutes() {
-  return [...new Set(calculators.map((calc) => calc.category))]
-    .filter(Boolean)
-    .map((category) => `/calculator/${category.toLowerCase()}`);
-}
-
-export function getAllPublicRoutes() {
-  const staticRoutes = [
+export function getStaticSiteRoutes() {
+  return [
     "/",
     "/calculator",
     "/about",
@@ -63,14 +66,27 @@ export function getAllPublicRoutes() {
     "/help",
     "/privacy",
     "/terms",
+    "/blog",
   ];
+}
 
+/** All calculator pages plus site hub/static pages. */
+export function getCalculatorSitemapRoutes() {
   return [
-    ...staticRoutes,
+    ...getStaticSiteRoutes(),
     ...getCategoryRoutes(),
-    ...getToolRoutes(),
     ...getCalculatorRoutes(),
   ];
+}
+
+/** All tool routes except fun-tools. */
+export function getToolsSitemapRoutes() {
+  return getToolRoutes().filter((route) => !route.startsWith("/tools/fun-tools"));
+}
+
+/** Fun-tools category hub and individual tools only. */
+export function getFunToolsSitemapRoutes() {
+  return getToolRoutes().filter((route) => route.startsWith("/tools/fun-tools"));
 }
 
 export function getRoutePriority(route) {
@@ -78,6 +94,7 @@ export function getRoutePriority(route) {
 
   if (route === "/") return 1;
   if (route === "/calculator") return 0.9;
+  if (route.startsWith("/tools/fun-tools/") && segments.length === 3) return 0.8;
   if (route.startsWith("/tools/") && segments.length === 2) return 0.85;
   if (route.startsWith("/calculator/") && segments.length === 2) return 0.75;
   if (route.startsWith("/calculator/") && segments.length === 3) return 0.8;

@@ -49,15 +49,16 @@ const textTools = [
     description: "Convert text to UPPERCASE, lowercase, Title Case, and more.",
     icon: <CaseUpper className="w-6 h-6" />,
     iconBg: "bg-purple-100 text-purple-600",
-    link: "/text-tools/case-converter",
-    status: "coming-soon"
+    link: "/tools/text-tools/case-converter",  // Added leading /
+    status: "active"
   },
+  // Remove the leading /
   {
     title: "Remove Duplicate Lines",
     description: "Instantly clean your lists by removing repeating lines.",
     icon: <Rows3 className="w-6 h-6" />,
     iconBg: "bg-emerald-100 text-emerald-600",
-    link: "/text-tools/remove-duplicates",
+    link: "/tools/text-tools/remove-duplicates",  // Fixed
     status: "coming-soon"
   },
   {
@@ -65,7 +66,7 @@ const textTools = [
     description: "Compare two pieces of text to find differences and changes.",
     icon: <GitCompare className="w-6 h-6" />,
     iconBg: "bg-orange-100 text-orange-600",
-    link: "/text-tools/diff-checker",
+    link: "/tools/text-tools/diff-checker",  // Fixed
     status: "coming-soon"
   },
   {
@@ -73,7 +74,7 @@ const textTools = [
     description: "Convert any string into an SEO-friendly URL slug.",
     icon: <Link2 className="w-6 h-6" />,
     iconBg: "bg-indigo-100 text-indigo-600",
-    link: "/text-tools/slug-generator",
+    link: "/tools/text-tools/slug-generator",  // Fixed
     status: "coming-soon"
   },
   {
@@ -81,7 +82,7 @@ const textTools = [
     description: "Generate placeholder text for your design and layout needs.",
     icon: <Pilcrow className="w-6 h-6" />,
     iconBg: "bg-rose-100 text-rose-600",
-    link: "/text-tools/lorem-ipsum",
+    link: "/tools/text-tools/lorem-ipsum",  // Fixed
     status: "coming-soon"
   },
   {

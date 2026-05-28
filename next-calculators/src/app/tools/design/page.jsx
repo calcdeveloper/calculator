@@ -40,8 +40,8 @@ const designTools = [
     description: "Convert HSL color values to hexadecimal format for web design.",
     icon: <Palette className="w-6 h-6" />,
     iconBg: "bg-orange-100 text-orange-600",
-    link: "/tools/design/hsl-to-hex",
-    status: "coming-soon"
+    link: "/tools/design/hsl-hex",
+    status: "active"
   },
   {
     title: "Hex to HSL",
@@ -145,7 +145,7 @@ export default function DesignToolsPage() {
   return (
     <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
       {/* Hero Header */}
-      <header className="bg-gradient-to-r from-pink-600 to-purple-600 pt-16 pb-32 px-4">
+      <header className="bg-linear-to-r from-pink-600 to-purple-600 pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-conv-white/70 text-sm mb-6 max-w-4xl mx-auto">
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span>
         </nav>

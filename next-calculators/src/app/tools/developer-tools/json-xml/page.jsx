@@ -6,15 +6,14 @@ export const dynamic = "force-static";
 export const metadata = createPageMetadata({
   title: 'JSON to XML Converter Online - Free & Secure',
   description:
-    'Convert JSON to XML instantly with our free online tool. Secure browser-side processing ensures your data never leaves your computer. No signup required.',
-  path: '/tools/json-tools/json-xml',
+    'Convert JSON to XML instantly with our free online developer tool. Secure browser-side processing ensures your data never leaves your computer.',
+  path: '/tools/developer-tools/json-xml',
   keywords: [
     'json to xml converter',
     'convert json to xml online',
     'json to xml free',
-    'secure json to xml',
+    'developer tools json',
     'json to xml formatter',
-    'developer tools',
   ],
   openGraph: {
     title: 'JSON to XML Converter - 100% Private & Fast',
@@ -28,21 +27,21 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "JSON to XML Converter",
-      "operatingSystem": "Any",
-      "applicationCategory": "DeveloperApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      name: "JSON to XML Converter",
+      operatingSystem: "Any",
+      applicationCategory: "DeveloperApplication",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     },
     {
       "@type": "HowTo",
-      "name": "How to Convert JSON to XML",
-      "step": [
-        { "@type": "HowToStep", "text": "Paste your JSON code into the input editor." },
-        { "@type": "HowToStep", "text": "Click the 'Convert to XML' button." },
-        { "@type": "HowToStep", "text": "Copy the resulting XML or download it as a file." }
-      ]
-    }
-  ]
+      name: "How to Convert JSON to XML",
+      step: [
+        { "@type": "HowToStep", text: "Paste your JSON code into the input editor." },
+        { "@type": "HowToStep", text: "Click the Convert to XML button." },
+        { "@type": "HowToStep", text: "Copy the resulting XML or download it as a file." },
+      ],
+    },
+  ],
 };
 
 export default function JSONtoXMLPage() {

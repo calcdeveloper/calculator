@@ -27,10 +27,10 @@ export default function About() {
           <li><strong>Generator Tools:</strong> Instant platforms for cryptographic password design, variable QR generation, and productivity asset mockups.</li>
           <li><strong>PDF Tools:</strong> Front-end manipulation utilities to split, merge, convert, and format global standard documentation sets.</li>
           <li><strong>Text Tools:</strong> Content structural analyzers, parsing modules, case editors, and character calculators.</li>
-          <li><strong>JSON Tools:</strong> Tree validation setups, minifiers, and beautification scripts compiled explicitly for technical developers.</li>
+          <li><strong>Developer Tools:</strong> JSON formatters, validators, converters, HTML formatters, regex testers, and code utilities for technical workflows.</li>
+          <li><strong>Fun Tools:</strong> Love calculators, coin flips, randomizers, and mini-games for entertainment.</li>
           <li><strong>Encoder/Decoder Tools:</strong> Client-side cryptographic operations for Base64 formats, HTML escaping, and URL transformations.</li>
           <li><strong>Converter Tools:</strong> Unified metrics for metric transformations, engineering standards, and file formatting frameworks.</li>
-          <li><strong>Developer Tools:</strong> Regex validation engines, code minification scripts, and engineering assets.</li>
           <li><strong>Design Tools:</strong> Color space pickers, layout calculations, and pixel processing variables.</li>
         </ul>
 

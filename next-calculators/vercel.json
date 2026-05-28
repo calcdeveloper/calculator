@@ -7,6 +7,16 @@
       "source": "/category/:category",
       "destination": "/calculator/:category",
       "permanent": true
+    },
+    {
+      "source": "/tools/json-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/json-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
     }
   ],
   "headers": [
@@ -25,6 +35,33 @@
     },
     {
       "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-calculators.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-tools.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-fun-tools.xml",
       "headers": [
         {
           "key": "Cache-Control",

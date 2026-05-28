@@ -52,7 +52,7 @@ const encoderDecoderTools = [
     icon: <LinkIcon className="w-6 h-6" />,
     iconBg: "bg-emerald-100 text-emerald-600",
     link: "/tools/encoder-decoder/url-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "URL Decoder",

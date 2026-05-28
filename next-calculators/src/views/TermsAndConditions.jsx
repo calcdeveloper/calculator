@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
 
       <div className="bg-calc-white p-8 rounded-xl border border-calc-lightGray shadow-sm space-y-8 text-lg leading-relaxed">
         <p>
-          Welcome to <strong className="text-calc-green">ToolsWizard</strong>. By accessing or using our website and its complete ecosystem of online tools, including Calculator Tools, Generator Tools, PDF Tools, Text Tools, JSON Tools, Encoder/Decoder Tools, Converter Tools, Developer Tools, and Design Tools, you agree to comply with and be legally bound by the following Terms and Conditions.
+          Welcome to <strong className="text-calc-green">ToolsWizard</strong>. By accessing or using our website and its complete ecosystem of online tools, including Calculator Tools, Generator Tools, PDF Tools, Text Tools, Fun Tools, Encoder/Decoder Tools, Converter Tools, Developer Tools, and Design Tools, you agree to comply with and be legally bound by the following Terms and Conditions.
         </p>
 
         <section>

@@ -74,17 +74,17 @@ export default function JSONtoXMLClient() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div className="min-h-screen bg-dev-bg font-sans text-dev-dark">
       {/* Hero Section */}
-      <section className="bg-linear-to-r from-indigo-700 to-blue-800 pt-16 pb-32 px-4">
+      <section className="bg-gradient-to-r from-dev-primary to-dev-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <nav className="flex justify-center space-x-2 text-indigo-100/70 text-sm mb-6">
-            <span>Tools</span> <ChevronRight size={14} /> <span>JSON Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">JSON to XML</span>
+          <nav className="flex justify-center space-x-2 text-dev-white/70 text-sm mb-6">
+            <span>Tools</span> <ChevronRight size={14} /> <span>Developer Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">JSON to XML</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
             JSON to XML Converter
           </h1>
-          <p className="text-xl text-indigo-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-dev-white/90 max-w-2xl mx-auto leading-relaxed">
             Convert your JSON data into structured XML format instantly. Secure, fast, and processed entirely in your browser.
           </p>
         </div>
@@ -241,8 +241,8 @@ export default function JSONtoXMLClient() {
         </article>
       </main>
 
-      <footer className="bg-json-white border-t border-json-gray py-8 px-6">
-        <p className="text-sm text-json-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
+      <footer className="bg-dev-white border-t border-dev-gray py-8 px-6">
+        <p className="text-sm text-dev-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
       </footer>
     </div>
   );

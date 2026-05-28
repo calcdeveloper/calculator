@@ -35,7 +35,7 @@ const pdfTools = [
     icon: <FileDown className="w-6 h-6" />,
     iconBg: 'bg-indigo-100 text-indigo-600',
     link: '/tools/pdf-tools/extract-pages',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Add Images to PDF', 
