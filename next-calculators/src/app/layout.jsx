@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -101,6 +102,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );

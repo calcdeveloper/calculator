@@ -9,6 +9,10 @@ export const SUPPORT_EMAIL = "support@toolswizard.in";
 export const SITE_DESCRIPTION =
   "Free online calculators, generators, PDF tools, converters, and developer utilities. Fast, private, and mobile-friendly.";
 
+/** Google Analytics 4 measurement ID (gtag.js). */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-FGTS1112ND";
+
 /** Build an absolute URL from a path (e.g. `/tools/generators`). */
 export function absoluteUrl(path = "/") {
   const normalized = path.startsWith("/") ? path : `/${path}`;
