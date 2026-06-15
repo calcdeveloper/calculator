@@ -39,11 +39,11 @@ export default function ExtractPagesClient() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="bg-gray-50 pt-12 pb-6 px-4">
       <div className="max-w-4xl mx-auto">
+        
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Extract PDF Pages</h1>
-          <p className="text-xl text-gray-600">Select and extract specific pages from your PDF document</p>
+          <p className="text-xl text-gray-600 font-medium">Select and extract specific pages from your PDF document instantly</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
@@ -100,7 +100,7 @@ export default function ExtractPagesClient() {
         </div>
 
         {extracted && (
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <div className="flex flex-col items-center gap-6">
               <div className="flex items-center gap-3 text-green-600">
                 <Check size={32} />
@@ -116,26 +116,7 @@ export default function ExtractPagesClient() {
             </div>
           </div>
         )}
-
-        <div className="mt-12 bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About PDF Page Extraction</h2>
-          <div className="space-y-4 text-gray-700">
-            <p>
-              Our PDF page extractor allows you to select specific pages from your PDF documents and download them as a new file. This is useful for extracting relevant pages from large reports, presentations, or documents.
-            </p>
-            <p>
-              All processing happens entirely in your browser using client-side JavaScript. Your PDF files are never uploaded to our servers, ensuring complete privacy and security of your documents.
-            </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Features</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Select individual pages or page ranges</li>
-              <li>Combine multiple selections into one PDF</li>
-              <li>Instant processing without server uploads</li>
-              <li>No file size limitations</li>
-              <li>Works offline in your browser</li>
-            </ul>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
