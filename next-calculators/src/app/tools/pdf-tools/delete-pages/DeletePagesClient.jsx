@@ -488,11 +488,6 @@ export default function DeletePagesClient() {
             <div className="absolute top-[-10%] left-[-10%] w-60 h-60 bg-pdf-white rounded-full blur-3xl"></div>
             <div className="absolute bottom-[-10%] right-[-10%] w-60 h-60 bg-pdf-white rounded-full blur-3xl"></div>
           </div>
-          <h2 className="text-3xl md:text-5xl font-black mb-8 leading-tight">Need to merge or split instead?</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="/tools/pdf-tools/merge-pdf" className="bg-pdf-white text-pdf-primary px-8 py-4 rounded-2xl font-black hover:bg-pdf-bg transition-colors shadow-lg inline-block">Merge PDF</a>
-            <a href="/tools/pdf-tools/split-pdf" className="bg-pdf-secondary text-pdf-white border-2 border-pdf-secondary/80 px-8 py-4 rounded-2xl font-black hover:bg-pdf-secondary/80 transition-colors inline-block">Split PDF</a>
-          </div>
         </section>
       </main>
 
