@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
@@ -105,6 +106,7 @@ export default function RootLayout({ children }) {
         <main className="grow">{children}</main>
         <Footer />
         <GoogleAnalytics />
+        <Analytics />
       </body>
     </html>
   );
