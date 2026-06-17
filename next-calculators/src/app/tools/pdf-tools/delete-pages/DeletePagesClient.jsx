@@ -481,14 +481,6 @@ export default function DeletePagesClient() {
             ))}
           </div>
         </section>
-
-        {/* Strategic Operational CTA Cross-Linking Section */}
-        <section className="bg-pdf-primary rounded-[3rem] p-10 md:p-20 text-center text-pdf-white mb-20 shadow-2xl shadow-pdf-primary/20 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            <div className="absolute top-[-10%] left-[-10%] w-60 h-60 bg-pdf-white rounded-full blur-3xl"></div>
-            <div className="absolute bottom-[-10%] right-[-10%] w-60 h-60 bg-pdf-white rounded-full blur-3xl"></div>
-          </div>
-        </section>
       </main>
 
       <footer className="bg-pdf-dark text-pdf-gray py-12 px-4 text-center">
