@@ -70,24 +70,22 @@ export default function URLEncoderClient() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
-          <div className="flex gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <button
               onClick={() => setMode("encode")}
-              className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-colors ${
-                mode === "encode"
+              className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-colors ${mode === "encode"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+                }`}
             >
               Encode
             </button>
             <button
               onClick={() => setMode("decode")}
-              className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-colors ${
-                mode === "decode"
+              className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-colors ${mode === "decode"
                   ? "bg-purple-600 text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+                }`}
             >
               Decode
             </button>
@@ -119,59 +117,38 @@ export default function URLEncoderClient() {
             </div>
           </div>
 
-          <div className="flex gap-4 mt-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
             <button
               onClick={handleConvert}
               disabled={!input}
-              className="flex-1 bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-green-600 text-white py-3 px-2 sm:px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
             >
-              <RefreshCw size={20} />
+              <RefreshCw size={20} className="hidden sm:block" />
               {mode === "encode" ? "Encode" : "Decode"}
             </button>
             <button
               onClick={swap}
               disabled={!output}
-              className="flex-1 bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-orange-600 text-white py-3 px-2 sm:px-6 rounded-lg font-semibold hover:bg-orange-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               Swap
             </button>
             <button
               onClick={copyToClipboard}
               disabled={!output}
-              className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-blue-600 text-white py-3 px-2 sm:px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
             >
-              <Copy size={20} />
+              <Copy size={20} className="hidden sm:block" />
               Copy
             </button>
             <button
               onClick={downloadText}
               disabled={!output}
-              className="flex-1 bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-purple-600 text-white py-3 px-2 sm:px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Download size={20} />
               Download
             </button>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About URL Encoding</h2>
-          <div className="space-y-4 text-gray-700">
-            <p>
-              URL encoding (also known as percent encoding) converts special characters into a format that can be safely transmitted over the internet. Characters like spaces, ampersands, and other symbols are replaced with %XX format.
-            </p>
-            <p>
-              Our URL encoder/decoder tool allows you to instantly convert URLs between their encoded and decoded forms. All processing happens entirely in your browser - your URLs are never sent to our servers.
-            </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Common Encodings</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Space → %20 or +</li>
-              <li>/ → %2F</li>
-              <li>? → %3F</li>
-              <li>& → %26</li>
-              <li>= → %3D</li>
-              <li># → %23</li>
-            </ul>
           </div>
         </div>
       </div>

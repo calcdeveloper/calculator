@@ -1,24 +1,29 @@
 import JSONtoXMLClient from './JSONtoXMLClient';
+import JSONtoXMLSeo from '@/components/tools/JSONtoXMLSeo';
 import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
-  title: 'JSON to XML Converter Online - Free & Secure',
+  title: 'Free JSON to XML Converter Online | Fast & Secure Data Parsing',
   description:
-    'Convert JSON to XML instantly with our free online developer tool. Secure browser-side processing ensures your data never leaves your computer.',
+    'Instantly convert JSON objects to structured XML format with our free, secure, and fast online JSON to XML converter. Features browser-side processing, array handling, and strict schema compliance.',
   path: '/tools/developer-tools/json-xml',
   keywords: [
-    'json to xml converter',
-    'convert json to xml online',
-    'json to xml free',
-    'developer tools json',
-    'json to xml formatter',
+    'JSON to XML converter',
+    'convert JSON to XML online',
+    'JSON XML parser',
+    'developer tools JSON XML',
+    'free JSON to XML tool',
+    'JSON to XML formatter',
+    'data interoperability tools',
+    'legacy system integration JSON XML',
+    'secure JSON converter'
   ],
   openGraph: {
-    title: 'JSON to XML Converter - 100% Private & Fast',
+    title: 'Free JSON to XML Converter Online | Fast & Secure Data Parsing',
     description:
-      'Transform JSON data into structured XML documents locally in your browser.',
+      'Instantly convert JSON objects to structured XML format with our free, secure, and fast online JSON to XML converter. Features browser-side processing.',
   },
 });
 
@@ -49,6 +54,7 @@ export default function JSONtoXMLPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <JSONtoXMLClient />
+      <JSONtoXMLSeo />
     </>
   );
 }

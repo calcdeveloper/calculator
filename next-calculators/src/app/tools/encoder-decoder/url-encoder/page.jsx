@@ -1,31 +1,31 @@
 import URLEncoderClient from './URLEncoderClient';
+import URLEncoderSeo from '@/components/tools/URLEncoderSeo';
 import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
-  title: 'Free URL Encoder/Decoder Online | Encode & Decode URLs Instantly | ToolsWizard',
+  title: 'Free URL Encoder / Decoder - Safely Encode & Decode URLs Online',
   description:
-    'Encode and decode URLs instantly. Free online URL encoder/decoder tool for developers. Convert special characters to URL-safe format and back.',
+    'Easily encode or decode your URLs with our free online URL Encoder / Decoder tool. Safely convert special characters into percent-encoded formats for safe web transmission.',
   path: '/tools/encoder-decoder/url-encoder',
   keywords: [
-    'URL encoder',
-    'URL decoder',
-    'encode URL',
-    'decode URL',
-    'URL encoding',
-    'URL decoding',
-    'percent encoding',
-    'URL safe',
-    'online URL encoder',
-    'free URL tool',
-    'URL converter',
-    'URL escape',
+    'URL Encoder Decoder',
+    'URL encoding tool',
+    'URL decoder online',
+    'percent-encoding converter',
+    'URI encode decode',
+    'URL escape unescape',
+    'safe URL characters',
+    'encode query string',
+    'decode URL parameters',
+    'web address encoder',
+    'HTTP URL encoding'
   ],
   openGraph: {
-    title: 'Free URL Encoder/Decoder Online - Encode & Decode URLs Instantly',
+    title: 'Free URL Encoder / Decoder - Safely Encode & Decode URLs Online',
     description:
-      'Encode and decode URLs instantly. Perfect for developers and web professionals.',
+      'Easily encode or decode your URLs with our free online URL Encoder / Decoder tool. Safely convert special characters into percent-encoded formats.',
   },
   twitter: {
     title: 'Free URL Encoder/Decoder Online',
@@ -99,8 +99,9 @@ export default function URLEncoder() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
       />
-      
+
       <URLEncoderClient />
+      <URLEncoderSeo />
     </>
   );
 }

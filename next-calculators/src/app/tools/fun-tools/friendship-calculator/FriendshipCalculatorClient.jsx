@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Heart, RefreshCw, Share2 } from "lucide-react";
+import FriendshipCalculatorSeo from "@/components/tools/FriendshipCalculatorSeo";
 
 export default function FriendshipCalculatorClient() {
   const [name1, setName1] = useState("");
@@ -140,22 +141,16 @@ export default function FriendshipCalculatorClient() {
           </div>
         )}
 
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Friendship Calculator</h2>
-          <div className="space-y-4 text-gray-700">
-            <p>
-              This friendship calculator is a fun tool that calculates the friendship percentage between two names. It's perfect for entertainment and sharing with friends!
-            </p>
-            <p className="text-sm text-gray-500 italic">
-              Disclaimer: This is for entertainment purposes only. Real friendship depends on many factors beyond names and cannot be calculated by any algorithm.
-            </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">How to Use</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Enter two names in the input fields</li>
-              <li>Click the "Calculate Friendship" button</li>
-              <li>See your friendship percentage and message</li>
-              <li>Share the result with your friends!</li>
-            </ul>
+        <FriendshipCalculatorSeo />
+
+        {/* INTERNAL TOOLS CROSS LINKING DIRECTORY HUB */}
+        <div className="mt-8 p-6 bg-white rounded-2xl shadow-md border border-gray-100">
+          <h4 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wider">Explore Related Tools</h4>
+          <div className="flex flex-wrap gap-2 text-xs">
+            <a href="/tools/generators/uuid-generator" className="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-md border text-gray-600 hover:text-green-700 transition-colors font-medium">UUID Generator</a>
+            <a href="/tools/fun-tools/love-percentage" className="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-md border text-gray-600 hover:text-green-700 transition-colors font-medium">Love Percentage</a>
+            <a href="/tools/fun-tools/coin-flip" className="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-md border text-gray-600 hover:text-green-700 transition-colors font-medium">Coin Flip</a>
+            <a href="/tools/text-tools/case-converter" className="px-3 py-1.5 bg-gray-50 hover:bg-green-50 rounded-md border text-gray-600 hover:text-green-700 transition-colors font-medium">Case Converter</a>
           </div>
         </div>
       </div>

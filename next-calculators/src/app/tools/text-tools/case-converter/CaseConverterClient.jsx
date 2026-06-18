@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Copy, Download, RefreshCw, Type } from "lucide-react";
+import CaseConverterSeo from "@/components/tools/CaseConverterSeo";
 
 export default function CaseConverterClient() {
   const [text, setText] = useState("");
@@ -224,28 +225,7 @@ export default function CaseConverterClient() {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Case Converter</h2>
-          <div className="space-y-4 text-gray-700">
-            <p>
-              Our case converter tool allows you to instantly convert text between different cases. Whether you need to format text for code, documents, or social media, this tool makes it easy.
-            </p>
-            <p>
-              All processing happens entirely in your browser. Your text is never sent to our servers, ensuring complete privacy and security.
-            </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Supported Conversions</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>UPPERCASE:</strong> Convert all letters to uppercase</li>
-              <li><strong>lowercase:</strong> Convert all letters to lowercase</li>
-              <li><strong>Title Case:</strong> Capitalize the first letter of each word</li>
-              <li><strong>Sentence case:</strong> Capitalize the first letter of each sentence</li>
-              <li><strong>camelCase:</strong> First word lowercase, subsequent words capitalized</li>
-              <li><strong>snake_case:</strong> Words separated by underscores</li>
-              <li><strong>kebab-case:</strong> Words separated by hyphens</li>
-              <li><strong>tOGGLE cASE:</strong> Invert the case of each letter</li>
-            </ul>
-          </div>
-        </div>
+        <CaseConverterSeo />
       </div>
     </div>
   );

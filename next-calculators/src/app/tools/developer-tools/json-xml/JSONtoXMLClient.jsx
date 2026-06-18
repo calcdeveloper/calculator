@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useCallback } from 'react';
-import { 
-  FileCode, ArrowRightLeft, Copy, Download, Trash2, 
+import {
+  FileCode, ArrowRightLeft, Copy, Download, Trash2,
   CheckCircle2, ShieldCheck, Zap, Info, ChevronRight,
   Code2, Braces, Terminal, FileOutput
 } from 'lucide-react';
@@ -16,7 +16,7 @@ export default function JSONtoXMLClient() {
 
   const jsonToXml = (obj, rootName = 'root') => {
     let xml = '';
-    
+
     const parse = (data, name) => {
       let content = '';
       if (Array.isArray(data)) {
@@ -93,7 +93,7 @@ export default function JSONtoXMLClient() {
       {/* Tool Interface */}
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden p-6 md:p-8">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Input Side */}
             <div className="space-y-4">
@@ -105,7 +105,7 @@ export default function JSONtoXMLClient() {
                   <Trash2 size={16} /> Clear
                 </button>
               </div>
-              <textarea 
+              <textarea
                 value={jsonInput}
                 onChange={(e) => setJsonInput(e.target.value)}
                 placeholder='Paste your JSON here (e.g. { "name": "ToolsWizard", "status": "online" })'
@@ -120,7 +120,7 @@ export default function JSONtoXMLClient() {
                   <Code2 size={20} className="text-blue-600" /> XML Output
                 </label>
                 <div className="flex gap-2">
-                  <button 
+                  <button
                     disabled={!xmlOutput}
                     onClick={handleCopy}
                     className="p-2 text-slate-500 hover:text-indigo-600 disabled:opacity-30 transition-all rounded-lg hover:bg-slate-100"
@@ -128,7 +128,7 @@ export default function JSONtoXMLClient() {
                   >
                     {copySuccess ? <CheckCircle2 className="text-emerald-500" size={20} /> : <Copy size={20} />}
                   </button>
-                  <button 
+                  <button
                     disabled={!xmlOutput}
                     onClick={handleDownload}
                     className="p-2 text-slate-500 hover:text-indigo-600 disabled:opacity-30 transition-all rounded-lg hover:bg-slate-100"
@@ -138,7 +138,7 @@ export default function JSONtoXMLClient() {
                   </button>
                 </div>
               </div>
-              <textarea 
+              <textarea
                 readOnly
                 value={xmlOutput}
                 placeholder="The XML result will appear here..."
@@ -148,7 +148,7 @@ export default function JSONtoXMLClient() {
           </div>
 
           <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-            <button 
+            <button
               onClick={handleConvert}
               disabled={!jsonInput || isProcessing}
               className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-300 text-white px-10 py-4 rounded-2xl font-black text-lg transition-all shadow-xl shadow-indigo-100 flex items-center justify-center gap-3"
@@ -183,62 +183,6 @@ export default function JSONtoXMLClient() {
           </div>
         </section>
 
-        {/* Long-form SEO Content */}
-        <article className="prose prose-slate max-w-none bg-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-slate-200">
-          <h2 className="text-3xl font-bold text-slate-900">Why Convert JSON to XML?</h2>
-          <p>
-            While JSON has become the standard for modern web APIs due to its lightweight nature, XML (eXtensible Markup Language) remains vital for many enterprise systems, legacy SOAP services, and document storage standards. Our <strong>JSON to XML converter</strong> bridges the gap between these formats, providing a developer-friendly way to transform data without writing complex custom scripts.
-          </p>
-
-          <div className="not-prose grid md:grid-cols-2 gap-8 my-10">
-            <div className="p-6 bg-indigo-50/50 rounded-2xl border border-indigo-100">
-              <h4 className="font-bold text-indigo-800 mb-3 flex items-center gap-2"><FileOutput size={18} /> Best Use Cases</h4>
-              <ul className="text-sm space-y-2 text-slate-700">
-                <li>• Testing SOAP web service endpoints</li>
-                <li>• Transforming API responses for legacy software</li>
-                <li>• Generating XML sitemaps or RSS feeds from JSON data</li>
-                <li>• Compliance with industry-specific XML standards</li>
-              </ul>
-            </div>
-            <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-              <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2"><CheckCircle2 size={18} /> Tool Capabilities</h4>
-              <ul className="text-sm space-y-2 text-slate-700">
-                <li>• Handles deeply nested JSON objects</li>
-                <li>• Converts JSON arrays into repetitive XML tags</li>
-                <li>• Generates standard XML version headers</li>
-                <li>• Sanitizes keys to ensure valid XML tag names</li>
-              </ul>
-            </div>
-          </div>
-
-          <h3 className="text-2xl font-bold mt-10">How Our Secure Converter Works</h3>
-          <p>
-            Most online converters require you to upload your data. At <strong>ToolsWizard</strong>, we believe your data belongs to you. Our tool utilizes the modern JavaScript <code>JSON.parse()</code> and a custom recursive mapping function that operates entirely within your browser's sandboxed environment.
-          </p>
-          <ol className="space-y-4 text-slate-700">
-            <li><strong>Input:</strong> You paste your raw JSON into the editor. We perform a real-time syntax check to ensure the JSON is valid.</li>
-            <li><strong>Mapping:</strong> Our tool traverses the JSON tree. It maps keys to XML tags and values to text content between those tags.</li>
-            <li><strong>Output:</strong> The resulting XML is beautified and presented with a standard <code>UTF-8</code> header, ready for production use.</li>
-          </ol>
-
-          <h3 className="text-2xl font-bold mt-10">Frequently Asked Questions</h3>
-          <div className="not-prose space-y-4 mt-6">
-            {[
-              { q: "Is my JSON data saved on your servers?", a: "No. ToolsWizard is a client-side platform. Your data never touches our server; it is processed locally in your browser's memory and cleared when you close the tab." },
-              { q: "Can it handle large JSON files?", a: "Yes, our converter is optimized for performance. It can handle large datasets (up to several MBs) efficiently without slowing down your browser." },
-              { q: "What happens to JSON arrays?", a: "JSON arrays are converted into repetitive XML tags. For example, a list of 'users' in JSON will become multiple '<item>' tags (or custom tags) within the XML structure." },
-              { q: "Is there a limit on conversions?", a: "No. ToolsWizard provides unlimited, free conversions for all users without any registration required." }
-            ].map((faq, i) => (
-              <details key={i} className="group border border-slate-200 rounded-xl p-5 bg-slate-50/50 transition-all hover:bg-white hover:border-indigo-300">
-                <summary className="font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
-                  {faq.q}
-                  <span className="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <p className="mt-4 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">{faq.a}</p>
-              </details>
-            ))}
-          </div>
-        </article>
       </main>
 
       <footer className="bg-dev-white border-t border-dev-gray py-8 px-6">
