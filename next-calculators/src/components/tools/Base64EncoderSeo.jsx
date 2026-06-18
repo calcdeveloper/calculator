@@ -37,8 +37,8 @@ export default function Base64EncoderSeo() {
             <li>• Ideal for encoding API keys and tokens</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2"><Zap size={18} /> Lightning Fast Performance</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Zap size={18} className="text-enc-primary" /> Lightning Fast Performance</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• Instant real-time encoding results</li>
             <li>• Handles massive text blocks smoothly</li>
@@ -62,8 +62,8 @@ export default function Base64EncoderSeo() {
             <li>• <strong>Canvas Exports:</strong> Extracting graphical data from HTML5 Canvas elements.</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2"><Terminal size={18} /> Backend & Data Transmission</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Terminal size={18} className="text-enc-primary" /> Backend & Data Transmission</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• <strong>Email Attachments (MIME):</strong> Safely sending files over SMTP text protocols.</li>
             <li>• <strong>HTTP Basic Auth:</strong> Encoding username:password strings for standard web authentication.</li>

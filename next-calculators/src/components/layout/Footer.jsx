@@ -24,10 +24,10 @@ export default function Footer() {
               <li><Link href="/tools/pdf-tools" className="hover:text-calc-green transition">PDF Tools</Link></li>
               <li><Link href="/tools/text-tools" className="hover:text-calc-green transition">Text Tools</Link></li>
               <li><Link href="/tools/fun-tools" className="hover:text-calc-green transition">Fun Tools</Link></li>
-              <li><Link href="tools/encoder-decoder" className="hover:text-calc-green transition">Encoder/Decoder</Link></li>
-              <li><Link href="tools/converter" className="hover:text-calc-green transition">Converter Tools</Link></li>
-              <li><Link href="tools/developer-tools" className="hover:text-calc-green transition">Developer Tools</Link></li>
-              <li><Link href="tools/design" className="hover:text-calc-green transition">Design Tools</Link></li>
+              <li><Link href="/tools/encoder-decoder" className="hover:text-calc-green transition">Encoder/Decoder</Link></li>
+              <li><Link href="/tools/converter" className="hover:text-calc-green transition">Converter Tools</Link></li>
+              <li><Link href="/tools/developer-tools" className="hover:text-calc-green transition">Developer Tools</Link></li>
+              <li><Link href="/tools/design" className="hover:text-calc-green transition">Design Tools</Link></li>
             </ul>
           </div>
 

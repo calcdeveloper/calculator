@@ -48,8 +48,8 @@ export default function URLEncoderSeo() {
             <li>• No tracking, logging, or data retention</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2"><Zap size={18} /> Blazing Fast Execution</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Zap size={18} className="text-enc-primary" /> Blazing Fast Execution</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• Instantaneous encoding and decoding</li>
             <li>• No server round-trips or loading times</li>
@@ -70,8 +70,8 @@ export default function URLEncoderSeo() {
             <li>• <strong>Debugging Links:</strong> Quickly identify character encoding errors leading to 400 or 404 errors.</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2"><Link size={18} /> Marketing & Affiliates</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Link size={18} className="text-enc-primary" /> Marketing & Affiliates</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• <strong>UTM Tracking:</strong> Ensure campaign tags with spaces or special characters don't break tracking links.</li>
             <li>• <strong>Affiliate Marketing:</strong> Safely encode long URLs with numerous parameters, IDs, and redirect instructions.</li>

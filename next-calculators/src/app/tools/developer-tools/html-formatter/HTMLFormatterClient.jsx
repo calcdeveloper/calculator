@@ -185,12 +185,12 @@ export default function HTMLFormatterClient() {
         {/* Informational Sections */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-dev-white p-8 rounded-3xl border border-dev-gray shadow-sm">
-            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
+            <div className="w-12 h-12 bg-dev-primary/10 text-dev-primary rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
             <h3 className="text-xl font-bold mb-3">Browser-Side Security</h3>
             <p className="text-dev-gray leading-relaxed text-sm">Your HTML code is processed locally. We never transmit your code to our servers, keeping your sensitive information private and secure.</p>
           </div>
           <div className="bg-dev-white p-8 rounded-3xl border border-dev-gray shadow-sm">
-            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6"><Zap /></div>
+            <div className="w-12 h-12 bg-dev-secondary/20 text-dev-primary rounded-xl flex items-center justify-center mb-6"><Zap /></div>
             <h3 className="text-xl font-bold mb-3">Instant Formatting</h3>
             <p className="text-dev-gray leading-relaxed text-sm">Our optimized algorithm formats HTML in milliseconds, handling large files without any delay or lag.</p>
           </div>
@@ -227,8 +227,8 @@ export default function HTMLFormatterClient() {
                 <li>• Zero code retention</li>
               </ul>
             </div>
-            <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2"><Zap size={18} /> Lightning Fast</h4>
+            <div className="p-6 bg-dev-bg/30 rounded-2xl border border-dev-gray">
+              <h4 className="font-bold text-dev-dark mb-3 flex items-center gap-2"><Zap size={18} className="text-dev-primary" /> Lightning Fast</h4>
               <ul className="text-sm space-y-2 text-dev-gray">
                 <li>• Instant formatting results</li>
                 <li>• Handles large HTML files</li>
@@ -280,8 +280,8 @@ export default function HTMLFormatterClient() {
                 <li>• Debugging HTML structure</li>
               </ul>
             </div>
-            <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-              <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2"><Terminal size={18} /> Code Maintenance</h4>
+            <div className="p-6 bg-dev-bg/30 rounded-2xl border border-dev-gray">
+              <h4 className="font-bold text-dev-dark mb-3 flex items-center gap-2"><Terminal size={18} className="text-dev-primary" /> Code Maintenance</h4>
               <ul className="text-sm space-y-2 text-dev-gray">
                 <li>• Improving code readability</li>
                 <li>• Standardizing team code style</li>

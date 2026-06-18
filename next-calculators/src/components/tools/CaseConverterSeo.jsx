@@ -39,55 +39,55 @@ export default function CaseConverterSeo() {
         Our Case Converter supports eight distinct text format conversions to fit different requirements. Here is a breakdown of what each option does and when you should employ it:
       </p>
       
-      <div className="overflow-x-auto my-6">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+      <div className="overflow-x-auto my-6 border border-text-gray/30 rounded-xl">
+        <table className="min-w-full divide-y divide-text-gray/30">
+          <thead className="bg-text-bg">
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Format Name</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Visual Example</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Primary Use Case</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-text-dark uppercase tracking-wider">Format Name</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-text-dark uppercase tracking-wider">Visual Example</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-text-dark uppercase tracking-wider">Primary Use Case</th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200 text-sm">
+          <tbody className="bg-text-white divide-y divide-text-gray/30 text-sm">
             <tr>
-              <td className="px-6 py-4 font-semibold">UPPERCASE</td>
-              <td className="px-6 py-4">FREE ONLINE CASE CONVERTER</td>
-              <td className="px-6 py-4">Acronyms, legal contracts, attention-grabbing titles.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">UPPERCASE</td>
+              <td className="px-6 py-4 text-text-gray">FREE ONLINE CASE CONVERTER</td>
+              <td className="px-6 py-4 text-text-gray">Acronyms, legal contracts, attention-grabbing titles.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">lowercase</td>
-              <td className="px-6 py-4">free online case converter</td>
-              <td className="px-6 py-4">Email addresses, filenames, Linux directories.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">lowercase</td>
+              <td className="px-6 py-4 text-text-gray">free online case converter</td>
+              <td className="px-6 py-4 text-text-gray">Email addresses, filenames, Linux directories.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">Title Case</td>
-              <td className="px-6 py-4">Free Online Case Converter</td>
-              <td className="px-6 py-4">Book titles, article headlines, presentation slides.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">Title Case</td>
+              <td className="px-6 py-4 text-text-gray">Free Online Case Converter</td>
+              <td className="px-6 py-4 text-text-gray">Book titles, article headlines, presentation slides.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">Sentence case</td>
-              <td className="px-6 py-4">Free online case converter</td>
-              <td className="px-6 py-4">Paragraph body text, standard documents, blogs.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">Sentence case</td>
+              <td className="px-6 py-4 text-text-gray">Free online case converter</td>
+              <td className="px-6 py-4 text-text-gray">Paragraph body text, standard documents, blogs.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">camelCase</td>
-              <td className="px-6 py-4">freeOnlineCaseConverter</td>
-              <td className="px-6 py-4">JavaScript and Java variables, software functions.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">camelCase</td>
+              <td className="px-6 py-4 text-text-gray">freeOnlineCaseConverter</td>
+              <td className="px-6 py-4 text-text-gray">JavaScript and Java variables, software functions.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">snake_case</td>
-              <td className="px-6 py-4">free_online_case_converter</td>
-              <td className="px-6 py-4">Python variables, database column names.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">snake_case</td>
+              <td className="px-6 py-4 text-text-gray">free_online_case_converter</td>
+              <td className="px-6 py-4 text-text-gray">Python variables, database column names.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">kebab-case</td>
-              <td className="px-6 py-4">free-online-case-converter</td>
-              <td className="px-6 py-4">URL slugs, CSS selectors, REST API endpoints.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">kebab-case</td>
+              <td className="px-6 py-4 text-text-gray">free-online-case-converter</td>
+              <td className="px-6 py-4 text-text-gray">URL slugs, CSS selectors, REST API endpoints.</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-semibold">tOGGLE cASE</td>
-              <td className="px-6 py-4">fREE oNLINE cASE cONVERTER</td>
-              <td className="px-6 py-4">Correcting accidentally activated Caps Lock text.</td>
+              <td className="px-6 py-4 font-semibold text-text-dark">tOGGLE cASE</td>
+              <td className="px-6 py-4 text-text-gray">fREE oNLINE cASE cONVERTER</td>
+              <td className="px-6 py-4 text-text-gray">Correcting accidentally activated Caps Lock text.</td>
             </tr>
           </tbody>
         </table>

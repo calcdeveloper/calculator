@@ -38,8 +38,8 @@ export default function Base64DecoderSeo() {
             <li>• No tracking or data retention</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2"><Zap size={18} /> High-Speed Processing</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Zap size={18} className="text-enc-primary" /> High-Speed Processing</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• Instant, keystroke-by-keystroke decoding</li>
             <li>• Easily handles strings millions of characters long</li>
@@ -63,8 +63,8 @@ export default function Base64DecoderSeo() {
             <li>• <strong>Source Code Extraction:</strong> Recovering embedded SVG code or fonts from massive CSS files.</li>
           </ul>
         </div>
-        <div className="p-6 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2"><Terminal size={18} /> Security & System Administration</h4>
+        <div className="p-6 bg-enc-bg/30 rounded-2xl border border-enc-gray">
+          <h4 className="font-bold text-enc-dark mb-3 flex items-center gap-2"><Terminal size={18} className="text-enc-primary" /> Security & System Administration</h4>
           <ul className="text-sm space-y-2 text-enc-gray">
             <li>• <strong>Network Analysis:</strong> Inspecting HTTP Basic Authentication headers (which are transmitted as Base64) during penetration testing.</li>
             <li>• <strong>Malware Analysis:</strong> Malicious scripts often hide their payloads using Base64; decoding them reveals the true threat.</li>

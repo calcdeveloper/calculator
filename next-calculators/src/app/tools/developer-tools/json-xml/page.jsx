@@ -1,5 +1,4 @@
 import JSONtoXMLClient from './JSONtoXMLClient';
-import JSONtoXMLSeo from '@/components/tools/JSONtoXMLSeo';
 import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
@@ -54,7 +53,6 @@ export default function JSONtoXMLPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <JSONtoXMLClient />
-      <JSONtoXMLSeo />
     </>
   );
 }

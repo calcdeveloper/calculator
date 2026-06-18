@@ -91,21 +91,21 @@ export default function CoinFlipClient() {
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Coins />
             </div>
             <h3 className="text-xl font-bold mb-2">50/50 Fair Toss</h3>
             <p className="text-fun-gray text-sm">Each flip is independent—great for quick binary decisions.</p>
           </div>
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <ShieldCheck />
             </div>
             <h3 className="text-xl font-bold mb-2">No Server Logs</h3>
             <p className="text-fun-gray text-sm">Flips run in your browser; history clears when you leave the page.</p>
           </div>
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-secondary/20 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Zap />
             </div>
             <h3 className="text-xl font-bold mb-2">Instant</h3>

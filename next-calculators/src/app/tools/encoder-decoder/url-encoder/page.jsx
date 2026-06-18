@@ -1,5 +1,4 @@
 import URLEncoderClient from './URLEncoderClient';
-import URLEncoderSeo from '@/components/tools/URLEncoderSeo';
 import { createPageMetadata } from '@/utils/seo';
 
 export const dynamic = "force-static";
@@ -101,7 +100,6 @@ export default function URLEncoder() {
       />
 
       <URLEncoderClient />
-      <URLEncoderSeo />
     </>
   );
 }

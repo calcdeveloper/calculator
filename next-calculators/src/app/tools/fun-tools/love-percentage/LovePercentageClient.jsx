@@ -109,21 +109,21 @@ export default function LovePercentageClient() {
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Sparkles />
             </div>
             <h3 className="text-xl font-bold mb-2">Instant Fun</h3>
             <p className="text-fun-gray text-sm">Get a playful score in one click—perfect for parties and chats.</p>
           </div>
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <ShieldCheck />
             </div>
             <h3 className="text-xl font-bold mb-2">Private</h3>
             <p className="text-fun-gray text-sm">Names stay in your browser—we never store them on a server.</p>
           </div>
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
-            <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-fun-secondary/20 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Zap />
             </div>
             <h3 className="text-xl font-bold mb-2">Shareable</h3>

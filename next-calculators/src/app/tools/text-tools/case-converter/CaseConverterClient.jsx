@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Download, RefreshCw, Type } from "lucide-react";
+import { Copy, Download, Type, ChevronRight } from "lucide-react";
 import CaseConverterSeo from "@/components/tools/CaseConverterSeo";
 
 export default function CaseConverterClient() {
@@ -94,131 +94,150 @@ export default function CaseConverterClient() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Case Converter</h1>
-          <p className="text-xl text-gray-600">Convert text to different cases instantly</p>
+    <div className="min-h-screen bg-text-bg font-sans text-text-dark">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-text-primary to-text-primaryDark pt-16 pb-32 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <nav className="flex justify-center flex-wrap gap-1 text-text-white/70 text-sm mb-6">
+            <span>Tools</span>
+            <ChevronRight size={14} className="inline" />
+            <span>Text Tools</span>
+            <ChevronRight size={14} className="inline" />
+            <span className="text-text-white font-medium">Case Converter</span>
+          </nav>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
+            <Type size={40} />
+            Case Converter
+          </h1>
+          <p className="text-xl text-text-white/90 max-w-2xl mx-auto leading-relaxed">
+            Convert text to different cases instantly. Easy, fast, and entirely private.
+          </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white rounded-2xl shadow-lg p-6">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Input Text
-            </label>
-            <textarea
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              placeholder="Enter your text here..."
-              className="w-full h-64 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
-            />
-            <div className="mt-4 flex gap-2">
-              <button
-                onClick={() => setText("")}
-                className="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-lg font-semibold hover:bg-gray-300 transition-colors"
-              >
-                Clear
-              </button>
-              <button
-                onClick={() => {
-                  setText(convertedText);
-                  setConvertedText("");
-                }}
-                disabled={!convertedText}
-                className="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
-              >
-                Use Output
-              </button>
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-6 md:p-8 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Input Text */}
+            <div className="space-y-4">
+              <label className="block text-sm font-semibold text-text-dark mb-2">
+                Input Text
+              </label>
+              <textarea
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                placeholder="Enter your text here..."
+                className="w-full h-64 px-4 py-3 border border-text-gray/30 rounded-xl focus:ring-2 focus:ring-text-primary focus:border-transparent resize-none bg-text-bg/50 outline-none"
+              />
+              <div className="mt-4 flex gap-2">
+                <button
+                  onClick={() => setText("")}
+                  className="flex-1 bg-text-bg text-text-dark border border-text-gray/30 py-3 rounded-xl font-semibold hover:bg-text-gray/10 transition-colors"
+                >
+                  Clear
+                </button>
+                <button
+                  onClick={() => {
+                    setText(convertedText);
+                    setConvertedText("");
+                  }}
+                  disabled={!convertedText}
+                  className="flex-1 bg-text-secondary text-text-white py-3 rounded-xl font-semibold hover:bg-text-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Use Output
+                </button>
+              </div>
+            </div>
+
+            {/* Converted Text */}
+            <div className="space-y-4">
+              <label className="block text-sm font-semibold text-text-dark mb-2">
+                Converted Text
+              </label>
+              <textarea
+                value={convertedText}
+                readOnly
+                placeholder="Converted text will appear here..."
+                className="w-full h-64 px-4 py-3 border border-text-gray/30 rounded-xl bg-text-bg/50 resize-none outline-none"
+              />
+              <div className="mt-4 flex gap-2">
+                <button
+                  onClick={copyToClipboard}
+                  disabled={!convertedText}
+                  className="flex-1 bg-text-primary text-text-white py-3 rounded-xl font-semibold hover:bg-text-primaryDark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  <Copy size={18} />
+                  Copy
+                </button>
+                <button
+                  onClick={downloadText}
+                  disabled={!convertedText}
+                  className="flex-1 bg-text-dark text-text-white py-3 rounded-xl font-semibold hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  <Download size={18} />
+                  Download
+                </button>
+              </div>
             </div>
           </div>
-
-          <div className="bg-white rounded-2xl shadow-lg p-6">
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Converted Text
-            </label>
-            <textarea
-              value={convertedText}
-              readOnly
-              placeholder="Converted text will appear here..."
-              className="w-full h-64 px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 resize-none"
-            />
-            <div className="mt-4 flex gap-2">
-              <button
-                onClick={copyToClipboard}
-                disabled={!convertedText}
-                className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                <Copy size={18} />
-                Copy
-              </button>
-              <button
-                onClick={downloadText}
-                disabled={!convertedText}
-                className="flex-1 bg-purple-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                <Download size={18} />
-                Download
-              </button>
-            </div>
-          </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Conversion Options</h2>
+        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-6 md:p-8 mb-8">
+          <h2 className="text-xl font-bold text-text-dark mb-4">Conversion Options</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <button
               onClick={convertToUppercase}
               disabled={!text}
-              className="bg-green-100 text-green-800 py-3 px-4 rounded-lg font-semibold hover:bg-green-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed uppercase"
             >
               UPPERCASE
             </button>
             <button
               onClick={convertToLowercase}
               disabled={!text}
-              className="bg-blue-100 text-blue-800 py-3 px-4 rounded-lg font-semibold hover:bg-blue-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed lowercase"
             >
               lowercase
             </button>
             <button
               onClick={convertToTitleCase}
               disabled={!text}
-              className="bg-purple-100 text-purple-800 py-3 px-4 rounded-lg font-semibold hover:bg-purple-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed capitalize"
             >
               Title Case
             </button>
             <button
               onClick={convertToSentenceCase}
               disabled={!text}
-              className="bg-pink-100 text-pink-800 py-3 px-4 rounded-lg font-semibold hover:bg-pink-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Sentence case
             </button>
             <button
               onClick={convertToCamelCase}
               disabled={!text}
-              className="bg-yellow-100 text-yellow-800 py-3 px-4 rounded-lg font-semibold hover:bg-yellow-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               camelCase
             </button>
             <button
               onClick={convertToSnakeCase}
               disabled={!text}
-              className="bg-orange-100 text-orange-800 py-3 px-4 rounded-lg font-semibold hover:bg-orange-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               snake_case
             </button>
             <button
               onClick={convertToKebabCase}
               disabled={!text}
-              className="bg-teal-100 text-teal-800 py-3 px-4 rounded-lg font-semibold hover:bg-teal-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               kebab-case
             </button>
             <button
               onClick={toggleCase}
               disabled={!text}
-              className="bg-red-100 text-red-800 py-3 px-4 rounded-lg font-semibold hover:bg-red-200 transition-colors disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+              className="bg-text-bg text-text-primary border border-text-gray/30 py-4 px-4 rounded-xl font-bold hover:bg-text-primary/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               tOGGLE cASE
             </button>
@@ -226,7 +245,11 @@ export default function CaseConverterClient() {
         </div>
 
         <CaseConverterSeo />
-      </div>
+      </main>
+
+      <footer className="bg-text-white border-t border-text-gray/30 py-8 px-6">
+        <p className="text-sm text-text-gray text-center">© 2026 ToolsWizard — Privacy-First Developer Utilities.</p>
+      </footer>
     </div>
   );
 }

@@ -144,12 +144,12 @@ export default function Base64EncoderClient() {
         {/* Informational Sections */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-enc-white p-8 rounded-3xl border border-enc-gray shadow-sm">
-            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
+            <div className="w-12 h-12 bg-enc-primary/10 text-enc-primary rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
             <h3 className="text-xl font-bold mb-3">Browser-Side Security</h3>
             <p className="text-enc-gray leading-relaxed text-sm">Your text is processed locally. We never transmit your data to our servers, keeping your sensitive information private and secure.</p>
           </div>
           <div className="bg-enc-white p-8 rounded-3xl border border-enc-gray shadow-sm">
-            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6"><Zap /></div>
+            <div className="w-12 h-12 bg-enc-secondary/20 text-enc-primary rounded-xl flex items-center justify-center mb-6"><Zap /></div>
             <h3 className="text-xl font-bold mb-3">Instant Encoding</h3>
             <p className="text-enc-gray leading-relaxed text-sm">Our optimized algorithm converts text to Base64 in milliseconds, handling large amounts of data without any delay or lag.</p>
           </div>
@@ -165,13 +165,13 @@ export default function Base64EncoderClient() {
         <Base64EncoderSeo />
 
         {/* INTERNAL TOOLS CROSS LINKING DIRECTORY HUB */}
-        <div className="mt-8 p-6 bg-white rounded-2xl shadow-md border border-gray-100">
-          <h4 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wider">Explore Related Developer Tools</h4>
+        <div className="mt-8 p-6 bg-enc-white rounded-2xl shadow-md border border-enc-gray">
+          <h4 className="text-sm font-bold text-enc-dark mb-3 uppercase tracking-wider">Explore Related Developer Tools</h4>
           <div className="flex flex-wrap gap-2 text-xs">
-            <a href="/tools/encoder-decoder/base64-decoder" className="px-3 py-1.5 bg-gray-50 hover:bg-blue-50 rounded-md border text-gray-600 hover:text-blue-700 transition-colors font-medium">Base64 Decoder</a>
-            <a href="/tools/encoder-decoder/url-encoder" className="px-3 py-1.5 bg-gray-50 hover:bg-blue-50 rounded-md border text-gray-600 hover:text-blue-700 transition-colors font-medium">URL Encoder</a>
-            <a href="/tools/developer-tools/html-minifier" className="px-3 py-1.5 bg-gray-50 hover:bg-blue-50 rounded-md border text-gray-600 hover:text-blue-700 transition-colors font-medium">HTML Minifier</a>
-            <a href="/tools/generators/uuid-generator" className="px-3 py-1.5 bg-gray-50 hover:bg-blue-50 rounded-md border text-gray-600 hover:text-blue-700 transition-colors font-medium">UUID Generator</a>
+            <a href="/tools/encoder-decoder/base64-decoder" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">Base64 Decoder</a>
+            <a href="/tools/encoder-decoder/url-encoder" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">URL Encoder</a>
+            <a href="/tools/developer-tools/html-minifier" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">HTML Minifier</a>
+            <a href="/tools/generators/uuid-generator" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">UUID Generator</a>
           </div>
         </div>
       </main>

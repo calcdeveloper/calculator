@@ -6,6 +6,7 @@ import {
   CheckCircle2, ShieldCheck, Zap, Info, ChevronRight,
   Code2, Braces, Terminal, FileOutput
 } from 'lucide-react';
+import JSONtoXMLSeo from "@/components/tools/JSONtoXMLSeo";
 
 export default function JSONtoXMLClient() {
   const [jsonInput, setJsonInput] = useState('');
@@ -92,16 +93,16 @@ export default function JSONtoXMLClient() {
 
       {/* Tool Interface */}
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden p-6 md:p-8">
+        <div className="bg-dev-white rounded-3xl shadow-2xl border border-dev-gray overflow-hidden p-6 md:p-8">
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Input Side */}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <label className="flex items-center gap-2 font-bold text-slate-700">
-                  <Braces size={20} className="text-indigo-600" /> JSON Input
+                <label className="flex items-center gap-2 font-bold text-dev-dark">
+                  <Braces size={20} className="text-dev-primary" /> JSON Input
                 </label>
-                <button onClick={clearAll} className="text-slate-400 hover:text-red-500 transition-colors flex items-center gap-1 text-sm font-medium">
+                <button onClick={clearAll} className="text-dev-gray hover:text-red-500 transition-colors flex items-center gap-1 text-sm font-medium">
                   <Trash2 size={16} /> Clear
                 </button>
               </div>
@@ -109,21 +110,21 @@ export default function JSONtoXMLClient() {
                 value={jsonInput}
                 onChange={(e) => setJsonInput(e.target.value)}
                 placeholder='Paste your JSON here (e.g. { "name": "ToolsWizard", "status": "online" })'
-                className="w-full h-[400px] p-4 bg-slate-50 border border-slate-200 rounded-2xl font-mono text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all resize-none"
+                className="w-full h-[400px] p-4 bg-dev-bg/50 border border-dev-gray rounded-2xl font-mono text-sm focus:ring-2 focus:ring-dev-primary focus:bg-white outline-none transition-all resize-none"
               />
             </div>
 
             {/* Output Side */}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <label className="flex items-center gap-2 font-bold text-slate-700">
-                  <Code2 size={20} className="text-blue-600" /> XML Output
+                <label className="flex items-center gap-2 font-bold text-dev-dark">
+                  <Code2 size={20} className="text-dev-primary" /> XML Output
                 </label>
                 <div className="flex gap-2">
                   <button
                     disabled={!xmlOutput}
                     onClick={handleCopy}
-                    className="p-2 text-slate-500 hover:text-indigo-600 disabled:opacity-30 transition-all rounded-lg hover:bg-slate-100"
+                    className="p-2 text-dev-gray hover:text-dev-primary disabled:opacity-30 transition-all rounded-lg hover:bg-dev-bg/50"
                     title="Copy to Clipboard"
                   >
                     {copySuccess ? <CheckCircle2 className="text-emerald-500" size={20} /> : <Copy size={20} />}
@@ -131,7 +132,7 @@ export default function JSONtoXMLClient() {
                   <button
                     disabled={!xmlOutput}
                     onClick={handleDownload}
-                    className="p-2 text-slate-500 hover:text-indigo-600 disabled:opacity-30 transition-all rounded-lg hover:bg-slate-100"
+                    className="p-2 text-dev-gray hover:text-dev-primary disabled:opacity-30 transition-all rounded-lg hover:bg-dev-bg/50"
                     title="Download XML"
                   >
                     <Download size={20} />
@@ -142,7 +143,7 @@ export default function JSONtoXMLClient() {
                 readOnly
                 value={xmlOutput}
                 placeholder="The XML result will appear here..."
-                className="w-full h-[400px] p-4 bg-slate-50 border border-slate-200 rounded-2xl font-mono text-sm outline-none resize-none"
+                className="w-full h-[400px] p-4 bg-dev-bg/50 border border-dev-gray rounded-2xl font-mono text-sm outline-none resize-none"
               />
             </div>
           </div>
@@ -151,7 +152,7 @@ export default function JSONtoXMLClient() {
             <button
               onClick={handleConvert}
               disabled={!jsonInput || isProcessing}
-              className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-300 text-white px-10 py-4 rounded-2xl font-black text-lg transition-all shadow-xl shadow-indigo-100 flex items-center justify-center gap-3"
+              className="w-full md:w-auto bg-dev-primary hover:bg-dev-primaryDark disabled:bg-dev-gray text-dev-white px-10 py-4 rounded-2xl font-black text-lg transition-all shadow-xl shadow-dev-primary/20 flex items-center justify-center gap-3"
             >
               {isProcessing ? "Converting..." : <><ArrowRightLeft size={22} /> Convert to XML</>}
             </button>
@@ -166,23 +167,24 @@ export default function JSONtoXMLClient() {
 
         {/* Informational Sections */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
+          <div className="bg-dev-white p-8 rounded-3xl border border-dev-gray shadow-sm">
+            <div className="w-12 h-12 bg-dev-primary/10 text-dev-primary rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
             <h3 className="text-xl font-bold mb-3">Browser-Side Security</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">Your JSON data is processed locally. We never transmit your information to our servers, keeping your API keys and data private.</p>
+            <p className="text-dev-gray leading-relaxed text-sm">Your JSON data is processed locally. We never transmit your information to our servers, keeping your API keys and data private.</p>
           </div>
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6"><Zap /></div>
+          <div className="bg-dev-white p-8 rounded-3xl border border-dev-gray shadow-sm">
+            <div className="w-12 h-12 bg-dev-secondary/20 text-dev-primary rounded-xl flex items-center justify-center mb-6"><Zap /></div>
             <h3 className="text-xl font-bold mb-3">Instant Conversion</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">Our optimized algorithm transforms complex, nested JSON objects into clean, indented XML documents in milliseconds.</p>
+            <p className="text-dev-gray leading-relaxed text-sm">Our optimized algorithm transforms complex, nested JSON objects into clean, indented XML documents in milliseconds.</p>
           </div>
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-            <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6"><Terminal /></div>
+          <div className="bg-dev-white p-8 rounded-3xl border border-dev-gray shadow-sm">
+            <div className="w-12 h-12 bg-dev-primary/10 text-dev-primary rounded-xl flex items-center justify-center mb-6"><Terminal /></div>
             <h3 className="text-xl font-bold mb-3">Dev-Friendly</h3>
-            <p className="text-slate-600 leading-relaxed text-sm">Perfect for integrating legacy XML systems with modern JSON APIs. Get standardized XML headers and clean tagging.</p>
+            <p className="text-dev-gray leading-relaxed text-sm">Perfect for integrating legacy XML systems with modern JSON APIs. Get standardized XML headers and clean tagging.</p>
           </div>
         </section>
 
+        <JSONtoXMLSeo />
       </main>
 
       <footer className="bg-dev-white border-t border-dev-gray py-8 px-6">
