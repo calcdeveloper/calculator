@@ -14,10 +14,10 @@ export default function UUIDGeneratorClient() {
     if (typeof window !== 'undefined' && window.crypto) {
       const randomBytes = new Uint8Array(16);
       window.crypto.getRandomValues(randomBytes);
-      
+
       randomBytes[6] = (randomBytes[6] & 0x0f) | 0x40;
       randomBytes[8] = (randomBytes[8] & 0x3f) | 0x80;
-      
+
       let uuid = '';
       for (let i = 0; i < 16; i++) {
         const byte = randomBytes[i].toString(16).padStart(2, '0');
@@ -26,7 +26,7 @@ export default function UUIDGeneratorClient() {
           if (includeHyphens) uuid += '-';
         }
       }
-      
+
       return uppercase ? uuid.toUpperCase() : uuid;
     }
     return 'UUID generation not supported in this browser';
@@ -72,10 +72,10 @@ export default function UUIDGeneratorClient() {
             Free UUID Generator
           </h1>
           <p className="text-xl text-gen-white/90 max-w-3xl mx-auto leading-relaxed mb-8">
-            Generate cryptographically secure UUID v4 identifiers instantly. Perfect for developers, 
+            Generate cryptographically secure UUID v4 identifiers instantly. Perfect for developers,
             database keys, and unique ID requirements.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center gap-2 bg-gen-white/20 text-gen-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm border border-gen-white/30">
               <Shield size={16} />
@@ -108,7 +108,7 @@ export default function UUIDGeneratorClient() {
                   ))}
                 </select>
               </div>
-              
+
               <div className="flex items-center gap-3 pt-6">
                 <input
                   type="checkbox"
@@ -121,7 +121,7 @@ export default function UUIDGeneratorClient() {
                   Include Hyphens
                 </label>
               </div>
-              
+
               <div className="flex items-center gap-3 pt-6">
                 <input
                   type="checkbox"
@@ -135,7 +135,7 @@ export default function UUIDGeneratorClient() {
                 </label>
               </div>
             </div>
-            
+
             <button
               onClick={generateUUIDs}
               className="w-full bg-gen-primary text-gen-white py-4 px-6 rounded-2xl font-bold hover:bg-gen-primaryDark transition-all flex items-center justify-center gap-3 text-lg shadow-xl shadow-gen-primary/30 active:scale-[0.99]"
@@ -143,7 +143,7 @@ export default function UUIDGeneratorClient() {
               <RefreshCw size={24} />
               Generate UUID{count > 1 ? 's' : ''}
             </button>
-            
+
             <div className="pt-4 border-t border-gen-gray/20">
               <div className="flex justify-between items-center mb-4">
                 <label className="block text-base font-bold text-gen-dark">

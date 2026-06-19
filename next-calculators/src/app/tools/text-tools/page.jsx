@@ -1,23 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Type, 
-  Hash, 
-  CaseUpper, 
-  Copy, 
-  GitCompare, 
-  SortAsc, 
-  Dices, 
-  Undo2, 
-  Link2, 
-  Eraser, 
-  Sparkles, 
-  SearchCode, 
-  Pilcrow, 
-  AlignLeft, 
-  FileJson, 
-  Scissors, 
-  Combine, 
+import {
+  Type,
+  Hash,
+  CaseUpper,
+  Copy,
+  GitCompare,
+  SortAsc,
+  Dices,
+  Undo2,
+  Link2,
+  Eraser,
+  Sparkles,
+  SearchCode,
+  Pilcrow,
+  AlignLeft,
+  FileJson,
+  Scissors,
+  Combine,
   FileText,
   Replace,
   Rows3,
@@ -37,14 +37,6 @@ export const metadata = createPageMetadata({
 
 const textTools = [
   {
-    title: "Word, Character & Line Counter",
-    description: "Count words, characters, and sentences in your text.",
-    icon: <Hash className="w-6 h-6" />,
-    iconBg: "bg-blue-100 text-blue-600",
-    link: "/calculator/education/word-counter",
-    status: "active"
-  },
-  {
     title: "Case Converter",
     description: "Convert text to UPPERCASE, lowercase, Title Case, and more.",
     icon: <CaseUpper className="w-6 h-6" />,
@@ -59,7 +51,7 @@ const textTools = [
     icon: <Rows3 className="w-6 h-6" />,
     iconBg: "bg-emerald-100 text-emerald-600",
     link: "/tools/text-tools/remove-duplicates",  // Fixed
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Text Diff Checker",
@@ -67,7 +59,7 @@ const textTools = [
     icon: <GitCompare className="w-6 h-6" />,
     iconBg: "bg-orange-100 text-orange-600",
     link: "/tools/text-tools/diff-checker",  // Fixed
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Slug Generator",
@@ -75,7 +67,7 @@ const textTools = [
     icon: <Link2 className="w-6 h-6" />,
     iconBg: "bg-indigo-100 text-indigo-600",
     link: "/tools/text-tools/slug-generator",  // Fixed
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Lorem Ipsum Generator",
@@ -83,49 +75,55 @@ const textTools = [
     icon: <Pilcrow className="w-6 h-6" />,
     iconBg: "bg-rose-100 text-rose-600",
     link: "/tools/text-tools/lorem-ipsum",  // Fixed
-    status: "coming-soon"
+    status: "active"
   },
   {
-    title: "Character Counter",
-    description: "Calculate the exact number of characters with or without spaces.",
+    title: "Word, Character & Sentence Counter",
+    description: "Calculate the exact number of words, characters, sentences, and paragraphs.",
     icon: <Type className="w-6 h-6" />,
-    iconBg: "bg-cyan-100 text-cyan-600",
-    status: "coming-soon"
+    iconBg: "bg-blue-100 text-blue-600",
+    link: "/tools/text-tools/character-counter",
+    status: "active"
   },
   {
     title: "Text Sorter",
     description: "Alphabetize or sort lines of text in ascending/descending order.",
     icon: <SortAsc className="w-6 h-6" />,
     iconBg: "bg-amber-100 text-amber-600",
-    status: "coming-soon"
+    link: "/tools/text-tools/text-sorter",
+    status: "active"
   },
   {
     title: "Find and Replace",
     description: "Quickly find specific text and replace it with something else.",
     icon: <Replace className="w-6 h-6" />,
     iconBg: "bg-lime-100 text-lime-600",
-    status: "coming-soon"
+    link: "/tools/text-tools/find-and-replace",
+    status: "active"
   },
   {
     title: "Whitespace Remover",
     description: "Clean up extra spaces, tabs, and unnecessary line breaks.",
     icon: <Eraser className="w-6 h-6" />,
     iconBg: "bg-slate-100 text-slate-600",
-    status: "coming-soon"
+    link: "/tools/text-tools/whitespace-remover",
+    status: "active"
   },
   {
     title: "Text Cleaner",
     description: "Remove emojis, special characters, or HTML tags from text.",
     icon: <Sparkles className="w-6 h-6" />,
     iconBg: "bg-pink-100 text-pink-600",
-    status: "coming-soon"
+    link: "/tools/text-tools/text-cleaner",
+    status: "active"
   },
   {
     title: "Random Text Generator",
     description: "Generate random strings or words for testing purposes.",
     icon: <Dices className="w-6 h-6" />,
     iconBg: "bg-violet-100 text-violet-600",
-    status: "coming-soon"
+    link: "/tools/text-tools/random-text-generator",
+    status: "active"
   }
 ];
 
@@ -151,8 +149,8 @@ export default function TextToolsPage() {
       <main className="max-w-7xl mx-auto px-4 -mt-20 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {textTools.map((tool, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-text-white rounded-2xl p-8 flex flex-col border border-text-gray hover:shadow-md transition-shadow"
             >
               <div className="flex items-start gap-4 mb-6">
@@ -168,14 +166,14 @@ export default function TextToolsPage() {
               </div>
 
               {tool.status === "active" ? (
-                <Link 
+                <Link
                   href={tool.link}
                   className="mt-auto w-full bg-text-primary hover:bg-text-primaryDark text-text-white text-center py-3 rounded-lg font-bold transition-colors"
                 >
                   Use Tool
                 </Link>
               ) : (
-                <button 
+                <button
                   disabled
                   className="mt-auto w-full bg-text-gray/20 text-text-gray text-center py-3 rounded-lg font-bold cursor-not-allowed"
                 >

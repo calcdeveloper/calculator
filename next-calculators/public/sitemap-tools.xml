@@ -114,16 +114,4 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://toolswizard.in/tools/text-tools</loc>
-    <lastmod>2026-06-18T12:03:40.866Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://toolswizard.in/tools/text-tools/case-converter</loc>
-    <lastmod>2026-06-18T12:03:40.866Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>

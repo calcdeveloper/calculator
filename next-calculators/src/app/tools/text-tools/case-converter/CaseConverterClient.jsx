@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Download, Type, ChevronRight } from "lucide-react";
+import { Copy, RefreshCw, Type, ArrowUpCircle, ArrowDownCircle, Heading, Download, ChevronRight } from "lucide-react";
 import CaseConverterSeo from "@/components/tools/CaseConverterSeo";
+import RelatedTextTools from "@/components/tools/RelatedTextTools";
 
 export default function CaseConverterClient() {
   const [text, setText] = useState("");
@@ -245,6 +246,7 @@ export default function CaseConverterClient() {
         </div>
 
         <CaseConverterSeo />
+        <RelatedTextTools currentPath="/tools/text-tools/case-converter" />
       </main>
 
       <footer className="bg-text-white border-t border-text-gray/30 py-8 px-6">
