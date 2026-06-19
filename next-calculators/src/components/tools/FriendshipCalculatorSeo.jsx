@@ -36,6 +36,18 @@ export default function FriendshipCalculatorSeo() {
         In today's fast-paced digital world, friendships are formed online and offline, crossing borders and cultures. While true friendship is built on trust, shared experiences, and mutual respect, adding a little bit of fun through a <em>friendship percentage calculator</em> can spark joy and laughter. Just enter two names, click calculate, and watch our unique algorithm determine your friendship score!
       </p>
 
+      <h3 className="text-2xl font-bold text-fun-dark mt-10">How to Use the Friendship Calculator</h3>
+      <p>
+        Our Friendship Calculator is designed to be incredibly intuitive and fast. To get your friendship compatibility score, just follow these simple steps:
+      </p>
+      <ol className="list-decimal pl-6 space-y-4 text-fun-gray mt-4">
+        <li><strong>Enter Your Name:</strong> Type your first name or the nickname you are commonly known by in the first input box. The algorithm processes characters, so spelling matters!</li>
+        <li><strong>Enter Your Friend's Name:</strong> In the second input box, type the name of your friend, coworker, sibling, or even your pet.</li>
+        <li><strong>Click the Button:</strong> Hit the "Calculate Friendship" button. The tool does not require any loading time or page refreshes.</li>
+        <li><strong>View Your Results:</strong> Instantly, the calculator will display a beautifully animated progress ring showing your friendship score out of 100%. Below the score, you will receive a customized message interpreting your bond.</li>
+        <li><strong>Share the Fun:</strong> If you get an incredible 99% or a hilariously low 12%, use the built-in copy buttons to share the result directly to your group chats or social media feeds.</li>
+      </ol>
+
       <h3 className="text-2xl font-bold text-fun-dark mt-10">How Does the Friendship Calculator Work?</h3>
       <p>
         You might be wondering, "How can a simple web tool determine how good of a friend someone is?" The truth is, our <strong>friendship meter</strong> uses a specific numerological and character-based algorithm to generate its results. 
@@ -49,7 +61,7 @@ export default function FriendshipCalculatorSeo() {
         <li><strong>Percentage Generation:</strong> Finally, we use a mathematical modulo operation (specifically <code>% 101</code>) to ensure the final score always lands perfectly between 0% and 100%.</li>
       </ul>
       <p>
-        This means that typing the exact same two names will always yield the exact same result, adding a layer of consistency to the fun!
+        This means that typing the exact same two names will always yield the exact same result, adding a layer of consistency to the fun. It isn't just a random number generator; it is mathematically tied to your specific identities!
       </p>
 
       <h3 className="text-2xl font-bold text-fun-dark mt-10">Why Use an Online Friendship Test?</h3>
@@ -57,18 +69,18 @@ export default function FriendshipCalculatorSeo() {
         While this tool is primarily designed for entertainment, there are several reasons why thousands of users flock to our <strong>friendship compatibility tester</strong> every day:
       </p>
       
-      <ol className="list-decimal pl-6 space-y-2 text-fun-gray">
+      <ol className="list-decimal pl-6 space-y-4 text-fun-gray mt-4">
         <li>
-          <strong>Icebreaker Activity:</strong> Are you at a party, a new school, or a team-building event? Calculating friendship scores is a fantastic, low-pressure way to break the ice and start a conversation.
+          <strong>Icebreaker Activity:</strong> Are you at a party, a new school, or a team-building event? Calculating friendship scores is a fantastic, low-pressure way to break the ice and start a conversation. "Hey, let's see what the calculator says our score is!"
         </li>
         <li>
           <strong>Social Media Sharing:</strong> Got a 99% "Best Friends Forever" score? The tool includes a built-in sharing feature, allowing you to instantly copy the result or share it directly to your favorite social media platforms like WhatsApp, Twitter, or Instagram.
         </li>
         <li>
-          <strong>Nostalgic Fun:</strong> Remember the days of passing notes in class and doing the "FLAMES" game or using a pen-and-paper love calculator? This tool brings that nostalgic joy into the modern, digital era.
+          <strong>Nostalgic Fun:</strong> Remember the days of passing notes in class and doing the "FLAMES" game or using a pen-and-paper love calculator? This tool brings that nostalgic joy into the modern, digital era, without wasting any notebook paper.
         </li>
         <li>
-          <strong>No Registration Required:</strong> Unlike many modern apps that force you to create an account or give up your email address, our friendship score calculator is 100% free, runs completely in your browser, and requires zero sign-ups. Your data stays private.
+          <strong>No Registration Required:</strong> Unlike many modern apps that force you to create an account or give up your email address, our friendship score calculator is 100% free, runs completely in your browser, and requires zero sign-ups. Your data stays completely private.
         </li>
       </ol>
 
@@ -77,11 +89,11 @@ export default function FriendshipCalculatorSeo() {
         Once you hit the "Calculate Friendship" button, you don't just get a boring number. Our tool provides custom, heartwarming (and sometimes humorous) messages based on your exact percentage bracket:
       </p>
       
-      <ul className="list-disc pl-6 space-y-2 text-fun-gray">
-        <li><strong>90% - 100%: Best Friends Forever! 💖</strong> - You two share an unbreakable bond. You finish each other's sentences and are practically inseparable.</li>
-        <li><strong>70% - 89%: Great to Good Friends! 💕</strong> - A solid, reliable friendship. You enjoy hanging out and have a lot of common interests.</li>
-        <li><strong>40% - 69%: Acquaintances to Friends! 💗</strong> - You are getting to know each other. There is definitely potential for this bond to grow stronger over time.</li>
-        <li><strong>0% - 39%: Strangers or Keep Trying! 💛</strong> - Don't let a low score get you down! Remember, this is just an algorithm. Real friendship takes time, effort, and shared experiences to build.</li>
+      <ul className="list-disc pl-6 space-y-4 text-fun-gray mt-4">
+        <li><strong>90% - 100%: Best Friends Forever! 💖</strong> - You two share an unbreakable bond. You finish each other's sentences and are practically inseparable. This is the ultimate friendship tier.</li>
+        <li><strong>70% - 89%: Great to Good Friends! 💕</strong> - A solid, reliable friendship. You enjoy hanging out, have a lot of common interests, and can always count on each other.</li>
+        <li><strong>40% - 69%: Acquaintances to Friends! 💗</strong> - You are getting to know each other. There is definitely potential for this bond to grow stronger over time. Consider inviting them out for coffee!</li>
+        <li><strong>0% - 39%: Strangers or Keep Trying! 💛</strong> - Don't let a low score get you down! Remember, this is just a mathematical algorithm based on spelling. Real friendship takes time, effort, and shared experiences to build. Use this low score as a challenge to prove the machine wrong.</li>
       </ul>
 
       <h3 className="text-2xl font-bold text-fun-dark mt-10">The Psychology of Friendship and Name Compatibility</h3>
@@ -92,7 +104,7 @@ export default function FriendshipCalculatorSeo() {
         While an online <strong>friendship checker</strong> based on names cannot scientifically measure the depth of your empathy, trust, or loyalty, it taps into our innate desire for connection. When we see a high score, it validates our positive feelings toward that person. When we see a low score, we often laugh it off, turning it into an inside joke. This shared laughter and engagement is, ironically, what actually helps build a stronger friendship!
       </p>
       <p>
-        If you want to genuinely improve a friendship, focus on active listening, being reliable, showing empathy during tough times, and celebrating their successes. Use our calculator as a fun starting point, but do the real work in the real world.
+        If you want to genuinely improve a friendship, focus on active listening, being reliable, showing empathy during tough times, and celebrating their successes. Use our calculator as a fun starting point, but do the real work in the real world. Call them up, schedule a hangout, and make new memories.
       </p>
 
       <h3 className="text-2xl font-bold text-fun-dark mt-10">Frequently Asked Questions</h3>

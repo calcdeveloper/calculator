@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Heart, RefreshCw, Share2, ChevronRight, ShieldCheck, Zap, Sparkles } from "lucide-react";
 import FriendshipCalculatorSeo from "@/components/tools/FriendshipCalculatorSeo";
+import RelatedFunTools from "@/components/tools/RelatedFunTools";
 
 export default function FriendshipCalculatorClient() {
   const [name1, setName1] = useState("");
@@ -177,17 +178,7 @@ export default function FriendshipCalculatorClient() {
         </section>
 
         <FriendshipCalculatorSeo />
-
-        {/* INTERNAL TOOLS CROSS LINKING DIRECTORY HUB */}
-        <div className="mt-8 p-6 bg-fun-white rounded-2xl shadow-md border border-fun-gray">
-          <h4 className="text-sm font-bold text-fun-dark mb-3 uppercase tracking-wider">Explore Related Tools</h4>
-          <div className="flex flex-wrap gap-2 text-xs">
-            <a href="/tools/generators/uuid-generator" className="px-3 py-1.5 bg-fun-bg hover:bg-fun-bg/80 rounded-md border border-fun-gray text-fun-gray hover:text-fun-primary transition-colors font-medium">UUID Generator</a>
-            <a href="/tools/fun-tools/love-percentage" className="px-3 py-1.5 bg-fun-bg hover:bg-fun-bg/80 rounded-md border border-fun-gray text-fun-gray hover:text-fun-primary transition-colors font-medium">Love Percentage</a>
-            <a href="/tools/fun-tools/coin-flip" className="px-3 py-1.5 bg-fun-bg hover:bg-fun-bg/80 rounded-md border border-fun-gray text-fun-gray hover:text-fun-primary transition-colors font-medium">Coin Flip</a>
-            <a href="/tools/text-tools/case-converter" className="px-3 py-1.5 bg-fun-bg hover:bg-fun-bg/80 rounded-md border border-fun-gray text-fun-gray hover:text-fun-primary transition-colors font-medium">Case Converter</a>
-          </div>
-        </div>
+        <RelatedFunTools />
       </main>
 
       <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6">

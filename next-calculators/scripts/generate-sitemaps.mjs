@@ -112,15 +112,15 @@ function buildUrlset(routes) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes
-  .map(
-    (route) => `  <url>
+      .map(
+        (route) => `  <url>
     <loc>${escapeXml(`${siteUrl}${route}`)}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${getRouteChangeFrequency(route)}</changefreq>
     <priority>${getRoutePriority(route)}</priority>
   </url>`
-  )
-  .join("\n")}
+      )
+      .join("\n")}
 </urlset>
 `;
 }
@@ -156,13 +156,13 @@ const childSitemaps = Object.keys(sitemapGroups).map(
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${childSitemaps
-  .map(
-    (loc) => `  <sitemap>
+    .map(
+      (loc) => `  <sitemap>
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${indexLastmod}</lastmod>
   </sitemap>`
-  )
-  .join("\n")}
+    )
+    .join("\n")}
 </sitemapindex>
 `;
 

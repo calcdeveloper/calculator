@@ -24,6 +24,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { createPageMetadata } from '@/utils/seo';
+import TextToolsMainSeo from '@/components/tools/TextToolsMainSeo';
 
 export const dynamic = "force-static";
 
@@ -184,18 +185,7 @@ export default function TextToolsPage() {
           ))}
         </div>
 
-        {/* About Section */}
-        <div className="mt-24 pt-16 border-t border-text-gray">
-          <h2 className="text-3xl font-bold text-text-dark mb-6">About Text Tools</h2>
-          <div className="space-y-6 text-text-gray leading-relaxed max-w-5xl">
-            <p>
-              Our comprehensive suite of Text Tools helps you manipulate, optimize, and clean your content with ease. Whether you need to count words for an essay, convert the case of a professional document, or strip away duplicate lines from a developer log, ToolsWizard provides browser-based solutions that are fast and private.
-            </p>
-            <p>
-              Unlike other platforms, we prioritize a "No-Friction" philosophy. All our text utilities run locally in your browser, meaning your sensitive text data is never uploaded to our servers. From simple formatting to complex find-and-replace operations, our tools are designed to save you time and improve your workflow efficiency.
-            </p>
-          </div>
-        </div>
+        <TextToolsMainSeo />
       </main>
     </div>
   );

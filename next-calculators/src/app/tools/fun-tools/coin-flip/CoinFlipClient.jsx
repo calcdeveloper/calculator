@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Coins, ChevronRight, ShieldCheck, Zap, BarChart3 } from 'lucide-react';
 import CoinFlipSeo from '@/components/tools/CoinFlipSeo';
+import RelatedFunTools from '@/components/tools/RelatedFunTools';
 
 export default function CoinFlipClient() {
   const [result, setResult] = useState(null);
@@ -114,6 +115,7 @@ export default function CoinFlipClient() {
         </section>
 
         <CoinFlipSeo />
+        <RelatedFunTools />
       </main>
 
       <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6">

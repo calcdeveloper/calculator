@@ -16,6 +16,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import { createPageMetadata } from '@/utils/seo';
+import FunToolsMainSeo from '@/components/tools/FunToolsMainSeo';
 
 export const dynamic = 'force-static';
 
@@ -58,7 +59,7 @@ const funTools = [
     icon: <Cake className="w-6 h-6" />,
     iconBg: 'bg-amber-100 text-amber-600',
     link: '/tools/fun-tools/guess-your-age',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Random Number Generator',
@@ -66,7 +67,7 @@ const funTools = [
     icon: <Dices className="w-6 h-6" />,
     iconBg: 'bg-violet-100 text-violet-600',
     link: '/tools/fun-tools/random-number-generator',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Random Wheel Spinner',
@@ -74,7 +75,7 @@ const funTools = [
     icon: <RotateCw className="w-6 h-6" />,
     iconBg: 'bg-indigo-100 text-indigo-600',
     link: '/tools/fun-tools/random-wheel-spinner',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Yes/No Picker',
@@ -82,7 +83,7 @@ const funTools = [
     icon: <HelpCircle className="w-6 h-6" />,
     iconBg: 'bg-teal-100 text-teal-600',
     link: '/tools/fun-tools/yes-no-picker',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Dice Roller',
@@ -90,7 +91,7 @@ const funTools = [
     icon: <Dices className="w-6 h-6" />,
     iconBg: 'bg-orange-100 text-orange-600',
     link: '/tools/fun-tools/dice-roller',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Coin Flip',
@@ -106,7 +107,7 @@ const funTools = [
     icon: <Palette className="w-6 h-6" />,
     iconBg: 'bg-pink-100 text-pink-600',
     link: '/tools/fun-tools/random-color-generator',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Lucky Number Generator',
@@ -114,23 +115,16 @@ const funTools = [
     icon: <Sparkles className="w-6 h-6" />,
     iconBg: 'bg-fuchsia-100 text-fuchsia-600',
     link: '/tools/fun-tools/lucky-number-generator',
-    status: 'coming-soon',
+    status: 'active',
   },
-  {
-    title: 'Face Swap Tool',
-    description: 'Swap faces in photos for hilarious results (coming soon).',
-    icon: <Smile className="w-6 h-6" />,
-    iconBg: 'bg-lime-100 text-lime-700',
-    link: '/tools/fun-tools/face-swap',
-    status: 'coming-soon',
-  },
+
   {
     title: 'Tic Tac Toe',
     description: 'Play classic tic tac toe against the computer in your browser.',
     icon: <Grid3X3 className="w-6 h-6" />,
     iconBg: 'bg-cyan-100 text-cyan-700',
     link: '/tools/fun-tools/tic-tac-toe',
-    status: 'coming-soon',
+    status: 'active',
   },
   {
     title: 'Number Guessing Game',
@@ -138,7 +132,7 @@ const funTools = [
     icon: <Target className="w-6 h-6" />,
     iconBg: 'bg-emerald-100 text-emerald-600',
     link: '/tools/fun-tools/number-guessing-game',
-    status: 'coming-soon',
+    status: 'active',
   },
 ];
 
@@ -196,21 +190,7 @@ export default function FunToolsPage() {
           ))}
         </div>
 
-        <div className="mt-24 pt-16 border-t border-fun-gray/30">
-          <h2 className="text-3xl font-bold text-fun-dark mb-6">About Fun Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-fun-gray leading-relaxed">
-            <p>
-              ToolsWizard Fun Tools bring lighthearted utilities to your browser—love percentage calculators,
-              coin flips, random pickers, and classic mini-games. Everything runs locally for privacy and speed,
-              with no account required.
-            </p>
-            <p>
-              Whether you need a quick <strong>heads or tails</strong> decision, a playful{' '}
-              <strong>love compatibility score</strong>, or upcoming games like tic tac toe, our fun category is
-              built for sharing laughs with friends and family online.
-            </p>
-          </div>
-        </div>
+        <FunToolsMainSeo />
       </main>
 
       <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6">

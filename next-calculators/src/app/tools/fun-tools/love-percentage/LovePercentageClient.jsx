@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Heart, ChevronRight, Sparkles, ShieldCheck, Zap } from 'lucide-react';
 import LovePercentageSeo from '@/components/tools/LovePercentageSeo';
+import RelatedFunTools from '@/components/tools/RelatedFunTools';
 
 function calculateLoveScore(name1, name2) {
   const clean = (s) => s.toLowerCase().replace(/[^a-z]/g, '');
@@ -132,6 +133,7 @@ export default function LovePercentageClient() {
         </section>
 
         <LovePercentageSeo />
+        <RelatedFunTools />
       </main>
 
       <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6">
