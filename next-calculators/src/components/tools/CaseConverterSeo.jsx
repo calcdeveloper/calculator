@@ -183,6 +183,16 @@ export default function CaseConverterSeo() {
         <li><strong>Copy and Download:</strong> Copy your converted text to your clipboard or download it as a plain text file (`converted-text.txt`) with a single click.</li>
       </ul>
 
+      
+      <h3 className="text-2xl font-bold text-text-dark mt-10">How to Use the Case Converter</h3>
+      <p>Using our online Case Converter is incredibly straightforward. Just follow these simple steps:</p>
+      <ol className="list-decimal pl-6 space-y-4 mt-4 mb-10 text-text-gray">
+        <li><strong>Input your data:</strong> Paste or type your content into the main input text area.</li>
+        <li><strong>Select options:</strong> Choose any specific formatting or conversion options if applicable to your task.</li>
+        <li><strong>Instantly process:</strong> The tool will automatically process your input in real-time, or you can click the primary action button to execute.</li>
+        <li><strong>Copy or Download:</strong> Once generated, easily copy the resulting output to your clipboard or download it as a text file for immediate use.</li>
+      </ol>
+
       <h3 className="text-2xl font-bold text-text-primary mt-10 mb-6">Frequently Asked Questions</h3>
       <div className="not-prose space-y-4">
         {faqs.map((faq, i) => (

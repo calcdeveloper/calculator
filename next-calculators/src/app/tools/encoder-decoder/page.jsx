@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import EncoderDecoderMainSeo from "@/components/tools/EncoderDecoderMainSeo";
 import { 
   Key, 
   Link as LinkIcon, 
@@ -60,7 +61,7 @@ const encoderDecoderTools = [
     icon: <LinkIcon className="w-6 h-6" />,
     iconBg: "bg-teal-100 text-teal-600",
     link: "/tools/encoder-decoder/url-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "HTML Encoder",
@@ -68,7 +69,7 @@ const encoderDecoderTools = [
     icon: <FileCode className="w-6 h-6" />,
     iconBg: "bg-orange-100 text-orange-600",
     link: "/tools/encoder-decoder/html-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "HTML Decoder",
@@ -76,7 +77,7 @@ const encoderDecoderTools = [
     icon: <FileCode className="w-6 h-6" />,
     iconBg: "bg-amber-100 text-amber-600",
     link: "/tools/encoder-decoder/html-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "JWT Decoder",
@@ -84,7 +85,7 @@ const encoderDecoderTools = [
     icon: <Shield className="w-6 h-6" />,
     iconBg: "bg-rose-100 text-rose-600",
     link: "/tools/encoder-decoder/jwt-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "JWT Generator",
@@ -92,39 +93,39 @@ const encoderDecoderTools = [
     icon: <Key className="w-6 h-6" />,
     iconBg: "bg-pink-100 text-pink-600",
     link: "/tools/encoder-decoder/jwt-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "MD5 Hash Generator",
     description: "Generate MD5 hash for file integrity checks and data verification.",
     icon: <Fingerprint className="w-6 h-6" />,
     iconBg: "bg-purple-100 text-purple-600",
-    link: "/tools/encoder-decoder/md5-generator",
-    status: "coming-soon"
+    link: "/tools/encoder-decoder/md5-hash-generator",
+    status: "active"
   },
   {
     title: "SHA1 Hash Generator",
     description: "Generate SHA-1 hash for secure data verification and checksums.",
     icon: <Fingerprint className="w-6 h-6" />,
     iconBg: "bg-violet-100 text-violet-600",
-    link: "/tools/encoder-decoder/sha1-generator",
-    status: "coming-soon"
+    link: "/tools/encoder-decoder/sha1-hash-generator",
+    status: "active"
   },
   {
     title: "SHA256 Hash Generator",
     description: "Generate SHA-256 hash for strong cryptographic security.",
     icon: <Fingerprint className="w-6 h-6" />,
     iconBg: "bg-fuchsia-100 text-fuchsia-600",
-    link: "/tools/encoder-decoder/sha256-generator",
-    status: "coming-soon"
+    link: "/tools/encoder-decoder/sha256-hash-generator",
+    status: "active"
   },
   {
     title: "Bcrypt Hash Generator",
     description: "Generate bcrypt hashes for secure password storage and authentication.",
     icon: <Lock className="w-6 h-6" />,
     iconBg: "bg-red-100 text-red-600",
-    link: "/tools/encoder-decoder/bcrypt-generator",
-    status: "coming-soon"
+    link: "/tools/encoder-decoder/bcrypt-hash-generator",
+    status: "active"
   },
   {
     title: "String Encoder",
@@ -132,7 +133,7 @@ const encoderDecoderTools = [
     icon: <FileText className="w-6 h-6" />,
     iconBg: "bg-cyan-100 text-cyan-600",
     link: "/tools/encoder-decoder/string-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Unicode Encoder",
@@ -140,7 +141,7 @@ const encoderDecoderTools = [
     icon: <Globe className="w-6 h-6" />,
     iconBg: "bg-sky-100 text-sky-600",
     link: "/tools/encoder-decoder/unicode-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Unicode Decoder",
@@ -148,7 +149,7 @@ const encoderDecoderTools = [
     icon: <Globe className="w-6 h-6" />,
     iconBg: "bg-blue-100 text-blue-600",
     link: "/tools/encoder-decoder/unicode-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "ROT13 Encoder",
@@ -156,7 +157,7 @@ const encoderDecoderTools = [
     icon: <RefreshCw className="w-6 h-6" />,
     iconBg: "bg-lime-100 text-lime-600",
     link: "/tools/encoder-decoder/rot13-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Hex Encoder",
@@ -164,7 +165,7 @@ const encoderDecoderTools = [
     icon: <Hash className="w-6 h-6" />,
     iconBg: "bg-green-100 text-green-600",
     link: "/tools/encoder-decoder/hex-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Hex Decoder",
@@ -172,7 +173,7 @@ const encoderDecoderTools = [
     icon: <Hash className="w-6 h-6" />,
     iconBg: "bg-emerald-100 text-emerald-600",
     link: "/tools/encoder-decoder/hex-decoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Binary Encoder",
@@ -180,7 +181,7 @@ const encoderDecoderTools = [
     icon: <Binary className="w-6 h-6" />,
     iconBg: "bg-slate-100 text-slate-600",
     link: "/tools/encoder-decoder/binary-encoder",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Binary Decoder",
@@ -188,7 +189,7 @@ const encoderDecoderTools = [
     icon: <Binary className="w-6 h-6" />,
     iconBg: "bg-gray-100 text-gray-600",
     link: "/tools/encoder-decoder/binary-decoder",
-    status: "coming-soon"
+    status: "active"
   }
 ];
 
@@ -249,30 +250,7 @@ export default function EncoderDecoderPage() {
           ))}
         </div>
 
-        {/* SEO & About Section */}
-        <div className="mt-24 pt-16 border-t border-enc-gray">
-          <h2 className="text-3xl font-bold text-enc-dark mb-6">About Encoder/Decoder Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-enc-gray leading-relaxed">
-            <div>
-              <p className="mb-4">
-                Our encoder/decoder tools provide instant data transformation for developers, security professionals, and data analysts. Whether you need to <strong>encode Base64</strong> for API requests, <strong>decode JWT tokens</strong> for debugging, or <strong>generate cryptographic hashes</strong> for verification, our tools deliver results in milliseconds.
-              </p>
-              <p>
-                All operations happen entirely in your browser, ensuring your sensitive data never leaves your device. This makes our tools perfect for processing <strong>passwords</strong>, <strong>API keys</strong>, <strong>personal information</strong>, and other confidential data without privacy concerns.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4">
-                From simple text encoding to complex cryptographic operations, our suite covers all common encoding and decoding needs. Use our <strong>URL encoder</strong> to prepare data for web requests, or our <strong>HTML encoder</strong> to prevent XSS vulnerabilities in your applications.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-enc-primary"/> <strong>Fast:</strong> Instant processing without delay</li>
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-enc-primary"/> <strong>Secure:</strong> Browser-side processing only</li>
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-enc-primary"/> <strong>Private:</strong> Zero server-side data storage</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <EncoderDecoderMainSeo />
       </main>
 
       {/* Breadcrumb Navigation for SEO */}

@@ -133,6 +133,16 @@ export default function JSONtoXMLSeo() {
         </div>
       </div>
 
+      
+      <h3 className="text-2xl font-bold text-dev-dark mt-10">How to Use JSON to XML Converter</h3>
+      <p>Using our online JSON to XML Converter is incredibly straightforward. Just follow these simple steps:</p>
+      <ol className="list-decimal pl-6 space-y-4 mt-4 mb-10 text-dev-gray">
+        <li><strong>Input your data:</strong> Paste or type your content into the main input text area.</li>
+        <li><strong>Select options:</strong> Choose any specific formatting or conversion options if applicable to your task.</li>
+        <li><strong>Instantly process:</strong> The tool will automatically process your input in real-time, or you can click the primary action button to execute.</li>
+        <li><strong>Copy or Download:</strong> Once generated, easily copy the resulting output to your clipboard or download it as a text file for immediate use.</li>
+      </ol>
+
       <h3 className="text-2xl font-bold mt-10 text-dev-dark">Frequently Asked Questions</h3>
       <div className="not-prose space-y-4 mt-6">
         {[

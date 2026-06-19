@@ -6,6 +6,7 @@ import {
   Zap, Info, ChevronRight, FileText, Lock, Globe, Terminal 
 } from 'lucide-react';
 import Base64EncoderSeo from "@/components/tools/Base64EncoderSeo";
+import RelatedEncoderDecoderTools from "@/components/tools/RelatedEncoderDecoderTools";
 
 export default function Base64EncoderClient() {
   const [textInput, setTextInput] = useState('');
@@ -161,19 +162,8 @@ export default function Base64EncoderClient() {
         </section>
 
         {/* Long-form SEO Content */}
-        {/* Long-form SEO Content */}
         <Base64EncoderSeo />
-
-        {/* INTERNAL TOOLS CROSS LINKING DIRECTORY HUB */}
-        <div className="mt-8 p-6 bg-enc-white rounded-2xl shadow-md border border-enc-gray">
-          <h4 className="text-sm font-bold text-enc-dark mb-3 uppercase tracking-wider">Explore Related Developer Tools</h4>
-          <div className="flex flex-wrap gap-2 text-xs">
-            <a href="/tools/encoder-decoder/base64-decoder" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">Base64 Decoder</a>
-            <a href="/tools/encoder-decoder/url-encoder" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">URL Encoder</a>
-            <a href="/tools/developer-tools/html-minifier" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">HTML Minifier</a>
-            <a href="/tools/generators/uuid-generator" className="px-3 py-1.5 bg-enc-bg/50 hover:bg-enc-bg rounded-md border border-enc-gray text-enc-gray hover:text-enc-primary transition-colors font-medium">UUID Generator</a>
-          </div>
-        </div>
+        <RelatedEncoderDecoderTools />
       </main>
 
       <footer className="bg-enc-white border-t border-enc-gray py-8 px-6">

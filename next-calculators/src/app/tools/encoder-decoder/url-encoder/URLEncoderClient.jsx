@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Download, RefreshCw, Link2, ChevronRight, FileText, Code, Trash2 } from "lucide-react";
 import URLEncoderSeo from "@/components/tools/URLEncoderSeo";
+import RelatedEncoderDecoderTools from "@/components/tools/RelatedEncoderDecoderTools";
 
 export default function URLEncoderClient() {
   const [input, setInput] = useState("");
@@ -183,6 +184,7 @@ export default function URLEncoderClient() {
           </div>
         </div>
         <URLEncoderSeo />
+        <RelatedEncoderDecoderTools />
       </main>
     </div>
   );
