@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { Download, Copy, RefreshCw, QrCode, ChevronRight } from "lucide-react";
 import QRGeneratorSeo from "@/components/tools/QRGeneratorSeo";
+import RelatedGeneratorsTools from "@/components/tools/RelatedGeneratorsTools";
 
 export default function QRGeneratorClient() {
   const [text, setText] = useState("");
@@ -168,6 +169,7 @@ export default function QRGeneratorClient() {
         )}
 
         <QRGeneratorSeo />
+        <RelatedGeneratorsTools />
 
       </main>
       

@@ -2,91 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://toolswizard.in/tools/converter</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/converter/xml-json</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/design</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://toolswizard.in/tools/design/color-converter</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/color-mixer</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/color-palette-generator</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/contrast-checker</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/css-color-generator</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/hex-to-hsl</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://toolswizard.in/tools/design/hsl-hex</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/image-color-picker</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/material-color-generator</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/opacity-calculator</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/random-color-generator</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/design/rgb-hex</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolswizard.in/tools/design/tailwind-color-picker</loc>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/developer-tools</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/developer-tools/html-formatter</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/developer-tools/html-minifier</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/developer-tools/json-xml</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolswizard.in/tools/generators</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://toolswizard.in/tools/generators/qr-generator</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolswizard.in/tools/generators/uuid-generator</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/pdf-tools</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/pdf-tools/delete-pages</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolswizard.in/tools/pdf-tools/extract-pages</loc>
-    <lastmod>2026-06-19T20:48:36.834Z</lastmod>
+    <lastmod>2026-06-20T10:00:14.378Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -5,7 +5,8 @@ import {
   Palette, Copy, CheckCircle2, ShieldCheck, 
   Zap, ChevronRight, Droplets, RefreshCw, Eye
 } from 'lucide-react';
-import RGBHexSeo from '@/components/tools/RGBHexSeo';
+import RgbToHexSeo from '@/components/tools/RgbToHexSeo';
+import RelatedDesignTools from '@/components/tools/RelatedDesignTools';
 
 export default function RGBHexClient() {
   const [red, setRed] = useState(0);
@@ -216,7 +217,8 @@ export default function RGBHexClient() {
           </div>
         </section>
 
-        <RGBHexSeo />
+        <RgbToHexSeo />
+        <RelatedDesignTools />
 
       </main>
 

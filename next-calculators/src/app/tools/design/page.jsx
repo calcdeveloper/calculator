@@ -15,6 +15,7 @@ import {
   Contrast
 } from 'lucide-react';
 import { createPageMetadata } from '@/utils/seo';
+import DesignHubSeo from '@/components/tools/DesignHubSeo';
 
 export const dynamic = "force-static";
 
@@ -49,7 +50,7 @@ const designTools = [
     icon: <Wind className="w-6 h-6" />,
     iconBg: "bg-yellow-100 text-yellow-600",
     link: "/tools/design/hex-to-hsl",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Gradient Generator",
@@ -57,7 +58,7 @@ const designTools = [
     icon: <Zap className="w-6 h-6" />,
     iconBg: "bg-green-100 text-green-600",
     link: "/tools/design/gradient-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Color Palette Generator",
@@ -65,7 +66,7 @@ const designTools = [
     icon: <PaletteIcon className="w-6 h-6" />,
     iconBg: "bg-blue-100 text-blue-600",
     link: "/tools/design/color-palette-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Contrast Checker",
@@ -73,7 +74,7 @@ const designTools = [
     icon: <Contrast className="w-6 h-6" />,
     iconBg: "bg-indigo-100 text-indigo-600",
     link: "/tools/design/contrast-checker",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Color Converter",
@@ -81,7 +82,7 @@ const designTools = [
     icon: <Layers className="w-6 h-6" />,
     iconBg: "bg-purple-100 text-purple-600",
     link: "/tools/design/color-converter",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "CSS Color Generator",
@@ -89,7 +90,7 @@ const designTools = [
     icon: <Wand2 className="w-6 h-6" />,
     iconBg: "bg-pink-100 text-pink-600",
     link: "/tools/design/css-color-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Image Color Picker",
@@ -97,7 +98,7 @@ const designTools = [
     icon: <Pipette className="w-6 h-6" />,
     iconBg: "bg-cyan-100 text-cyan-600",
     link: "/tools/design/image-color-picker",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Random Color Generator",
@@ -105,7 +106,7 @@ const designTools = [
     icon: <Dice5 className="w-6 h-6" />,
     iconBg: "bg-rose-100 text-rose-600",
     link: "/tools/design/random-color-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Tailwind Color Picker",
@@ -113,7 +114,7 @@ const designTools = [
     icon: <Eye className="w-6 h-6" />,
     iconBg: "bg-teal-100 text-teal-600",
     link: "/tools/design/tailwind-color-picker",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Material Color Generator",
@@ -121,7 +122,7 @@ const designTools = [
     icon: <Palette className="w-6 h-6" />,
     iconBg: "bg-amber-100 text-amber-600",
     link: "/tools/design/material-color-generator",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Color Mixer",
@@ -129,7 +130,7 @@ const designTools = [
     icon: <Droplets className="w-6 h-6" />,
     iconBg: "bg-violet-100 text-violet-600",
     link: "/tools/design/color-mixer",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Opacity Calculator",
@@ -137,7 +138,7 @@ const designTools = [
     icon: <Eye className="w-6 h-6" />,
     iconBg: "bg-slate-100 text-slate-600",
     link: "/tools/design/opacity-calculator",
-    status: "coming-soon"
+    status: "active"
   }
 ];
 
@@ -198,30 +199,8 @@ export default function DesignToolsPage() {
           ))}
         </div>
 
-        {/* SEO Article Section */}
-        <div className="mt-24 pt-16 border-t border-conv-gray">
-          <h2 className="text-3xl font-bold text-conv-dark mb-6">About Design Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-conv-gray leading-relaxed">
-            <div>
-              <p className="mb-4">
-                <strong>Design Tools</strong> are essential utilities for modern web designers, UI/UX professionals, and developers. Whether you need to convert color formats for CSS, generate accessible color palettes, or extract colors from images, ToolsWizard provides comprehensive design utilities that streamline your workflow and save valuable time.
-              </p>
-              <p>
-                Our color tools support all major formats including RGB, HEX, HSL, and CMYK. Convert between formats instantly, check accessibility compliance, and generate beautiful palettes that work harmoniously with your design systems. Whether you're building a personal project or enterprise application, our tools scale to meet your needs.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4">
-                Every tool is designed with privacy and speed in mind. All color calculations, conversions, and palette generation happen instantly in your browser—your design data never leaves your device. No accounts, no limits, no subscriptions—just powerful design utilities available whenever you need them.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2"><Palette size={16} className="text-pink-600"/> <strong>Comprehensive:</strong> Support for RGB, HEX, HSL, CMYK, and more.</li>
-                <li className="flex items-center gap-2"><Palette size={16} className="text-pink-600"/> <strong>Accessible:</strong> WCAG contrast checking and compliance tools.</li>
-                <li className="flex items-center gap-2"><Palette size={16} className="text-pink-600"/> <strong>Fast & Private:</strong> 100% browser-based, zero data storage.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        {/* Comprehensive SEO Content */}
+        <DesignHubSeo />
       </main>
 
       {/* Breadcrumbs */}

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Copy, RefreshCw, Palette, Download, Eye, Droplets, ShieldCheck, Zap, ChevronRight, CheckCircle2 } from "lucide-react";
-import HSLHexSeo from "@/components/tools/HSLHexSeo";
+import HslToHexSeo from "@/components/tools/HslToHexSeo";
+import RelatedDesignTools from "@/components/tools/RelatedDesignTools";
 
 export default function HSLHexClient() {
   const [hue, setHue] = useState(180);
@@ -238,7 +239,8 @@ export default function HSLHexClient() {
           </div>
         </section>
 
-        <HSLHexSeo />
+        <HslToHexSeo />
+        <RelatedDesignTools />
       </main>
 
       <footer className="bg-design-white border-t border-design-gray py-8 px-6">

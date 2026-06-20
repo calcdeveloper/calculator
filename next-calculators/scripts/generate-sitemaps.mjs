@@ -133,7 +133,7 @@ const sitemapGroups = {
     ...getCalculatorRoutes(),
   ],
   "sitemap-tools.xml": allToolRoutes.filter(
-    (route) => !route.startsWith("/tools/fun-tools") && !route.startsWith("/tools/text-tools") && !route.startsWith("/tools/encoder-decoder")
+    (route) => !route.startsWith("/tools/fun-tools") && !route.startsWith("/tools/text-tools") && !route.startsWith("/tools/encoder-decoder") && !route.startsWith("/tools/generators")
   ),
   "sitemap-fun-tools.xml": allToolRoutes.filter((route) =>
     route.startsWith("/tools/fun-tools")
@@ -143,6 +143,9 @@ const sitemapGroups = {
   ),
   "sitemap-encoder-decoder.xml": allToolRoutes.filter((route) =>
     route.startsWith("/tools/encoder-decoder")
+  ),
+  "sitemap-generators.xml": allToolRoutes.filter((route) =>
+    route.startsWith("/tools/generators")
   ),
 };
 

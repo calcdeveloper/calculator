@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Hash, Copy, RefreshCw, Shield, ChevronRight } from 'lucide-react';
 import UUIDGeneratorSeo from '@/components/tools/UUIDGeneratorSeo';
+import RelatedGeneratorsTools from '@/components/tools/RelatedGeneratorsTools';
 
 export default function UUIDGeneratorClient() {
   const [uuids, setUuids] = useState(['']);
@@ -181,6 +182,7 @@ export default function UUIDGeneratorClient() {
         </div>
 
         <UUIDGeneratorSeo />
+        <RelatedGeneratorsTools />
       </main>
 
       <footer className="bg-gen-white border-t border-gen-gray/30 py-8 px-6 mt-12">
