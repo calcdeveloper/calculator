@@ -97,8 +97,8 @@ export default function ColorPaletteGeneratorClient() {
         </div>
       </section>
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 -mt-20 pb-20 flex flex-col">
-        <div className="bg-conv-white rounded-3xl shadow-2xl overflow-hidden mb-8 border border-conv-gray/20 flex flex-col flex-1 min-h-[500px]">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
           <div className="flex flex-col md:flex-row flex-1">
             {colors.map((color, index) => (

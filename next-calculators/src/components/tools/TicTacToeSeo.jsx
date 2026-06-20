@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TicTacToeSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         Play Tic Tac Toe Online: A Modern Digital Take on the Ultimate Classic Game
       </h2>
@@ -115,6 +115,6 @@ export default function TicTacToeSeo() {
           Take a much-needed, quick mental break from your stressful work. Scroll back to the top of this page, select your preferred game mode, and see if you can easily outsmart our randomized computer AI or securely win bragging rights against your best friends!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

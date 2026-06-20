@@ -27,7 +27,7 @@ export default function LovePercentageSeo() {
   ];
 
   return (
-    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray/30">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl font-bold text-fun-dark">Free Love Percentage Calculator Online: Test Your Compatibility</h2>
       <p>
         The <strong>Love Percentage Calculator</strong> on ToolsWizard is one of the most popular casual tools for couples, classmates, and friends who want a quick, humorous compatibility reading. In seconds, you enter two names and receive a percentage score paired with a short message—from playful friendship vibes to dramatic soulmate energy. Millions of people have used similar name-based love tests at school, during festivals, and on social media because they spark conversation, laughter, and light debate. Our version is built for the modern web: fast, mobile-friendly, private, and completely free without registration.

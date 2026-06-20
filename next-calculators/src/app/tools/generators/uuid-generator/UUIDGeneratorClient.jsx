@@ -90,9 +90,9 @@ export default function UUIDGeneratorClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         {/* Interactive Application Block */}
-        <div className="bg-gen-white rounded-3xl shadow-2xl p-6 md:p-10 mb-8 border border-gen-gray/20">
+        <div className="bg-gen-white rounded-3xl shadow-2xl border border-gen-gray overflow-hidden p-6 md:p-8">
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>

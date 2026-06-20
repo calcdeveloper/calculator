@@ -43,8 +43,8 @@ export default function CoinFlipClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12 text-center">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8 text-center">
           <div
             className={`mx-auto w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-inner mb-8 transition-all duration-500 ${
               flipping ? 'animate-spin bg-amber-100 text-amber-800' : result === 'Heads' ? 'bg-yellow-400 text-yellow-900' : result === 'Tails' ? 'bg-slate-300 text-slate-800' : 'bg-fun-bg text-fun-gray border-2 border-dashed border-fun-gray/40'
@@ -90,22 +90,22 @@ export default function CoinFlipClient() {
           )}
         </div>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Coins />
             </div>
             <h3 className="text-xl font-bold mb-2">50/50 Fair Toss</h3>
             <p className="text-fun-gray text-sm">Each flip is independent—great for quick binary decisions.</p>
           </div>
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <ShieldCheck />
             </div>
             <h3 className="text-xl font-bold mb-2">No Server Logs</h3>
             <p className="text-fun-gray text-sm">Flips run in your browser; history clears when you leave the page.</p>
           </div>
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-secondary/20 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Zap />
             </div>

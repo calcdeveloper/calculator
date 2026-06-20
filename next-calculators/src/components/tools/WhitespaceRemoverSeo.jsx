@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function WhitespaceRemoverSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Complete Guide to Managing Whitespace and Formatting Text
       </h2>
@@ -142,6 +142,6 @@ export default function WhitespaceRemoverSeo() {
           Invisible characters hold immense power over how text is displayed and processed. Allowing stray tabs, trailing spaces, or broken line breaks to persist in your documents or code is a recipe for formatting disasters and software bugs. The ToolsWizard Whitespace Remover empowers you to take absolute control over the invisible structure of your text. By utilizing this secure, client-side tool, you can instantly sanitize data, optimize code, and ensure your written communication is flawlessly formatted every single time.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

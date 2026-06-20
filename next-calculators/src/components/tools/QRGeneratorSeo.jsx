@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function QRGeneratorSeo() {
   return (
-    <div className="mt-12 bg-gen-white rounded-3xl shadow-xl p-8 md:p-12 border border-gen-gray/20 prose prose-slate max-w-none text-gen-dark leading-relaxed space-y-8 font-sans">
+    <article className="prose prose-slate max-w-none bg-gen-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-gen-gray mt-12">
       {/* USER NAVIGATION AND TABLE OF CONTENTS */}
       <div className="p-6 bg-gen-bg/50 rounded-2xl border border-gen-gray/20">
         <h3 className="text-sm font-bold uppercase tracking-wider text-gen-dark mt-0 mb-4">Table of Contents</h3>
@@ -237,6 +237,6 @@ export default function QRGeneratorSeo() {
         </div>
       </section>
 
-    </div>
+    </article>
   );
 }

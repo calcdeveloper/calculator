@@ -111,7 +111,7 @@ export default function FindAndReplaceClient() {
       </section>
 
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-6 md:p-8 mb-8">
+        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray overflow-hidden p-6 md:p-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
             {/* Input Options Sidebar */}

@@ -3,7 +3,7 @@ import { Shield, Zap, Lock, Key } from 'lucide-react';
 
 export default function BcryptHashGeneratorSeo() {
   return (
-    <article className="prose prose-slate max-w-none bg-enc-white p-6 sm:p-10 md:p-16 rounded-3xl md:rounded-[2.5rem] shadow-sm border border-enc-gray mt-8 md:mt-12">
+    <article className="prose prose-slate max-w-none bg-enc-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-enc-gray mt-12">
       <h2 className="text-3xl font-bold text-enc-dark">The Definitive, Comprehensive Guide to Bcrypt Password Hashing</h2>
       
       <p>

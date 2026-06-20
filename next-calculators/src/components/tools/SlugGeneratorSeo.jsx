@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SlugGeneratorSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Comprehensive Guide to SEO-Friendly URL Slugs
       </h2>
@@ -155,6 +155,6 @@ export default function SlugGeneratorSeo() {
           The URL slug might seem like a minor detail, but it plays a starring role in your website's SEO strategy and user experience. A well-crafted slug communicates clearly to search engines, encourages users to click, and makes your links highly shareable. With the ToolsWizard Slug Generator, creating perfect, hyphen-separated, lowercase, and special-character-free URLs is effortless and instant. Bookmark this tool to streamline your web publishing workflow and give your content the technical SEO foundation it deserves.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

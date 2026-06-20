@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TextCleanerSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Ultimate Guide to Text Cleaning and Data Sanitization
       </h2>
@@ -132,6 +132,6 @@ export default function TextCleanerSeo() {
           Unsanitized text is a roadblock to productivity. Whether you are a data scientist preparing a dataset for machine learning, a marketer anonymizing survey results, or a developer migrating content to a new database, ensuring your text is free of unwanted formatting and hazardous characters is a crucial first step. The ToolsWizard Text Cleaner puts enterprise-grade data sanitization capabilities directly in your browser. By combining multiple specialized filters, you can instantly transform chaotic, dirty data into pristine, actionable text, all while maintaining absolute privacy and security.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

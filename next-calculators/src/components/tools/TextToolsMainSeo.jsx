@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TextToolsMainSeo() {
   return (
-    <div className="mt-16 bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 mb-16">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 leading-tight">
         The Ultimate Collection of Free Online Text Processing Tools
       </h2>
@@ -118,6 +118,6 @@ export default function TextToolsMainSeo() {
           Stop wasting hours of your valuable time performing tedious, highly repetitive manual text formatting tasks. Scroll up, find the specific tool you desperately need, paste your messy text into the box, and let our powerful algorithms do all the heavy lifting for you instantly!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

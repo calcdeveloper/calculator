@@ -88,6 +88,9 @@ const toolSchema = {
   ]
 };
 
+import HtmlMinifierSeo from '@/components/tools/HTMLMinifierSeo';
+import RelatedDeveloperTools from '@/components/tools/RelatedDeveloperTools';
+
 export default function HTMLMinifier() {
   return (
     <>
@@ -100,7 +103,13 @@ export default function HTMLMinifier() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
       />
       
-      <HTMLMinifierClient />
+      <div className="min-h-screen bg-dev-bg">
+        <HTMLMinifierClient />
+        <div className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+          <HtmlMinifierSeo />
+          <RelatedDeveloperTools currentToolPath="/tools/developer-tools/html-minifier" />
+        </div>
+      </div>
     </>
   );
 }

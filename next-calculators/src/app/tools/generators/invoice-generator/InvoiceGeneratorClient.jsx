@@ -73,10 +73,10 @@ export default function InvoiceGeneratorClient() {
         </div>
       </section>
 
-      <main className="max-w-5xl mx-auto px-4 -mt-20 pb-20 print:p-0 print:m-0 print:max-w-none">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         
         {/* Editor Controls - Hidden on Print */}
-        <div className="bg-gen-white rounded-t-3xl shadow-lg p-6 border-b border-gen-gray/20 print:hidden flex justify-between items-center flex-wrap gap-4">
+        <div className="bg-gen-white rounded-3xl shadow-2xl border border-gen-gray overflow-hidden p-6 md:p-8">
           <div className="flex gap-4 items-center">
             <div className="flex flex-col">
               <label className="text-xs font-bold text-gen-gray mb-1">Currency Symbol</label>

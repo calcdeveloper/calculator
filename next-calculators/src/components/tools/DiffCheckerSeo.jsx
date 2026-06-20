@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DiffCheckerSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Ultimate Guide to Text Diff Checkers and Version Control
       </h2>
@@ -148,6 +148,6 @@ export default function DiffCheckerSeo() {
           A Text Diff Checker is an essential utility for anyone who works with written content or code. By instantly visualizing the differences between two documents, you save valuable time, eliminate the risk of human oversight, and maintain absolute control over the evolution of your work. Whether you are debugging a complex application, reviewing a legal contract, or refining a marketing campaign, the ToolsWizard Diff Checker provides a fast, secure, and intuitive solution for all your text comparison needs. Stop squinting at your screen trying to spot the changes—let our automated tool do the heavy lifting for you!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

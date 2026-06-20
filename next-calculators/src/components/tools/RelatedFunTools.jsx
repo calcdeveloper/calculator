@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   Heart,
@@ -90,42 +90,44 @@ const funTools = [
   },
 ];
 
-export default function RelatedFunTools({ currentPath }) {
-  // Filter out the current tool
-  const related = funTools.filter(tool => tool.link !== currentPath);
+export default function RelatedFunTools(props) {
+  const currentPath = props.currentToolPath || props.currentPath || "";
+  const [tools, setTools] = useState([]);
+
+  useEffect(() => {
+    if (!currentPath) {
+      setTools(funTools);
+      return;
+    }
+    // Filter out the current tool
+    const filteredTools = funTools.filter(tool => tool.link !== currentPath && !tool.link.includes(currentPath));
+    setTools(filteredTools);
+  }, [currentPath]);
+
+  if (tools.length === 0) return null;
 
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8">
-      <div className="flex items-center justify-between mb-8 border-b border-fun-gray/20 pb-4">
-        <h2 className="text-2xl font-bold text-fun-dark">Explore Other Fun Tools</h2>
-        <Link 
-          href="/tools/fun-tools" 
-          className="text-fun-primary hover:text-fun-primaryDark font-semibold flex items-center gap-1 transition-colors text-sm"
-        >
-          View All <ArrowRight size={16} />
-        </Link>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {related.map((tool, index) => (
-          <Link
-            key={index}
-            href={tool.link}
-            className="group flex flex-col p-5 rounded-2xl border border-fun-gray/20 bg-fun-bg/30 hover:bg-fun-primary/5 hover:border-fun-primary/30 transition-all duration-300"
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-fun-white shadow-sm flex items-center justify-center text-fun-primary group-hover:scale-110 group-hover:bg-fun-primary group-hover:text-fun-white transition-all duration-300">
-                {tool.icon}
+    <div className="mt-16 bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8">
+      <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Fun Tools</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {tools.map((tool, index) => {
+          const Icon = tool.icon;
+          
+          return (
+            <Link
+              key={index}
+              href={tool.link}
+              className="group flex items-center gap-3 p-3 rounded-xl border transition-all duration-300 shadow-sm bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 hover:shadow-md"
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors bg-gray-50 text-gray-500 group-hover:text-black group-hover:bg-gray-200">
+                {React.isValidElement(tool.icon) ? tool.icon : <Icon size={20} />}
               </div>
-              <h3 className="font-bold text-fun-dark text-lg group-hover:text-fun-primary transition-colors">
+              <span className="font-bold text-sm line-clamp-1 text-gray-700 group-hover:text-black">
                 {tool.title}
-              </h3>
-            </div>
-            <p className="text-sm text-fun-gray leading-relaxed flex-grow">
-              {tool.description}
-            </p>
-          </Link>
-        ))}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

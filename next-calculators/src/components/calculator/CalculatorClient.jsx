@@ -233,6 +233,20 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                   </div>
                 );
               }
+              if (input.type === "text") {
+                return (
+                  <div key={input.id} className="mb-6">
+                    <label className="font-semibold text-calc-black text-sm sm:text-base block mb-3">{input.label}</label>
+                    <input 
+                      type="text" 
+                      value={inputs[input.id] !== undefined ? inputs[input.id] : ""} 
+                      onChange={(e) => handleInputChange(input.id, e.target.value)} 
+                      placeholder={input.placeholder || ""}
+                      className="w-full bg-calc-green/10 border border-calc-green/20 rounded-lg px-4 py-3 text-calc-black font-bold focus:outline-none focus:ring-2 focus:ring-calc-green"
+                    />
+                  </div>
+                );
+              }
               // Number Input
               return (
                 <div key={input.id} className="mb-6">

@@ -2,26 +2,42 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://toolswizard.in/sitemap-calculators.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://toolswizard.in/sitemap-tools.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://toolswizard.in/sitemap-pdf-tools.xml</loc>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://toolswizard.in/sitemap-converter-tools.xml</loc>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://toolswizard.in/sitemap-design-tools.xml</loc>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://toolswizard.in/sitemap-developer-tools.xml</loc>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://toolswizard.in/sitemap-fun-tools.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://toolswizard.in/sitemap-text-tools.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://toolswizard.in/sitemap-encoder-decoder.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://toolswizard.in/sitemap-generators.xml</loc>
-    <lastmod>2026-06-20T10:00:14.379Z</lastmod>
+    <lastmod>2026-06-20T22:11:49.543Z</lastmod>
   </sitemap>
 </sitemapindex>

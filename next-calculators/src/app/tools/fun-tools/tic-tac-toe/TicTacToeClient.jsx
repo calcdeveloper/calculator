@@ -96,8 +96,8 @@ export default function TicTacToeClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-6 md:p-10 mb-16 flex flex-col items-center">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8">
           
           {/* Game Mode Selector */}
           <div className="flex bg-fun-bg rounded-xl border border-fun-gray/20 p-1 mb-8 w-full max-w-sm">
@@ -167,7 +167,7 @@ export default function TicTacToeClient() {
         </div>
 
         {/* Features Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm text-center md:text-left hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
               <Monitor />

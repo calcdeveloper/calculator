@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function RandomTextGeneratorSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Comprehensive Guide to Random String and Text Generation
       </h2>
@@ -144,6 +144,6 @@ export default function RandomTextGeneratorSeo() {
           Chaos is an essential ingredient in building robust, secure, and well-tested digital systems. Whether you are hunting for edge-case bugs, stress-testing database ingestion, or quickly mocking up data structures, you need immediate access to highly configurable random strings. The ToolsWizard Random Text Generator strips away the complexity of scripting, providing a fast, secure, and infinitely useful utility right in your browser. Embrace the entropy and build better software today.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

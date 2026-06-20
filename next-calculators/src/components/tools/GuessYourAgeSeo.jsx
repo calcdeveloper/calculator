@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GuessYourAgeSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         The Ultimate Guess Your Age Tool: Uncovering Your True Mental Age
       </h2>
@@ -131,6 +131,6 @@ export default function GuessYourAgeSeo() {
           Stop wondering whether you truly act your age. Scroll up to the top of the page, click through our quick, interactive five-question quiz, and discover your true mental age in seconds. Don't forget to use the sharing buttons to post your results with your friends and see who really acts the oldest in your group!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

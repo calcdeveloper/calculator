@@ -1,19 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  ArrowRightLeft, 
-  FileSpreadsheet, 
-  FileCode, 
-  FileJson, 
-  Braces, 
-  Type, 
-  FileText, 
-  Binary, 
-  Image as ImageIcon, 
-  Clock, 
-  Palette, 
-  Table, 
-  FileArchive, 
+import {
+  ArrowRightLeft,
+  FileSpreadsheet,
+  FileCode,
+  FileJson,
+  Braces,
+  Type,
+  FileText,
+  Binary,
+  Image as ImageIcon,
+  Clock,
+  Palette,
+  Table,
+  FileArchive,
   Hash,
   ChevronRight,
   CodeXml,
@@ -33,14 +33,6 @@ export const metadata = createPageMetadata({
 
 const converterTools = [
   {
-    title: "JSON to XML",
-    description: "Transform JSON data into structured XML documents instantly.",
-    icon: <CodeXml className="w-6 h-6" />,
-    iconBg: "bg-blue-100 text-blue-600",
-    link: "/tools/developer-tools/json-xml",
-    status: "active"
-  },
-  {
     title: "XML to JSON",
     description: "Transform XML documents into structured JSON data instantly.",
     icon: <CodeXml className="w-6 h-6" />,
@@ -49,12 +41,20 @@ const converterTools = [
     status: "active"
   },
   {
+    title: "JSON to XML",
+    description: "Transform JSON data into structured XML documents instantly.",
+    icon: <CodeXml className="w-6 h-6" />,
+    iconBg: "bg-blue-100 text-blue-600",
+    link: "/tools/developer-tools/json-xml",
+    status: "active"
+  },
+  {
     title: "JSON to CSV",
     description: "Convert nested JSON objects into flat CSV files for spreadsheets.",
     icon: <FileSpreadsheet className="w-6 h-6" />,
     iconBg: "bg-emerald-100 text-emerald-600",
-    link: "/tools/converter/json-to-csv",
-    status: "coming-soon"
+    link: "/tools/developer-tools/json-csv",
+    status: "active"
   },
   {
     title: "CSV to JSON",
@@ -62,7 +62,7 @@ const converterTools = [
     icon: <FileJson className="w-6 h-6" />,
     iconBg: "bg-indigo-100 text-indigo-600",
     link: "/tools/converter/csv-to-json",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "HTML to Markdown",
@@ -70,7 +70,7 @@ const converterTools = [
     icon: <Languages className="w-6 h-6" />,
     iconBg: "bg-orange-100 text-orange-600",
     link: "/tools/converter/html-to-markdown",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Markdown to HTML",
@@ -78,7 +78,7 @@ const converterTools = [
     icon: <FileText className="w-6 h-6" />,
     iconBg: "bg-purple-100 text-purple-600",
     link: "/tools/converter/markdown-to-html",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Text to Binary",
@@ -86,7 +86,7 @@ const converterTools = [
     icon: <Binary className="w-6 h-6" />,
     iconBg: "bg-rose-100 text-rose-600",
     link: "/tools/converter/text-to-binary",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Image to Base64",
@@ -94,7 +94,7 @@ const converterTools = [
     icon: <ImageIcon className="w-6 h-6" />,
     iconBg: "bg-cyan-100 text-cyan-600",
     link: "/tools/converter/image-to-base64",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Timestamp to Date",
@@ -102,15 +102,15 @@ const converterTools = [
     icon: <Clock className="w-6 h-6" />,
     iconBg: "bg-amber-100 text-amber-600",
     link: "/tools/converter/timestamp-to-date",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "RGB to HEX",
     description: "Quickly find the HEX code for any RGB or RGBA color value.",
     icon: <Palette className="w-6 h-6" />,
     iconBg: "bg-pink-100 text-pink-600",
-    link: "/tools/converter/rgb-to-hex",
-    status: "coming-soon"
+    link: "/tools/design/rgb-hex",
+    status: "active"
   },
   {
     title: "JSON to Excel",
@@ -118,7 +118,7 @@ const converterTools = [
     icon: <Table className="w-6 h-6" />,
     iconBg: "bg-green-100 text-green-600",
     link: "/tools/converter/json-to-excel",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Decimal to Binary",
@@ -126,7 +126,7 @@ const converterTools = [
     icon: <Hash className="w-6 h-6" />,
     iconBg: "bg-slate-100 text-slate-600",
     link: "/tools/converter/decimal-to-binary",
-    status: "coming-soon"
+    status: "active"
   },
   {
     title: "Base64 to File",
@@ -134,9 +134,11 @@ const converterTools = [
     icon: <FileArchive className="w-6 h-6" />,
     iconBg: "bg-violet-100 text-violet-600",
     link: "/tools/converter/base64-to-file",
-    status: "coming-soon"
+    status: "active"
   }
 ];
+
+import ConverterHubSeo from '@/components/tools/ConverterHubSeo';
 
 export default function ConverterToolsPage() {
   return (
@@ -157,34 +159,34 @@ export default function ConverterToolsPage() {
       </header>
 
       {/* Tools Grid */}
-      <main className="max-w-7xl mx-auto px-4 -mt-20 pb-24">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {converterTools.map((tool, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-conv-white rounded-2xl p-8 flex flex-col border border-conv-gray hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12 duration-300 ${tool.iconBg}`}>
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12 duration-300 [&>svg]:w-5 [&>svg]:h-5 ${tool.iconBg}`}>
                   {tool.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-conv-dark mb-1">{tool.title}</h3>
-                  <p className="text-conv-gray text-sm leading-relaxed">
+                  <h3 className="text-xl font-bold text-conv-dark mb-1 line-clamp-1">{tool.title}</h3>
+                  <p className="text-conv-gray text-sm leading-relaxed line-clamp-2">
                     {tool.description}
                   </p>
                 </div>
               </div>
 
               {tool.status === "active" ? (
-                <Link 
+                <Link
                   href={tool.link}
                   className="mt-auto w-full bg-conv-primary hover:bg-conv-primaryDark text-conv-white text-center py-3 rounded-lg font-bold transition-colors shadow-sm"
                 >
                   Use Tool
                 </Link>
               ) : (
-                <button 
+                <button
                   disabled
                   className="mt-auto w-full bg-conv-gray/20 text-conv-gray text-center py-3 rounded-lg font-bold cursor-not-allowed"
                 >
@@ -196,29 +198,7 @@ export default function ConverterToolsPage() {
         </div>
 
         {/* SEO Article Section */}
-        <div className="mt-24 pt-16 border-t border-conv-gray">
-          <h2 className="text-3xl font-bold text-conv-dark mb-6">About Converter Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-conv-gray leading-relaxed">
-            <div>
-              <p className="mb-4">
-                In a digital landscape filled with fragmented data formats, <strong>Converter Tools</strong> are the essential bridge for developers, designers, and data scientists. Whether you are transforming a complex <strong>JSON response to CSV</strong> for a stakeholder report or converting raw <strong>Binary to Text</strong> to debug a system log, ToolsWizard offers a seamless, high-speed solution.
-              </p>
-              <p>
-                Our philosophy is simple: conversion should be instant and private. Many online converters require you to upload files to their servers, creating a security risk for sensitive business data. ToolsWizard converters run 100% on the client side, meaning your data never leaves your device.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4">
-                We support a wide array of transformations beyond simple file formats. Our <strong>Timestamp converter</strong>, <strong>Color formatters</strong>, and <strong>Base64 encoders</strong> are designed to streamline the technical tasks that usually require custom scripts or heavy software.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-conv-primary"/> <strong>Fast:</strong> Powered by JavaScript Web Workers.</li>
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-conv-primary"/> <strong>Private:</strong> Zero server-side data storage.</li>
-                <li className="flex items-center gap-2"><ArrowRightLeft size={16} className="text-conv-primary"/> <strong>Free:</strong> No limits, no subscriptions.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <ConverterHubSeo />
       </main>
 
       {/* Breadcrumbs */}

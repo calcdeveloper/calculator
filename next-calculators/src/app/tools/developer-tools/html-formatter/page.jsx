@@ -76,11 +76,20 @@ const jsonLd = {
   ]
 };
 
+import HtmlFormatterSeo from '@/components/tools/HtmlFormatterSeo';
+import RelatedDeveloperTools from '@/components/tools/RelatedDeveloperTools';
+
 export default function HTMLFormatterPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <HTMLFormatterClient />
+      <div className="min-h-screen bg-dev-bg">
+        <HTMLFormatterClient />
+        <div className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+          <HtmlFormatterSeo />
+          <RelatedDeveloperTools currentToolPath="/tools/developer-tools/html-formatter" />
+        </div>
+      </div>
     </>
   );
 }

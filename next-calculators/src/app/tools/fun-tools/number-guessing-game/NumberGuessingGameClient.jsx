@@ -81,8 +81,8 @@ export default function NumberGuessingGameClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-6 md:p-10 mb-16 flex flex-col md:flex-row gap-8">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8">
           
           {/* Game Area */}
           <div className="flex-1">
@@ -169,7 +169,7 @@ export default function NumberGuessingGameClient() {
         </div>
 
         {/* Features Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm text-center md:text-left hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
               <Brain />

@@ -86,8 +86,8 @@ export default function ColorMixerClient() {
       </header>
 
       {/* Tool Interface */}
-      <main className="max-w-5xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray/30 overflow-hidden mb-8 p-6 md:p-10">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
           <div className="flex flex-col gap-10">
             

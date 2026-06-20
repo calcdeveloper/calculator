@@ -84,8 +84,8 @@ export default function FriendshipCalculatorClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 mb-8">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div>
               <label className="block font-bold text-fun-dark mb-2">
@@ -153,22 +153,22 @@ export default function FriendshipCalculatorClient() {
           </div>
         )}
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Sparkles />
             </div>
             <h3 className="text-xl font-bold mb-2">Instant Fun</h3>
             <p className="text-fun-gray text-sm">Get a playful score in one click—perfect for parties and chats.</p>
           </div>
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <ShieldCheck />
             </div>
             <h3 className="text-xl font-bold mb-2">Private</h3>
             <p className="text-fun-gray text-sm">Names stay in your browser—we never store them on a server.</p>
           </div>
-          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm">
+          <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray shadow-sm">
             <div className="w-12 h-12 bg-fun-secondary/20 text-fun-primary rounded-xl flex items-center justify-center mb-4">
               <Zap />
             </div>

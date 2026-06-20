@@ -37,7 +37,7 @@ export default function EncoderDecoderMainSeo() {
   ];
 
   return (
-    <div className="mt-16 bg-enc-white rounded-3xl shadow-xl p-8 md:p-12 border border-enc-gray/20 prose prose-slate max-w-none text-enc-dark leading-relaxed font-sans">
+    <article className="prose prose-slate max-w-none bg-enc-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-enc-gray mt-12">
       <div className="p-6 bg-enc-bg/50 rounded-2xl border border-enc-gray/20 mb-8">
         <h4 className="text-sm font-bold text-enc-dark mb-4 uppercase tracking-wider">Table of Contents</h4>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-semibold text-enc-primary list-none p-0 m-0">
@@ -203,6 +203,6 @@ export default function EncoderDecoderMainSeo() {
           ))}
         </div>
       </section>
-    </div>
+    </article>
   );
 }

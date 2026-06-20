@@ -2,18 +2,18 @@
 
 import React, { useState, useRef } from 'react';
 import { PDFDocument } from 'pdf-lib';
-import { 
-  Upload, Trash2, RotateCcw, ShieldCheck, Zap, Info, 
-  ChevronRight, FileText, CheckCircle2, MousePointerClick
-} from 'lucide-react';
+import { Eye, Download, Upload, Trash2, RotateCcw, ShieldCheck, Zap, Info, 
+  ChevronRight, FileText, CheckCircle2, MousePointerClick } from 'lucide-react';
 import DeletePagesSeo from '@/components/tools/DeletePagesSeo';
+import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
 
 export default function DeletePagesClient() {
   const [file, setFile] = useState(null);
   const [pages, setPages] = useState([]); 
   const [selectedPages, setSelectedPages] = useState(new Set());
   const [isProcessing, setIsProcessing] = useState(false);
-  const [isDone, setIsDone] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
+  const [extractedUrl, setExtractedUrl] = useState(null);
   const [error, setError] = useState(null);
   const fileInputRef = useRef(null);
 
@@ -62,12 +62,7 @@ export default function DeletePagesClient() {
       const pdfBytes = await pdfDoc.save();
       const blob = new Blob([pdfBytes], { type: 'application/pdf' });
       const url = URL.createObjectURL(blob);
-      
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `updated_${file.name}`;
-      link.click();
-      setIsDone(true);
+      setExtractedUrl(url);
     } catch (err) {
       setError("Could not process the PDF.");
     } finally {
@@ -75,11 +70,22 @@ export default function DeletePagesClient() {
     }
   };
 
+  const handleDownload = () => {
+    if (!extractedUrl) return;
+    const link = document.createElement("a");
+    link.href = extractedUrl;
+    link.download = `updated_${file.name}`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const reset = () => {
+    setShowPreview(false);
     setFile(null);
     setPages([]);
     setSelectedPages(new Set());
-    setIsDone(false);
+    setExtractedUrl(null);
     setError(null);
   };
 
@@ -101,8 +107,8 @@ export default function DeletePagesClient() {
       </section>
 
       {/* Primary Workspace Interactive Component Container */}
-      <main className="max-w-5xl mx-auto px-4 -mt-20">
-        <div className="bg-pdf-white rounded-3xl shadow-2xl border border-pdf-gray overflow-hidden">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-pdf-white rounded-3xl shadow-2xl border border-pdf-gray overflow-hidden p-6 md:p-8">
           {!file ? (
             <div 
               className="p-12 md:p-20 flex flex-col items-center justify-center border-4 border-dashed border-pdf-gray m-4 rounded-2xl hover:bg-pdf-bg/50 transition-colors cursor-pointer"
@@ -123,6 +129,40 @@ export default function DeletePagesClient() {
                 Choose File
               </button>
               <input type="file" ref={fileInputRef} className="hidden" accept=".pdf" onChange={handleUpload} />
+            </div>
+          ) : extractedUrl ? (
+            <div className="p-8 flex flex-col items-center justify-center text-center">
+              <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle2 size={40} />
+              </div>
+              <h2 className="text-3xl font-bold text-pdf-dark mb-4">Pages Deleted!</h2>
+              <p className="text-pdf-gray mb-8">Your modified PDF is ready for download.</p>
+              
+              <div className="flex gap-4 w-full md:w-auto">
+                <button
+                  onClick={reset}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-6 py-4 bg-pdf-gray/20 hover:bg-pdf-gray/30 text-pdf-dark font-bold rounded-xl transition-all"
+                >
+                  <RotateCcw size={20} /> Start Over
+                </button>
+                <button
+                  onClick={() => setShowPreview(!showPreview)}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-pdf-white border border-pdf-primary text-pdf-primary hover:bg-pdf-primary/5 font-bold rounded-xl transition-all shadow-sm"
+                >
+                  <Eye size={20} /> {showPreview ? 'Hide Preview' : 'Preview PDF'}
+                </button>
+                <button
+                  onClick={handleDownload}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-pdf-primary hover:bg-pdf-primaryDark text-pdf-white font-bold rounded-xl transition-all shadow-lg shadow-pdf-primary/20"
+                >
+                  <Download size={20} /> Download PDF
+                </button>
+              </div>
+              {showPreview && (
+                <div className="w-full mt-8 border border-pdf-gray rounded-xl overflow-hidden shadow-inner h-[600px] bg-gray-50">
+                  <iframe src={extractedUrl} className="w-full h-full" title="PDF Preview" />
+                </div>
+              )}
             </div>
           ) : (
             <div className="p-6 md:p-10">
@@ -183,7 +223,7 @@ export default function DeletePagesClient() {
         </div>
 
         {/* Core Value Proposition Matrix Block */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-pdf-white p-8 rounded-3xl border border-pdf-gray shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-pdf-primary/10 text-pdf-primary rounded-xl flex items-center justify-center mb-6"><ShieldCheck size={24} /></div>
             <h3 className="text-xl font-bold mb-3">Absolute Data Privacy</h3>
@@ -203,7 +243,7 @@ export default function DeletePagesClient() {
 
         {/* Extract SEO */}
         <DeletePagesSeo />
-
+        <RelatedPdfTools currentToolPath="/tools/pdf-tools/delete-pages" />
       </main>
 
       <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-4 text-center mt-12">

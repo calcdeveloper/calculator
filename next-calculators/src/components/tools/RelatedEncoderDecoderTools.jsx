@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
@@ -141,36 +141,44 @@ const ENCODER_DECODER_TOOLS = [
   }
 ];
 
-export default function RelatedEncoderDecoderTools({ currentPath }) {
-  const pathname = usePathname();
-  const activePath = currentPath || pathname;
-  
-  // Filter out current path to only show related tools
-  const relatedTools = ENCODER_DECODER_TOOLS.filter(tool => tool.link !== activePath);
+export default function RelatedEncoderDecoderTools(props) {
+  const currentPath = props.currentToolPath || props.currentPath || "";
+  const [tools, setTools] = useState([]);
+
+  useEffect(() => {
+    if (!currentPath) {
+      setTools(ENCODER_DECODER_TOOLS);
+      return;
+    }
+    // Filter out the current tool
+    const filteredTools = ENCODER_DECODER_TOOLS.filter(tool => tool.link !== currentPath && !tool.link.includes(currentPath));
+    setTools(filteredTools);
+  }, [currentPath]);
+
+  if (tools.length === 0) return null;
 
   return (
-    <div className="mt-16 bg-enc-white rounded-3xl shadow-xl border border-enc-gray/20 p-6 md:p-8">
-      <h3 className="text-2xl font-bold text-enc-dark mb-6">Explore Other Encoder & Decoder Tools</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {relatedTools.map((tool, index) => (
-          <Link
-            key={index}
-            href={tool.link}
-            className="group flex flex-col p-5 rounded-2xl border border-enc-gray/20 bg-enc-bg/30 hover:bg-enc-primary/5 hover:border-enc-primary/30 transition-all duration-300"
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-enc-white shadow-sm flex items-center justify-center text-enc-primary group-hover:scale-110 group-hover:bg-enc-primary group-hover:text-enc-white transition-all duration-300">
-                {tool.icon}
+    <div className="mt-16 bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8">
+      <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Encoder Decoder Tools</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {tools.map((tool, index) => {
+          const Icon = tool.icon;
+          
+          return (
+            <Link
+              key={index}
+              href={tool.link}
+              className="group flex items-center gap-3 p-3 rounded-xl border transition-all duration-300 shadow-sm bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 hover:shadow-md"
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors bg-gray-50 text-gray-500 group-hover:text-black group-hover:bg-gray-200">
+                {React.isValidElement(tool.icon) ? tool.icon : <Icon size={20} />}
               </div>
-              <h3 className="font-bold text-enc-dark text-lg group-hover:text-enc-primary transition-colors">
+              <span className="font-bold text-sm line-clamp-1 text-gray-700 group-hover:text-black">
                 {tool.title}
-              </h3>
-            </div>
-            <p className="text-sm text-enc-gray leading-relaxed flex-grow">
-              {tool.description}
-            </p>
-          </Link>
-        ))}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

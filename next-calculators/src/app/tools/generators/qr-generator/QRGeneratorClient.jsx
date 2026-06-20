@@ -72,10 +72,10 @@ export default function QRGeneratorClient() {
       </section>
 
       {/* Main Container */}
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         
         {/* Input Interface */}
-        <div className="bg-gen-white rounded-3xl shadow-2xl border border-gen-gray/20 p-6 md:p-10 mb-8">
+        <div className="bg-gen-white rounded-3xl shadow-2xl border border-gen-gray overflow-hidden p-6 md:p-8">
           <div className="mb-6">
             <label className="block text-sm font-semibold text-gen-dark mb-2">
               Enter URL or Plain Text

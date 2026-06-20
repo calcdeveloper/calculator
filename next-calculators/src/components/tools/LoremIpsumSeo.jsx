@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LoremIpsumSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Ultimate Guide to Lorem Ipsum and Placeholder Text
       </h2>
@@ -143,6 +143,6 @@ export default function LoremIpsumSeo() {
           Lorem Ipsum has stood the test of time, transitioning from the printing presses of the 16th century to the digital design canvases of today, because it solves a fundamental psychological problem in design evaluation. By using the ToolsWizard Lorem Ipsum Generator, you can instantly populate your wireframes and mockups with visually perfect dummy text, keeping your clients focused on the design and keeping your workflow moving at top speed. Bookmark this tool as an essential part of your daily digital toolkit.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

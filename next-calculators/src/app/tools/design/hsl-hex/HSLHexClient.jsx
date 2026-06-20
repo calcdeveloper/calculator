@@ -113,7 +113,7 @@ export default function HSLHexClient() {
 
       {/* Main Tool Container */}
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-design-white rounded-3xl shadow-2xl border border-design-gray overflow-hidden p-6 md:p-10 mb-8">
+        <div className="bg-design-white rounded-3xl shadow-2xl border border-design-gray overflow-hidden p-6 md:p-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Left Column - Input */}
@@ -221,7 +221,7 @@ export default function HSLHexClient() {
         </div>
 
         {/* Informational Sections */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 mb-12">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-design-white p-8 rounded-3xl border border-design-gray shadow-sm">
             <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6"><ShieldCheck /></div>
             <h3 className="text-xl font-bold mb-3">Browser-Side Security</h3>

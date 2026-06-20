@@ -25,7 +25,7 @@ export default function ImageColorPickerSeo() {
   ];
 
   return (
-    <div className="mt-12 bg-conv-white rounded-3xl shadow-xl p-8 md:p-12 border border-conv-gray/20 prose prose-slate max-w-none text-conv-dark leading-relaxed space-y-8 font-sans">
+    <article className="prose prose-slate max-w-none bg-conv-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-conv-gray mt-12">
       
       {/* TABLE OF CONTENTS */}
       <div className="p-6 bg-conv-bg/50 rounded-2xl border border-conv-gray/20">
@@ -166,6 +166,6 @@ export default function ImageColorPickerSeo() {
           ))}
         </div>
       </section>
-    </div>
+    </article>
   );
 }

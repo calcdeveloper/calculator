@@ -25,7 +25,7 @@ export default function InvoiceGeneratorSeo() {
   ];
 
   return (
-    <div className="mt-12 bg-gen-white rounded-3xl shadow-xl p-8 md:p-12 border border-gen-gray/20 prose prose-slate max-w-none text-gen-dark leading-relaxed space-y-8 font-sans">
+    <article className="prose prose-slate max-w-none bg-gen-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-gen-gray mt-12">
       
       {/* TABLE OF CONTENTS */}
       <div className="p-6 bg-gen-bg/50 rounded-2xl border border-gen-gray/20">
@@ -180,6 +180,6 @@ export default function InvoiceGeneratorSeo() {
           ))}
         </div>
       </section>
-    </div>
+    </article>
   );
 }

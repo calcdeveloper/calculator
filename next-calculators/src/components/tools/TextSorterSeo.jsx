@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TextSorterSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Comprehensive Guide to Sorting Text and Lists
       </h2>
@@ -152,6 +152,6 @@ export default function TextSorterSeo() {
           A disorganized list is a liability in any professional setting. It causes confusion, slows down data retrieval, and looks incredibly unprofessional. By integrating the ToolsWizard Text Sorter into your workflow, you guarantee that your data is always presented logically, efficiently, and attractively. Whether you're a developer organizing a dropdown menu, an author formatting a bibliography, or a marketer managing a giveaway, our one-click sorting utility is the fastest, most secure way to bring order to your text.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

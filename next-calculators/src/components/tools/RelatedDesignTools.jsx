@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { 
   Palette, Droplets, Zap, Eye, Palette as PaletteIcon, Wand2, Pipette, Dice5, Wind, Layers, Contrast
@@ -105,26 +105,44 @@ const designTools = [
   }
 ];
 
-export default function RelatedDesignTools() {
+export default function RelatedDesignTools(props) {
+  const currentPath = props.currentToolPath || props.currentPath || "";
+  const [tools, setTools] = useState([]);
+
+  useEffect(() => {
+    if (!currentPath) {
+      setTools(designTools);
+      return;
+    }
+    // Filter out the current tool
+    const filteredTools = designTools.filter(tool => tool.link !== currentPath && !tool.link.includes(currentPath));
+    setTools(filteredTools);
+  }, [currentPath]);
+
+  if (tools.length === 0) return null;
+
   return (
-    <div className="mt-16 pt-12 border-t border-conv-gray/30">
-      <h2 className="text-2xl font-bold text-conv-dark mb-8">Related Design Tools</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {designTools.map((tool, index) => (
-          <Link 
-            key={index} 
-            href={tool.link}
-            className="flex items-start gap-4 p-4 rounded-xl border border-conv-gray/20 bg-conv-white hover:border-pink-500 hover:shadow-lg transition-all duration-300 group"
-          >
-            <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 transition-colors duration-300 ${tool.iconBg}`}>
-              {tool.icon}
-            </div>
-            <div>
-              <h3 className="font-bold text-conv-dark group-hover:text-pink-600 transition-colors">{tool.title}</h3>
-              <p className="text-sm text-conv-gray mt-1 leading-snug">{tool.description}</p>
-            </div>
-          </Link>
-        ))}
+    <div className="mt-16 bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8">
+      <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Design Tools</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {tools.map((tool, index) => {
+          const Icon = tool.icon;
+          
+          return (
+            <Link
+              key={index}
+              href={tool.link}
+              className="group flex items-center gap-3 p-3 rounded-xl border transition-all duration-300 shadow-sm bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 hover:shadow-md"
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors bg-gray-50 text-gray-500 group-hover:text-black group-hover:bg-gray-200">
+                {React.isValidElement(tool.icon) ? tool.icon : <Icon size={20} />}
+              </div>
+              <span className="font-bold text-sm line-clamp-1 text-gray-700 group-hover:text-black">
+                {tool.title}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

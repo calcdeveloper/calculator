@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function RandomNumberGeneratorSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         The Ultimate Random Number Generator: Fair, Fast, and Free
       </h2>
@@ -124,6 +124,6 @@ export default function RandomNumberGeneratorSeo() {
           Stop flipping biased coins or pulling crumpled names out of a hat. Embrace the speed, absolute fairness, and modern convenience of digital randomness. Scroll back to the top of the page, carefully input your parameters, and let the ToolsWizard Random Number Generator do the heavy lifting for your next massive giveaway, math project, or game night!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

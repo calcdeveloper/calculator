@@ -102,7 +102,7 @@ export default function XMLToJSONClient() {
 
       {/* Converter Section */}
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray/30 p-6 md:p-8">
+        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="space-y-4">
               <label className="flex items-center gap-2 font-bold text-conv-dark">

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function RandomWheelSpinnerSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         The Ultimate Random Wheel Spinner: Stop Guessing, Start Spinning
       </h2>
@@ -126,6 +126,6 @@ export default function RandomWheelSpinnerSeo() {
           Do not waste another precious minute of your day deliberating over low-stakes, stressful decisions. Add your options, hit the giant spin button, and embrace the chaos. The ToolsWizard Random Wheel Spinner is definitively the fairest, fastest, and most visually satisfying way to make a randomized choice online today.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

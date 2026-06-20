@@ -101,7 +101,7 @@ export default function CharacterCounterClient() {
         
         {/* Main Stats Cards */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-          <div className="bg-text-white rounded-2xl shadow-xl border border-text-primary/20 p-6 flex flex-col items-center justify-center text-center">
+          <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray overflow-hidden p-6 md:p-8 text-center">
             <span className="text-4xl font-extrabold text-text-primary mb-2">{stats.charsWithSpaces}</span>
             <span className="text-sm font-semibold text-text-gray uppercase tracking-wider">Characters</span>
           </div>
@@ -127,7 +127,7 @@ export default function CharacterCounterClient() {
           </div>
         </div>
 
-        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-6 md:p-8 mb-8">
+        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray overflow-hidden p-6 md:p-8">
           <div className="space-y-4">
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-semibold text-text-dark">

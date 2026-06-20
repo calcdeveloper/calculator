@@ -45,7 +45,7 @@ export default function UUIDGeneratorSeo() {
   ];
 
   return (
-    <div className="mt-12 bg-gen-white rounded-3xl shadow-xl p-8 md:p-12 border border-gen-gray/20 prose prose-slate max-w-none text-gen-dark leading-relaxed space-y-8 font-sans">
+    <article className="prose prose-slate max-w-none bg-gen-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-gen-gray mt-12">
       {/* TABLE OF CONTENTS BRIEFING BREADCRUMB */}
       <div className="p-6 bg-gen-bg/50 rounded-2xl border border-gen-gray/20">
         <h4 className="text-sm font-bold text-gen-dark mb-4 uppercase tracking-wider">Table of Contents</h4>
@@ -311,6 +311,6 @@ export default function UUIDGeneratorSeo() {
           ))}
         </div>
       </section>
-    </div>
+    </article>
   );
 }

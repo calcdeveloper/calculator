@@ -2,16 +2,16 @@
 
 import React, { useState, useRef } from "react";
 import { PDFDocument } from 'pdf-lib';
-import { 
-  Download, Upload, FileText, CheckCircle2, 
-  RotateCcw, ShieldCheck, Zap, ChevronRight, SplitSquareHorizontal 
-} from "lucide-react";
+import { Eye, Download, Upload, FileText, CheckCircle2, 
+  RotateCcw, ShieldCheck, Zap, ChevronRight, SplitSquareHorizontal } from 'lucide-react';
 import ExtractPagesSeo from '@/components/tools/ExtractPagesSeo';
+import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
 
 export default function ExtractPagesClient() {
   const [file, setFile] = useState(null);
   const [pageRange, setPageRange] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
   const [extractedUrl, setExtractedUrl] = useState(null);
   const [error, setError] = useState(null);
   const [pageCount, setPageCount] = useState(0);
@@ -105,6 +105,7 @@ export default function ExtractPagesClient() {
   };
 
   const reset = () => {
+    setShowPreview(false);
     setFile(null);
     setPageRange("");
     setExtractedUrl(null);
@@ -140,8 +141,8 @@ export default function ExtractPagesClient() {
       </section>
 
       {/* Main Tool */}
-      <main className="max-w-4xl mx-auto px-4 -mt-20">
-        <div className="bg-pdf-white rounded-3xl shadow-2xl border border-pdf-gray overflow-hidden p-6 md:p-10 mb-8">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-pdf-white rounded-3xl shadow-2xl border border-pdf-gray overflow-hidden p-6 md:p-8">
           
           {!file && !isProcessing && (
             <div 
@@ -235,6 +236,13 @@ export default function ExtractPagesClient() {
                 >
                   <RotateCcw size={20} /> Start Over
                 </button>
+                
+                <button
+                  onClick={() => setShowPreview(!showPreview)}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-pdf-white border border-pdf-primary text-pdf-primary hover:bg-pdf-primary/5 font-bold rounded-xl transition-all shadow-sm"
+                >
+                  <Eye size={20} /> {showPreview ? 'Hide Preview' : 'Preview PDF'}
+                </button>
                 <button
                   onClick={handleDownload}
                   className="flex-1 md:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-pdf-primary hover:bg-pdf-primaryDark text-pdf-white font-bold rounded-xl transition-all shadow-lg shadow-pdf-primary/20"
@@ -242,12 +250,18 @@ export default function ExtractPagesClient() {
                   <Download size={20} /> Download PDF
                 </button>
               </div>
+              {showPreview && (
+                <div className="w-full mt-8 border border-pdf-gray rounded-xl overflow-hidden shadow-inner h-[600px] bg-gray-50">
+                  <iframe src={extractedUrl} className="w-full h-full" title="PDF Preview" />
+                </div>
+              )}
+
             </div>
           )}
         </div>
 
         {/* Feature Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-pdf-white p-8 rounded-3xl border border-pdf-gray shadow-sm">
             <div className="w-12 h-12 bg-pdf-primary/10 text-pdf-primary rounded-xl flex items-center justify-center mb-6"><ShieldCheck size={24} /></div>
             <h3 className="text-xl font-bold mb-3">100% Secure</h3>
@@ -267,6 +281,7 @@ export default function ExtractPagesClient() {
 
         {/* SEO Component */}
         <ExtractPagesSeo />
+        <RelatedPdfTools currentToolPath="/tools/pdf-tools/extract-pages" />
 
       </main>
 

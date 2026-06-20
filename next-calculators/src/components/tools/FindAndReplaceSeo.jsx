@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FindAndReplaceSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Ultimate Guide to Find and Replace: Mastering Text Manipulation
       </h2>
@@ -141,6 +141,6 @@ export default function FindAndReplaceSeo() {
           The Find and Replace function is one of the most vital tools in the digital worker's arsenal. By understanding how to utilize case sensitivity, word boundaries, and the raw power of Regular Expressions, you can turn hours of manual editing into a task that takes mere milliseconds. The ToolsWizard Find and Replace utility provides a secure, blazingly fast, and feature-rich environment to execute these text substitutions flawlessly. Stop manually scanning documents for errors and start leveraging the power of algorithmic text replacement today.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

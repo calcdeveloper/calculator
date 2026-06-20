@@ -153,7 +153,7 @@ export default function FunToolsPage() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 -mt-20 pb-24">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {funTools.map((tool, index) => (
             <div
@@ -162,13 +162,15 @@ export default function FunToolsPage() {
             >
               <div className="flex items-start gap-4 mb-6">
                 <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110 duration-300 ${tool.iconBg}`}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12 duration-300 [&>svg]:w-5 [&>svg]:h-5 ${tool.iconBg}`}
                 >
                   {tool.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-fun-dark mb-1">{tool.title}</h3>
-                  <p className="text-fun-gray text-sm leading-relaxed">{tool.description}</p>
+                  <h3 className="text-xl font-bold text-fun-dark mb-1 line-clamp-1">{tool.title}</h3>
+                  <p className="text-fun-gray text-sm leading-relaxed line-clamp-2">
+                    {tool.description}
+                  </p>
                 </div>
               </div>
               {tool.status === 'active' ? (

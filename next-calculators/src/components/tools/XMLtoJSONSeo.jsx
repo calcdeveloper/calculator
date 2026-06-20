@@ -25,7 +25,7 @@ export default function XMLtoJSONSeo() {
   ];
 
   return (
-    <div className="space-y-8 mt-12">
+    <article className="prose prose-slate max-w-none bg-conv-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-conv-gray mt-12">
       {/* Main Content */}
       <div className="bg-conv-white rounded-3xl shadow-lg border border-conv-gray/20 p-8">
         <h2 className="text-3xl font-bold text-conv-dark mb-6">
@@ -266,6 +266,6 @@ export default function XMLtoJSONSeo() {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }

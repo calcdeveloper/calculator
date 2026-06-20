@@ -27,7 +27,7 @@ export default function CoinFlipSeo() {
   ];
 
   return (
-    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray/30">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl font-bold text-fun-dark">Free Online Coin Flip – Heads or Tails Instantly</h2>
       <p>
         Need a fair, fast way to settle a tie, choose who goes first, or settle a friendly debate? The{' '}

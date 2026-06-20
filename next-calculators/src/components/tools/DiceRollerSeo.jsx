@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DiceRollerSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         The Ultimate Virtual Dice Roller: Fair, Instant Rolls Every Time
       </h2>
@@ -119,6 +119,6 @@ export default function DiceRollerSeo() {
           Keep the fun and the game going no matter where you are in the world. The ToolsWizard Virtual Dice Roller is fast, visually beautiful, and achieves pure mathematical perfection. Select your desired quantity, hit the giant roll button, and may the odds be ever in your favor tonight!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

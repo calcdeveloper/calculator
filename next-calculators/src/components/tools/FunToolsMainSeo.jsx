@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FunToolsMainSeo() {
   return (
-    <div className="mt-16 bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-8 md:p-12 mb-16">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl md:text-4xl font-extrabold text-fun-dark mb-8 leading-tight">
         Explore the Best Free Fun Tools and Games Online
       </h2>
@@ -128,6 +128,6 @@ export default function FunToolsMainSeo() {
           Why are you still reading this? You have a massive playground of digital entertainment right at your fingertips. Scroll back up to the top of the page, click on any of the highly colorful tool cards that catch your eye, and instantly start having fun with the absolute best collection of free online tools on the entire internet!
         </p>
       </div>
-    </div>
+    </article>
   );
 }

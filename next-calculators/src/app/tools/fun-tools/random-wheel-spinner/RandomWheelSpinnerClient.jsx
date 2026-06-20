@@ -62,9 +62,12 @@ export default function RandomWheelSpinnerClient() {
     // The pointer is at the top (0 degrees or 360 degrees)
     // To land on winnerIndex, the wheel needs to rotate backwards so the slice aligns with the top.
     const sliceCenterAngle = winnerIndex * degreesPerSlice + (degreesPerSlice / 2);
-    const targetRotation = (spins * 360) + (360 - sliceCenterAngle);
+    
+    // We want the final absolute rotation to be exactly 360 - sliceCenterAngle (modulo 360)
+    const currentSpins = Math.floor(rotation / 360);
+    const targetAbsoluteRotation = (currentSpins + spins) * 360 + (360 - sliceCenterAngle);
 
-    setRotation(rotation + targetRotation);
+    setRotation(targetAbsoluteRotation);
 
     // Wait for animation to finish (5 seconds)
     setTimeout(() => {
@@ -75,8 +78,8 @@ export default function RandomWheelSpinnerClient() {
 
   // SVG drawing logic
   const getCoordinatesForPercent = (percent) => {
-    const x = Math.cos(2 * Math.PI * percent) * 100;
-    const y = Math.sin(2 * Math.PI * percent) * 100;
+    const x = Number((Math.cos(2 * Math.PI * percent) * 100).toFixed(5));
+    const y = Number((Math.sin(2 * Math.PI * percent) * 100).toFixed(5));
     return [x, y];
   };
 
@@ -102,7 +105,7 @@ export default function RandomWheelSpinnerClient() {
       </section>
 
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-6 md:p-10 mb-16 flex flex-col lg:flex-row gap-12">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8">
           
           {/* Wheel Container */}
           <div className="flex-1 flex flex-col items-center justify-center relative">
@@ -232,7 +235,7 @@ export default function RandomWheelSpinnerClient() {
         </div>
 
         {/* Features Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm text-center md:text-left hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
               <RotateCw />

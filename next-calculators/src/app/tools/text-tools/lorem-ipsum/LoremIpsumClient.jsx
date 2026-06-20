@@ -113,7 +113,7 @@ export default function LoremIpsumClient() {
       </section>
 
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-6 md:p-8 mb-8">
+        <div className="bg-text-white rounded-3xl shadow-2xl border border-text-gray overflow-hidden p-6 md:p-8">
           
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
             {/* Controls Sidebar */}

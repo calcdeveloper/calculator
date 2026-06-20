@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { 
   Type, ArrowUpDown, Replace, Eraser, Sparkles, Dices, 
@@ -73,33 +74,44 @@ export const TEXT_TOOLS = [
   }
 ];
 
-export default function RelatedTextTools({ currentPath }) {
-  // Filter out the current tool and randomly select a few, or just show all other tools
-  const relatedTools = TEXT_TOOLS.filter(tool => tool.link !== currentPath);
+export default function RelatedTextTools(props) {
+  const currentPath = props.currentToolPath || props.currentPath || "";
+  const [tools, setTools] = useState([]);
+
+  useEffect(() => {
+    if (!currentPath) {
+      setTools(TEXT_TOOLS);
+      return;
+    }
+    // Filter out the current tool
+    const filteredTools = TEXT_TOOLS.filter(tool => tool.link !== currentPath && !tool.link.includes(currentPath));
+    setTools(filteredTools);
+  }, [currentPath]);
+
+  if (tools.length === 0) return null;
 
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-xl border border-text-gray/20 p-6 md:p-8">
-      <h3 className="text-2xl font-bold text-text-dark mb-6">Explore Other Text Tools</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {relatedTools.map((tool, index) => (
-          <Link 
-            key={index} 
-            href={tool.link}
-            className="group flex flex-col p-4 bg-text-bg/50 rounded-xl border border-text-gray/20 hover:border-text-primary/40 hover:bg-text-primary/5 transition-all duration-300"
-          >
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-text-primary/10 text-text-primary p-2 rounded-lg group-hover:scale-110 transition-transform">
-                {tool.icon}
+    <div className="mt-16 bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8">
+      <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Text Tools</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {tools.map((tool, index) => {
+          const Icon = tool.icon;
+          
+          return (
+            <Link
+              key={index}
+              href={tool.link}
+              className="group flex items-center gap-3 p-3 rounded-xl border transition-all duration-300 shadow-sm bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 hover:shadow-md"
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors bg-gray-50 text-gray-500 group-hover:text-black group-hover:bg-gray-200">
+                {React.isValidElement(tool.icon) ? tool.icon : <Icon size={20} />}
               </div>
-              <h4 className="font-semibold text-text-dark group-hover:text-text-primary transition-colors">
+              <span className="font-bold text-sm line-clamp-1 text-gray-700 group-hover:text-black">
                 {tool.title}
-              </h4>
-            </div>
-            <p className="text-sm text-text-gray pl-11">
-              {tool.description}
-            </p>
-          </Link>
-        ))}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

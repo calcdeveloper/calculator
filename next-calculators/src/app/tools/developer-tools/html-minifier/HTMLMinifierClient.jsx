@@ -5,7 +5,6 @@ import {
   Code, Copy, Download, Trash2, CheckCircle2, ShieldCheck, 
   Zap, Info, ChevronRight, FileText, Minimize2, Maximize2 
 } from 'lucide-react';
-import HTMLMinifierSeo from '@/components/tools/HTMLMinifierSeo';
 
 export default function HTMLMinifierClient() {
   const [input, setInput] = useState("");
@@ -196,13 +195,7 @@ export default function HTMLMinifierClient() {
           </div>
         )}
 
-        <HTMLMinifierSeo />
-
       </main>
-      
-      <footer className="bg-dev-white border-t border-dev-gray py-8 px-6 mt-12">
-        <p className="text-sm text-dev-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
-      </footer>
     </div>
   );
 }

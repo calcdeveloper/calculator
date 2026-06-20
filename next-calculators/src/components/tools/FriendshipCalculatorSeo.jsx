@@ -25,7 +25,7 @@ export default function FriendshipCalculatorSeo() {
   ];
 
   return (
-    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray/30 mt-12">
+    <article className="prose prose-slate max-w-none bg-fun-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-fun-gray mt-12">
       <h2 className="text-3xl font-bold text-fun-dark">The Ultimate Online Friendship Calculator: Test Your Bond Instantly</h2>
       
       <p>

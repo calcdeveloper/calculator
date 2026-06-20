@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { FileText, RotateCw, Trash2, Download, Image, Lock, Hash, ChevronRight, FileDown, Shield, Layers } from 'lucide-react';
 import { createPageMetadata } from '@/utils/seo';
 
+import PdfHubSeo from '@/components/tools/PdfHubSeo';
+
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
@@ -19,7 +21,7 @@ const pdfTools = [
     icon: <RotateCw className="w-6 h-6" />,
     iconBg: 'bg-blue-100 text-blue-600',
     link: '/tools/pdf-tools/rotate-pdf',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Delete Pages', 
@@ -43,7 +45,7 @@ const pdfTools = [
     icon: <Image className="w-6 h-6" />,
     iconBg: 'bg-purple-100 text-purple-600',
     link: '/tools/pdf-tools/add-images',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Protect PDF with Password', 
@@ -51,7 +53,7 @@ const pdfTools = [
     icon: <Shield className="w-6 h-6" />,
     iconBg: 'bg-rose-100 text-rose-600',
     link: '/tools/pdf-tools/password-protect',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Add Page Numbers', 
@@ -59,7 +61,7 @@ const pdfTools = [
     icon: <Hash className="w-6 h-6" />,
     iconBg: 'bg-amber-100 text-amber-600',
     link: '/tools/pdf-tools/page-numbers',
-    status: 'coming-soon'
+    status: 'active'
   },
   { 
     title: 'Merge PDF', 
@@ -67,7 +69,7 @@ const pdfTools = [
     icon: <Layers className="w-6 h-6" />,
     iconBg: 'bg-cyan-100 text-cyan-600',
     link: '/tools/pdf-tools/merge-pdf',
-    status: 'coming-soon'
+    status: 'active'
   }
 ];
 
@@ -90,7 +92,7 @@ export default function PDFToolsPage() {
       </header>
 
       {/* Tools Grid */}
-      <main className="max-w-7xl mx-auto px-4 -mt-20 pb-24">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pdfTools.map((tool, index) => (
             <div 
@@ -98,12 +100,12 @@ export default function PDFToolsPage() {
               className="bg-pdf-white rounded-2xl p-8 flex flex-col border border-pdf-gray hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12 duration-300 ${tool.iconBg}`}>
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12 duration-300 [&>svg]:w-5 [&>svg]:h-5 ${tool.iconBg}`}>
                   {tool.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-pdf-dark mb-1">{tool.title}</h3>
-                  <p className="text-pdf-gray text-sm leading-relaxed">
+                  <h3 className="text-xl font-bold text-pdf-dark mb-1 line-clamp-1">{tool.title}</h3>
+                  <p className="text-pdf-gray text-sm leading-relaxed line-clamp-2">
                     {tool.description}
                   </p>
                 </div>
@@ -128,30 +130,7 @@ export default function PDFToolsPage() {
           ))}
         </div>
 
-        {/* SEO & About Section */}
-        <div className="mt-24 pt-16 border-t border-pdf-gray">
-          <h2 className="text-3xl font-bold text-pdf-dark mb-6">About PDF Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-pdf-gray leading-relaxed">
-            <div>
-              <p className="mb-4">
-                Our comprehensive suite of PDF tools helps you manipulate, optimize, and secure PDF documents with ease. Whether you need to rotate pages for proper orientation, or protect sensitive documents with passwords, we have the right tool for you.
-              </p>
-              <p>
-                All operations happen locally in your browser for complete privacy. Your documents never leave your device, ensuring maximum security for sensitive business, academic, or personal files.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4">
-                From <strong>rotating</strong> misoriented scans to <strong>merging</strong> multiple documents into one, our tools provide instant results without any registration or watermarks. Perfect for business documents, academic papers, and legal files.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2"><FileText size={16} className="text-pdf-primary"/> <strong>Free:</strong> No limits or watermarks</li>
-                <li className="flex items-center gap-2"><FileText size={16} className="text-pdf-primary"/> <strong>Secure:</strong> Browser-side processing</li>
-                <li className="flex items-center gap-2"><FileText size={16} className="text-pdf-primary"/> <strong>Fast:</strong> Optimized algorithms</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <PdfHubSeo />
       </main>
 
       {/* Breadcrumb Navigation for SEO */}

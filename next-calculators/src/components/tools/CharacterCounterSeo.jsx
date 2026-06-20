@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CharacterCounterSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         The Complete Guide to Character Limits and Text Counting
       </h2>
@@ -137,6 +137,6 @@ export default function CharacterCounterSeo() {
           In a world where digital real estate is strictly rationed, precision is paramount. Whether you are optimizing a website for Google, launching a cost-effective SMS campaign, or crafting the perfect concise tweet, knowing exactly how many characters and words you have used is non-negotiable. The ToolsWizard Word, Character, Sentence & Paragraph Counter removes the guesswork, providing you with real-time, comprehensive text statistics in a secure, privacy-first environment. Stop estimating and start measuring—your digital communication strategy depends on it.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

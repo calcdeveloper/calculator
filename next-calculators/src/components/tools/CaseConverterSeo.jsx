@@ -21,7 +21,7 @@ export default function CaseConverterSeo() {
   ];
 
   return (
-    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray/30 mt-12 text-text-dark">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-primary mb-6">
         Free Online Case Converter – Instantly Format Your Text Case
       </h2>

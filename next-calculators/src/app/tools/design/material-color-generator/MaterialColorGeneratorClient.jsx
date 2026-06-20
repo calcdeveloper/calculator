@@ -74,7 +74,7 @@ export default function MaterialColorGeneratorClient() {
       </header>
 
       {/* Tool Interface */}
-      <main className="max-w-7xl mx-auto px-4 -mt-20 pb-20">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         
         {/* Active Selection Modal */}
         <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray/30 overflow-hidden mb-12 p-8 md:p-12 transition-colors duration-500" style={{ backgroundColor: selectedColor.hex }}>
@@ -94,7 +94,7 @@ export default function MaterialColorGeneratorClient() {
         </div>
 
         {/* Palette Grid */}
-        <div className="bg-conv-white rounded-3xl shadow-xl border border-conv-gray/20 p-6 md:p-10 mb-8">
+        <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
           <div className="flex justify-between items-center mb-8">
             <h3 className="text-2xl font-bold text-conv-dark">Material Design Palette</h3>

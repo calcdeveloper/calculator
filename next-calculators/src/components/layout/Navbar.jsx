@@ -28,7 +28,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-semibold text-calc-gray transition-colors hover:text-calc-green"
+                className="text-base font-semibold text-calc-gray transition-colors hover:text-gray-900"
               >
                 {link.label}
               </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <Link
               href="/#trending"
-              className="bg-calc-green/10 text-calc-green border border-calc-green/20 px-6 py-2.5 rounded-full font-bold hover:bg-calc-green hover:text-calc-white transition-all duration-300 shadow-sm"
+              className="bg-white text-gray-900 border border-gray-200 px-6 py-2.5 rounded-full font-bold hover:bg-gray-50 hover:shadow-md transition-all duration-300 shadow-sm"
             >
               Explore Trending Tools
             </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-3 rounded-lg text-lg font-medium text-calc-gray hover:bg-calc-white hover:text-calc-black transition-colors"
+                  className="block px-4 py-3 rounded-lg text-lg font-medium text-calc-gray hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
               <div className="pt-4 mt-2 border-t border-calc-lightGray">
                 <Link
                   href="/#trending"
-                  className="block w-full text-center bg-calc-green text-calc-white px-6 py-3 rounded-lg font-bold hover:bg-calc-darkGreen transition-colors"
+                  className="block w-full text-center bg-white text-gray-900 border border-gray-200 px-6 py-3 rounded-lg font-bold hover:bg-gray-50 transition-colors shadow-sm"
                 >
                   Explore Trending Tools
                 </Link>

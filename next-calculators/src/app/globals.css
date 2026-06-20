@@ -80,13 +80,13 @@
   --color-conv-dark: #1f2937;
   
   /* 9. Developer Tools Colors */
-  --color-dev-primary: #374151;
-  --color-dev-primaryDark: #1f2937;
-  --color-dev-secondary: #4b5563;
-  --color-dev-bg: #f9fafb;
+  --color-dev-primary: #000000;
+  --color-dev-primaryDark: #1a1a1a;
+  --color-dev-secondary: #333333;
+  --color-dev-bg: #f4f4f5;
   --color-dev-white: #ffffff;
-  --color-dev-gray: #6b7280;
-  --color-dev-dark: #111827;
+  --color-dev-gray: #71717a;
+  --color-dev-dark: #000000;
   
   /* 10. Fun Tools Colors */
   --color-fun-primary: #f43f5e;

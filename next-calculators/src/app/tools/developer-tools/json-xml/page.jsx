@@ -48,11 +48,20 @@ const jsonLd = {
   ],
 };
 
+import JsonToXmlSeo from '@/components/tools/JSONtoXMLSeo';
+import RelatedDeveloperTools from '@/components/tools/RelatedDeveloperTools';
+
 export default function JSONtoXMLPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <JSONtoXMLClient />
+      <div className="min-h-screen bg-dev-bg">
+        <JSONtoXMLClient />
+        <div className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+          <JsonToXmlSeo />
+          <RelatedDeveloperTools currentToolPath="/tools/developer-tools/json-xml" />
+        </div>
+      </div>
     </>
   );
 }

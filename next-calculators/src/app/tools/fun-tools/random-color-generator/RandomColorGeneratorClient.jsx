@@ -82,8 +82,8 @@ export default function RandomColorGeneratorClient() {
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20">
-        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray/30 p-6 md:p-10 mb-16">
+      <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
+        <div className="bg-fun-white rounded-3xl shadow-2xl border border-fun-gray overflow-hidden p-6 md:p-8">
           
           <div 
             className="w-full h-64 md:h-80 rounded-2xl shadow-inner mb-10 transition-colors duration-500 ease-in-out border border-fun-gray/20"
@@ -144,7 +144,7 @@ export default function RandomColorGeneratorClient() {
         </div>
 
         {/* Features Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 mb-20">
           <div className="bg-fun-white p-8 rounded-3xl border border-fun-gray/30 shadow-sm text-center md:text-left hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-fun-primary/10 text-fun-primary rounded-xl flex items-center justify-center mb-4 mx-auto md:mx-0">
               <Wand2 />

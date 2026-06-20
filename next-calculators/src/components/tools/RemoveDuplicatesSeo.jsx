@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function RemoveDuplicatesSeo() {
   return (
-    <div className="mt-16 bg-text-white rounded-3xl shadow-2xl border border-text-gray/30 p-8">
+    <article className="prose prose-slate max-w-none bg-text-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-text-gray mt-12">
       <h2 className="text-3xl font-extrabold text-text-dark mb-6">
         Comprehensive Guide to Removing Duplicate Lines from Text
       </h2>
@@ -184,6 +184,6 @@ export default function RemoveDuplicatesSeo() {
           Removing duplicate lines from text is a simple yet profoundly impactful operation that can save hours of manual labor, prevent embarrassing mistakes in marketing, and ensure the integrity of critical data analysis. By incorporating the ToolsWizard Remove Duplicate Lines tool into your daily digital toolkit, you empower yourself to work smarter, faster, and more securely. Stop wrestling with messy spreadsheets and redundant logs—clean your text instantly today!
         </p>
       </div>
-    </div>
+    </article>
   );
 }
