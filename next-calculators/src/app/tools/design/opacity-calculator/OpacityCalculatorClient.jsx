@@ -58,7 +58,7 @@ export default function OpacityCalculatorClient() {
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Opacity Calculator</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Eye size={40} />
             CSS Opacity Calculator
           </h1>
@@ -72,7 +72,7 @@ export default function OpacityCalculatorClient() {
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:p-10">
             
             {/* Input & Live Preview Side */}
             <div className="space-y-8 flex flex-col">

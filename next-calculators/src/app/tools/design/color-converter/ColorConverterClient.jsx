@@ -103,7 +103,7 @@ export default function ColorConverterClient() {
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Color Converter</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Layers size={40} />
             Universal Color Converter
           </h1>

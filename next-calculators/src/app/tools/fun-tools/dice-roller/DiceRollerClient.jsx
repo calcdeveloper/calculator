@@ -76,7 +76,7 @@ export default function DiceRollerClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Dice Roller</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Dices size={40} />
             Virtual Dice Roller
           </h1>
@@ -108,7 +108,7 @@ export default function DiceRollerClient() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-16 min-h-[150px]">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-5 md:p-10 mb-16 min-h-[150px]">
             {diceValues.map((val, idx) => (
               <Die key={idx} value={val} isRolling={isRolling} />
             ))}

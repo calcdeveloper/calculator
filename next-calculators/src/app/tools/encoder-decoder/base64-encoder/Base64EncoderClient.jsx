@@ -59,7 +59,7 @@ export default function Base64EncoderClient() {
           <nav className="flex justify-center space-x-2 text-enc-white/70 text-sm mb-6">
             <span>Tools</span> <ChevronRight size={14} /> <span>Encoder/Decoder</span> <ChevronRight size={14} /> <span className="text-white font-medium">Base64 Encoder</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight">
             Base64 Encoder
           </h1>
           <p className="text-xl text-enc-white/90 max-w-2xl mx-auto leading-relaxed">

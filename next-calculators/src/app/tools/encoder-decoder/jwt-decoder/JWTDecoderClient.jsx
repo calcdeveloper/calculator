@@ -79,7 +79,7 @@ export default function JWTDecoderClient() {
           <nav className="flex justify-center space-x-2 text-enc-white/70 text-sm mb-6">
             <span>Tools</span> <ChevronRight size={14} /> <span>Encoder/Decoder</span> <ChevronRight size={14} /> <span className="text-white font-medium">JWT Decoder</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Key size={48} />
             JWT Decoder
           </h1>

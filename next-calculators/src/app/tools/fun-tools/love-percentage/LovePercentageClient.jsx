@@ -53,7 +53,7 @@ export default function LovePercentageClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Love Percentage</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
             Love Percentage Calculator
           </h1>
           <p className="text-xl text-fun-white/90 max-w-2xl mx-auto leading-relaxed">

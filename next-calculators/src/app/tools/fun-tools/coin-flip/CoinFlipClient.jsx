@@ -34,7 +34,7 @@ export default function CoinFlipClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Coin Flip</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
             Coin Flip – Heads or Tails
           </h1>
           <p className="text-xl text-fun-white/90 max-w-2xl mx-auto leading-relaxed">

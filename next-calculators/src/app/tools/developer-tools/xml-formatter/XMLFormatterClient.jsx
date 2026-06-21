@@ -99,7 +99,7 @@ export default function XMLFormatterClient() {
     <>
       <header className="bg-linear-to-r from-dev-primary to-dev-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
             XML Formatter
         
           </h1>

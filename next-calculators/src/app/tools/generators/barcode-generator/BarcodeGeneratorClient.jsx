@@ -92,7 +92,7 @@ export default function BarcodeGeneratorClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">Barcode Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <BarcodeIcon size={40} />
             Free Barcode Generator
           </h1>
@@ -104,7 +104,7 @@ export default function BarcodeGeneratorClient() {
 
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-gen-white rounded-3xl shadow-2xl border border-gen-gray overflow-hidden p-6 md:p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-10">
             
             {/* Controls */}
             <div className="space-y-6">

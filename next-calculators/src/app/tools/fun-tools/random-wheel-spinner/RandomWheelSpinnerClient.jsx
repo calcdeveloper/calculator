@@ -94,7 +94,7 @@ export default function RandomWheelSpinnerClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Random Wheel Spinner</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <RotateCw size={40} />
             Random Wheel Spinner
           </h1>

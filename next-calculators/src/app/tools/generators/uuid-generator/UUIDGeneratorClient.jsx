@@ -68,7 +68,7 @@ export default function UUIDGeneratorClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">UUID Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Hash size={40} />
             Free UUID Generator
           </h1>

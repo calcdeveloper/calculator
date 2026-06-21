@@ -107,7 +107,7 @@ export default function GuessYourAgeClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Guess Your Age</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight">
             Guess Your Mental Age Tool
           </h1>
           <p className="text-xl text-fun-white/90 max-w-2xl mx-auto leading-relaxed">

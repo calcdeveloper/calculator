@@ -68,7 +68,7 @@ export default function RemoveDuplicatesClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-text-white font-medium">Remove Duplicate Lines</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Rows3 size={40} />
             Remove Duplicate Lines
           </h1>

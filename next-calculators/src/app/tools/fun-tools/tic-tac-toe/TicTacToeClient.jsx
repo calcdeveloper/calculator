@@ -86,7 +86,7 @@ export default function TicTacToeClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Tic Tac Toe</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Grid3X3 size={40} />
             Tic Tac Toe
           </h1>

@@ -63,7 +63,7 @@ export default function MaterialColorGeneratorClient() {
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Material Color Generator</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Layers size={40} />
             Google Material Colors
           </h1>
@@ -80,7 +80,7 @@ export default function MaterialColorGeneratorClient() {
         <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray/30 overflow-hidden mb-12 p-8 md:p-12 transition-colors duration-500" style={{ backgroundColor: selectedColor.hex }}>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className={`space-y-2 ${getContrastText(selectedColor.hex)}`}>
-              <h2 className="text-4xl md:text-5xl font-black capitalize">{formatName(selectedColor.name)} {selectedColor.shade}</h2>
+              <h2 className="text-3xl md:text-5xl font-black capitalize">{formatName(selectedColor.name)} {selectedColor.shade}</h2>
               <p className="text-xl font-mono opacity-90">{selectedColor.hex.toUpperCase()}</p>
             </div>
             

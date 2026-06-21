@@ -60,7 +60,7 @@ export default function Base64ToFilePage() {
           <span className="text-conv-white">Base64 to File</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight">
             Base64 to File Decoder
           </h1>
           <p className="text-xl text-conv-white/90 leading-relaxed">

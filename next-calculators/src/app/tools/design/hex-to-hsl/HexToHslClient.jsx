@@ -92,7 +92,7 @@ export default function HexToHslClient() {
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Hex to HSL</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Wind size={40} />
             Hex to HSL Converter
           </h1>
@@ -106,7 +106,7 @@ export default function HexToHslClient() {
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-10">
             {/* Input Section */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-conv-dark">Input Hex Code</h3>

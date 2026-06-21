@@ -42,7 +42,7 @@ export default function DiffCheckerClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-text-white font-medium">Text Diff Checker</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <GitCompare size={40} />
             Text Diff Checker
           </h1>
@@ -119,7 +119,7 @@ export default function DiffCheckerClient() {
               </label>
             </div>
             
-            <div className="flex gap-4 w-full md:w-auto">
+            <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
               <button
                 onClick={handleClear}
                 className="flex-1 md:flex-none px-8 bg-text-bg text-text-dark border border-text-gray/30 py-3 rounded-xl font-semibold hover:bg-text-gray/10 transition-colors"

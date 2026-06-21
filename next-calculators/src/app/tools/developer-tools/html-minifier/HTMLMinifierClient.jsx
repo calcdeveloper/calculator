@@ -91,7 +91,7 @@ export default function HTMLMinifierClient() {
           <nav className="flex justify-center space-x-2 text-dev-white/70 text-sm mb-6">
             <span>Tools</span> <ChevronRight size={14} /> <span>Developer Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">HTML Minifier</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Minimize2 size={40} />
             HTML Minifier
           </h1>

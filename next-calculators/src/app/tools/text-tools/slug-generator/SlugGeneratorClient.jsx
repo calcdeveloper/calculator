@@ -55,7 +55,7 @@ export default function SlugGeneratorClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-text-white font-medium">Slug Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Link2 size={40} />
             Slug Generator
           </h1>

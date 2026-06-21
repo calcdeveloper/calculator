@@ -124,7 +124,7 @@ export default function AddImagesClient() {
           <nav className="flex justify-center space-x-2 text-pdf-white/70 text-sm mb-6" aria-label="Breadcrumb">
             <span>Tools</span> <ChevronRight size={14} /> <span>PDF Tools</span> <ChevronRight size={14} /> <span className="text-pdf-white font-medium">Add Images</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-pdf-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-pdf-white mb-6 tracking-tight">
             Add Images to PDF
           </h1>
           <p className="text-xl text-pdf-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -139,7 +139,7 @@ export default function AddImagesClient() {
           
           {!pdfFile && !isProcessing && (
             <div 
-              className="p-12 md:p-20 flex flex-col items-center justify-center border-4 border-dashed border-pdf-gray rounded-2xl hover:bg-pdf-bg/50 transition-colors cursor-pointer"
+              className="p-6 md:p-12 md:p-20 flex flex-col items-center justify-center border-4 border-dashed border-pdf-gray rounded-2xl hover:bg-pdf-bg/50 transition-colors cursor-pointer"
               onClick={() => pdfInputRef.current.click()}
               onDragOver={(e) => e.preventDefault()}
               onDrop={(e) => {
@@ -161,7 +161,7 @@ export default function AddImagesClient() {
           )}
 
           {isProcessing && !extractedUrl && (
-            <div className="p-16 flex flex-col items-center justify-center">
+            <div className="p-8 md:p-16 flex flex-col items-center justify-center">
               <div className="w-16 h-16 border-4 border-pdf-primary border-t-transparent rounded-full animate-spin mb-6"></div>
               <h3 className="text-2xl font-bold text-pdf-dark">Processing Document...</h3>
             </div>
@@ -214,7 +214,7 @@ export default function AddImagesClient() {
                 </div>
 
                 {imageFiles.length === 0 ? (
-                  <div className="p-12 border-2 border-dashed border-pdf-gray rounded-2xl flex flex-col items-center justify-center text-center text-pdf-gray bg-pdf-bg/50">
+                  <div className="p-6 md:p-12 border-2 border-dashed border-pdf-gray rounded-2xl flex flex-col items-center justify-center text-center text-pdf-gray bg-pdf-bg/50">
                     <ImageIcon size={48} className="mb-4 opacity-50" />
                     <p>No images added yet.</p>
                     <p className="text-sm mt-2">Added images will be appended as new pages.</p>
@@ -251,7 +251,7 @@ export default function AddImagesClient() {
               <h2 className="text-3xl font-bold text-pdf-dark mb-4">Images Added!</h2>
               <p className="text-pdf-gray mb-8">Your PDF has been successfully updated and is ready to download.</p>
               
-              <div className="flex gap-4 w-full md:w-auto">
+              <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
                 <button
                   onClick={reset}
                   className="flex-1 md:flex-none flex items-center justify-center gap-2 px-6 py-4 bg-pdf-gray/20 hover:bg-pdf-gray/30 text-pdf-dark font-bold rounded-xl transition-all"

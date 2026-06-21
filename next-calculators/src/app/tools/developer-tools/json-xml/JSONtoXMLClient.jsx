@@ -82,7 +82,7 @@ export default function JSONtoXMLClient() {
           <nav className="flex justify-center space-x-2 text-dev-white/70 text-sm mb-6">
             <span>Tools</span> <ChevronRight size={14} /> <span>Developer Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">JSON to XML</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
             JSON to XML Converter
           </h1>
           <p className="text-xl text-dev-white/90 max-w-2xl mx-auto leading-relaxed">

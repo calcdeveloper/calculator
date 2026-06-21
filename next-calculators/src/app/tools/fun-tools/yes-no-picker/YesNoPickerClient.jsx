@@ -41,7 +41,7 @@ export default function YesNoPickerClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Yes/No Picker</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-fun-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <HelpCircle size={40} />
             Yes or No Picker
           </h1>

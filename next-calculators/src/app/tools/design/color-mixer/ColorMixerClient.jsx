@@ -75,7 +75,7 @@ export default function ColorMixerClient() {
           <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Color Mixer</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Blend size={40} />
             CSS Color Mixer
           </h1>
@@ -89,7 +89,7 @@ export default function ColorMixerClient() {
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-conv-white rounded-3xl shadow-2xl border border-conv-gray overflow-hidden p-6 md:p-8">
           
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-5 md:p-10">
             
             {/* Input Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
@@ -184,7 +184,7 @@ export default function ColorMixerClient() {
 
             {/* Output Result */}
             <div 
-              className={`p-10 md:p-16 rounded-3xl shadow-inner border border-black/10 transition-colors duration-300 flex flex-col items-center justify-center text-center space-y-6 group`}
+              className={`p-5 md:p-10 md:p-16 rounded-3xl shadow-inner border border-black/10 transition-colors duration-300 flex flex-col items-center justify-center text-center space-y-6 group`}
               style={{ backgroundColor: mixedColor }}
             >
               <h2 className={`text-sm font-bold uppercase tracking-[0.2em] opacity-70 ${getContrastText(mixedColor)}`}>Mixed Result</h2>

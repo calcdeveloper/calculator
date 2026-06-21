@@ -60,7 +60,7 @@ export default function RGBHexClient() {
           <nav className="flex justify-center items-center gap-2 text-design-white/70 text-sm mb-6">
             <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">RGB to Hex</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-design-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-design-white mb-6 tracking-tight">
             RGB to Hex Converter
           </h1>
           <p className="text-xl text-design-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -73,7 +73,7 @@ export default function RGBHexClient() {
       <main className="max-w-6xl mx-auto px-4 -mt-20 pb-20">
         <div className="bg-design-white rounded-3xl shadow-2xl border border-design-gray overflow-hidden p-6 md:p-8">
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:p-10">
             {/* Input Side */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-design-dark flex items-center gap-2">

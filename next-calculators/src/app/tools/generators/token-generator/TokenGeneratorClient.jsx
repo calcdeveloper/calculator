@@ -72,7 +72,7 @@ export default function TokenGeneratorClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">JWT Token Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Lock size={40} />
             JWT Token Generator
           </h1>

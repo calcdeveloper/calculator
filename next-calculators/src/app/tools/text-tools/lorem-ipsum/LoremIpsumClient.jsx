@@ -102,7 +102,7 @@ export default function LoremIpsumClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-text-white font-medium">Lorem Ipsum Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-text-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Pilcrow size={40} />
             Lorem Ipsum Generator
           </h1>

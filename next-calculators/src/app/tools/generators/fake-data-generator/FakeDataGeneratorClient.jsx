@@ -144,7 +144,7 @@ export default function FakeDataGeneratorClient() {
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">Fake Data Generator</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gen-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Database size={40} />
             Fake Data Generator
           </h1>
