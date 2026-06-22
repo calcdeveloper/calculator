@@ -6,7 +6,6 @@ import {
   CheckCircle2, ShieldCheck, Zap, Info, ChevronRight,
   Code2, Braces, Terminal, FileOutput
 } from 'lucide-react';
-import JSONtoXMLSeo from "@/components/tools/JSONtoXMLSeo";
 
 export default function JSONtoXMLClient() {
   const [jsonInput, setJsonInput] = useState('');
@@ -183,13 +182,8 @@ export default function JSONtoXMLClient() {
             <p className="text-dev-gray leading-relaxed text-sm">Perfect for integrating legacy XML systems with modern JSON APIs. Get standardized XML headers and clean tagging.</p>
           </div>
         </section>
-
-        <JSONtoXMLSeo />
       </main>
 
-      <footer className="bg-dev-white border-t border-dev-gray py-8 px-6">
-        <p className="text-sm text-dev-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
-      </footer>
     </div>
   );
 }
