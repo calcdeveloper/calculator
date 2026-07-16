@@ -41,11 +41,17 @@ export const calculateLogic = (inputs) => {
     let bmr = (10 * weightKg) + (6.25 * finalHeightCm) - (5 * age);
     bmr = gender === 'male' ? bmr + 5 : bmr - 161;
   
+    // 6. Estimated Body Fat Percentage (Deurenberg Formula)
+    const genderFactor = gender === 'male' ? 1 : 0;
+    const bodyFatPercentage = (1.20 * bmi) + (0.23 * age) - (10.8 * genderFactor) - 5.4;
+    const roundedBodyFat = Math.max(2, Math.round(bodyFatPercentage * 10) / 10);
+  
     return {
       summary: [
         { label: 'Your BMI', value: roundedBmi, isCurrency: false, isHighlight: true },
         { label: 'Health Status', value: category, isCurrency: false },
         { label: 'Ideal Weight Range', value: idealWeightText, isCurrency: false },
+        { label: 'Est. Body Fat', value: `${roundedBodyFat}%`, isCurrency: false },
         { label: 'Est. BMR (Calories/Day)', value: Math.round(bmr), isCurrency: false }
       ],
       chartData: [

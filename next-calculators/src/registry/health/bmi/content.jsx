@@ -79,7 +79,7 @@ export default function Content() {
         <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded-r-lg">
           <h3 className="font-bold text-green-800 mb-2">Understanding Your Results</h3>
           <p className="text-sm text-green-900">
-            Once you input your data, the calculator instantly displays your <strong>BMI Score</strong>. It will also reveal your <strong>Health Status</strong> (e.g., Normal Weight), your personalized <strong>Ideal Weight Range</strong>, and your estimated <strong>BMR</strong> (the number of calories your body burns at rest per day).
+            Once you input your data, the calculator instantly displays your <strong>BMI Score</strong>. It will also reveal your <strong>Health Status</strong> (e.g., Normal Weight), your personalized <strong>Ideal Weight Range</strong>, your <strong>Est. Body Fat %</strong> (which varies based on your gender and age), and your estimated <strong>BMR</strong> (the number of calories your body burns at rest per day).
           </p>
         </div>
       </section>
