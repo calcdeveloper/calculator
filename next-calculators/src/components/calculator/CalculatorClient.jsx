@@ -6,6 +6,7 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recha
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import { ArrowLeft } from "lucide-react";
+import RelatedFinanceCalculators from "./RelatedFinanceCalculators";
 
 // Note: If you don't use TypingTest/WordCounter globally, you can safely remove these imports
 // import TypingTest from "../../registry/education/typing-test/TypingTest";
@@ -316,7 +317,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                   </div>
                 )}
                 {showTable && results.schedule && results.schedule.length > 0 && (
-                  <div className="w-full bg-calc-white rounded-xl border border-calc-lightGray overflow-hidden">
+                  <div className="w-full bg-calc-white rounded-xl border border-calc-lightGray overflow-hidden mb-8">
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <thead className="bg-calc-green text-calc-white">
@@ -341,6 +342,25 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                     </div>
                   </div>
                 )}
+                {results.breakup && results.breakup.length > 0 && (
+                  <div className="w-full mt-4 mb-8">
+                    <h3 className="text-xl font-bold text-calc-black mb-4">Charges Breakup</h3>
+                    <div className="w-full bg-calc-white rounded-xl border border-calc-lightGray overflow-hidden shadow-sm">
+                      <table className="w-full text-sm">
+                        <tbody className="divide-y divide-calc-lightGray">
+                          {results.breakup.map((row, index) => (
+                            <tr key={index} className="hover:bg-calc-gray/5">
+                              <td className={`px-5 py-4 text-calc-gray ${row.isTotal ? 'font-bold uppercase text-xs tracking-wider text-calc-black' : ''}`}>{row.label}</td>
+                              <td className={`px-5 py-4 text-right text-calc-gray ${row.isTotal ? 'font-bold text-calc-black' : ''}`}>
+                                {row.value === 0 ? '₹0.00' : `₹${row.value.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -350,6 +370,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
       {children && (
         <div className="prose max-w-none text-calc-darkGray bg-calc-white p-6 sm:p-8 rounded-2xl border border-calc-lightGray mt-6 sm:mt-8">
           {children}
+          <RelatedFinanceCalculators category={category} currentCalculatorId={calculator} />
         </div>
       )}
     </div>

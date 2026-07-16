@@ -6,5 +6,17 @@
   "framework": null,
   "env": {
     "NEXT_PUBLIC_SITE_URL": "https://toolswizard.in"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/tools/json-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/json-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    }
+  ]
 }
