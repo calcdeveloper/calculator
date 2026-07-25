@@ -1,6 +1,23 @@
 import React from 'react';
 
+import FAQAccordion from './FAQAccordion';
+
 export default function MergePdfSeo() {
+  const faqs = [
+    {
+      question: "Is my data secure when using this Merge PDF tool?",
+      answer: "Absolutely. All processing happens locally in your web browser using JavaScript. Your files are never uploaded to any external server, ensuring 100% data privacy and security."
+    },
+    {
+      question: "Does this tool work on mobile devices?",
+      answer: "Yes! Our platform is fully responsive and leverages modern browser APIs, meaning you can easily use it on your iPhone, iPad, or Android device without downloading an app."
+    },
+    {
+      question: "Will the quality of my document be affected?",
+      answer: "No. Our tools perform structural and metadata edits without re-rendering or compressing the underlying graphics or text, ensuring perfect lossless quality."
+    }
+  ];
+
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12">
       <h2 className="text-3xl font-bold text-pdf-dark mb-6">The Ultimate Guide to Merging PDFs: Architecture, Security, and Workflows</h2>
@@ -15,7 +32,24 @@ export default function MergePdfSeo() {
         Our <strong>Merge PDF Tool</strong> is an advanced, enterprise-grade utility that solves these challenges natively within your web browser. Utilizing state-of-the-art client-side processing, it allows you to combine multiple PDF files securely, instantly, and without the massive security risks associated with traditional cloud-based document editors.
       </p>
 
-      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Technical Reality of PDF Merging</h3>
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
+        How to Use the Merge PDF Tool
+      </h3>
+      <ol className="list-decimal pl-6 mb-8 space-y-3">
+        <li>
+          <strong>Select Your File:</strong> Click the upload area or simply drag and drop your PDF document directly into the browser window.
+        </li>
+        <li>
+          <strong>Configure Options:</strong> Use the intuitive visual interface to select the specific pages, rotation angles, or settings you wish to apply to your document.
+        </li>
+        <li>
+          <strong>Process Locally:</strong> Click the main action button. Our advanced browser-based engine will instantly process the file directly on your device without uploading it to any server.
+        </li>
+        <li>
+          <strong>Download Result:</strong> Once processing is complete, your newly modified PDF will be immediately available for download to your local storage.
+        </li>
+      </ol>
+<h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Technical Reality of PDF Merging</h3>
       <p className="mb-4">
         Why can't you just "append" the binary data of one PDF to the end of another? To understand why PDF merging requires a sophisticated engine, you must understand how the Portable Document Format is structured.
       </p>
@@ -87,6 +121,13 @@ export default function MergePdfSeo() {
       <p className="mb-8">
         To get the best results when merging files, ensure that your source documents are not heavily encrypted with owner passwords, as this will block the engine from reading the object graph. Use our drag-and-drop interface to visually reorder your files before hitting the merge button, ensuring the final output flows exactly as intended. By adopting a zero-trust, client-side workflow, you protect your data, save immense amounts of time, and maintain peak professional organization.
       </p>
+      
+
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-6 border-b border-pdf-gray/20 pb-4">
+        Frequently Asked Questions
+      </h3>
+      <FAQAccordion faqs={faqs} />
+
     </article>
   );
 }

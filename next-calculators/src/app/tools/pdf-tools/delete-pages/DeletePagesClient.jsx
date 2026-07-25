@@ -5,7 +5,7 @@ import { PDFDocument } from 'pdf-lib';
 import { Eye, Download, Upload, Trash2, RotateCcw, ShieldCheck, Zap, Info, 
   ChevronRight, FileText, CheckCircle2, MousePointerClick } from 'lucide-react';
 import DeletePagesSeo from '@/components/tools/DeletePagesSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function DeletePagesClient() {
   const [file, setFile] = useState(null);
@@ -243,12 +243,10 @@ export default function DeletePagesClient() {
 
         {/* Extract SEO */}
         <DeletePagesSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/delete-pages" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/delete-pages" />
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-4 text-center mt-12">
-        <p className="text-sm font-medium text-pdf-dark/60">© 2026 ToolsWizard - The Private PDF Toolkit. No data collection, ever.</p>
-      </footer>
+      
     </div>
   );
 }

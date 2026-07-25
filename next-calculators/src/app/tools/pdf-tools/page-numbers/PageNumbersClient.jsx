@@ -5,7 +5,7 @@ import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import { Eye, Download, Upload, FileText, CheckCircle2, 
   RotateCcw, ShieldCheck, Zap, ChevronRight, Hash, AlignLeft, AlignCenter, AlignRight } from 'lucide-react';
 import AddPageNumbersSeo from '@/components/tools/AddPageNumbersSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function PageNumbersClient() {
   const [file, setFile] = useState(null);
@@ -341,12 +341,10 @@ export default function PageNumbersClient() {
         </section>
 
         <AddPageNumbersSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/page-numbers" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/page-numbers" />
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-6">
-        <p className="text-pdf-dark/60 text-center font-medium">© 2026 ToolsWizard - Privacy-First PDF Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { encryptPDF } from '@pdfsmaller/pdf-encrypt-lite';
 import { Eye, Download, Upload, FileText, CheckCircle2, 
   RotateCcw, ShieldCheck, Zap, ChevronRight, Lock, KeyRound, AlertTriangle } from 'lucide-react';
 import ProtectPdfSeo from '@/components/tools/ProtectPdfSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function ProtectPdfClient() {
   const [file, setFile] = useState(null);
@@ -240,12 +240,10 @@ export default function ProtectPdfClient() {
         </section>
 
         <ProtectPdfSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/password-protect" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/password-protect" />
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-6">
-        <p className="text-pdf-dark/60 text-center font-medium">© 2026 ToolsWizard - Privacy-First PDF Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

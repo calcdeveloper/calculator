@@ -38,8 +38,8 @@ const toolCategories = [
     path: '/tools/generators'
   },
   {
-    name: 'PDF Tools',
-    description: 'PDF creation, manipulation, and conversion',
+    name: 'Image and PDF Tool',
+    description: 'Image and PDF creation, manipulation, and conversion',
     icon: <FileText size={32} />,
     color: 'bg-red-500',
     path: '/tools/pdf-tools'
@@ -169,8 +169,8 @@ export default function Home() {
               <div className="inline-flex p-3 rounded-lg bg-red-500 text-white mb-4 group-hover:scale-110 transition-transform">
                 <FileText size={28} />
               </div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">PDF Tools</h3>
-              <p className="text-gray-600 text-sm">PDF creation and manipulation</p>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Image and PDF Tool</h3>
+              <p className="text-gray-600 text-sm">Image and PDF creation and manipulation</p>
             </Link>
 
             <Link 

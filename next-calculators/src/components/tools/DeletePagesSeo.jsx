@@ -1,6 +1,23 @@
 import React from 'react';
 
+import FAQAccordion from './FAQAccordion';
+
 export default function DeletePagesSeo() {
+  const faqs = [
+    {
+      question: "Is my data secure when using this Delete PDF Pages tool?",
+      answer: "Absolutely. All processing happens locally in your web browser using JavaScript. Your files are never uploaded to any external server, ensuring 100% data privacy and security."
+    },
+    {
+      question: "Does this tool work on mobile devices?",
+      answer: "Yes! Our platform is fully responsive and leverages modern browser APIs, meaning you can easily use it on your iPhone, iPad, or Android device without downloading an app."
+    },
+    {
+      question: "Will the quality of my document be affected?",
+      answer: "No. Our tools perform structural and metadata edits without re-rendering or compressing the underlying graphics or text, ensuring perfect lossless quality."
+    }
+  ];
+
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12">
       <h2 className="text-3xl font-bold text-pdf-dark mb-6">The Expert's Guide to Deleting PDF Pages and Optimizing Document Architecture</h2>
@@ -15,7 +32,24 @@ export default function DeletePagesSeo() {
         This is why mastering the ability to rapidly, securely, and surgically delete pages from a PDF is a critical digital skill. Our <strong>Delete PDF Pages Tool</strong> is engineered specifically to solve this problem. Operating entirely within the secure sandbox of your web browser, it allows you to purge irrelevant or confidential pages from massive documents instantly. In this guide, we will explore the internal mechanics of PDF page removal, the immense security benefits of client-side processing, and best practices for managing digital documents.
       </p>
 
-      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">How PDF Deletion Actually Works (And Why It's Complicated)</h3>
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
+        How to Use the Delete PDF Pages Tool
+      </h3>
+      <ol className="list-decimal pl-6 mb-8 space-y-3">
+        <li>
+          <strong>Select Your File:</strong> Click the upload area or simply drag and drop your PDF document directly into the browser window.
+        </li>
+        <li>
+          <strong>Configure Options:</strong> Use the intuitive visual interface to select the specific pages, rotation angles, or settings you wish to apply to your document.
+        </li>
+        <li>
+          <strong>Process Locally:</strong> Click the main action button. Our advanced browser-based engine will instantly process the file directly on your device without uploading it to any server.
+        </li>
+        <li>
+          <strong>Download Result:</strong> Once processing is complete, your newly modified PDF will be immediately available for download to your local storage.
+        </li>
+      </ol>
+<h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">How PDF Deletion Actually Works (And Why It's Complicated)</h3>
       <p className="mb-4">
         If you have a 50-page Word Document (<code>.docx</code>) and you want to delete page 10, you simply highlight the text on that page and hit the Backspace key. The word processor instantly recalculates the flow of the document, moves page 11 up to take its place, and you are done. 
       </p>
@@ -95,6 +129,13 @@ export default function DeletePagesSeo() {
         <li><strong>Check Internal Hyperlinks:</strong> If your PDF has clickable internal links (e.g., "Click here to see Appendix B"), deleting the pages containing Appendix B will result in "dead" links. The PDF won't crash, but clicking the link will simply do nothing.</li>
         <li><strong>Always Retain the Master Copy:</strong> Our tool automatically downloads the processed file as a new file (e.g., <code>edited_document.pdf</code>), intentionally preserving your original upload. Never overwrite your master source file; you may realize later that you accidentally deleted a crucial page.</li>
       </ol>
+      
+
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-6 border-b border-pdf-gray/20 pb-4">
+        Frequently Asked Questions
+      </h3>
+      <FAQAccordion faqs={faqs} />
+
     </article>
   );
 }

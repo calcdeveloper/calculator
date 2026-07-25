@@ -7,7 +7,7 @@ import {
   RotateCcw, ShieldCheck, Zap, ChevronRight, Eye, RefreshCw
 } from "lucide-react";
 import RotatePdfSeo from '@/components/tools/RotatePdfSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function RotatePdfClient() {
   const [file, setFile] = useState(null);
@@ -286,12 +286,10 @@ export default function RotatePdfClient() {
         </section>
 
         <RotatePdfSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/rotate-pdf" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/rotate-pdf" />
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-6">
-        <p className="text-pdf-dark/60 text-center font-medium">© 2026 ToolsWizard - Privacy-First PDF Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

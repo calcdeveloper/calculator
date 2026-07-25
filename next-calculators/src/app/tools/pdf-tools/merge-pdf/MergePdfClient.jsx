@@ -5,7 +5,7 @@ import { PDFDocument } from 'pdf-lib';
 import { Eye, Download, Upload, FileText, CheckCircle2, 
   RotateCcw, ShieldCheck, Zap, ChevronRight, Layers, Trash2, ArrowUp, ArrowDown } from 'lucide-react';
 import MergePdfSeo from '@/components/tools/MergePdfSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function MergePdfClient() {
   const [files, setFiles] = useState([]);
@@ -259,12 +259,10 @@ export default function MergePdfClient() {
         </section>
 
         <MergePdfSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/merge-pdf" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/merge-pdf" />
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-6">
-        <p className="text-pdf-dark/60 text-center font-medium">© 2026 ToolsWizard - Privacy-First PDF Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

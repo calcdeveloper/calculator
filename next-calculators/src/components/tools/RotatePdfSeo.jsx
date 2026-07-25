@@ -1,6 +1,23 @@
 import React from 'react';
 
+import FAQAccordion from './FAQAccordion';
+
 export default function RotatePdfSeo() {
+  const faqs = [
+    {
+      question: "Is my data secure when using this Rotate PDF tool?",
+      answer: "Absolutely. All processing happens locally in your web browser using JavaScript. Your files are never uploaded to any external server, ensuring 100% data privacy and security."
+    },
+    {
+      question: "Does this tool work on mobile devices?",
+      answer: "Yes! Our platform is fully responsive and leverages modern browser APIs, meaning you can easily use it on your iPhone, iPad, or Android device without downloading an app."
+    },
+    {
+      question: "Will the quality of my document be affected?",
+      answer: "No. Our tools perform structural and metadata edits without re-rendering or compressing the underlying graphics or text, ensuring perfect lossless quality."
+    }
+  ];
+
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12">
       <h2 className="text-3xl font-bold text-pdf-dark mb-6">The Comprehensive Guide to Rotating PDF Documents and Pages</h2>
@@ -15,7 +32,24 @@ export default function RotatePdfSeo() {
         Our <strong>Rotate PDF Tool</strong> solves all of these problems by bringing enterprise-grade document manipulation directly into your browser. Engineered with advanced client-side processing, it allows you to rotate individual pages or entire documents instantly, securely, and permanently. In this deep dive, we will explore how PDF rotation actually works at the code level, the security risks of traditional server-side tools, and how our zero-trust architecture provides the ultimate solution.
       </p>
 
-      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Technical Mechanics of PDF Rotation</h3>
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
+        How to Use the Rotate PDF Tool
+      </h3>
+      <ol className="list-decimal pl-6 mb-8 space-y-3">
+        <li>
+          <strong>Select Your File:</strong> Click the upload area or simply drag and drop your PDF document directly into the browser window.
+        </li>
+        <li>
+          <strong>Configure Options:</strong> Use the intuitive visual interface to select the specific pages, rotation angles, or settings you wish to apply to your document.
+        </li>
+        <li>
+          <strong>Process Locally:</strong> Click the main action button. Our advanced browser-based engine will instantly process the file directly on your device without uploading it to any server.
+        </li>
+        <li>
+          <strong>Download Result:</strong> Once processing is complete, your newly modified PDF will be immediately available for download to your local storage.
+        </li>
+      </ol>
+<h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Technical Mechanics of PDF Rotation</h3>
       <p className="mb-4">
         When you click a button to rotate an image (like a JPEG or PNG), the software is literally changing the pixel data, shifting every colored dot on a grid. A PDF document, however, does not work like this. A PDF is a highly structured database of objects, vectors, text nodes, and layout dictionaries.
       </p>
@@ -89,6 +123,13 @@ export default function RotatePdfSeo() {
       <p className="mb-8">
         Proper document orientation is the absolute baseline for professional digital communication. Legal professionals use this tool to ensure massive discovery dockets are perfectly readable before submitting them to court systems. Real estate agents use it to properly align sideways property deeds and blueprints. By mastering this browser-based tool, you ensure that you are delivering highly professional, easily readable, and completely secure information to your stakeholders, without the massive overhead of server-side processing or expensive desktop software subscriptions.
       </p>
+      
+
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-6 border-b border-pdf-gray/20 pb-4">
+        Frequently Asked Questions
+      </h3>
+      <FAQAccordion faqs={faqs} />
+
     </article>
   );
 }

@@ -5,7 +5,7 @@ import { PDFDocument } from 'pdf-lib';
 import { Eye, Download, Upload, FileText, CheckCircle2, 
   RotateCcw, ShieldCheck, Zap, ChevronRight, SplitSquareHorizontal } from 'lucide-react';
 import ExtractPagesSeo from '@/components/tools/ExtractPagesSeo';
-import RelatedPdfTools from '@/components/tools/RelatedPdfTools';
+import RelatedImagePdfTools from '@/components/tools/RelatedImagePdfTools';
 
 export default function ExtractPagesClient() {
   const [file, setFile] = useState(null);
@@ -281,13 +281,11 @@ export default function ExtractPagesClient() {
 
         {/* SEO Component */}
         <ExtractPagesSeo />
-        <RelatedPdfTools currentToolPath="/tools/pdf-tools/extract-pages" />
+        <RelatedImagePdfTools currentToolPath="/tools/pdf-tools/extract-pages" />
 
       </main>
 
-      <footer className="bg-pdf-white border-t border-pdf-gray py-8 px-4 text-center mt-12">
-        <p className="text-sm font-medium text-pdf-dark/60">© 2026 ToolsWizard - Fast, secure, client-side PDF tools.</p>
-      </footer>
+      
     </div>
   );
 }

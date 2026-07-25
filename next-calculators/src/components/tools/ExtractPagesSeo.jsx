@@ -1,6 +1,23 @@
 import React from 'react';
 
+import FAQAccordion from './FAQAccordion';
+
 export default function ExtractPagesSeo() {
+  const faqs = [
+    {
+      question: "Is my data secure when using this Extract PDF Pages tool?",
+      answer: "Absolutely. All processing happens locally in your web browser using JavaScript. Your files are never uploaded to any external server, ensuring 100% data privacy and security."
+    },
+    {
+      question: "Does this tool work on mobile devices?",
+      answer: "Yes! Our platform is fully responsive and leverages modern browser APIs, meaning you can easily use it on your iPhone, iPad, or Android device without downloading an app."
+    },
+    {
+      question: "Will the quality of my document be affected?",
+      answer: "No. Our tools perform structural and metadata edits without re-rendering or compressing the underlying graphics or text, ensuring perfect lossless quality."
+    }
+  ];
+
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12">
       <h2 className="text-3xl font-bold text-pdf-dark mb-6">The Definitive Guide to PDF Page Extraction and Document Assembly</h2>
@@ -15,7 +32,24 @@ export default function ExtractPagesSeo() {
         Sending the entire document is not an option. It violates data security protocols, exceeds email attachment limits, and wastes the recipient's time. This is where the surgical precision of PDF extraction becomes necessary. Our <strong>Extract PDF Pages Tool</strong> is an enterprise-grade utility designed to isolate, extract, and reassemble specific PDF pages directly within your browser. In this deep dive, we will explore the technical mechanics of PDF compilation, the security advantages of our zero-trust architecture, and the professional workflows optimized by this technology.
       </p>
 
-      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Mechanics of PDF Extraction</h3>
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
+        How to Use the Extract PDF Pages Tool
+      </h3>
+      <ol className="list-decimal pl-6 mb-8 space-y-3">
+        <li>
+          <strong>Select Your File:</strong> Click the upload area or simply drag and drop your PDF document directly into the browser window.
+        </li>
+        <li>
+          <strong>Configure Options:</strong> Use the intuitive visual interface to select the specific pages, rotation angles, or settings you wish to apply to your document.
+        </li>
+        <li>
+          <strong>Process Locally:</strong> Click the main action button. Our advanced browser-based engine will instantly process the file directly on your device without uploading it to any server.
+        </li>
+        <li>
+          <strong>Download Result:</strong> Once processing is complete, your newly modified PDF will be immediately available for download to your local storage.
+        </li>
+      </ol>
+<h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Mechanics of PDF Extraction</h3>
       <p className="mb-4">
         To understand why you cannot simply "copy and paste" a page from a PDF like you can with a Word Document, you must understand how a PDF is architected. A PDF is not a stream of text; it is a relational database of objects.
       </p>
@@ -93,6 +127,13 @@ export default function ExtractPagesSeo() {
       <p className="mb-8">
         PDF extraction is more than a convenience; it is a fundamental pillar of modern digital administration. Legal teams use it to isolate specific case precedents from massive dockets. Sales teams use it to extract targeted case studies from master marketing decks. By mastering this tool, you ensure that you are delivering highly relevant, focused, and secure information to your stakeholders without the immense overhead of server-side processing or expensive desktop software subscriptions.
       </p>
+      
+
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-6 border-b border-pdf-gray/20 pb-4">
+        Frequently Asked Questions
+      </h3>
+      <FAQAccordion faqs={faqs} />
+
     </article>
   );
 }
