@@ -1,5 +1,6 @@
 import Blog from "../../views/Blog";
 import { createPageMetadata } from "@/utils/seo";
+import { getSortedPostsData } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -11,5 +12,6 @@ export const metadata = createPageMetadata({
 });
 
 export default function BlogPage() {
-  return <Blog />;
+  const allPostsData = getSortedPostsData();
+  return <Blog allPostsData={allPostsData} />;
 }

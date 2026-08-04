@@ -11,6 +11,7 @@ const siteUrl = (
 const registryDir = path.join(projectRoot, "src", "registry");
 const toolsDir = path.join(projectRoot, "src", "app", "tools");
 const publicDir = path.join(projectRoot, "public");
+const blogDir = path.join(projectRoot, "src", "content", "blog");
 
 function escapeXml(value) {
   return value
@@ -72,6 +73,15 @@ function getToolRoutes() {
   return [...new Set(routes)].sort();
 }
 
+function getBlogRoutes() {
+  if (!fs.existsSync(blogDir)) return [];
+  return fs
+    .readdirSync(blogDir)
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => `/blog/${file.replace(/\.md$/, "")}`)
+    .sort();
+}
+
 function getStaticSiteRoutes() {
   return [
     "/",
@@ -81,7 +91,6 @@ function getStaticSiteRoutes() {
     "/help",
     "/privacy",
     "/terms",
-    "/blog",
   ];
 }
 
@@ -89,18 +98,19 @@ function getRoutePriority(route) {
   const segments = route.split("/").filter(Boolean);
 
   if (route === "/") return 1;
-  if (route === "/calculator") return 0.9;
+  if (route === "/calculator" || route === "/blog") return 0.9;
   if (route.startsWith("/tools/fun-tools/") && segments.length === 3) return 0.8;
   if (route.startsWith("/tools/") && segments.length === 2) return 0.85;
   if (route.startsWith("/calculator/") && segments.length === 2) return 0.75;
   if (route.startsWith("/calculator/") && segments.length === 3) return 0.8;
   if (route.startsWith("/tools/")) return 0.8;
+  if (route.startsWith("/blog/") && segments.length === 2) return 0.8;
   return 0.6;
 }
 
 function getRouteChangeFrequency(route) {
   if (route === "/") return "daily";
-  if (route.startsWith("/calculator/") || route.startsWith("/tools/")) {
+  if (route.startsWith("/calculator/") || route.startsWith("/tools/") || route.startsWith("/blog/")) {
     return "weekly";
   }
   return "monthly";
@@ -131,6 +141,10 @@ const sitemapGroups = {
     ...getStaticSiteRoutes(),
     ...getCategoryRoutes(),
     ...getCalculatorRoutes(),
+  ],
+  "sitemap-blog.xml": [
+    "/blog",
+    ...getBlogRoutes(),
   ],
   "sitemap-tools.xml": allToolRoutes.filter(
     (route) => !route.startsWith("/tools/fun-tools") && !route.startsWith("/tools/text-tools") && !route.startsWith("/tools/encoder-decoder") && !route.startsWith("/tools/generators") && !route.startsWith("/tools/developer-tools") && !route.startsWith("/tools/design") && !route.startsWith("/tools/pdf-tools") && !route.startsWith("/tools/converter")
