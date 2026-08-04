@@ -47,7 +47,7 @@ Using our tool is incredibly simple and takes just a few seconds.
 **Step 3:** Input the **Rate of Interest (p.a)** (e.g., 7.5%).
 **Step 4:** Enter the **Time Period** in years or months (e.g., 5 years).
 **Step 5:** Select the **Compounding Frequency** (Quarterly is standard).
-**Step 6:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 The tool will instantly display:
 *   Total amount invested.

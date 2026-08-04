@@ -49,7 +49,7 @@ Using our tool is frictionless and requires zero financial expertise. Here is ho
 **Step 2:** Determine your **Yearly Investment Amount**. For maximum tax benefits, many aim for ₹1,50,000, but you can enter any amount you are comfortable saving (e.g., ₹50,000).
 **Step 3:** Enter the **Investment Tenure**. The default is 15 years, but you can increase it if you plan to extend your account.
 **Step 4:** Input the current **Interest Rate** (e.g., 7.1%).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   Your Total Principal Invested over the tenure.

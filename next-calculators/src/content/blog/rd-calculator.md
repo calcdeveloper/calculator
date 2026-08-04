@@ -47,7 +47,7 @@ Using our tool is designed to be completely frictionless. You do not need a back
 **Step 2:** Determine your **Monthly Deposit Amount**. For example, if you plan to save $500 (or ₹5,000) from your salary every month, enter that value.
 **Step 3:** Input the **Annual Interest Rate** quoted by your bank or financial institution (e.g., 6.5%).
 **Step 4:** Enter the **Investment Tenure** in years or months (e.g., 5 years).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   Your Total Principal Invested over the tenure.

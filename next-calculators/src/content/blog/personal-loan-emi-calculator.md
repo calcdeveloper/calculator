@@ -50,7 +50,7 @@ Using our tool is designed to be frictionless and instantaneous. Here is how you
 **Step 2:** Determine your **Principal Loan Amount**. For example, if you need $20,000 for a home renovation, enter `20000`. (Works for any currency: INR, GBP, EUR, etc.).
 **Step 3:** Input the **Annual Interest Rate** quoted by your lender (e.g., 14.5%).
 **Step 4:** Enter the **Loan Tenure** in years or months (e.g., 3 years or 36 months).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   Your exact Monthly EMI.

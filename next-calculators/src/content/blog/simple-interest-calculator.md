@@ -49,7 +49,7 @@ Using our tool is incredibly intuitive. You can get your answers in less than te
 **Step 2:** Enter the **Principal Amount**. For example, if you are borrowing $5,000 (or ₹50,000) for a home repair, enter that number.
 **Step 3:** Input the **Annual Interest Rate**. For a friendly loan, this might be a low rate like 4%. 
 **Step 4:** Enter the **Time Period** in years or months. (e.g., 2 years).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   Your Original Principal.

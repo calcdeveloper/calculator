@@ -45,7 +45,7 @@ Using our tool is incredibly simple and gives you instant results.
 **Step 2:** Enter your **Principal Loan Amount** (e.g., ₹5,00,000).
 **Step 3:** Input the **Annual Interest Rate** offered by your bank (e.g., 10.5%).
 **Step 4:** Enter the **Loan Tenure** in years or months (e.g., 5 years).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 The tool will instantly display:
 *   Your Monthly EMI.

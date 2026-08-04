@@ -47,7 +47,7 @@ Using our tool is designed to be completely frictionless. You do not need a back
 **Step 2:** Determine your **Total Investment Amount**. For example, if you received a bonus of $25,000 (or ₹5,000,000), enter that value.
 **Step 3:** Input the **Expected Annual Return Rate**. For an equity mutual fund, a realistic estimate is 12%. For a debt fund, it might be 7%.
 **Step 4:** Enter the **Investment Tenure** in years (e.g., 20 years).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   Your Original Principal Invested.

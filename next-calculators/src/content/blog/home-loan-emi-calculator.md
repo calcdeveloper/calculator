@@ -50,7 +50,7 @@ Using our tool gives you instant financial clarity without requiring a finance d
 **Step 2:** Determine your **Principal Loan Amount**. For instance, if you are buying a house worth $400,000 and putting $80,000 (20%) down, your loan amount is $320,000. Enter `320000` (or the equivalent in INR, EUR, etc.).
 **Step 3:** Input the **Annual Interest Rate** quoted by your lender. (e.g., 6.5%).
 **Step 4:** Enter the **Loan Tenure** in years (e.g., 30 years).
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Immediately, the tool will reveal:
 *   Your exact Monthly EMI.

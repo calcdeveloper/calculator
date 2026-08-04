@@ -47,7 +47,7 @@ Using our tool is incredibly simple and takes just a few seconds.
 **Step 3:** Input the **Expected Return Rate (p.a)** (e.g., 12%).
 **Step 4:** Enter the **Investment Period** in years (e.g., 10 years).
 **Step 5:** Input the **Expected Inflation Rate (p.a)** (e.g., 6%).
-**Step 6:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 The tool will instantly display:
 *   Total amount invested.

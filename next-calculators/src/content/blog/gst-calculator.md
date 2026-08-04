@@ -52,7 +52,7 @@ Using our tool is designed to be frictionless, empowering both accountants and e
 **Step 4:** Select the operation:
 *   Choose **Add GST** if the $5,000 is your base fee and you need to charge tax on top of it.
 *   Choose **Remove GST** if the $5,000 is the final budget and you need to know how much of it goes to taxes.
-**Step 5:** Click on the "Calculate" button.
+The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
 *   The Net Price (Base Amount).
