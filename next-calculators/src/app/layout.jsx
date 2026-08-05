@@ -34,15 +34,15 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.png", type: "image/png", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "256x256" },  // Increased from 192x192
-      { url: "/icon.png", type: "image/png", sizes: "192x192" },
-      { url: "/icon.png", type: "image/png", sizes: "128x128" },
-      { url: "/icon.png", type: "image/png", sizes: "96x96" },
-      { url: "/icon.png", type: "image/png", sizes: "64x64" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "any" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "256x256" },  // Increased from 192x192
+      { url: "/icon.png?v=6", type: "image/png", sizes: "192x192" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "128x128" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "96x96" },
+      { url: "/icon.png?v=6", type: "image/png", sizes: "64x64" },
     ],
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    shortcut: "/icon.png?v=6",
+    apple: "/icon.png?v=6",
   },
   openGraph: {
     title: `${SITE_NAME} - Free Online Calculators & Utility Tools`,
@@ -53,7 +53,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/icon.png",
+        url: "/icon.png?v=6",
         width: 256,  // Increased from 192
         height: 256,  // Increased from 192
         alt: SITE_NAME,
