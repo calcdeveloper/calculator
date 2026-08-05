@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-24">
           <Link href="/" className="flex items-center shrink-0 group py-1" onClick={() => setIsOpen(false)}>
             <img
-              src="/logo.png?v=2"
+              src="/logo.png?v=6"
               alt="ToolsWizard"
               width={280}
               height={80}
@@ -44,7 +44,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-               <Link
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-base font-semibold text-calc-gray transition-colors hover:text-gray-900"
@@ -55,7 +55,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center">
-             <Link
+            <Link
               href="/#trending"
               className="bg-white text-gray-900 border border-gray-200 px-6 py-2.5 rounded-full font-bold hover:bg-gray-50 hover:shadow-md transition-all duration-300 shadow-sm"
             >
@@ -64,14 +64,14 @@ export default function Navbar() {
           </div>
 
           <div className="md:hidden relative" ref={menuRef}>
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-calc-black hover:text-calc-green transition-colors p-2 focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={30} /> : <Menu size={30} />}
             </button>
-            
+
             {isOpen && (
               <div className="absolute right-0 mt-4 w-[calc(100vw-2rem)] sm:w-72 bg-calc-white border border-calc-lightGray rounded-lg shadow-xl p-4 space-y-2">
                 {navLinks.map((link) => (
