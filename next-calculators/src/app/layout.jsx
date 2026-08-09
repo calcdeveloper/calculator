@@ -11,6 +11,7 @@ import {
   SUPPORT_EMAIL,
 } from "@/config/site";
 import { organizationSchema, websiteSchema } from "@/utils/seo";
+import { Analytics } from "@vercel/analytics/next";
 
 export const dynamic = "force-static";
 
