@@ -24,7 +24,7 @@ You can use our tool here: [Home Loan EMI Calculator](/calculator/finance/home-l
 
 A home loan is a multi-decade commitment. Relying on rough estimates or the aggressive sales pitches of loan officers can lead to catastrophic financial decisions. Here is a deep dive into why using a Home Loan EMI Calculator is an absolute necessity:
 
-1.  **Determining True Affordability:** Just because a bank approves you for a $500,000 or ₹4 Crore loan does not mean you can afford it. The calculator helps you determine a loan amount where the monthly EMI fits comfortably within your monthly household budget, leaving enough room for savings, emergencies, and living expenses.
+1.  **Determining True Affordability:** Just because a bank approves you for a ₹500,000 or ₹4 Crore loan does not mean you can afford it. The calculator helps you determine a loan amount where the monthly EMI fits comfortably within your monthly household budget, leaving enough room for savings, emergencies, and living expenses.
 2.  **Optimizing Down Payments:** A larger down payment reduces your loan amount, which drastically lowers your EMI and total interest paid. The calculator allows you to run multiple scenarios (e.g., 10% down vs. 20% down) to find the perfect balance between liquidity and debt reduction.
 3.  **Tenure Selection Strategy:** A 15-year mortgage will have a higher EMI than a 30-year mortgage, but you will save hundreds of thousands in interest. The calculator helps you visualize this trade-off so you can pick the tenure that aligns with your financial goals.
 4.  **Understanding the "Interest Trap":** Most first-time buyers are shocked to learn that on a 30-year mortgage, they might end up paying more in interest than the actual cost of the house. The calculator exposes this "interest trap," encouraging you to make prepayments.
@@ -47,7 +47,7 @@ Once you input these parameters, the tool executes complex compounding algorithm
 Using our tool gives you instant financial clarity without requiring a finance degree. Here is how to master it:
 
 **Step 1:** Visit the [Home Loan EMI Calculator](/calculator/finance/home-loan) page on toolswizard.
-**Step 2:** Determine your **Principal Loan Amount**. For instance, if you are buying a house worth $400,000 and putting $80,000 (20%) down, your loan amount is $320,000. Enter `320000` (or the equivalent in INR, EUR, etc.).
+**Step 2:** Determine your **Principal Loan Amount**. For instance, if you are buying a house worth ₹400,000 and putting ₹80,000 (20%) down, your loan amount is ₹320,000. Enter `320000` (or the equivalent in INR, EUR, etc.).
 **Step 3:** Input the **Annual Interest Rate** quoted by your lender. (e.g., 6.5%).
 **Step 4:** Enter the **Loan Tenure** in years (e.g., 30 years).
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
@@ -78,18 +78,18 @@ Because you are paying down the principal every month, the interest you owe next
 Let’s look at two detailed, practical examples to see the profound impact of tenure and interest rates across different regions.
 
 ### Scenario A: A 30-Year Mortgage in the USA
-*   **Home Purchase Price:** $500,000
-*   **Down Payment (20%):** $100,000
-*   **Principal Loan Amount:** $400,000
+*   **Home Purchase Price:** ₹500,000
+*   **Down Payment (20%):** ₹100,000
+*   **Principal Loan Amount:** ₹400,000
 *   **Rate of Interest:** 7% p.a.
 *   **Loan Tenure:** 30 Years (360 months)
 
 **Calculator Output:**
-*   **Monthly EMI (Principal + Interest):** $2,661.21
-*   **Total Interest Payable over 30 years:** $558,035.60
-*   **Total Payment:** $958,035.60
+*   **Monthly EMI (Principal + Interest):** ₹2,661.21
+*   **Total Interest Payable over 30 years:** ₹558,035.60
+*   **Total Payment:** ₹958,035.60
 
-*Insight:* Notice how the total interest paid ($558K) is actually higher than the original loan amount ($400K). This is the reality of a 30-year mortgage at 7%.
+*Insight:* Notice how the total interest paid (₹558K) is actually higher than the original loan amount (₹400K). This is the reality of a 30-year mortgage at 7%.
 
 ### Scenario B: A 20-Year Home Loan in India
 *   **Principal Loan Amount:** ₹50,00,000 (50 Lakhs)
@@ -116,7 +116,7 @@ Let’s look at two detailed, practical examples to see the profound impact of t
 When navigating the complex world of mortgages and home loans, avoid these critical mistakes:
 
 1.  **Looking Only at the EMI:** Lenders often try to sell you a loan based on an "affordable monthly payment" by stretching the tenure to 30 or 40 years. While the EMI drops, the total interest skyrockets. Always look at the *Total Interest Payable* figure on the calculator.
-2.  **Forgetting Taxes and Insurance:** In many countries (especially the USA), your monthly housing cost is not just your EMI. You must add Property Taxes, Homeowners Insurance, and HOA fees. If your EMI is $2,000, your actual monthly obligation might be $2,800.
+2.  **Forgetting Taxes and Insurance:** In many countries (especially the USA), your monthly housing cost is not just your EMI. You must add Property Taxes, Homeowners Insurance, and HOA fees. If your EMI is ₹2,000, your actual monthly obligation might be ₹2,800.
 3.  **Draining Liquidity for a Down Payment:** While a 20% down payment is ideal to avoid Private Mortgage Insurance (PMI), don't empty your emergency fund to achieve it. You need cash for closing costs, moving expenses, and sudden home repairs.
 4.  **Ignoring the Impact of a 15-Year Mortgage:** Most buyers default to a 30-year mortgage. Run the numbers for a 15-year mortgage on the calculator. The EMI will be higher, but the interest savings are astronomical.
 5.  **Falling for "Teaser" Rates (ARMs):** Adjustable-Rate Mortgages (ARMs) start with a low interest rate that adjusts upward after a few years. Use the calculator to run scenarios assuming the interest rate jumps by 2% or 3% to see if you can still afford the house.

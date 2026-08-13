@@ -24,7 +24,7 @@ You can use our tool here: [RD Calculator](/calculator/finance/rd)
 
 Investing without a concrete goal or mathematical foresight is like driving blindfolded. Relying on rough estimates for a recurring deposit often leads to disappointment when the maturity date arrives. Here is a deep dive into why using this calculator is essential:
 
-1.  **Precision Goal Setting:** If you need exactly $15,000 (or ₹15 Lakhs) for your child's college tuition in 5 years, how much do you need to save every month? The calculator allows you to reverse-engineer your financial goals. By playing with the monthly deposit amount, you can pinpoint the exact figure required to hit your target.
+1.  **Precision Goal Setting:** If you need exactly ₹15,000 (or ₹15 Lakhs) for your child's college tuition in 5 years, how much do you need to save every month? The calculator allows you to reverse-engineer your financial goals. By playing with the monthly deposit amount, you can pinpoint the exact figure required to hit your target.
 2.  **Visualizing the Power of Compounding:** Many people underestimate how much interest a small monthly deposit can generate over 10 years. The calculator visually separates your "Total Investment" from the "Interest Earned," demonstrating the profound impact of quarterly compounding over long periods.
 3.  **Comparing Bank Rates:** A 0.5% difference in interest rates might not sound like much, but over a 5-year RD, it translates to a significant amount of money. The calculator empowers you to compare offerings from different banks to ensure you maximize your returns.
 4.  **Cash Flow Management:** Before committing to an RD—which often carries penalties for missed payments or premature withdrawals—you must ensure the monthly installment fits your budget. The calculator helps you balance your desired maturity amount with a realistic monthly cash outflow.
@@ -44,7 +44,7 @@ Once you enter these inputs, the calculator executes an algorithm that calculate
 Using our tool is designed to be completely frictionless. You do not need a background in finance to master your savings plan.
 
 **Step 1:** Visit the [RD Calculator](/calculator/finance/rd) page on toolswizard.
-**Step 2:** Determine your **Monthly Deposit Amount**. For example, if you plan to save $500 (or ₹5,000) from your salary every month, enter that value.
+**Step 2:** Determine your **Monthly Deposit Amount**. For example, if you plan to save ₹500 (or ₹5,000) from your salary every month, enter that value.
 **Step 3:** Input the **Annual Interest Rate** quoted by your bank or financial institution (e.g., 6.5%).
 **Step 4:** Enter the **Investment Tenure** in years or months (e.g., 5 years).
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
@@ -74,16 +74,16 @@ Where:
 To truly understand how an RD builds wealth, let's look at two detailed examples across different global scenarios.
 
 ### Scenario A: Saving for a Car Down Payment (USA/Global)
-*   **Monthly Deposit Amount:** $1,000
+*   **Monthly Deposit Amount:** ₹1,000
 *   **Rate of Interest:** 5% p.a.
 *   **Investment Tenure:** 3 Years (36 months)
 
 **Calculator Output:**
-*   **Total Amount Invested:** $36,000
-*   **Total Interest Earned:** $2,878
-*   **Maturity Amount:** $38,878
+*   **Total Amount Invested:** ₹36,000
+*   **Total Interest Earned:** ₹2,878
+*   **Maturity Amount:** ₹38,878
 
-*Insight:* By locking away $1,000 a month in a systematic savings account, you not only force yourself to save $36,000, but you also earn a completely risk-free $2,878 just in interest. This easily covers the taxes or insurance on a new car.
+*Insight:* By locking away ₹1,000 a month in a systematic savings account, you not only force yourself to save ₹36,000, but you also earn a completely risk-free ₹2,878 just in interest. This easily covers the taxes or insurance on a new car.
 
 ### Scenario B: Creating an Emergency Fund in India
 *   **Monthly Deposit Amount:** ₹10,000

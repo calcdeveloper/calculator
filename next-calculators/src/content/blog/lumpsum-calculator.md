@@ -16,7 +16,7 @@ A [**Lumpsum Calculator**](/calculator/finance/lumpsum) is a sophisticated digit
 
 Unlike a Systematic Investment Plan (SIP) or a Recurring Deposit (RD) where you invest small amounts every month, a lumpsum investment involves putting all your capital to work on day one. Because the entire principal amount is invested immediately, the compounding effect begins instantly on the full sum. The Lumpsum Calculator handles the complex mathematics of annual compounding, projecting how your initial capital will multiply over the years.
 
-It strips away the uncertainty of investing, replacing vague hopes of "making good money" with concrete, data-driven projections. Whether you are investing $10,000 in an S&P 500 index fund in the USA or ₹5 Lakhs in a Nifty 50 mutual fund in India, this tool provides the absolute clarity required to make confident financial decisions.
+It strips away the uncertainty of investing, replacing vague hopes of "making good money" with concrete, data-driven projections. Whether you are investing ₹10,000 in an S&P 500 index fund in the USA or ₹5 Lakhs in a Nifty 50 mutual fund in India, this tool provides the absolute clarity required to make confident financial decisions.
 
 You can use our tool here: [Lumpsum Calculator](/calculator/finance/lumpsum)
 
@@ -24,7 +24,7 @@ You can use our tool here: [Lumpsum Calculator](/calculator/finance/lumpsum)
 
 Making a large, one-time investment can be psychologically daunting. The fear of market crashes or choosing the wrong asset class often paralyses investors, causing them to sit on cash while inflation erodes its value. Here is why using a Lumpsum Calculator is an essential first step before deploying your capital:
 
-1.  **Visualizing the "Eighth Wonder of the World":** Albert Einstein allegedly called compound interest the eighth wonder of the world. The calculator proves this by showing how a single deposit of $50,000 can quietly balloon into over $500,000 over three decades without you lifting a finger. Seeing these numbers transforms theoretical math into tangible motivation.
+1.  **Visualizing the "Eighth Wonder of the World":** Albert Einstein allegedly called compound interest the eighth wonder of the world. The calculator proves this by showing how a single deposit of ₹50,000 can quietly balloon into over ₹500,000 over three decades without you lifting a finger. Seeing these numbers transforms theoretical math into tangible motivation.
 2.  **Setting Realistic Financial Goals:** If you need ₹1 Crore for your retirement in 15 years, and you currently have ₹20 Lakhs, the calculator will tell you exactly what annual return you need to hit that target. This helps you choose the right asset class (e.g., aggressive equity vs. conservative debt).
 3.  **Lumpsum vs. SIP Comparisons:** Many investors struggle to decide between investing a lump sum immediately or trickling it into the market via a SIP to mitigate risk (Dollar-Cost Averaging). Running scenarios on the calculator often reveals that over long tenures, the lumpsum approach frequently yields higher total returns because all the money is compounding from day one.
 4.  **Managing Expectations:** During bull markets, investors often expect unsustainable 25% annual returns. The calculator allows you to input conservative, realistic return rates (like 10-12%) so you can plan your future based on solid ground rather than market euphoria.
@@ -44,7 +44,7 @@ Once you input these parameters, the tool processes the compounding algorithm in
 Using our tool is designed to be completely frictionless. You do not need a background in finance or complex spreadsheet skills to forecast your wealth.
 
 **Step 1:** Visit the [Lumpsum Calculator](/calculator/finance/lumpsum) page on toolswizard.
-**Step 2:** Determine your **Total Investment Amount**. For example, if you received a bonus of $25,000 (or ₹5,000,000), enter that value.
+**Step 2:** Determine your **Total Investment Amount**. For example, if you received a bonus of ₹25,000 (or ₹5,000,000), enter that value.
 **Step 3:** Input the **Expected Annual Return Rate**. For an equity mutual fund, a realistic estimate is 12%. For a debt fund, it might be 7%.
 **Step 4:** Enter the **Investment Tenure** in years (e.g., 20 years).
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
@@ -78,16 +78,16 @@ While the math is elegant, the heavy lifting of calculating exponential growth o
 To truly grasp the phenomenal power of one-time investments, let's explore two detailed, real-world examples across different global markets.
 
 ### Scenario A: Investing an Inheritance (USA/Global)
-*   **Total Investment Amount:** $100,000
+*   **Total Investment Amount:** ₹100,000
 *   **Expected Annual Return:** 10% (Historical average of the S&P 500)
 *   **Investment Tenure:** 25 Years
 
 **Calculator Output:**
-*   **Total Amount Invested:** $100,000
-*   **Estimated Returns Gained:** $983,470
-*   **Total Maturity Value:** $1,083,470
+*   **Total Amount Invested:** ₹100,000
+*   **Estimated Returns Gained:** ₹983,470
+*   **Total Maturity Value:** ₹1,083,470
 
-*Insight:* By simply parking an inheritance in a low-cost index fund and not touching it for 25 years, the $100,000 grows into over $1 Million. The compounding effect generates nearly ten times the original principal in pure profit.
+*Insight:* By simply parking an inheritance in a low-cost index fund and not touching it for 25 years, the ₹100,000 grows into over ₹1 Million. The compounding effect generates nearly ten times the original principal in pure profit.
 
 ### Scenario B: A Mid-Career Bonus Investment in India
 *   **Total Investment Amount:** ₹10,00,000 (10 Lakhs)
@@ -121,7 +121,7 @@ When planning a lumpsum investment, investors frequently fall into psychological
 
 ## Real-Life Applications
 
-*   **Retirement Planning:** Calculating if the $200,000 you just transferred from an old 401(k) to an IRA will be enough to retire on in 15 years if it grows at 8% annually.
+*   **Retirement Planning:** Calculating if the ₹200,000 you just transferred from an old 401(k) to an IRA will be enough to retire on in 15 years if it grows at 8% annually.
 *   **Child's Education Fund:** A grandparent gifting ₹5 Lakhs to a newborn child. By investing it as a lumpsum in an equity fund, it can grow enough to cover their entire college tuition 18 years later.
 *   **Windfall Management:** Structuring the investment of a sudden windfall (like a property sale or lottery win) to ensure the capital outpaces inflation and provides generational wealth.
 *   **Real Estate vs. Equity Comparisons:** If you have ₹50 Lakhs, you can use the calculator to compare the expected 15-year return of investing it in a mutual fund versus using it to buy a physical property (factoring in rent and property appreciation).

@@ -159,7 +159,7 @@ A trainer pinches your skin at 3 to 7 different sites on your body (chest, abdom
 ### 4. Bioelectrical Impedance Analysis (BIA Smart Scales)
 Most modern bathroom scales have metal plates that send a mild electrical current through your feet. Muscle contains water and conducts electricity well; fat resists it. The scale measures the resistance to estimate body fat. While incredibly easy, these scales are notoriously inaccurate. If you drink a glass of water or sweat heavily, your BIA body fat percentage can fluctuate by 5% in a single day.
 
-*The Navy Tape Method Advantage:* Our calculator offers the best balance. It is vastly more accurate than a standard BMI or a cheap BIA scale, it costs zero dollars, it doesn't require radiation, and you can track your progress consistently using a simple $2 tape measure in your own bathroom.
+*The Navy Tape Method Advantage:* Our calculator offers the best balance. It is vastly more accurate than a standard BMI or a cheap BIA scale, it costs zero dollars, it doesn't require radiation, and you can track your progress consistently using a simple ₹2 tape measure in your own bathroom.
 
 ## Benefits of Using This Tool
 

@@ -47,7 +47,7 @@ Once you feed these parameters into the tool, it executes a complex compounding 
 Using our tool is designed to be frictionless and instantaneous. Here is how you can master your loan planning in under a minute:
 
 **Step 1:** Visit the [Personal Loan EMI Calculator](/calculator/finance/personal-loan) page on toolswizard.
-**Step 2:** Determine your **Principal Loan Amount**. For example, if you need $20,000 for a home renovation, enter `20000`. (Works for any currency: INR, GBP, EUR, etc.).
+**Step 2:** Determine your **Principal Loan Amount**. For example, if you need ₹20,000 for a home renovation, enter `20000`. (Works for any currency: INR, GBP, EUR, etc.).
 **Step 3:** Input the **Annual Interest Rate** quoted by your lender (e.g., 14.5%).
 **Step 4:** Enter the **Loan Tenure** in years or months (e.g., 3 years or 36 months).
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
@@ -78,16 +78,16 @@ Unlike simple interest, where interest is calculated on the original principal e
 To understand the profound impact of high interest rates on personal loans, let's look at two detailed examples across different global markets.
 
 ### Scenario A: A Medical Emergency Loan in the USA
-*   **Principal Loan Amount:** $15,000
+*   **Principal Loan Amount:** ₹15,000
 *   **Rate of Interest:** 18% p.a. (Common for average credit scores)
 *   **Loan Tenure:** 3 Years (36 months)
 
 **Calculator Output:**
-*   **Monthly EMI:** $542.29
-*   **Total Interest Payable over 3 years:** $4,522.44
-*   **Total Payment:** $19,522.44
+*   **Monthly EMI:** ₹542.29
+*   **Total Interest Payable over 3 years:** ₹4,522.44
+*   **Total Payment:** ₹19,522.44
 
-*Insight:* Over just 3 years, you are paying over $4,500 in interest on a $15,000 loan. If you stretched this tenure to 5 years to lower the EMI to $380, the total interest would skyrocket to $7,854! The calculator proves that shorter tenures are vital for high-interest loans.
+*Insight:* Over just 3 years, you are paying over ₹4,500 in interest on a ₹15,000 loan. If you stretched this tenure to 5 years to lower the EMI to ₹380, the total interest would skyrocket to ₹7,854! The calculator proves that shorter tenures are vital for high-interest loans.
 
 ### Scenario B: A Wedding Loan in India
 *   **Principal Loan Amount:** ₹10,00,000 (10 Lakhs)
@@ -114,7 +114,7 @@ To understand the profound impact of high interest rates on personal loans, let'
 When navigating unsecured personal loans, avoid these critical and costly errors:
 
 1.  **Chasing the Lowest EMI:** The easiest way a bank lowers your EMI is by increasing the loan tenure (from 3 years to 5 years). This is a trap. The longer the tenure, the exponentially higher the total interest you pay. Always aim for the highest EMI you can comfortably afford to minimize the tenure.
-2.  **Ignoring the Processing Fee (Origination Fee):** As mentioned earlier, banks charge an upfront fee. If you need exactly $10,000 to pay a contractor, and the bank deducts a 3% origination fee ($300), you will only receive $9,700 in hand. You must calculate EMIs on a slightly higher loan amount to get your exact cash requirement.
+2.  **Ignoring the Processing Fee (Origination Fee):** As mentioned earlier, banks charge an upfront fee. If you need exactly ₹10,000 to pay a contractor, and the bank deducts a 3% origination fee (₹300), you will only receive ₹9,700 in hand. You must calculate EMIs on a slightly higher loan amount to get your exact cash requirement.
 3.  **Borrowing More Than Needed:** Because personal loans are quickly approved, banks often pre-approve you for much more than you asked for. Do not take a larger loan just because it is offered. Run the calculator and see the interest cost before accepting extra funds.
 4.  **Falling for "Flat Rate" Scams:** Some lenders advertise a "7% Flat Rate." In reality, a flat rate calculates interest on the full principal for the entire tenure, never reducing the balance. A 7% flat rate is often equivalent to a 13% reducing balance rate. Always ensure the lender is quoting a reducing balance APR.
 5.  **Ignoring Prepayment Penalties:** If you plan to pay off the loan early (e.g., when you get your annual bonus), check if the bank charges a prepayment or foreclosure penalty. Sometimes, this penalty negates the interest you save by paying early.

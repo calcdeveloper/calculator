@@ -361,6 +361,36 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                     </div>
                   </div>
                 )}
+                {results.referenceTable && (
+                  <div className="w-full mt-4 mb-8">
+                    <div className="w-full bg-calc-white rounded-xl border border-calc-lightGray overflow-hidden shadow-sm">
+                      <table className="w-full text-sm">
+                        {results.referenceTable.headers && (
+                          <thead className="bg-calc-green text-calc-white">
+                            <tr>
+                              {results.referenceTable.headers.map((header, idx) => (
+                                <th key={idx} className={`px-5 py-3 font-semibold ${idx === 0 ? 'text-left' : 'text-right'}`}>
+                                  {header}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                        )}
+                        <tbody className="divide-y divide-calc-lightGray">
+                          {results.referenceTable.rows.map((row, rowIndex) => (
+                            <tr key={rowIndex} className="hover:bg-calc-gray/5">
+                              {row.map((cell, cellIndex) => (
+                                <td key={cellIndex} className={`px-5 py-4 text-calc-gray ${cellIndex === 0 ? 'font-medium text-calc-black' : 'text-right font-mono text-calc-black'}`}>
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>

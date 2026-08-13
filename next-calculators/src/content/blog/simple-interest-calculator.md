@@ -16,7 +16,7 @@ This is where a [**Simple Interest Calculator**](/calculator/finance/simple-inte
 
 A [**Simple Interest Calculator**](/calculator/finance/simple-interest) is a digital tool designed to instantly compute the amount of interest earned or paid on a principal sum, calculated exclusively on that original principal for the entire duration of the term.
 
-The defining characteristic of simple interest is that it does *not* compound. In a compounding scenario, you earn "interest on your interest." With simple interest, the interest charge remains flat and constant every single year. For example, if you borrow $1,000 at a 10% simple interest rate for 3 years, you pay exactly $100 in interest every year. The interest does not snowball. 
+The defining characteristic of simple interest is that it does *not* compound. In a compounding scenario, you earn "interest on your interest." With simple interest, the interest charge remains flat and constant every single year. For example, if you borrow ₹1,000 at a 10% simple interest rate for 3 years, you pay exactly ₹100 in interest every year. The interest does not snowball. 
 
 Our calculator streamlines this process. Instead of reaching for a pen and paper to multiply your principal, rate, and time, you simply input the three variables into the tool. Within milliseconds, it outputs the total interest accumulated and the final maturity amount (Principal + Interest), saving you time and guaranteeing mathematical accuracy.
 
@@ -46,7 +46,7 @@ Once you provide these three data points, the computational engine multiplies th
 Using our tool is incredibly intuitive. You can get your answers in less than ten seconds without any financial jargon getting in the way.
 
 **Step 1:** Visit the [Simple Interest Calculator](/calculator/finance/simple-interest) page on toolswizard.
-**Step 2:** Enter the **Principal Amount**. For example, if you are borrowing $5,000 (or ₹50,000) for a home repair, enter that number.
+**Step 2:** Enter the **Principal Amount**. For example, if you are borrowing ₹5,000 (or ₹50,000) for a home repair, enter that number.
 **Step 3:** Input the **Annual Interest Rate**. For a friendly loan, this might be a low rate like 4%. 
 **Step 4:** Enter the **Time Period** in years or months. (e.g., 2 years).
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
@@ -80,15 +80,15 @@ A = P + [(P × R × T) / 100]
 To fully appreciate the straightforward nature of simple interest, let's explore two practical examples from different parts of the world.
 
 ### Scenario A: A Friendly Personal Loan (USA/Global)
-*   **Principal Amount Borrowed:** $10,000
+*   **Principal Amount Borrowed:** ₹10,000
 *   **Annual Interest Rate:** 5%
 *   **Time Period:** 3 Years
 
 **Calculator Output:**
-*   **Total Interest:** $1,500
-*   **Total Repayment Amount:** $11,500
+*   **Total Interest:** ₹1,500
+*   **Total Repayment Amount:** ₹11,500
 
-*Insight:* The calculation is perfectly linear. 5% of $10,000 is $500. Since the interest does not compound, the borrower simply pays $500 for Year 1, $500 for Year 2, and $500 for Year 3. The total interest is exactly $1,500. This transparency prevents disputes between friends or family members.
+*Insight:* The calculation is perfectly linear. 5% of ₹10,000 is ₹500. Since the interest does not compound, the borrower simply pays ₹500 for Year 1, ₹500 for Year 2, and ₹500 for Year 3. The total interest is exactly ₹1,500. This transparency prevents disputes between friends or family members.
 
 ### Scenario B: Short-Term Auto Financing in India
 *   **Principal Amount (Car Loan):** ₹3,00,000 (3 Lakhs)
@@ -113,7 +113,7 @@ To fully appreciate the straightforward nature of simple interest, let's explore
 
 While simple interest is the easiest financial concept to grasp, people still make costly mistakes when applying it to real-world scenarios. Avoid these common pitfalls:
 
-1.  **Confusing Simple with Compound Interest:** This is the most dangerous mistake. If you invest $10,000 in the stock market expecting a 10% return for 10 years, using a Simple Interest calculator will tell you you'll make $10,000 in interest. In reality, due to compounding, you'll make nearly $16,000. Never use this calculator for long-term investments like mutual funds, 401(k)s, or PPFs.
+1.  **Confusing Simple with Compound Interest:** This is the most dangerous mistake. If you invest ₹10,000 in the stock market expecting a 10% return for 10 years, using a Simple Interest calculator will tell you you'll make ₹10,000 in interest. In reality, due to compounding, you'll make nearly ₹16,000. Never use this calculator for long-term investments like mutual funds, 401(k)s, or PPFs.
 2.  **Mishandling the Time Variable (T):** The formula strictly requires the time to be in *years*. If you take a 6-month loan and input "6" into the Time field without specifying it is months, the calculator will assume you mean 6 years, resulting in an interest charge that is 12 times higher than reality. Always ensure your time units are correct.
 3.  **Ignoring the "Flat Rate" Trap in Auto Loans:** Some predatory car dealerships advertise a low "Flat Interest Rate." This is actually simple interest applied to the *full principal* for the entire duration of the loan, even as you pay down the balance. A 7% flat rate is often mathematically worse than an 11% reducing-balance (compound) rate. 
 4.  **Forgetting to Formalize the Agreement:** Even if you use the calculator to perfectly determine the interest on a loan to a friend, failing to write those numbers down into a legally binding promissory note can lead to misunderstandings later. Use the calculator's output to draft the contract.

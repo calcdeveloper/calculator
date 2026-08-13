@@ -29,7 +29,7 @@ Auto financing is one of the most opaque corners of personal finance. Dealership
 1.  **Exposing the "Long Tenure" Trap:** A 72-month (6-year) car loan drastically lowers your monthly EMI compared to a 36-month loan. However, the calculator reveals the hidden danger: you will pay exponentially more in total interest. Furthermore, because cars depreciate rapidly, a 72-month loan practically guarantees you will be "underwater" (owing more than the car is worth) for several years.
 2.  **Negotiating with Confidence:** Dealerships will often ask, "What monthly payment are you looking for?" If you give them a number, they will manipulate the loan term and interest rate to hit it. By using the calculator beforehand, you know exactly what the EMI *should* be for a specific car price and interest rate. This forces the dealer to negotiate on the actual price of the car, not just the monthly payment.
 3.  **Understanding Flat-Rate vs. Reducing-Balance:** Some predatory lenders advertise a low "Flat Interest Rate." The calculator (which uses standard reducing-balance math) quickly exposes this trick. A 7% flat rate is often mathematically more expensive than a 12% reducing-balance rate.
-4.  **Optimizing Your Down Payment:** If you are unsure whether to put $5,000 or $10,000 down on your new vehicle, you can run both scenarios through the tool to see exactly how that extra $5,000 upfront impacts your monthly cash flow over the next 5 years.
+4.  **Optimizing Your Down Payment:** If you are unsure whether to put ₹5,000 or ₹10,000 down on your new vehicle, you can run both scenarios through the tool to see exactly how that extra ₹5,000 upfront impacts your monthly cash flow over the next 5 years.
 
 ## How does the Car Loan EMI Calculator work?
 
@@ -46,7 +46,7 @@ Once you input these parameters, the algorithm calculates the exact monthly EMI 
 Using our tool is designed to be completely frictionless. You can pull it out on your smartphone right in the middle of a dealership showroom.
 
 **Step 1:** Visit the [Car Loan EMI Calculator](/calculator/finance/car-loan) page on toolswizard.
-**Step 2:** Enter the **Principal Loan Amount**. For example, if the car is $30,000 and you are putting $5,000 down, your loan amount is $25,000 (or ₹25,00,000).
+**Step 2:** Enter the **Principal Loan Amount**. For example, if the car is ₹30,000 and you are putting ₹5,000 down, your loan amount is ₹25,000 (or ₹25,00,000).
 **Step 3:** Input the **Annual Interest Rate** quoted by the bank (e.g., 9%).
 **Step 4:** Enter the **Loan Tenure** in years or months (e.g., 5 years).
 **The tool will automatically and instantly calculate your results as you type—no need to click any buttons!**
@@ -76,17 +76,17 @@ While the mathematical formula involves complex exponents and fractional interes
 To truly understand the critical importance of auto loan math, let's explore two detailed, real-world examples across different global markets.
 
 ### Scenario A: Buying a SUV in the USA (The 72-Month Trap)
-John wants to buy a new SUV for $45,000. He puts down $5,000, leaving a loan amount of $40,000. The dealer offers him a 6.5% interest rate on a standard 48-month loan, or a 7.5% rate on a stretched 72-month loan to "help him out" with the monthly payment.
+John wants to buy a new SUV for ₹45,000. He puts down ₹5,000, leaving a loan amount of ₹40,000. The dealer offers him a 6.5% interest rate on a standard 48-month loan, or a 7.5% rate on a stretched 72-month loan to "help him out" with the monthly payment.
 
 **Option 1 (48 Months at 6.5%):**
-*   **Monthly EMI:** $948
-*   **Total Interest Paid:** $5,527
+*   **Monthly EMI:** ₹948
+*   **Total Interest Paid:** ₹5,527
 
 **Option 2 (72 Months at 7.5%):**
-*   **Monthly EMI:** $691
-*   **Total Interest Paid:** $9,786
+*   **Monthly EMI:** ₹691
+*   **Total Interest Paid:** ₹9,786
 
-*Insight:* The salesman will heavily push Option 2, pointing out that it saves John $257 a month. However, the calculator reveals the harsh truth: by taking the 72-month loan, John pays an extra **$4,259 in pure interest**. Furthermore, a car depreciates wildly in 6 years, virtually guaranteeing John will be underwater on the loan for years.
+*Insight:* The salesman will heavily push Option 2, pointing out that it saves John ₹257 a month. However, the calculator reveals the harsh truth: by taking the 72-month loan, John pays an extra **₹4,259 in pure interest**. Furthermore, a car depreciates wildly in 6 years, virtually guaranteeing John will be underwater on the loan for years.
 
 ### Scenario B: Buying a Hatchback in India
 Sneha wants to buy a premium hatchback. The on-road price is ₹10,00,000. She makes a down payment of ₹2,00,000 and takes a car loan for the remaining ₹8,00,000 from a major bank at 8.75% interest for a tenure of 5 years (60 months).
@@ -114,7 +114,7 @@ Sneha wants to buy a premium hatchback. The on-road price is ₹10,00,000. She m
 
 When financing a rapidly depreciating asset like an automobile, minor miscalculations can lead to years of financial regret. Avoid these frequent pitfalls:
 
-1.  **Shopping by "Monthly Payment":** This is the deadliest trap in car buying. If you tell a dealer "I can afford $400 a month," they will put you in a massively overpriced car and just stretch the loan to 84 months to hit the $400 mark, crushing you with interest. Always negotiate on the *total price* of the car.
+1.  **Shopping by "Monthly Payment":** This is the deadliest trap in car buying. If you tell a dealer "I can afford ₹400 a month," they will put you in a massively overpriced car and just stretch the loan to 84 months to hit the ₹400 mark, crushing you with interest. Always negotiate on the *total price* of the car.
 2.  **Ignoring the "On-Road" Price:** When inputting the Principal into the calculator, don't use the car's sticker price (Ex-Showroom price). You must add sales tax, registration, dealer fees, and insurance. The loan amount is based on the final "On-Road" or "Out-the-Door" price.
 3.  **Accepting Flat-Rate Loans:** Some unethical lenders advertise a low 6% "Flat Rate." Flat rate means they calculate the interest on the *total* principal for the *entire* tenure, ignoring the fact that you are paying down the balance every month. A 6% flat rate is effectively an 11% reducing-balance rate. Always ask if the loan is reducing-balance.
 4.  **Rolling Over Negative Equity:** If you trade in a car that you still owe money on, and you owe more than it's worth, the dealer will roll that negative equity into your new loan. This instantly puts you underwater on the new car before you even drive it off the lot.

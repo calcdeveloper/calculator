@@ -29,7 +29,7 @@ You can use our tool here: [GST Calculator](/calculator/finance/gst)
 Tax calculation errors are not just minor inconveniences; they have real legal and financial consequences. Here is an in-depth look at why utilizing a dedicated GST Calculator is absolutely necessary in the modern commercial landscape:
 
 1.  **Flawless Invoicing for Businesses:** When a business sends an invoice to a client, the GST amount must be explicitly stated to allow the client to claim Input Tax Credit (ITC). If the business calculates this incorrectly, the client's accounting is disrupted, and the business faces regulatory scrutiny. The calculator ensures 100% accuracy on every invoice.
-2.  **Protecting Profit Margins:** Many retailers decide to sell an item for a round "flat price" (e.g., exactly ₹999 or $100). The seller must know exactly how much of that flat price is tax that must be remitted to the government, and how much is actual revenue. Using the "Remove GST" function prevents sellers from accidentally overestimating their profit margins.
+2.  **Protecting Profit Margins:** Many retailers decide to sell an item for a round "flat price" (e.g., exactly ₹999 or ₹100). The seller must know exactly how much of that flat price is tax that must be remitted to the government, and how much is actual revenue. Using the "Remove GST" function prevents sellers from accidentally overestimating their profit margins.
 3.  **Global Compliance and VAT:** While India uses the term GST, the UK and Europe use VAT (Value Added Tax). The mathematical mechanism is identical. A globally applicable calculator allows an e-commerce seller in the USA to accurately calculate the 20% VAT when selling a digital product to a customer in London.
 4.  **Consumer Transparency:** As a consumer, you might be quoted a price that is "exclusive of taxes." Before committing to the purchase, especially for big-ticket items like cars or electronics, using the calculator reveals the true final outflow from your bank account.
 
@@ -47,11 +47,11 @@ Once you input these parameters and select whether you want to "Add GST" or "Rem
 Using our tool is designed to be frictionless, empowering both accountants and everyday consumers to get answers instantly.
 
 **Step 1:** Visit the [GST Calculator](/calculator/finance/gst) page on toolswizard.
-**Step 2:** Enter the **Original Amount**. For instance, if you are a freelancer invoicing a client for a project worth $5,000 (or ₹50,000), enter that value.
+**Step 2:** Enter the **Original Amount**. For instance, if you are a freelancer invoicing a client for a project worth ₹5,000 (or ₹50,000), enter that value.
 **Step 3:** Input the applicable **GST Rate** (e.g., 18%).
 **Step 4:** Select the operation:
-*   Choose **Add GST** if the $5,000 is your base fee and you need to charge tax on top of it.
-*   Choose **Remove GST** if the $5,000 is the final budget and you need to know how much of it goes to taxes.
+*   Choose **Add GST** if the ₹5,000 is your base fee and you need to charge tax on top of it.
+*   Choose **Remove GST** if the ₹5,000 is the final budget and you need to know how much of it goes to taxes.
 The tool will automatically and instantly calculate your results as you type—no need to click any buttons!
 
 Instantly, the tool will display:
@@ -115,7 +115,7 @@ To truly understand the utility of the GST Calculator, let's explore two detaile
 
 When dealing with indirect taxes, small mathematical errors can lead to massive compliance headaches. Avoid these frequent pitfalls:
 
-1.  **The "Reverse Percentage" Fallacy:** The most common mistake globally is trying to remove a 10% tax from a $110 inclusive price by calculating 10% of $110 ($11) and subtracting it, leaving $99. The correct base price is actually $100. Always use the "Remove GST" function on the calculator to avoid this trap.
+1.  **The "Reverse Percentage" Fallacy:** The most common mistake globally is trying to remove a 10% tax from a ₹110 inclusive price by calculating 10% of ₹110 (₹11) and subtracting it, leaving ₹99. The correct base price is actually ₹100. Always use the "Remove GST" function on the calculator to avoid this trap.
 2.  **Ignoring Freight and Shipping:** In many jurisdictions, GST must also be calculated on the shipping and handling charges, not just the base price of the goods. Ensure you add shipping to the "Original Amount" before calculating the tax.
 3.  **Using the Wrong Tax Slab:** Countries like India have multiple GST slabs (0%, 5%, 12%, 18%, 28%) depending on the specific HSN/SAC code of the product. Always verify the correct legal tax bracket for your specific good or service before using the calculator to generate an invoice.
 4.  **Mixing Intra-State and Inter-State Billing (India Specific):** When billing within the same state, the GST amount must be split equally into CGST and SGST. When billing across state lines, the full amount is charged as IGST. The mathematical total is the same, but the accounting classification is strictly different.
@@ -136,7 +136,7 @@ A "GST Inclusive" price is the final, gross price that already contains the tax 
 Conceptually, yes. Both the Goods and Services Tax (GST) and the Value Added Tax (VAT) are indirect, destination-based consumption taxes. Different countries simply use different terminology, but the mathematical calculation is identical.
 
 **3. How is the reverse GST calculated?**
-To find the base price from a GST-inclusive amount, you use the formula: Base Price = Final Price × [100 / (100 + GST Rate)]. For example, to remove 10% GST from $110, you do: 110 × (100 / 110) = $100.
+To find the base price from a GST-inclusive amount, you use the formula: Base Price = Final Price × [100 / (100 + GST Rate)]. For example, to remove 10% GST from ₹110, you do: 110 × (100 / 110) = ₹100.
 
 **4. What are the common GST slabs in India?**
 India operates on a multi-tiered GST system. The primary slabs are 5% (essential goods), 12% (standard goods), 18% (most services and standard goods), and 28% (luxury items and sin goods). There is also a 0% exempt category.

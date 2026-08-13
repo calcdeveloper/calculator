@@ -47,7 +47,7 @@ Once you input these parameters, the algorithm subtracts the mandatory retiremen
 Using our tool is designed to be completely frictionless. You can quickly run the numbers while on a phone call with a recruiter.
 
 **Step 1:** Visit the [Salary Calculator](/calculator/finance/salary) page on toolswizard.
-**Step 2:** Enter your **Gross Annual Salary / CTC**. For example, enter $80,000 or ₹15,00,000.
+**Step 2:** Enter your **Gross Annual Salary / CTC**. For example, enter ₹80,000 or ₹15,00,000.
 **Step 3:** (If applicable) Enter any known mandatory deductions, such as your expected monthly health insurance premium or 401(k) contribution percentage.
 **Step 4:** Adjust the basic salary ratio if your offer letter specifies an unusual structure (e.g., Basic is only 30% of CTC).
 **The tool will automatically and instantly calculate your results as you type—no need to click any buttons!**
@@ -95,21 +95,21 @@ Arjun receives an offer letter with a CTC of ₹12,00,000 per annum. He assumes 
 *Insight:* Arjun's assumption of a ₹1 Lakh monthly salary was completely wrong. Because the CTC included the employer's EPF, and because of his own EPF and tax liabilities, his actual liquid cash is only ₹80,966 per month. If he had signed a lease for a ₹40,000 apartment assuming a ₹1 Lakh salary, he would have faced a severe cash crunch.
 
 ### Scenario B: Job Offer in the USA (Taxes and 401k)
-Sarah is offered an $85,000 salary in Texas (no state income tax). She plans to contribute 5% to her 401(k) to get the employer match.
+Sarah is offered an ₹85,000 salary in Texas (no state income tax). She plans to contribute 5% to her 401(k) to get the employer match.
 
-*   **Gross Annual Salary:** $85,000
-*   **401(k) Contribution:** 5% ($4,250 annually)
+*   **Gross Annual Salary:** ₹85,000
+*   **401(k) Contribution:** 5% (₹4,250 annually)
 
 *Deductions Calculated by the Tool:*
-*   **FICA (Social Security + Medicare):** 7.65% of Gross = $6,502
-*   **Estimated Federal Income Tax:** ~$10,500
-*   **Total Annual Deductions:** $21,252
+*   **FICA (Social Security + Medicare):** 7.65% of Gross = ₹6,502
+*   **Estimated Federal Income Tax:** ~₹10,500
+*   **Total Annual Deductions:** ₹21,252
 
 **Calculator Output:**
-*   **Net Annual Take-Home:** $63,748
-*   **Monthly Net Take-Home:** $5,312
+*   **Net Annual Take-Home:** ₹63,748
+*   **Monthly Net Take-Home:** ₹5,312
 
-*Insight:* The calculator instantly shows Sarah that her $85k salary translates to about $5,300 a month in usable cash. This allows her to accurately budget her student loan payments and rent in her new city without any unpleasant surprises on her first payday.
+*Insight:* The calculator instantly shows Sarah that her ₹85k salary translates to about ₹5,300 a month in usable cash. This allows her to accurately budget her student loan payments and rent in her new city without any unpleasant surprises on her first payday.
 
 ## Benefits of Using This Tool
 
@@ -126,7 +126,7 @@ When evaluating compensation packages, employees frequently fall victim to optic
 1.  **Ignoring the "Variable" Component:** Many modern CTCs include a "Variable Pay" or "Performance Bonus" (e.g., ₹2 Lakhs out of a ₹10 Lakh CTC). This money is not guaranteed and is usually paid out annually, not monthly. Always input only the *fixed* portion of your salary into the calculator to determine your actual monthly take-home.
 2.  **Forgetting Employer Contributions:** In many jurisdictions, companies add their mandatory contribution to your retirement fund (like EPF or Gratuity) into the top-line CTC number. This inflates the CTC artificially, as this is money you cannot touch until retirement or resignation.
 3.  **Misunderstanding Tax Brackets:** A classic mistake is rejecting a promotion because "it will put me in a higher tax bracket and I'll make less money." Progressive tax systems do not work this way. You only pay the higher tax rate on the income *above* the bracket threshold. The calculator easily proves that a raise always results in more net cash.
-4.  **Overlooking Local/State Taxes:** A $100k salary in California yields a vastly different take-home pay than a $100k salary in Florida, purely due to state income taxes. Always ensure you are factoring in your specific geographic location.
+4.  **Overlooking Local/State Taxes:** A ₹100k salary in California yields a vastly different take-home pay than a ₹100k salary in Florida, purely due to state income taxes. Always ensure you are factoring in your specific geographic location.
 
 ## Real-Life Applications
 
