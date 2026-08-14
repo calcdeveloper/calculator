@@ -198,7 +198,7 @@ Yes! If you have 5 books (n=5) and you want to arrange all 5 of them on a shelf 
 Because permutations care about order, they treat every single rearrangement as a brand-new unique item. (ABC, ACB, BAC, BCA, CAB, CBA are 6 different permutations). Combinations filter out the duplicates, looking at that list and saying, "Those are all the exact same three letters." It counts them as just 1 combination.
 
 **4. What is a "Permutation with Repetition"?**
-Standard nPr formulas assume that once you pick an item, it is gone (like drawing a card from a deck). But a PIN code on a smartphone is a permutation *with repetition*. If you pick the number '7' for the first slot, you can still pick '7' for the second slot. The formula for this is incredibly simple: **$n^r$**.
+Standard nPr formulas assume that once you pick an item, it is gone (like drawing a card from a deck). But a PIN code on a smartphone is a permutation *with repetition*. If you pick the number '7' for the first slot, you can still pick '7' for the second slot. The formula for this is incredibly simple: **n^r**.
 
 **5. How big is 52 Factorial (52!)?**
 52! (The number of ways to arrange a standard deck of cards) is a number so large it breaks the human brain. It is an 8 with 67 zeros behind it. It is vastly larger than the total number of atoms in the entire observable universe. 

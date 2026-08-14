@@ -206,7 +206,7 @@ It means exactly what it says! Zero is a perfectly valid, real number. It simply
 Sometimes, during the simplification process, both variables cancel each other out (e.g., *3x = 3x*). If the final result is a true statement like "5 = 5", it means the equation has **Infinite Solutions** (any number in the universe will work). If the final result is a false statement like "5 = 7", it means the equation has **No Solution** (it is a physically impossible paradox).
 
 **3. What is the difference between a Linear equation and a Quadratic equation?**
-A Linear equation (which our standard solver targets) only has variables with a power of 1 (just plain 'x'). When graphed, it creates a perfectly straight line. A Quadratic equation involves variables with a power of 2 (like $x^2$). When graphed, it creates a curved parabola (a U-shape).
+A Linear equation (which our standard solver targets) only has variables with a power of 1 (just plain 'x'). When graphed, it creates a perfectly straight line. A Quadratic equation involves variables with a power of 2 (like x²). When graphed, it creates a curved parabola (a U-shape).
 
 **4. Why do we use 'x' so much in algebra?**
 The tradition dates back hundreds of years to early mathematicians, particularly René Descartes, who popularized using letters at the end of the alphabet (x, y, z) for unknown variables, and letters at the beginning of the alphabet (a, b, c) for known constants. You can technically use any letter (like 'q' or 'm'), but 'x' is the global standard.

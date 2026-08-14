@@ -57,6 +57,11 @@ export const calculateLogic = (inputs) => {
         if (!/^[MDCLXVI]+$/.test(val)) {
           throw new Error("Invalid characters. Use only M, D, C, L, X, V, I.");
         }
+
+        const validRomanRegex = /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
+        if (!validRomanRegex.test(val)) {
+          throw new Error("Invalid Roman numeral sequence. Ensure correct subtraction and no more than 3 repeating characters.");
+        }
   
         let total = 0;
         let explanationSteps = [];

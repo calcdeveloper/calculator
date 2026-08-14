@@ -204,7 +204,7 @@ You cannot just add the discount percentage back to the final price! You must us
 Because the "Initial Value" changed. When you start with ₹100 and lose 50%, you lose ₹50, leaving you with ₹50. Now, ₹50 is your *new* starting line. To get back to ₹100, you have to gain ₹50. Since ₹50 is exactly 100% of your new starting line, it requires a 100% mathematical effort just to recover.
 
 **6. Do I need to convert my money to a specific currency to use this tool?**
-No. Percentages are universal mathematical ratios. A 20% increase on ₹100 Rupees operates on the exact same mathematical logic as a 20% increase on $100 US Dollars, €100 Euros, or 100 Bitcoin. The currency symbol is entirely irrelevant to the core calculator engine.
+No. Percentages are universal mathematical ratios. A 20% increase on ₹100 Rupees operates on the exact same mathematical logic as a 20% increase on 100 US Dollars, €100 Euros, or 100 Bitcoin. The currency symbol is entirely irrelevant to the core calculator engine.
 
 **7. How is this calculator used in inflation adjustments?**
 If the government prints massive amounts of currency, the value of the currency drops. If your grocery bill goes from ₹5,000 a month to ₹5,500 a month over a year, you use the calculator to find a 10% Increase. If your boss only gave you a 5% salary raise, you know mathematically that you are actually 5% poorer this year than last year.

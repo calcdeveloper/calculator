@@ -38,7 +38,7 @@ You can access our highly accurate, browser-based commercial tool here: [**Profi
 You might assume that calculating profit is as simple as subtracting two numbers on a pocket calculator. In reality, modern commercial mathematics is incredibly layered. Taxes, shipping overhead, volume discounts, and aggressive competitor pricing make manual calculation dangerously slow. Here is an in-depth look at why utilizing this tool is critical across various major industries:
 
 ### 1. E-Commerce and Dropshipping (Amazon, Shopify)
-The modern digital storefront is incredibly competitive. An Amazon FBA seller buys a product from China for $5. They want to sell it in the USA for $15. However, Amazon takes a 15% referral fee, a $3 shipping fee, and a $1 storage fee. Suddenly, the initial 200% markup looks very different. E-commerce sellers use profit calculators obsessively to ensure that after all hidden overhead costs are deducted, the final Net Profit Margin is actually positive.
+The modern digital storefront is incredibly competitive. An Indian e-commerce seller buys a product from China for ₹400. They want to sell it globally for ₹1,200. However, the platform takes a 15% referral fee, a ₹250 shipping fee, and a ₹80 storage fee. Suddenly, the initial 200% markup looks very different. E-commerce sellers use profit calculators obsessively to ensure that after all hidden overhead costs are deducted, the final Net Profit Margin is actually positive.
 
 ### 2. Retail and Brick-and-Mortar Stores (Clearance Sales)
 A physical retail clothing store buys winter jackets in October for ₹2,000 each. They mark them up to ₹5,000 (Marked Price). When winter ends in March, they need to clear the inventory. If the store owner just wildly guesses and puts a "65% OFF" sign on the rack, they might accidentally sell the jackets below the ₹2,000 Cost Price, triggering a massive mathematical Loss. Retail managers use calculators to find the exact "Breakeven Discount Percentage."
@@ -152,7 +152,7 @@ However, she wants to advertise a massive "25% OFF MEGA SALE!" on the storefront
 *Insight:* Priya prints fake price tags that say "₹8,000." When the customer walks in and sees the "25% OFF" sign, the calculator rings them up for ₹6,000. The customer feels like a genius for saving ₹2,000, and Priya flawlessly maintains her required profit margin. This is how the entire retail industry functions.
 
 ### Scenario C: The Stock Trader (Stop-Loss Triggers)
-Ravi is a day trader. He buys 500 shares of a highly volatile technology company at $40.00 per share (Total CP = $20,000). 
+Ravi is a day trader. He buys 500 shares of a highly volatile technology company at ₹3,000 per share (Total CP = ₹1,500,000). 
 
 Ravi has a strict risk management policy: he will never allow a trade to lose more than 8%. If the stock drops 8%, he will automatically trigger a "Stop-Loss" order and sell the shares to prevent a catastrophic blowout. He needs to know his exact exit price.
 
@@ -160,7 +160,7 @@ Ravi has a strict risk management policy: he will never allow a trade to lose mo
 *   **Calculator Input (Loss %):** 8
 *   **Calculator Output (Selling Price):** 36.80
 
-*Insight:* Ravi logs into his brokerage account and sets an automatic Stop-Loss order at exactly $36.80. The calculator removed all emotion from the trade and allowed him to lock in his maximum mathematical risk.
+*Insight:* Ravi logs into his brokerage account and sets an automatic Stop-Loss order at exactly ₹2,760. The calculator removed all emotion from the trade and allowed him to lock in his maximum mathematical risk.
 
 ### Scenario D: The Wholesale Buyer (Consecutive Discounts)
 You are the purchasing manager for a large hotel chain. You need to buy 1,000 new televisions. The electronics wholesaler quotes you a Marked Price of ₹20,000 per TV. However, because you are buying in bulk, they offer a "20% + 10% Consecutive Discount."
