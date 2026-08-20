@@ -263,7 +263,7 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
                       ) : input.suffix && <span className="text-calc-green font-bold ml-1 flex-shrink-0">{input.suffix}</span>}
                     </div>
                   </div>
-                  <input type="range" min={input.min || 0} max={input.max || 100} step={input.step || 1} value={inputs[input.id] || 0} onChange={(e) => handleInputChange(input.id, e.target.value)} className="w-full h-2 bg-calc-lightGray rounded-lg appearance-none cursor-pointer accent-calc-green" />
+                  <input type="range" min={input.min || 0} max={Math.max(Number(input.max || 100), Number(inputs[input.id] || 0))} step={input.step || 1} value={inputs[input.id] || 0} onChange={(e) => handleInputChange(input.id, e.target.value)} className="w-full h-2 bg-calc-lightGray rounded-lg appearance-none cursor-pointer accent-calc-green" />
                 </div>
               );
             })}
