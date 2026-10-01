@@ -2,9 +2,15 @@
 
 import Link from "next/link";
 import { marked } from "marked";
+import { calculators } from "@/utils/calculatorData";
 
 export default function BlogPost({ postData }) {
   const htmlContent = marked.parse(postData.content);
+
+  const categoryId = postData.category ? postData.category.toLowerCase() : null;
+  const relatedCalculators = categoryId 
+    ? calculators.filter(calc => calc.category === categoryId)
+    : [];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 min-h-screen text-calc-darkGray">
@@ -50,6 +56,25 @@ export default function BlogPost({ postData }) {
           [&>code]:bg-gray-100 [&>code]:px-1 [&>code]:py-0.5 [&>code]:rounded"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
+
+      {relatedCalculators.length > 0 && (
+        <div className="mt-16 p-8 border border-gray-100 rounded-xl bg-gray-50/50">
+          <h2 className="text-2xl font-bold text-calc-darkGray mb-6">
+            Explore Other {postData.category} Calculators
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {relatedCalculators.map((calc, index) => (
+              <Link
+                key={index}
+                href={calc.path}
+                className="inline-flex items-center px-4 py-2 border border-gray-200 bg-white rounded-md text-sm font-medium text-gray-700 hover:border-gray-300 hover:shadow-sm transition-all"
+              >
+                {calc.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
