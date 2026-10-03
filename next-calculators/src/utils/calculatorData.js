@@ -163,6 +163,20 @@ export const calculators = [
   { name: 'Transformer Turns Ratio Calculator', path: '/calculator/engineering/transformer-turns-ratio', category: 'engineering' },
   { name: 'Belt Length & Pulley Speed Calculator', path: '/calculator/engineering/belt-length-pulley-speed', category: 'engineering' },
 
+  // Fun Calculators
+  { name: 'Love Percentage Calculator', path: '/tools/fun-tools/love-percentage', category: 'fun' },
+  { name: 'Friendship Calculator', path: '/tools/fun-tools/friendship-calculator', category: 'fun' },
+  { name: 'Guess Your Mental Age Tool', path: '/tools/fun-tools/guess-your-age', category: 'fun' },
+  { name: 'Random Number Generator', path: '/tools/fun-tools/random-number-generator', category: 'fun' },
+  { name: 'Random Wheel Spinner', path: '/tools/fun-tools/random-wheel-spinner', category: 'fun' },
+  { name: 'Yes/No Picker', path: '/tools/fun-tools/yes-no-picker', category: 'fun' },
+  { name: 'Dice Roller', path: '/tools/fun-tools/dice-roller', category: 'fun' },
+  { name: 'Coin Flip', path: '/tools/fun-tools/coin-flip', category: 'fun' },
+  { name: 'Random Color Picker', path: '/tools/fun-tools/random-color-picker', category: 'fun' },
+  { name: 'Lucky Number Generator', path: '/tools/fun-tools/lucky-number-generator', category: 'fun' },
+  { name: 'Tic Tac Toe', path: '/tools/fun-tools/tic-tac-toe', category: 'fun' },
+  { name: 'Number Guessing Game', path: '/tools/fun-tools/number-guessing-game', category: 'fun' },
+
   // { name: 'Age Calculator', path: '/calculator/utility/age', category: 'utility' },
   // { name: 'Currency Converter', path: '/calculator/conversion/currency', category: 'conversion' },
   // { name: 'CGPA Calculator', path: '/calculator/education/cgpa', category: 'education' },
