@@ -4,6 +4,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import GoogleAdSense from "@/components/analytics/GoogleAdSense";
+import { Analytics } from "@vercel/analytics/next";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
