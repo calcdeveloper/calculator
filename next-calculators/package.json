@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.5.0",
-    "@next/swc-darwin-arm64": "^16.2.3",
     "@next/third-parties": "^16.2.3",
     "@pdfsmaller/pdf-encrypt-lite": "^1.0.2",
     "@vercel/analytics": "^2.0.1",
