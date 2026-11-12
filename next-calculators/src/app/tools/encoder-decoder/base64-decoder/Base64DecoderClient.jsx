@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useState, useCallback } from 'react';
 import { 
@@ -57,7 +58,7 @@ export default function Base64DecoderClient() {
       <section className="bg-gradient-to-r from-enc-primary to-enc-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center space-x-2 text-enc-white/70 text-sm mb-6">
-            <span>Tools</span> <ChevronRight size={14} /> <span>Encoder/Decoder</span> <ChevronRight size={14} /> <span className="text-white font-medium">Base64 Decoder</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/encoder-decoder" className="hover:underline transition-colors">Encoder/Decoder</Link> <ChevronRight size={14} /> <span className="text-white font-medium">Base64 Decoder</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight">
             Base64 Decoder
@@ -165,9 +166,7 @@ export default function Base64DecoderClient() {
         <RelatedEncoderDecoderTools />
       </main>
 
-      <footer className="bg-enc-white border-t border-enc-gray py-8 px-6">
-        <p className="text-sm text-enc-gray text-center">© 2026 ToolsWizard - Privacy-First Developer Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

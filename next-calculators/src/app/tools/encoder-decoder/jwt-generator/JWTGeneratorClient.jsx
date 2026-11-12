@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import { useState } from "react";
 import { Copy, RefreshCw, Key, ChevronRight, FileText, Settings, Code, Trash2, AlertCircle } from "lucide-react";
@@ -82,7 +83,7 @@ export default function JWTGeneratorClient() {
       <section className="bg-gradient-to-r from-enc-primary to-enc-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center space-x-2 text-enc-white/70 text-sm mb-6">
-            <span>Tools</span> <ChevronRight size={14} /> <span>Encoder/Decoder</span> <ChevronRight size={14} /> <span className="text-white font-medium">JWT Generator</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/encoder-decoder" className="hover:underline transition-colors">Encoder/Decoder</Link> <ChevronRight size={14} /> <span className="text-white font-medium">JWT Generator</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-extrabold text-enc-white mb-6 tracking-tight flex items-center justify-center gap-4">
             <Key size={48} />

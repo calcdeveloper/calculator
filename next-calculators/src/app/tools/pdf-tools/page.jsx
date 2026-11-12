@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FileText, RotateCw, Trash2, Download, Image, Lock, Hash, ChevronRight, FileDown, Shield, Layers } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 
 import PdfHubSeo from '@/components/tools/PdfHubSeo';
 
@@ -195,9 +195,30 @@ const pdfTools = [
   }
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Image & PDF Tools',
+  description: 'Compress, resize, convert images, rotate, extract, protect, and manipulate PDF files with our free online tools. Secure, fast, and private browser-side processing.',
+  path: '/tools/pdf-tools',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Image & PDF Tools', path: '/tools/pdf-tools' }
+]);
+
 export default function PDFToolsPage() {
   return (
-    <div className="min-h-screen bg-pdf-bg font-sans text-pdf-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-pdf-bg font-sans text-pdf-dark">
       {/* Hero Header */}
       <header className="bg-gradient-to-r from-pdf-primary to-pdf-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-pdf-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -256,5 +277,7 @@ export default function PDFToolsPage() {
       </main>
 
     </div>
+  
+    </>
   );
 }

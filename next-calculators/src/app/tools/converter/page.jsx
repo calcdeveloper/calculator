@@ -19,7 +19,7 @@ import {
   CodeXml,
   Languages
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
@@ -140,9 +140,30 @@ const converterTools = [
 
 import ConverterHubSeo from '@/components/tools/ConverterHubSeo';
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Converter Tools',
+  description: 'Convert between JSON, CSV, XML, Markdown, Base64, and more. Fast, secure, and private browser-side conversion tools for developers and creators.',
+  path: '/tools/converter',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Converter Tools', path: '/tools/converter' }
+]);
+
 export default function ConverterToolsPage() {
   return (
-    <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
       {/* Hero Header */}
       <header className="bg-linear-to-r from-conv-primary to-conv-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-conv-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -202,13 +223,17 @@ export default function ConverterToolsPage() {
       </main>
 
       {/* Breadcrumbs */}
-      <footer className="bg-conv-white border-t border-conv-gray py-8 px-6">
+      <nav aria-label="Breadcrumb" className="bg-conv-white border-t border-conv-gray py-6 px-6">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-conv-gray">
           <Link href="/" className="hover:text-conv-dark">Home</Link>
           <ChevronRight size={14} />
+          <Link href="/tools" className="hover:text-conv-dark">Tools</Link>
+          <ChevronRight size={14} />
           <span className="text-conv-dark font-medium">Converter Tools</span>
         </div>
-      </footer>
+      </nav>
     </div>
+  
+    </>
   );
 }

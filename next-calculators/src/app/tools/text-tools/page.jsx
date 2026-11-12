@@ -23,7 +23,7 @@ import {
   Rows3,
   ChevronRight
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 import TextToolsMainSeo from '@/components/tools/TextToolsMainSeo';
 
 export const dynamic = "force-static";
@@ -128,9 +128,30 @@ const textTools = [
   }
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Text Tools',
+  description: 'A comprehensive suite of free text tools including word counters, case converters, text cleaners, and generators. Process your text instantly and securely in your browser.',
+  path: '/tools/text-tools',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Text Tools', path: '/tools/text-tools' }
+]);
+
 export default function TextToolsPage() {
   return (
-    <div className="min-h-screen bg-text-bg font-sans text-text-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-text-bg font-sans text-text-dark">
       {/* Hero Header */}
       <header className="bg-gradient-to-r from-text-primary to-text-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-text-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -188,5 +209,7 @@ export default function TextToolsPage() {
         <TextToolsMainSeo />
       </main>
     </div>
+  
+    </>
   );
 }

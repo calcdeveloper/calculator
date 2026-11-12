@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { Palette, Copy, RefreshCw, ChevronRight, Check, Unlock, Lock } from 'lucide-react';
 import ColorPaletteGeneratorSeo from '@/components/tools/ColorPaletteGeneratorSeo';
@@ -81,9 +82,9 @@ export default function ColorPaletteGeneratorClient() {
       <section className="bg-gradient-to-r from-pink-600 to-purple-600 pt-16 pb-32 px-4 flex-shrink-0">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-conv-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Design Tools</span>
+            <Link href="/tools/design" className="hover:underline transition-colors">Design Tools</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-conv-white font-medium">Color Palette Generator</span>
           </nav>
@@ -161,9 +162,7 @@ export default function ColorPaletteGeneratorClient() {
         </div>
       </main>
 
-      <footer className="bg-conv-white border-t border-conv-gray/30 py-8 px-6 mt-auto">
-        <p className="text-sm text-conv-gray text-center">© 2026 ToolsWizard — Privacy-First Design Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

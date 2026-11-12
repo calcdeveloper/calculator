@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 import { HelpCircle, ChevronRight, Zap, Target, Sparkles, CheckCircle2, XCircle } from 'lucide-react';
@@ -35,9 +36,9 @@ export default function YesNoPickerClient() {
       <section className="bg-gradient-to-r from-fun-primary to-fun-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-fun-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Fun Tools</span>
+            <Link href="/tools/fun-tools" className="hover:underline transition-colors">Fun Tools</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Yes/No Picker</span>
           </nav>
@@ -128,9 +129,7 @@ export default function YesNoPickerClient() {
         <RelatedFunTools currentPath="/tools/fun-tools/yes-no-picker" />
       </main>
 
-      <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6 text-center">
-        <p className="text-sm text-fun-gray">© {new Date().getFullYear()} ToolsWizard — Playful Tools for Everyone.</p>
-      </footer>
+      
     </div>
   );
 }

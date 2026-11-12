@@ -27,7 +27,7 @@ import {
   Table,
   Eraser,
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
@@ -223,9 +223,30 @@ const developerTools = [
 
 import DeveloperToolsHubSeo from '@/components/tools/DeveloperToolsHubSeo';
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Developer Tools',
+  description: 'Format, minify, validate, and beautify code plus JSON formatters, validators, and converters. Free online developer tools—fast, secure, and private.',
+  path: '/tools/developer-tools',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Developer Tools', path: '/tools/developer-tools' }
+]);
+
 export default function DeveloperToolsPage() {
   return (
-    <div className="min-h-screen bg-dev-bg">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-dev-bg">
       {/* Hero Header */}
       <header className="bg-linear-to-r from-dev-primary to-dev-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-dev-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -303,5 +324,7 @@ export default function DeveloperToolsPage() {
         </div>
       </footer>
     </div>
+  
+    </>
   );
 }

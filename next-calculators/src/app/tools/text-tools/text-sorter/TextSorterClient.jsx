@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import { useState } from "react";
 import { Copy, ArrowUpDown, Download, ChevronRight, SortAsc, SortDesc, ArrowDownWideNarrow, ArrowUpNarrowWide, Shuffle } from "lucide-react";
@@ -80,9 +81,9 @@ export default function TextSorterClient() {
       <section className="bg-gradient-to-r from-text-primary to-text-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-text-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Text Tools</span>
+            <Link href="/tools/text-tools" className="hover:underline transition-colors">Text Tools</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-text-white font-medium">Text Sorter</span>
           </nav>
@@ -219,9 +220,7 @@ export default function TextSorterClient() {
         <RelatedTextTools currentPath="/tools/text-tools/text-sorter" />
       </main>
 
-      <footer className="bg-text-white border-t border-text-gray/30 py-8 px-6">
-        <p className="text-sm text-text-gray text-center">© 2026 ToolsWizard — Privacy-First Developer Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

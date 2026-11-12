@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import { useState } from "react";
 import { Heart, RefreshCw, Share2, ChevronRight, ShieldCheck, Zap, Sparkles } from "lucide-react";
@@ -68,9 +69,9 @@ export default function FriendshipCalculatorClient() {
       <section className="bg-gradient-to-r from-fun-primary to-fun-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-fun-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Fun Tools</span>
+            <Link href="/tools/fun-tools" className="hover:underline transition-colors">Fun Tools</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-fun-white font-medium">Friendship Calculator</span>
           </nav>
@@ -181,9 +182,7 @@ export default function FriendshipCalculatorClient() {
         <RelatedFunTools />
       </main>
 
-      <footer className="bg-fun-white border-t border-fun-gray/30 py-8 px-6">
-        <p className="text-sm text-fun-gray text-center">© 2026 ToolsWizard — Fun Tools for everyone.</p>
-      </footer>
+      
     </div>
   );
 }

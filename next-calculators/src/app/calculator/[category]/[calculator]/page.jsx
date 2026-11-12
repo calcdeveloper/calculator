@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import CalculatorLayout from "@/components/calculator/CalculatorLayout";
-import { absoluteUrl } from "@/config/site";
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from "@/utils/seo";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -48,25 +48,22 @@ export async function generateStaticParams() {
 
 // 2. Dynamic Metadata for SEO
 export async function generateMetadata({ params }) {
-  const { category, calculator } = await params; // Next 15: params is a Promise
+  const { category, calculator } = await params;
   try {
     const configModule = await import(`@/registry/${category}/${calculator}/config.js`);
-    // Handle both default and named exports
     const config = configModule.default || configModule.config;
-    
-    const path = `/calculator/${category}/${calculator}`;
-    return {
-      title: config.seoTitle || config.name,
+    const pagePath = `/calculator/${category}/${calculator}`;
+
+    return createPageMetadata({
+      title: config.seoTitle || `${config.name} - Free Online Calculator`,
       description: config.seoDescription || config.description,
-      alternates: { canonical: absoluteUrl(path) },
+      path: pagePath,
+      keywords: config.keywords,
       openGraph: {
         title: config.seoTitle || config.name,
         description: config.seoDescription || config.description,
-        url: absoluteUrl(path),
-        type: "website",
       },
-      robots: { index: true, follow: true },
-    };
+    });
   } catch (error) {
     return { title: "Calculator" };
   }
@@ -74,12 +71,11 @@ export async function generateMetadata({ params }) {
 
 // 3. Render the Page
 export default async function CalculatorPage({ params }) {
-  const { category, calculator } = await params; // Await the params for Next.js 15
+  const { category, calculator } = await params;
 
   let config;
   try {
     const configModule = await import(`@/registry/${category}/${calculator}/config.js`);
-    // Look for default export first, then named export 'config'
     config = configModule.default || configModule.config;
     
     if (!config) {
@@ -90,6 +86,24 @@ export default async function CalculatorPage({ params }) {
     console.error(`Failed to load config for: ${category}/${calculator}`, error);
     notFound();
   }
+
+  const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
+  const pagePath = `/calculator/${category}/${calculator}`;
+
+  const softwareSchema = createSoftwareAppSchema({
+    name: config.name,
+    description: config.seoDescription || config.description,
+    path: pagePath,
+    category: `${categoryName}Application`,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "INR" }
+  });
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Calculators", path: "/calculator" },
+    { name: `${categoryName} Calculators`, path: `/calculator/${category}` },
+    { name: config.name, path: pagePath }
+  ]);
 
   let ContentComponent = null;
   let CustomComponent = null;
@@ -109,24 +123,29 @@ export default async function CalculatorPage({ params }) {
       const ContentModule = await import(`@/registry/${category}/${calculator}/content.jsx`);
       ContentComponent = ContentModule.default;
     } catch (error) {
-      // Content is optional, so we don't trigger notFound here
       console.warn(`Optional content.jsx not found for: ${category}/${calculator}`);
     }
   }
 
-  // If it's a custom component, render it directly with config
-  if (CustomComponent) {
-    return <CustomComponent config={config} />;
-  }
-
-  // Otherwise, use the standard CalculatorLayout
   return (
-    <CalculatorLayout
-      category={category}
-      calculator={calculator}
-      initialConfig={toSerializableConfig(config)}
-    >
-      {ContentComponent ? <ContentComponent /> : null}
-    </CalculatorLayout>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      {CustomComponent ? (
+        <CustomComponent config={config} />
+      ) : (
+        <CalculatorLayout
+          category={category}
+          calculator={calculator}
+          initialConfig={toSerializableConfig(config)}
+        >
+          {ContentComponent ? <ContentComponent /> : null}
+        </CalculatorLayout>
+      )}
+    </>
   );
 }

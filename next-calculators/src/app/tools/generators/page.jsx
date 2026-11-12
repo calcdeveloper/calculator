@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Zap, Hash, Key, FileText, RefreshCw, ChevronRight, Barcode, User, Dices, Sparkles, Database, Mail, ShieldCheck, Network, Link as LinkIcon, Ticket, Shuffle, Receipt, Palette } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
@@ -135,9 +135,30 @@ const generators = [
   }
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Generator Tools',
+  description: 'Generate UUIDs, passwords, QR codes, random numbers, and more with our free online generator tools. Fast, secure, and private browser-side generation.',
+  path: '/tools/generators',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Generator Tools', path: '/tools/generators' }
+]);
+
 export default function GeneratorsPage() {
   return (
-    <div className="min-h-screen bg-gen-bg font-sans text-gen-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-gen-bg font-sans text-gen-dark">
       {/* Hero Header */}
       <header className="bg-gradient-to-r from-gen-primary to-gen-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-gen-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -308,5 +329,7 @@ export default function GeneratorsPage() {
         </div>
       </footer>
     </div>
+  
+    </>
   );
 }

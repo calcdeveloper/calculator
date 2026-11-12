@@ -2,10 +2,11 @@
 
 import MatrixGridInput from "../../registry/math/matrix/MatrixGridInput";
 import { useCallback, useState, useEffect } from "react";
+import Link from "next/link";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronRight } from "lucide-react";
 import RelatedFinanceCalculators from "./RelatedFinanceCalculators";
 
 // Note: If you don't use TypingTest/WordCounter globally, you can safely remove these imports
@@ -159,6 +160,15 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 min-h-screen">
       <div className="mb-8 sm:mb-10 border-b border-calc-lightGray pb-6">
+        <nav aria-label="Breadcrumb" className="flex items-center flex-wrap gap-2 text-sm text-calc-gray mb-4">
+          <Link href="/" className="hover:text-calc-green transition-colors">Home</Link>
+          <ChevronRight size={14} className="text-gray-400" />
+          <Link href="/calculator" className="hover:text-calc-green transition-colors">Calculators</Link>
+          <ChevronRight size={14} className="text-gray-400" />
+          <Link href={`/calculator/${category}`} className="hover:text-calc-green transition-colors capitalize">{category} Calculators</Link>
+          <ChevronRight size={14} className="text-gray-400" />
+          <span className="text-calc-black font-semibold truncate">{config.name}</span>
+        </nav>
         <div className="flex items-center gap-4 mb-4">
           <button
             onClick={handleBack}
@@ -397,12 +407,10 @@ export default function CalculatorClient({ category, calculator, initialConfig, 
         </div>
       </div>
 
-      {children && (
-        <div className="prose max-w-none text-calc-darkGray bg-calc-white p-6 sm:p-8 rounded-2xl border border-calc-lightGray mt-6 sm:mt-8">
-          {children}
-          <RelatedFinanceCalculators category={category} currentCalculatorId={calculator} />
-        </div>
-      )}
+      <div className="prose max-w-none text-calc-darkGray bg-calc-white p-6 sm:p-8 rounded-2xl border border-calc-lightGray mt-6 sm:mt-8">
+        {children}
+        <RelatedFinanceCalculators category={category} currentCalculatorId={calculator} />
+      </div>
     </div>
   );
 }

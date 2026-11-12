@@ -14,7 +14,7 @@ import {
   ChevronRight,
   Contrast
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 import DesignHubSeo from '@/components/tools/DesignHubSeo';
 
 export const dynamic = "force-static";
@@ -142,9 +142,30 @@ const designTools = [
   }
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Design Tools',
+  description: 'Free online design tools for color conversion, palette generation, contrast checking, and more. Fast, secure, and private browser-side design utilities.',
+  path: '/tools/design',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Design Tools', path: '/tools/design' }
+]);
+
 export default function DesignToolsPage() {
   return (
-    <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
       {/* Hero Header */}
       <header className="bg-linear-to-r from-pink-600 to-purple-600 pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-conv-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -204,13 +225,17 @@ export default function DesignToolsPage() {
       </main>
 
       {/* Breadcrumbs */}
-      <footer className="bg-conv-white border-t border-conv-gray py-8 px-6">
+      <nav aria-label="Breadcrumb" className="bg-conv-white border-t border-conv-gray py-6 px-6">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-conv-gray">
           <Link href="/" className="hover:text-conv-dark">Home</Link>
           <ChevronRight size={14} />
+          <Link href="/tools" className="hover:text-conv-dark">Tools</Link>
+          <ChevronRight size={14} />
           <span className="text-conv-dark font-medium">Design Tools</span>
         </div>
-      </footer>
+      </nav>
     </div>
+  
+    </>
   );
 }

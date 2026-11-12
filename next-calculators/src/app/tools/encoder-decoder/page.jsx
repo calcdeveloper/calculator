@@ -18,7 +18,7 @@ import {
   Braces,
   ArrowRightLeft
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
@@ -193,9 +193,30 @@ const encoderDecoderTools = [
   }
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Encoder/Decoder Tools',
+  description: 'Encode and decode Base64, URL, HTML, JWT, MD5, SHA, binary, hex, and more with our free online encoder/decoder tools. Fast, secure, and private browser-side processing.',
+  path: '/tools/encoder-decoder',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Encoder/Decoder Tools', path: '/tools/encoder-decoder' }
+]);
+
 export default function EncoderDecoderPage() {
   return (
-    <div className="min-h-screen bg-enc-bg font-sans text-enc-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-enc-bg font-sans text-enc-dark">
       {/* Hero Header */}
       <header className="bg-gradient-to-r from-enc-primary to-enc-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-enc-white/70 text-sm mb-6 max-w-4xl mx-auto">
@@ -262,5 +283,7 @@ export default function EncoderDecoderPage() {
         </div>
       </footer>
     </div>
+  
+    </>
   );
 }

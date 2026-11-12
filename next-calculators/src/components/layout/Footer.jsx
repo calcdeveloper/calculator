@@ -19,6 +19,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-4">
             <h3 className="font-bold text-calc-black mb-4">Tools</h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-calc-gray">
+              <li><Link href="/tools" className="hover:text-calc-green transition font-medium text-calc-black">All Tools Directory</Link></li>
               <li><Link href="/calculator" className="hover:text-calc-green transition">Calculator Tools</Link></li>
               <li><Link href="/tools/generators" className="hover:text-calc-green transition">Generator Tools</Link></li>
               <li><Link href="/tools/pdf-tools" className="hover:text-calc-green transition">Image and PDF Tool</Link></li>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Download, AlertCircle, FileArchive, FileCode, RefreshCw } from 'lucide-react';
+import { Download, AlertCircle, FileArchive, FileCode, RefreshCw, CheckCircle2 } from 'lucide-react';
 
 // Common MIME types to extensions mapping
 const mimeToExt = {

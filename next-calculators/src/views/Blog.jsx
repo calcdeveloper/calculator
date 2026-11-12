@@ -9,7 +9,7 @@ export default function Blog({ allPostsData = [] }) {
       {allPostsData.length === 0 ? (
         <div className="bg-calc-white p-8 rounded-xl border border-calc-lightGray shadow-sm">
           <p className="text-lg text-gray-600">
-            Coming soon! We're working on bringing you the latest articles, tutorials, and updates about online tools, calculators, and productivity tips.
+            Coming soon! We&apos;re working on bringing you the latest articles, tutorials, and updates about online tools, calculators, and productivity tips.
           </p>
         </div>
       ) : (

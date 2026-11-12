@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useState, useCallback } from 'react';
 import { 
@@ -84,7 +85,7 @@ export default function HTMLFormatterClient() {
       <section className="bg-gradient-to-r from-dev-primary to-dev-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center space-x-2 text-dev-white/70 text-sm mb-6">
-            <span>Tools</span> <ChevronRight size={14} /> <span>Developer Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">HTML Formatter</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/developer-tools" className="hover:underline transition-colors">Developer Tools</Link> <ChevronRight size={14} /> <span className="text-white font-medium">HTML Formatter</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-extrabold text-dev-white mb-6 tracking-tight">
             HTML Formatter

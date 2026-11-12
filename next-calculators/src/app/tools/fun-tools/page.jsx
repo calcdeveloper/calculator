@@ -15,7 +15,7 @@ import {
   Target,
   ChevronRight,
 } from 'lucide-react';
-import { createPageMetadata } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
 import FunToolsMainSeo from '@/components/tools/FunToolsMainSeo';
 
 export const dynamic = 'force-static';
@@ -136,9 +136,30 @@ const funTools = [
   },
 ];
 
+
+const softwareSchema = createSoftwareAppSchema({
+  name: 'Fun Tools',
+  description: 'Play with love calculators, coin flip, dice roller, random wheels, and more free fun tools on ToolsWizard. No signup, instant results, mobile-friendly.',
+  path: '/tools/fun-tools',
+  category: 'SoftwareApplication'
+});
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: 'Tools', path: '/tools' },
+  { name: 'Fun Tools', path: '/tools/fun-tools' }
+]);
+
 export default function FunToolsPage() {
   return (
-    <div className="min-h-screen bg-fun-bg font-sans text-fun-dark">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+        }}
+      />
+      <div className="min-h-screen bg-fun-bg font-sans text-fun-dark">
       <header className="bg-gradient-to-r from-fun-primary to-fun-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-fun-white/70 text-sm mb-6 max-w-4xl mx-auto">
           <span>Tools</span> <ChevronRight size={14} /> <span>Fun Tools</span>
@@ -205,5 +226,7 @@ export default function FunToolsPage() {
         </div>
       </footer>
     </div>
+  
+    </>
   );
 }

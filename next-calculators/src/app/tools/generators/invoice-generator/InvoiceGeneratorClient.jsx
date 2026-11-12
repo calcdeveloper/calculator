@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState, useRef } from 'react';
 import { FileText, Printer, ChevronRight, Plus, Trash2, Download } from 'lucide-react';
 import InvoiceGeneratorSeo from '@/components/tools/InvoiceGeneratorSeo';
@@ -57,9 +58,9 @@ export default function InvoiceGeneratorClient() {
       <section className="bg-gradient-to-r from-gen-primary to-gen-primaryDark pt-16 pb-32 px-4 print:hidden">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-gen-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Generators</span>
+            <Link href="/tools/generators" className="hover:underline transition-colors">Generators</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">Invoice Generator</span>
           </nav>
@@ -275,9 +276,7 @@ export default function InvoiceGeneratorClient() {
         </div>
       </main>
 
-      <footer className="bg-gen-white border-t border-gen-gray/30 py-8 px-6 mt-12 print:hidden">
-        <p className="text-sm text-gen-gray text-center">© 2026 ToolsWizard — Privacy-First Developer Utilities.</p>
-      </footer>
+      
 
       {/* Print Styles */}
       <style dangerouslySetInnerHTML={{__html: `

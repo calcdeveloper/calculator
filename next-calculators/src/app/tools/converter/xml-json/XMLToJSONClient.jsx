@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import { useState } from "react";
 import { Copy, Download, FileCode, Braces, Check, ChevronRight } from "lucide-react";
@@ -84,9 +85,9 @@ export default function XMLToJSONClient() {
       <section className="bg-gradient-to-r from-conv-primary to-conv-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-conv-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Converter Tools</span>
+            <Link href="/tools/converter" className="hover:underline transition-colors">Converter Tools</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-conv-white font-medium">XML to JSON</span>
           </nav>
@@ -170,9 +171,7 @@ export default function XMLToJSONClient() {
         <XMLtoJSONSeo />
       </main>
 
-      <footer className="bg-conv-white border-t border-conv-gray/30 py-8 px-6">
-        <p className="text-sm text-conv-gray text-center">© 2026 ToolsWizard — Privacy-First Developer Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

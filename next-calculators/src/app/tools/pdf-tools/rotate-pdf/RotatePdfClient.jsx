@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useState, useRef } from "react";
 import { PDFDocument, degrees } from 'pdf-lib';
@@ -116,7 +117,7 @@ export default function RotatePdfClient() {
       <section className="bg-gradient-to-r from-pdf-primary to-pdf-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center space-x-2 text-pdf-white/70 text-sm mb-6" aria-label="Breadcrumb">
-            <span>Tools</span> <ChevronRight size={14} /> <span>PDF Tools</span> <ChevronRight size={14} /> <span className="text-pdf-white font-medium">Rotate PDF</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/pdf-tools" className="hover:underline transition-colors">Image and PDF Tool</Link> <ChevronRight size={14} /> <span className="text-pdf-white font-medium">Rotate PDF</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-extrabold text-pdf-white mb-6 tracking-tight">
             Rotate PDF Pages

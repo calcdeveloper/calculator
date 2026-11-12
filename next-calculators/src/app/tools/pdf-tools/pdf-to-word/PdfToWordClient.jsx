@@ -184,7 +184,7 @@ export default function PdfToWordClient() {
       <header className="bg-gradient-to-r from-pdf-primary to-pdf-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center space-x-2 text-pdf-white/70 text-sm mb-6" aria-label="Breadcrumb">
-            <Link href="/tools/pdf-tools" className="hover:text-pdf-white transition-colors">Tools</Link> 
+            <Link href="/tools" className="hover:text-pdf-white transition-colors">Tools</Link> 
             <ChevronRight size={14} className="mt-0.5" /> 
             <Link href="/tools/pdf-tools" className="hover:text-pdf-white transition-colors">Image and PDF Tool</Link> 
             <ChevronRight size={14} className="mt-0.5" /> 

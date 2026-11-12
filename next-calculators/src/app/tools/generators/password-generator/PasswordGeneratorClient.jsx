@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Key, Copy, RefreshCw, Shield, ChevronRight, Check, AlertTriangle } from 'lucide-react';
 import PasswordGeneratorSeo from '@/components/tools/PasswordGeneratorSeo';
@@ -99,9 +100,9 @@ export default function PasswordGeneratorClient() {
       <section className="bg-gradient-to-r from-gen-primary to-gen-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center flex-wrap gap-1 text-gen-white/70 text-sm mb-6">
-            <span>Tools</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link>
             <ChevronRight size={14} className="inline" />
-            <span>Generators</span>
+            <Link href="/tools/generators" className="hover:underline transition-colors">Generators</Link>
             <ChevronRight size={14} className="inline" />
             <span className="text-gen-white font-medium">Password Generator</span>
           </nav>
@@ -272,9 +273,7 @@ export default function PasswordGeneratorClient() {
         <RelatedGeneratorsTools />
       </main>
 
-      <footer className="bg-gen-white border-t border-gen-gray/30 py-8 px-6 mt-12">
-        <p className="text-sm text-gen-gray text-center">© 2026 ToolsWizard — Privacy-First Developer Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

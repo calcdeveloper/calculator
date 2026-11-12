@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useState } from 'react';
 import { Wind, Copy, CheckCircle2, ChevronRight } from 'lucide-react';
@@ -57,7 +58,7 @@ export default function TailwindColorPickerClient() {
       {/* Hero Header */}
       <header className="bg-linear-to-r from-pink-600 to-purple-600 pt-16 pb-32 px-4">
         <nav className="flex justify-center items-center gap-2 text-conv-white/70 text-sm mb-6 max-w-4xl mx-auto">
-          <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">Tailwind Color Picker</span>
+          <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/design" className="hover:underline transition-colors">Design Tools</Link> <ChevronRight size={14} /> <span className="text-white font-medium">Tailwind Color Picker</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold text-conv-white mb-6 tracking-tight flex items-center justify-center gap-4">
@@ -144,9 +145,7 @@ export default function TailwindColorPickerClient() {
         <RelatedDesignTools />
       </main>
 
-      <footer className="bg-conv-white border-t border-conv-gray/30 py-8 px-6 mt-12">
-        <p className="text-sm text-conv-gray text-center">© 2026 ToolsWizard — Privacy-First Design Utilities.</p>
-      </footer>
+      
     </div>
   );
 }

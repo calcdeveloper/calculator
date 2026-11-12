@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React, { useState, useCallback } from 'react';
 import { 
@@ -58,7 +59,7 @@ export default function RGBHexClient() {
       <section className="bg-gradient-to-r from-design-primary to-design-primaryDark pt-16 pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <nav className="flex justify-center items-center gap-2 text-design-white/70 text-sm mb-6">
-            <span>Tools</span> <ChevronRight size={14} /> <span>Design Tools</span> <ChevronRight size={14} /> <span className="text-white font-medium">RGB to Hex</span>
+            <Link href="/tools" className="hover:underline transition-colors">Tools</Link> <ChevronRight size={14} /> <Link href="/tools/design" className="hover:underline transition-colors">Design Tools</Link> <ChevronRight size={14} /> <span className="text-white font-medium">RGB to Hex</span>
           </nav>
           <h1 className="text-3xl md:text-5xl font-extrabold text-design-white mb-6 tracking-tight">
             RGB to Hex Converter
@@ -222,9 +223,7 @@ export default function RGBHexClient() {
 
       </main>
 
-      <footer className="bg-design-white border-t border-design-gray py-8 px-6 mt-12">
-        <p className="text-sm text-design-dark/60 text-center font-medium">© 2026 ToolsWizard - Privacy-First Design Utilities.</p>
-      </footer>
+      
     </div>
   );
 }
