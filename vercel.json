@@ -9,6 +9,231 @@
   },
   "redirects": [
     {
+      "source": "/calculator/construction/tools/encoder-decoder",
+      "destination": "/tools/encoder-decoder",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/construction/tools/encoder-decoder/:path*",
+      "destination": "/tools/encoder-decoder/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/engineering/tools/design",
+      "destination": "/tools/design",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/engineering/tools/design/:path*",
+      "destination": "/tools/design/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/developer-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/developer-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/developer-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/developer-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/developer-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/developer-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/everyday/tools/design",
+      "destination": "/tools/design",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/everyday/tools/design/:path*",
+      "destination": "/tools/design/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/math/tools/design",
+      "destination": "/tools/design",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/math/tools/design/:path*",
+      "destination": "/tools/design/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/finance/tools/design",
+      "destination": "/tools/design",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/finance/tools/design/:path*",
+      "destination": "/tools/design/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/engineering/tools/converter",
+      "destination": "/tools/converter",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/engineering/tools/converter/:path*",
+      "destination": "/tools/converter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fun-tools/tools/developer-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fun-tools/tools/developer-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/finance/tools/developer-tools",
+      "destination": "/tools/developer-tools",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/finance/tools/developer-tools/:path*",
+      "destination": "/tools/developer-tools/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/converter",
+      "destination": "/tools/converter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/converter/:path*",
+      "destination": "/tools/converter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/converter",
+      "destination": "/tools/converter",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/converter/:path*",
+      "destination": "/tools/converter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fun-tools/tools/converter",
+      "destination": "/tools/converter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fun-tools/tools/converter/:path*",
+      "destination": "/tools/converter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/design",
+      "destination": "/tools/design",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/design/:path*",
+      "destination": "/tools/design/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/encoder-decoder",
+      "destination": "/tools/encoder-decoder",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/encoder-decoder/:path*",
+      "destination": "/tools/encoder-decoder/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/converter",
+      "destination": "/tools/converter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/developer-tools/tools/converter/:path*",
+      "destination": "/tools/converter/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/:category/tools/:tool",
+      "destination": "/tools/:tool",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/:category/tools/:tool/:path*",
+      "destination": "/tools/:tool/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/:tool",
+      "destination": "/tools/:tool",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools/:tool/:path*",
+      "destination": "/tools/:tool/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:category/tools/:tool",
+      "destination": "/tools/:tool",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:category/tools/:tool/:path*",
+      "destination": "/tools/:tool/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/:tool",
+      "destination": "/tools/:tool",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/:tool/:path*",
+      "destination": "/tools/:tool/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/calculator/tools",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/category/:category",
+      "destination": "/calculator/:category",
+      "permanent": true
+    },
+    {
       "source": "/tools/json-tools",
       "destination": "/tools/developer-tools",
       "permanent": true
@@ -17,6 +242,57 @@
       "source": "/tools/json-tools/:path*",
       "destination": "/tools/developer-tools/:path*",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(sitemap-.*\\.xml)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(favicon.ico|icon-48.png|icon-96.png|apple-touch-icon.png|logo.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, must-revalidate"
+        }
+      ]
     }
   ]
 }
