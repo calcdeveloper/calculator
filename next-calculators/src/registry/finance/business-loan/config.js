@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Business Loan EMI Calculator | MSME Loan EMI Calculator',
-  seoDescription: 'Free Business Loan EMI Calculator. Instantly calculate your MSME or working capital loan EMI, including hidden processing fees and GST on commercial loans.',
-  seoKeywords: 'business loan emi calculator, msme loan calculator, working capital loan emi, commercial loan calculator, sme loan emi',
+  seoTitle: 'Business Loan EMI Calculator - Commercial & MSME Loan Tool',
+  seoDescription: 'Calculate business loan EMIs, interest payable, and net cash disbursals with processing fees and GST. Compare MSME, term, and working capital credit.',
+  seoKeywords: 'business loan emi calculator, msme loan calculator, working capital loan emi, commercial loan calculator, sme loan emi, dscr loan calculator',
   
   inputs: [
     { id: 'principal', label: 'Business Loan Amount (₹)', min: 100000, max: 100000000, step: 50000, defaultValue: 1000000, prefix: '₹' },

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Content() {
   const faqSchema = {
@@ -239,6 +240,14 @@ export default function Content() {
       </section>
 
       
+
+      {/* CONNECT TO COMMERCIAL BUSINESS BORROWING */}
+      <section className="bg-blue-50/60 p-6 rounded-2xl border border-blue-100 mt-8">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Evaluating Commercial &amp; MSME Borrowing Affordability</h3>
+        <p className="text-gray-700 leading-relaxed">
+          While consumer affordability relies on personal Debt-to-Income (DTI) metrics, corporate entities and small businesses must evaluate debt capacity through commercial cash flow coverage and net capital realization. If you are financing commercial equipment, real estate, or working capital cycles, use our specialized <Link href="/calculator/finance/business-loan" className="text-blue-700 font-bold underline hover:text-blue-800">Business Loan EMI Calculator</Link> to model monthly repayments, upfront bank fees, GST friction, and DSCR solvency benchmarks.
+        </p>
+      </section>
 
     </div>
   );

@@ -156,6 +156,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Business Loan EMI Calculator',
+    desc: 'Calculate commercial & MSME loan EMIs with net disbursal, GST, and fees.',
+    path: '/calculator/finance/business-loan',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
