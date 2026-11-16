@@ -150,6 +150,12 @@ const trendingTools = [
     category: 'Text'
   },
   {
+    name: 'Break Even Calculator',
+    desc: 'Calculate break-even units, revenue targets, and commercial contribution margins.',
+    path: '/calculator/finance/break-even',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Content() {
   const faqSchema = {
@@ -229,6 +230,14 @@ export default function Content() {
       </section>
 
       
+
+      {/* CONNECT TO BREAK-EVEN ANALYSIS */}
+      <section className="bg-emerald-50/60 p-6 rounded-2xl border border-emerald-100 mt-8">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Connecting Margin to Break-Even Volume</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Calculating your product&apos;s gross margin is only the first half of commercial unit economics. Knowing your margin per unit allows you to calculate the exact sales volume needed to cover your company&apos;s fixed operating overhead, rent, and payroll. Use our comprehensive <Link href="/calculator/finance/break-even" className="text-emerald-700 font-bold underline hover:text-emerald-800">Break Even Calculator</Link> to model your break-even point in units and revenue, establish sales quotas, and stress-test your business against cost inflation.
+        </p>
+      </section>
 
     </div>
   );

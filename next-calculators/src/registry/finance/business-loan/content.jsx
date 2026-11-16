@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Content() {
   const faqSchema = {
@@ -212,6 +213,14 @@ export default function Content() {
       </section>
 
       
+
+      {/* IMPACT ON BREAK-EVEN OVERHEAD */}
+      <section className="bg-blue-50/60 p-6 rounded-2xl border border-blue-100 mt-8">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Incorporating Loan Repayments into Your Break-Even Model</h3>
+        <p className="text-gray-700 leading-relaxed">
+          Securing a commercial term loan introduces a non-negotiable monthly debt service obligation that expands your company&apos;s fixed structural overhead. Before signing a loan agreement, calculate how your new EMI inflates the sales volume required to maintain corporate solvency using our dedicated <Link href="/calculator/finance/break-even" className="text-blue-700 font-bold underline hover:text-blue-800">Break Even Calculator</Link>. Modeling the additional unit sales needed to cover debt service prevents cash flow shortages and protects operating solvency.
+        </p>
+      </section>
 
     </div>
   );

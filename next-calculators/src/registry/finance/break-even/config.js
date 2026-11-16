@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Break Even Point Calculator | Calculate Business Profitability',
-  seoDescription: 'Free Break Even Calculator for businesses. Instantly calculate your break-even point in units and sales revenue based on fixed costs, variable costs, and selling price.',
-  seoKeywords: 'break even calculator, break even point calculator, bep calculator, business profit calculator, contribution margin calculator',
+  seoTitle: 'Break Even Calculator - Free Break-Even Point Tool',
+  seoDescription: 'Calculate your business break-even point in units and sales revenue. Analyze fixed costs, variable expenses, contribution margins, and profit thresholds.',
+  seoKeywords: 'break even calculator, break even point calculator, bep calculator, business profit calculator, contribution margin calculator, unit economics calculator',
   
   inputs: [
     { id: 'fixedCosts', label: 'Total Fixed Costs (₹)', min: 0, max: 100000000, step: 1000, defaultValue: 50000, prefix: '₹' },
