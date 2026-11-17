@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function RandomColorGeneratorSeo() {
   const faqs = [
@@ -142,7 +143,7 @@ export default function RandomColorGeneratorSeo() {
           The random generation function then utilizes a strict `Math.min` and `Math.max` boundary system. For example, to generate a random hue between a user-defined `hueMin` and `hueMax`, the JavaScript execution is: `Math.floor(Math.random() * (hueMax - hueMin + 1)) + hueMin`.
         </p>
         <p className="text-lg text-conv-gray">
-          This exact logic is repeated for the Saturation and Lightness integers based on their specific UI slider states. Once the three integers are generated, they are fed into the conversion utility, instantly outputting a flawless, mathematically constrained Hex string ready to be injected into a CSS custom property or inline style tag.
+          This exact logic is repeated for the Saturation and Lightness integers based on their specific UI slider states. Once the three integers are generated, they are fed into the conversion utility, instantly outputting a flawless, mathematically constrained Hex string ready to be injected into a CSS custom property or inline style tag. If you need to generate a full harmonic 5-color scheme rather than an isolated single hex code, use our interactive <Link href="/tools/design/color-palette-generator" className="text-pink-600 font-semibold hover:underline">Color Palette Generator</Link> to iterate and lock complementary swatches with your keyboard spacebar.
         </p>
       </section>
 
