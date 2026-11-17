@@ -156,7 +156,7 @@ export default function Content() {
         </p>
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">Example A: The High-Basic Structure</h3>
         <p className="mb-4">
-          Ravi earns a gross salary of ₹1,00,000 per month. His company structures the basic pay at 50% (₹50,000). Because his basic is high, his mandatory EPF deduction (12% of basic) is ₹6,000. Assuming a flat ₹5,000 TDS and ₹200 Professional Tax, Ravi's total monthly deductions are ₹11,200. His final take-home salary is <strong>₹88,800</strong>. His retirement corpus is growing rapidly, but his monthly liquidity is slightly reduced.
+          Ravi earns a gross salary of ₹1,00,000 per month. His company structures the basic pay at 50% (₹50,000). Because his basic is high, his mandatory EPF deduction (12% of basic) is ₹6,000. Assuming a flat ₹5,000 TDS and ₹200 Professional Tax, Ravi's total monthly deductions are ₹11,200. His final take-home salary is <strong>₹88,800</strong>. His retirement corpus is growing rapidly (track its monthly compounding yield with our <a href="/calculator/finance/epf-interest" className="text-blue-600 font-semibold underline hover:text-blue-800">EPF Interest Calculator</a>), but his monthly liquidity is slightly reduced.
         </p>
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-4">Example B: The Low-Basic Structure</h3>
         <p className="mb-4">

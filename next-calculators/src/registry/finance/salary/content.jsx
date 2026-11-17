@@ -146,7 +146,7 @@ export default function Content() {
         </p>
         <ul className="list-disc pl-6 mb-4 space-y-4">
           <li>
-            <strong>Employee's Provident Fund (EPF):</strong> By law, you contribute 12% of your Basic Salary to the EPF. This money is invested by the government and earns an annual interest. While it reduces your monthly cash flow, it is a highly secure, tax-free retirement corpus.
+            <strong>Employee's Provident Fund (EPF):</strong> By law, you contribute 12% of your Basic Salary to the EPF. This capital compounds monthly under sovereign EPFO guarantees; calculate your exact month-by-month earnings using our <a href="/calculator/finance/epf-interest" className="text-blue-600 font-semibold underline hover:text-blue-800">EPF Interest Calculator</a>. While it reduces current liquidity, it forms an invaluable tax-free retirement corpus.
           </li>
           <li>
             <strong>Employer's Provident Fund (EPF):</strong> The employer matches your 12% contribution. Technically, 8.33% goes to the Employee Pension Scheme (EPS) and 3.67% goes to the EPF. Note that this 12% is usually deducted from your overall CTC during the offer negotiation phase.

@@ -5,8 +5,8 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'EPF Interest Calculator | Calculate Monthly & Annual PF Interest',
-  seoDescription: 'Free EPF Interest Calculator. Calculate exactly how much interest your Employees Provident Fund (EPF) account will earn this financial year based on monthly contributions.',
+  seoTitle: 'EPF Interest Calculator - Monthly & Annual PF Calculation',
+  seoDescription: 'Calculate your annual EPF interest and monthly PF compounding. Estimate employer and employee contribution growth with the latest 8.25% EPFO rate.',
   seoKeywords: 'epf interest calculator, pf interest calculation, epf interest rate, calculate pf interest monthly, provident fund interest',
   
   inputs: [

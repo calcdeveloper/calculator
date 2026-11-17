@@ -174,6 +174,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'EPF Interest Calculator',
+    desc: 'Calculate annual EPF interest compounding and monthly PF running balances.',
+    path: '/calculator/finance/epf-interest',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
