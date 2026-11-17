@@ -271,7 +271,7 @@ export default function Content() {
         <div className="bg-white p-5 rounded-xl border border-gray-200 text-sm space-y-2">
           <p>• <strong>Statutory Exemption Limit:</strong> Aggregate equity LTCG across all mutual funds and listed shares up to <strong>₹1,25,000 per financial year</strong> is completely exempt from income tax (increased from the prior ₹1,00,000 threshold).</p>
           <p>• <strong>Tax Rate on Excess Profits:</strong> All net long-term capital gains exceeding ₹1,25,000 within a single financial year are taxed at a flat rate of <strong>12.5%</strong> (plus 4% cess, resulting in an effective tax rate of 13.0%).</p>
-          <p>• <strong>Indexation Status:</strong> In line with broader equity taxation, no cost inflation indexation benefits are permitted on equity mutual fund units.</p>
+          <p>• <strong>Indexation Status:</strong> In line with broader equity taxation, no cost inflation indexation benefits are permitted on equity mutual fund units. To model how direct listed equity trades compare against mutual fund taxation, verify your trading friction, brokerage, and net capital gains ROI with our <Link href="/calculator/finance/stock-profit" className="text-emerald-800 font-semibold underline hover:text-emerald-950">Stock Profit Calculator</Link>.</p>
         </div>
 
         <h3 className="text-xl font-bold text-gray-900 mt-8 mb-3">5. Net Tax-Adjusted XIRR: The True Internal Rate of Return</h3>

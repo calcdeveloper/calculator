@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Stock Profit Calculator | Calculate Net Trading Profit & ROI',
-  seoDescription: 'Free Stock Profit Calculator. Calculate your net profit, total loss, and Return on Investment (ROI) for intraday and delivery stock trading.',
-  seoKeywords: 'stock profit calculator, share market calculator, trade profit calculator, ROI calculator, stock loss calculator',
+  seoTitle: 'Stock Profit Calculator - Calculate Net Trade Profit & ROI',
+  seoDescription: 'Calculate your exact net profit, loss, and ROI from stock trading. Model buy/sell prices, brokerage fees, STT, exchange charges, and capital gains taxes.',
+  seoKeywords: 'stock profit calculator, share market calculator, trade profit calculator, ROI calculator, stock loss calculator, brokerage calculator india',
   
   inputs: [
     { id: 'shares', label: 'Number of Shares', min: 1, max: 10000000, step: 1, defaultValue: 100 },

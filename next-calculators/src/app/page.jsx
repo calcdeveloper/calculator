@@ -228,6 +228,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Stock Profit Calculator',
+    desc: 'Calculate net trading profit, brokerage friction, STT, and capital gains ROI on equity trades.',
+    path: '/calculator/finance/stock-profit',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
