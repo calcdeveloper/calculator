@@ -522,7 +522,7 @@ const B_comp = compositeChannel(255, 42, 0.8); // = 212
 }`}</pre>
         </div>
         <p className="text-lg text-conv-gray leading-relaxed">
-          Once the composite solid hexadecimal code is computed, it can be dropped directly into this contrast calculator to verify legal compliance. If you need to convert between percentage opacities, 8-digit hex alpha codes, and solid fallback colors, use our dedicated <Link href="/tools/design/opacity-calculator" className="text-pink-600 font-semibold hover:underline">Opacity Calculator</Link>. For adjusting transitional colors without creating muddy midpoints, blend custom shades with our <Link href="/tools/design/color-mixer" className="text-pink-600 font-semibold hover:underline">CSS Color Mixer</Link>.
+          To extract the exact highlight and shadow pixels directly from your background photography, sample the image using our client-side <Link href="/tools/design/image-color-picker" className="text-pink-600 font-semibold hover:underline">Image Color Picker</Link>. Once the composite solid hexadecimal code is computed, it can be dropped directly into this contrast calculator to verify legal compliance. If you need to convert between percentage opacities, 8-digit hex alpha codes, and solid fallback colors, use our dedicated <Link href="/tools/design/opacity-calculator" className="text-pink-600 font-semibold hover:underline">Opacity Calculator</Link>. For adjusting transitional colors without creating muddy midpoints, blend custom shades with our <Link href="/tools/design/color-mixer" className="text-pink-600 font-semibold hover:underline">CSS Color Mixer</Link>.
         </p>
       </section>
 

@@ -659,7 +659,7 @@ const B_pixel = Math.round(lerp(B_A, B_B, t));`}</pre>
           Automated compilation pipelines powered by Amazon Style Dictionary read this central JSON token file and automatically generate CSS Custom Properties, Tailwind configuration presets, iOS SwiftUI <code>LinearGradient</code> struct instances, and Android Compose <code>Brush.linearGradient()</code> definitions. This single-source-of-truth architecture guarantees absolute visual harmony across every digital platform touchpoint.
         </p>
         <p className="text-lg text-conv-gray leading-relaxed">
-          To quickly copy verified class names and color ramps from the Tailwind design system, explore our <Link href="/tools/design/tailwind-color-picker" className="text-pink-600 font-semibold hover:underline">Tailwind Color Picker</Link>.
+          If you are designing atmospheric gradient glows based on photography, branding mockups, or album covers, extract exact chromatic stops with our <Link href="/tools/design/image-color-picker" className="text-pink-600 font-semibold hover:underline">Image Color Picker</Link>. To quickly copy verified class names and color ramps from the Tailwind design system, explore our <Link href="/tools/design/tailwind-color-picker" className="text-pink-600 font-semibold hover:underline">Tailwind Color Picker</Link>.
         </p>
       </section>
 

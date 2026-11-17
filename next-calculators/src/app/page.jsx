@@ -262,6 +262,12 @@ const trendingTools = [
     desc: 'Design beautiful linear and radial CSS gradients with custom angles, color stops, and instant Tailwind code export.',
     path: '/tools/design/gradient-generator',
     category: 'Design'
+  },
+  {
+    name: 'Image Color Picker',
+    desc: 'Extract exact HEX, RGB, and HSL color codes from photos online with zero-trust client-side canvas processing.',
+    path: '/tools/design/image-color-picker',
+    category: 'Design'
   }
 ];
 

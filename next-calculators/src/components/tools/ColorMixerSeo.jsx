@@ -308,7 +308,7 @@ export default function ColorMixerSeo() {
             <p className="text-slate-800 font-bold">• Step 950: Mix #7C3AED with #000000 at 85% → #180B34</p>
           </div>
           <p className="text-xs text-slate-600">
-            <strong>The Solution:</strong> By mixing the base brand color with pure white and deep charcoal in systematic percentage increments, the team establishes an immutable, mathematically harmonized design system palette in minutes. To generate full color palettes and export Tailwind configurations, explore our <Link href="/tools/design/color-palette-generator" className="text-pink-600 font-semibold underline hover:text-pink-700">Color Palette Generator</Link> and <Link href="/tools/design/tailwind-color-picker" className="text-pink-600 font-semibold underline hover:text-pink-700">Tailwind Color Picker</Link>.
+            <strong>The Solution:</strong> By mixing the base brand color with pure white and deep charcoal in systematic percentage increments, the team establishes an immutable, mathematically harmonized design system palette in minutes. To extract source hues directly from real-world mood boards and photography before blending, utilize our <Link href="/tools/design/image-color-picker" className="text-pink-600 font-semibold underline hover:text-pink-700">Image Color Picker</Link>. To generate full color palettes and export Tailwind configurations, explore our <Link href="/tools/design/color-palette-generator" className="text-pink-600 font-semibold underline hover:text-pink-700">Color Palette Generator</Link> and <Link href="/tools/design/tailwind-color-picker" className="text-pink-600 font-semibold underline hover:text-pink-700">Tailwind Color Picker</Link>.
           </p>
         </div>
       </section>
@@ -514,7 +514,7 @@ export default function ColorMixerSeo() {
       </section>
 
       {/* SECTION 10: RELATED DESIGN UTILITY HUB */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 not-prose">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 not-prose">
         <div className="bg-pink-50/60 p-6 rounded-2xl border border-pink-100">
           <h3 className="text-lg font-bold text-slate-900 mb-2">Color Palette Generator</h3>
           <p className="text-xs text-slate-600 leading-relaxed mb-3">
@@ -533,6 +533,13 @@ export default function ColorMixerSeo() {
           <h3 className="text-lg font-bold text-slate-900 mb-2">CSS Gradient Generator</h3>
           <p className="text-xs text-slate-600 leading-relaxed mb-3">
             Build smooth multi-stop linear and radial gradients with custom chromatic midpoints using our <Link href="/tools/design/gradient-generator" className="text-purple-700 font-bold underline hover:text-purple-800">Gradient Generator</Link>.
+          </p>
+        </div>
+
+        <div className="bg-emerald-50/60 p-6 rounded-2xl border border-emerald-100">
+          <h3 className="text-lg font-bold text-slate-900 mb-2">Image Color Picker</h3>
+          <p className="text-xs text-slate-600 leading-relaxed mb-3">
+            Extract exact HEX and RGB color swatches from photos and mood boards client-side using our <Link href="/tools/design/image-color-picker" className="text-emerald-700 font-bold underline hover:text-emerald-800">Image Color Picker</Link>.
           </p>
         </div>
       </div>

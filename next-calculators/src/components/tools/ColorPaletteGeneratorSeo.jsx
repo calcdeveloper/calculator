@@ -532,7 +532,7 @@ module.exports = {
           By committing this token manifest directly to a centralized Git repository, automated CI/CD workflows powered by Amazon Style Dictionary compile the single JSON source of truth simultaneously into CSS variables, Tailwind configuration presets, iOS Swift struct definitions, and Android Jetpack Compose themes. This eliminates manual copy-paste errors and ensures flawless chromatic alignment across web and mobile platforms.
         </p>
         <p className="text-lg text-gen-gray leading-relaxed">
-          To explore ready-to-use utility palettes extracted directly from the Tailwind framework, explore our <Link href="/tools/design/tailwind-color-picker" className="text-blue-600 font-semibold hover:underline">Tailwind Color Picker</Link> for rapid class copying and shade cross-referencing.
+          If your design workflow begins from photography or an inspirational mood board, extract exact real-world source hex codes using our <Link href="/tools/design/image-color-picker" className="text-blue-600 font-semibold hover:underline">Image Color Picker</Link>. To explore ready-to-use utility palettes extracted directly from the Tailwind framework, explore our <Link href="/tools/design/tailwind-color-picker" className="text-blue-600 font-semibold hover:underline">Tailwind Color Picker</Link> for rapid class copying and shade cross-referencing.
         </p>
       </section>
 
