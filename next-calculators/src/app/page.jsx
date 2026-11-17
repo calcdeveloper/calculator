@@ -186,6 +186,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Loan Affordability Calculator',
+    desc: 'Calculate maximum home loan borrowing capacity and property purchasing power based on the 50% DTI rule.',
+    path: '/calculator/finance/loan-affordability',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

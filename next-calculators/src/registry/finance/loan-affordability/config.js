@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Loan Affordability Calculator | How Much Can I Borrow?',
-  seoDescription: 'Free Loan Affordability Calculator. Calculate your maximum eligible loan amount and maximum asset purchase price based on your income and existing EMIs.',
-  seoKeywords: 'loan affordability calculator, how much loan can i get, mortgage affordability, dti ratio, maximum loan amount, home loan eligibility',
+  seoTitle: 'Loan Affordability Calculator - Max Borrowing & Home Loan',
+  seoDescription: 'Calculate your maximum borrowing capacity and home loan affordability based on gross income, existing debt obligations, and statutory 50% DTI limits.',
+  seoKeywords: 'loan affordability calculator, how much loan can i get, mortgage affordability, dti ratio, maximum loan amount, home loan eligibility, foir calculator',
   
   inputs: [
     { id: 'monthlyIncome', label: 'Gross Monthly Income (₹)', min: 10000, max: 5000000, step: 5000, defaultValue: 100000, prefix: '₹' },
