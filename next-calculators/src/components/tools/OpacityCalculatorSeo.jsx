@@ -130,7 +130,7 @@ export default function OpacityCalculatorSeo() {
           When the browser encounters a solid Hex code, it paints the pixel into memory once and forgets it. When the browser encounters an RGBA string with 50% opacity, it must force the Graphics Processing Unit (GPU) into a continuous calculation loop, constantly compositing the foreground color against whatever DOM elements happen to be scrolling underneath it.
         </p>
         <p className="text-lg text-conv-gray">
-          If you apply transparency to massive, full-screen background gradients or complex animated SVGs, the GPU will exhaust its memory budget, resulting in severe "jank" and dropped frames on lower-tier mobile devices. Senior performance engineers routinely audit their stylesheets, replacing unnecessary `rgba()` declarations with mathematically pre-mixed solid Hex codes to preserve critical 60fps rendering speeds.
+          If you apply transparency to massive, full-screen background gradients or complex animated SVGs, the GPU will exhaust its memory budget, resulting in severe "jank" and dropped frames on lower-tier mobile devices. Senior performance engineers routinely audit their stylesheets, replacing unnecessary `rgba()` declarations with mathematically pre-mixed solid Hex codes to preserve critical 60fps rendering speeds. When building complex multi-stop background ramps, prototype your transitions visually using our <Link href="/tools/design/gradient-generator" className="text-pink-600 font-semibold hover:underline">CSS Gradient Generator</Link>.
         </p>
       </section>
 

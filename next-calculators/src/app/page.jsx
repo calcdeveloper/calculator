@@ -256,6 +256,12 @@ const trendingTools = [
     desc: 'Verify color contrast ratios for WCAG 2.1 AA and AAA accessibility compliance on text and UI elements.',
     path: '/tools/design/contrast-checker',
     category: 'Design'
+  },
+  {
+    name: 'CSS Gradient Generator',
+    desc: 'Design beautiful linear and radial CSS gradients with custom angles, color stops, and instant Tailwind code export.',
+    path: '/tools/design/gradient-generator',
+    category: 'Design'
   }
 ];
 

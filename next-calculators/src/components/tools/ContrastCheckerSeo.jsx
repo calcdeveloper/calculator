@@ -454,7 +454,7 @@ button:focus-visible {
           <div className="border border-conv-gray/20 bg-conv-bg/40 p-4 rounded-xl">
             <h4 className="font-bold text-conv-dark text-base mb-1">Step 6: Sample Dynamic CSS Gradients & Image Overlays</h4>
             <p className="text-conv-gray text-sm leading-relaxed">
-              Identify the lightest and darkest pixels across any background image or gradient beneath text. Test against the worst-case sample point to guarantee readability.
+              Identify the lightest and darkest pixels across any background image or gradient beneath text. Test against the worst-case sample point to guarantee readability. When designing multi-stop directional backgrounds, construct compliant transitions using our <Link href="/tools/design/gradient-generator" className="text-pink-600 font-semibold hover:underline">CSS Gradient Generator</Link>.
             </p>
           </div>
           <div className="border border-conv-gray/20 bg-conv-bg/40 p-4 rounded-xl">
