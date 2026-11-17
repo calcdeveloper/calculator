@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function OpacityCalculatorSeo() {
   const faqs = [
@@ -142,7 +143,7 @@ export default function OpacityCalculatorSeo() {
           Instead of hardcoding `--brand: rgba(255, 0, 0, 0.5);`, a senior engineer will declare the raw integers: `--brand-rgb: 255, 0, 0;`. This atomic architecture unlocks incredible dynamic power. Anywhere in the application, the developer can compose a custom opacity on the fly by writing `background-color: rgba(var(--brand-rgb), 0.2);` or `border-color: rgba(var(--brand-rgb), 0.8);`.
         </p>
         <p className="text-lg text-conv-gray">
-          Our calculator assists in this migration by providing the exact extracted RGB integers alongside the compiled RGBA string. By adopting this atomic variable architecture, teams completely eliminate the need to generate dozens of hardcoded, static Hex Alpha variables in their `:root`, resulting in significantly cleaner, drier, and more maintainable CSS codebases.
+          Our calculator assists in this migration by providing the exact extracted RGB integers alongside the compiled RGBA string. By adopting this atomic variable architecture, teams completely eliminate the need to generate dozens of hardcoded, static Hex Alpha variables in their `:root`, resulting in significantly cleaner, drier, and more maintainable CSS codebases. If you need to flatten semi-transparent alpha overlays onto a solid canvas background into a pure 6-digit HEX hex code, compute the alpha composite directly with our <Link href="/tools/design/color-mixer" className="text-pink-600 font-semibold hover:underline">HEX Color Mixer tool</Link>.
         </p>
       </section>
 

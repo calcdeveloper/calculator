@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ColorPaletteGeneratorSeo() {
   const faqs = [
@@ -156,7 +157,7 @@ export default function ColorPaletteGeneratorSeo() {
           Our tool is explicitly designed to sit on a second monitor while the designer works inside Figma on their primary display. The designer utilizes our tool to algorithmically discover the perfect 5-color harmony. They then click the hex code, alt-tab to Figma, paste the hex string into a new Local Color Style, and repeat the process exactly four more times.
         </p>
         <p className="text-lg text-gen-gray">
-          Within roughly 45 seconds, the designer has extracted five mathematically perfect colors from our generation engine and permanently anchored them as foundational design tokens within their massive Figma file, allowing them to instantly begin drawing high-fidelity web components with absolute visual confidence.
+          Within roughly 45 seconds, the designer has extracted five mathematically perfect colors from our generation engine and permanently anchored them as foundational design tokens within their massive Figma file, allowing them to instantly begin drawing high-fidelity web components with absolute visual confidence. When intermediate tinting or transitional shades between two swatches are required, designers frequently leverage our companion <Link href="/tools/design/color-mixer" className="text-blue-600 font-semibold hover:underline">CSS Color Mixer</Link> to blend exact percentage ratios between base tokens.
         </p>
       </section>
 

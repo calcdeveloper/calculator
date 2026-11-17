@@ -240,6 +240,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'CSS Color Mixer',
+    desc: 'Blend two or more HEX/RGB colors with linear interpolation, gamma correction, and real-time palette export.',
+    path: '/tools/design/color-mixer',
+    category: 'Design'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

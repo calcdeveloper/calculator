@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function GradientGeneratorSeo() {
   const faqs = [
@@ -142,7 +143,7 @@ export default function GradientGeneratorSeo() {
           Instead of writing custom CSS, Tailwind developers declare the direction (`bg-gradient-to-r`), the starting color (`from-pink-500`), the optional middle stop (`via-purple-500`), and the ending color (`to-indigo-500`). The framework automatically compiles these utility classes into a flawless, standard CSS gradient string.
         </p>
         <p className="text-lg text-conv-gray">
-          However, Tailwind's native utility classes are strictly limited to linear gradients running in standard 45-degree increments (top, top-right, right, etc.). If a design requires a highly specific 117-degree angle, or a complex radial gradient, developers cannot use the default Tailwind classes. They must utilize our Gradient Generator to construct the exact mathematical string, and then inject it into Tailwind via an arbitrary value class (e.g., `bg-[linear-gradient(117deg,#FF0000,#0000FF)]`).
+          However, Tailwind&apos;s native utility classes are strictly limited to linear gradients running in standard 45-degree increments (top, top-right, right, etc.). If a design requires a highly specific 117-degree angle, or a complex radial gradient, developers cannot use the default Tailwind classes. They must utilize our Gradient Generator to construct the exact mathematical string, and then inject it into Tailwind via an arbitrary value class (e.g., `bg-[linear-gradient(117deg,#FF0000,#0000FF)]`). To calculate exact intermediate color stops and avoid the notorious &quot;gray dead zone&quot; in linear interpolations, pair this tool with our <Link href="/tools/design/color-mixer" className="text-pink-600 font-semibold hover:underline">online CSS Color Mixer</Link>.
         </p>
       </section>
 

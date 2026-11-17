@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ContrastCheckerSeo() {
   const faqs = [
@@ -142,7 +143,7 @@ export default function ContrastCheckerSeo() {
           If Google's crawler detects that your website's primary paragraphs utilize a low-contrast `#AAAAAA` gray text on a `#FFFFFF` background, the algorithm will mathematically flag the site as actively hostile to visually impaired users. This triggers a massive, algorithmic penalty to your Page Experience score.
         </p>
         <p className="text-lg text-conv-gray">
-          A poor Page Experience score prevents your application from ranking on the first page of Google Search results, devastating your organic traffic and revenue. Utilizing our free WCAG contrast calculator is not just a moral obligation; it is a critical, high-ROI technical SEO strategy designed to maximize your application's search visibility and dominance.
+          A poor Page Experience score prevents your application from ranking on the first page of Google Search results, devastating your organic traffic and revenue. Utilizing our free WCAG contrast calculator is not just a moral obligation; it is a critical, high-ROI technical SEO strategy designed to maximize your application&apos;s search visibility and dominance. If your background shade falls just short of the 4.5:1 ratio, use our <Link href="/tools/design/color-mixer" className="text-pink-600 font-semibold hover:underline">CSS Color Mixer</Link> to linearly blend in 5% to 15% white or black until full AA/AAA compliance is unlocked.
         </p>
       </section>
 
