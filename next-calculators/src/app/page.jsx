@@ -198,6 +198,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Margin Calculator',
+    desc: 'Calculate gross profit margin, markup percentage, and required retail selling prices.',
+    path: '/calculator/finance/margin',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

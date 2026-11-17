@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Margin Calculator | Calculate Gross Margin & Markup Percentage',
-  seoDescription: 'Free Margin Calculator for retail and e-commerce. Instantly calculate gross profit margin, markup percentage, or find the selling price for a target margin.',
-  seoKeywords: 'margin calculator, gross margin calculator, profit margin calculator, markup vs margin, retail margin calculator',
+  seoTitle: 'Margin Calculator - Gross Profit Margin & Markup Pricing',
+  seoDescription: 'Calculate gross profit margin, markup percentage, and required selling price. Master retail pricing formulas, contribution margins, and unit economics.',
+  seoKeywords: 'margin calculator, gross profit margin calculator, markup calculator, retail margin calculator, selling price calculator, markup vs margin',
   
   inputs: [
     { 
