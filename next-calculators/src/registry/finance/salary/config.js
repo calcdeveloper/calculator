@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Salary Calculator India | CTC to Take Home Salary Calculator',
-  seoDescription: 'Free online Salary Calculator to convert your CTC to In-Hand Take Home Salary. Calculate Basic, HRA, PF deductions and Net Monthly Salary accurately.',
-  seoKeywords: 'salary calculator, ctc calculator, take home salary calculator, in hand salary calculator india, gross salary calculator, pf deduction calculator',
+  seoTitle: 'Salary Calculator - Convert CTC to In-Hand Take Home Pay',
+  seoDescription: 'Convert CTC to net monthly in-hand take home salary. Model Basic pay, HRA, statutory EPF deductions, Professional Tax, TDS, and CTC restructuring accurately.',
+  seoKeywords: 'salary calculator, ctc to in hand salary calculator, take home salary calculator, ctc breakdown calculator, gross salary calculator, salary structuring india',
   
   inputs: [
     { id: 'ctc', label: 'Annual CTC (Cost to Company)', min: 100000, max: 100000000, step: 10000, defaultValue: 1200000, prefix: '₹' },

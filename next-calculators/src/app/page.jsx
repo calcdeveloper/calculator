@@ -222,6 +222,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Salary Calculator',
+    desc: 'Convert annual CTC to monthly in-hand take home salary with Basic, HRA, and PF decomposition.',
+    path: '/calculator/finance/salary',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
