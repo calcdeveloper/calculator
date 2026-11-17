@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Loan to Value EMI Calculator | Max Loan & EMI Estimator',
-  seoDescription: 'Free Loan to Value EMI Calculator. Find out your maximum eligible loan amount and calculate your monthly EMI based on property value and LTV rules.',
-  seoKeywords: 'ltv emi calculator, maximum loan calculator, property loan eligibility, ltv ratio, mortgage emi calculator',
+  seoTitle: 'LTV Calculator - Loan to Value Ratio & Mortgage EMI',
+  seoDescription: 'Calculate your exact Loan-to-Value (LTV) ratio, maximum eligible loan amount, down payment, and monthly EMI based on RBI prudential lending guidelines.',
+  seoKeywords: 'ltv calculator, loan to value calculator, ltv ratio, mortgage ltv calculator, maximum loan amount, home loan down payment, rbi ltv guidelines',
   
   inputs: [
     { 

@@ -720,6 +720,10 @@ export default function Content() {
             </tbody>
           </table>
         </div>
+
+        <p className="text-sm text-gray-600 leading-relaxed mt-4">
+          When pledging immovable real estate as secondary collateral or financing commercial premises directly, institutional lenders enforce strict Loan-to-Value (LTV) limits (typically 55% to 65% for commercial real estate). Model your collateral coverage and maximum borrowing ceiling with our specialized <a href="/calculator/finance/ltv" className="text-blue-700 font-semibold underline hover:text-blue-900">LTV Calculator</a>.
+        </p>
       </section>
 
       {/* SECTION 6: COMPREHENSIVE FAQS */}

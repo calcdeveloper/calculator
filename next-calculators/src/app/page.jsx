@@ -192,6 +192,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'LTV Calculator',
+    desc: 'Calculate Loan-to-Value ratios, maximum borrowing limits, and required down payments under RBI guidelines.',
+    path: '/calculator/finance/ltv',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

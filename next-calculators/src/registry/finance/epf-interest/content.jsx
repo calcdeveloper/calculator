@@ -487,7 +487,7 @@ export default function Content() {
           <div className="bg-white p-6 rounded-xl border border-gray-200">
             <h3 className="text-lg font-bold text-gray-900 mb-2">2. How Partial PF Withdrawals (Advances) Diminish Compounding</h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
-              The EPFO permits non-refundable advances under Form 31 for specific life events: home purchase (up to 90% of corpus), medical emergencies (employee share), or children's higher education.
+              The EPFO permits non-refundable advances under Form 31 for specific life events: home purchase (up to 90% of corpus), medical emergencies (employee share), or children's higher education. If deploying PF funds toward a residential down payment, verify your minimum equity obligations under statutory RBI caps using our <a href="/calculator/finance/ltv" className="text-blue-700 font-semibold underline hover:text-blue-900">LTV Calculator</a>.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed">
               However, withdrawing ₹5,00,000 from your PF at age 32 permanently removes that capital from an 8.25% sovereign compounding engine. Over a 25-year remaining career horizon, that single ₹5,00,000 withdrawal reduces your final retirement corpus by over <strong>₹36,10,000</strong>! Always explore cheaper short-term liquidity options before depleting retirement funds.
