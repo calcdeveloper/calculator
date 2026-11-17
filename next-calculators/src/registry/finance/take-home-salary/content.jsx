@@ -145,6 +145,9 @@ export default function Content() {
           <li>
             <strong>Submit Investment Proofs Early:</strong> Do not wait until March. Declare your tax-saving investments in April and submit proofs by December. This prevents massive TDS cuts in January, February, and March, keeping your take-home pay stable throughout the year.
           </li>
+          <li>
+            <strong>Automate Wealth Creation on Payday:</strong> Treat your investments as a non-negotiable statutory deduction you pay to your future self. Channel 20% to 30% of your net monthly take-home salary directly into disciplined index and flexi-cap SIPs; model your long-term compounding milestones with our <a href="/calculator/finance/mutual-fund-returns" className="text-amber-800 font-semibold underline hover:text-amber-900">Mutual Fund Returns Calculator</a>.
+          </li>
         </ul>
       </section>
 

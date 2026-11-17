@@ -204,6 +204,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Mutual Fund Returns Calculator',
+    desc: 'Calculate wealth compounding from SIPs and lumpsum mutual fund investments with annual step-up modeling.',
+    path: '/calculator/finance/mutual-fund-returns',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Content() {
   const faqSchema = {
@@ -186,7 +187,7 @@ export default function Content() {
               FV = P × [((1 + i)^n - 1) / i] × (1 + i)
             </div>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Where: <strong>FV</strong> = Future Value of SIP Investment, <strong>P</strong> = Monthly Installment Amount, <strong>i</strong> = Periodic Monthly Interest Rate (Annual Rate / 12 / 100), and <strong>n</strong> = Total Number of Monthly Installments (Years × 12). The multiplier <em>(1 + i)</em> accounts for investments made at the inception of each monthly billing cycle (annuity due).
+              Where: <strong>FV</strong> = Future Value of SIP Investment, <strong>P</strong> = Monthly Installment Amount, <strong>i</strong> = Periodic Monthly Interest Rate (Annual Rate / 12 / 100), and <strong>n</strong> = Total Number of Monthly Installments (Years × 12). The multiplier <em>(1 + i)</em> accounts for investments made at the inception of each monthly billing cycle (annuity due). For broader equity portfolios beyond Section 80C caps, model your long-term wealth compounding using our dedicated <Link href="/calculator/finance/mutual-fund-returns" className="text-indigo-700 font-semibold underline hover:text-indigo-800">Mutual Fund Returns Calculator</Link>.
             </p>
           </div>
         </div>

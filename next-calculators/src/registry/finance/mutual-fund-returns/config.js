@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Mutual Fund Returns Calculator | Calculate SIP & Lumpsum Wealth',
-  seoDescription: 'Free Mutual Fund Returns Calculator. Project your future wealth using SIPs with annual step-ups or lumpsum investments. Calculate compound interest effortlessly.',
-  seoKeywords: 'mutual fund calculator, mutual fund return calculator, sip calculator, step up sip calculator, lumpsum calculator, compound interest calculator',
+  seoTitle: 'Mutual Fund Returns Calculator - SIP & Lumpsum Wealth',
+  seoDescription: 'Calculate future wealth from mutual funds. Model monthly SIPs with step-up annual compounding, lumpsum investments, capital gains taxes, and CAGR yields.',
+  seoKeywords: 'mutual fund calculator, mutual fund return calculator, sip calculator, step up sip calculator, lumpsum calculator, compound interest calculator, mutual fund sip return',
   
   inputs: [
     { 
