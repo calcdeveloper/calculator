@@ -647,7 +647,7 @@ export default function Content() {
         </div>
 
         <p>
-          Asset-Liability Matching (ALM) dictates that long-term assets (such as an industrial warehouse with a 20-year lifespan) should be financed using long-term commercial loans, while short-term assets (such as 45-day accounts receivable) should be financed using revolving credit or invoice discounting. Utilizing short-term debt to fund long-term CapEx is the single most common cause of corporate liquidity failure.
+          Asset-Liability Matching (ALM) dictates that long-term assets (such as an industrial warehouse with a 20-year lifespan) should be financed using long-term commercial loans, while short-term assets (such as 45-day accounts receivable) should be financed using revolving credit or invoice discounting. Utilizing short-term debt to fund long-term CapEx is the single most common cause of corporate liquidity failure. Similarly, small businesses must avoid funding enterprise assets through consumer credit channels; if you carry equipment balances on commercial cards, calculate your true financial drag using our <a href="/calculator/finance/cc-emi" className="text-blue-600 font-semibold underline hover:text-blue-800">Credit Card EMI Calculator</a> before migrating debt into formal term loans.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">

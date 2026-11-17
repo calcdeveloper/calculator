@@ -75,7 +75,7 @@ export default function Content() {
           <li><strong>Enter Tax Deductions:</strong> Input your Professional Tax (usually ₹200 if applicable in your state) and your monthly Income Tax deducted at source (TDS).</li>
         </ul>
         <p className="mt-4">
-          As you type, the tool instantly calculates your Total Gross Earnings and subtracts your Total Deductions to provide your final Net Take Home Salary. The accompanying chart visualizes what portion of your income goes to taxes and savings versus what you can spend today.
+          As you type, the tool instantly calculates your Total Gross Earnings and subtracts your Total Deductions to provide your final Net Take Home Salary. The accompanying chart visualizes what portion of your income goes to taxes and savings versus what you can spend today. Once you calculate your disposable income, model any active gadget or lifestyle financing commitments using our <a href="/calculator/finance/cc-emi" className="text-blue-600 font-semibold underline hover:text-blue-800">Credit Card EMI Calculator</a> to prevent hidden fees and 18% GST from eroding your monthly savings.
         </p>
       </section>
 

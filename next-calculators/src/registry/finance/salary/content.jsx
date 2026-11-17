@@ -84,7 +84,7 @@ export default function Content() {
           <li><strong>Professional Tax:</strong> Enter ₹200 if your state levies it, or ₹0 if you are in a state like Delhi.</li>
         </ul>
         <p className="mt-4">
-          The summary instantly breaks down your Monthly Gross, Monthly Deductions, and the final Monthly Take-Home amount. The visual chart helps you see exactly what portion of your CTC is tied up in basic pay vs allowances and deductions.
+          The summary instantly breaks down your Monthly Gross, Monthly Deductions, and the final Monthly Take-Home amount. The visual chart helps you see exactly what portion of your CTC is tied up in basic pay vs allowances and deductions. Effective budgeting requires balancing this net income against recurring debt obligations; if you carry consumer financing balances, use our <a href="/calculator/finance/cc-emi" className="text-blue-600 font-semibold underline hover:text-blue-800">Credit Card EMI Calculator</a> to model the true cost of debt service.
         </p>
       </section>
 

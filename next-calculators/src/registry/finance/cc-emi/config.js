@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Credit Card EMI Calculator | Calculate Hidden Fees & GST',
-  seoDescription: 'Free Credit Card EMI Calculator. Discover the true cost of converting your credit card bill to EMI, including processing fees and 18% GST on interest.',
-  seoKeywords: 'credit card emi calculator, cc emi calculator, emi conversion cost, credit card gst, hidden emi charges',
+  seoTitle: 'Credit Card EMI Calculator - True Cost, Fees & GST',
+  seoDescription: 'Calculate credit card EMI repayments, hidden processing charges, and 18% GST on monthly interest. Compare merchant no-cost EMI vs standard bank conversion.',
+  seoKeywords: 'credit card emi calculator, cc emi calculator, emi conversion cost, credit card gst, hidden emi charges, no cost emi calculator',
   
   inputs: [
     { id: 'principal', label: 'Transaction / Bill Amount (₹)', min: 1000, max: 1000000, step: 500, defaultValue: 50000, prefix: '₹' },

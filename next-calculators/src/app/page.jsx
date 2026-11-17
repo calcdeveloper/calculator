@@ -162,6 +162,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Credit Card EMI Calculator',
+    desc: 'Calculate true credit card EMI costs, hidden bank processing fees, and 18% GST.',
+    path: '/calculator/finance/cc-emi',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
