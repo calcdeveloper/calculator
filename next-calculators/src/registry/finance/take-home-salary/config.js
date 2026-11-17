@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'Take Home Salary Calculator | In-Hand Salary Payslip Calculator',
-  seoDescription: 'Free online Take Home Salary Calculator. Enter your monthly Basic, HRA, Allowances, PF, and TDS to calculate your exact net in-hand salary in seconds.',
-  seoKeywords: 'take home salary calculator, in hand salary calculator, net salary calculator, payslip calculator india, monthly salary calculator',
+  seoTitle: 'Take Home Salary Calculator - Calculate Net In-Hand Pay',
+  seoDescription: 'Calculate monthly net take home salary from your payslip. Enter Basic, HRA, Special Allowance, EPF, Professional Tax, and TDS to model true in-hand bank pay.',
+  seoKeywords: 'take home salary calculator, in hand salary calculator, net salary calculator, payslip calculator india, monthly salary calculator, ctc to in hand',
   
   inputs: [
     { id: 'basic', label: 'Monthly Basic Pay', min: 1000, max: 10000000, step: 1000, defaultValue: 40000, prefix: '₹' },

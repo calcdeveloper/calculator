@@ -234,6 +234,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'Take Home Salary Calculator',
+    desc: 'Audit monthly payslip earnings, allowances, EPF, professional tax, and net in-hand bank deposits.',
+    path: '/calculator/finance/take-home-salary',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
