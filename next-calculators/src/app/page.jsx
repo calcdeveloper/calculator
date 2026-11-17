@@ -268,6 +268,12 @@ const trendingTools = [
     desc: 'Extract exact HEX, RGB, and HSL color codes from photos online with zero-trust client-side canvas processing.',
     path: '/tools/design/image-color-picker',
     category: 'Design'
+  },
+  {
+    name: 'Material Design Color Palette',
+    desc: 'Browse, search, and copy official Google Material Design (M2) 50-900 and accent HEX codes for web & mobile.',
+    path: '/tools/design/material-color-generator',
+    category: 'Design'
   }
 ];
 

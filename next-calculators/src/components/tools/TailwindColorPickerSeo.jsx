@@ -72,7 +72,7 @@ export default function TailwindColorPickerSeo() {
       <section id="naming-convention" className="pt-4">
         <h2 className="text-3xl font-bold text-conv-dark mb-4 tracking-tight">Deciphering the Semantic Naming Convention</h2>
         <p className="mb-4 text-lg text-conv-gray">
-          The structural genius of the Tailwind palette lies in its incredibly predictable, semantic naming convention. Every color follows the exact same numbered architecture, which acts as a universal language for frontend teams.
+          The structural genius of the Tailwind palette lies in its incredibly predictable, semantic naming convention. Every color follows the exact same numbered architecture, which acts as a universal language for frontend teams. This numeric scale was originally pioneered by Google with the <Link href="/tools/design/material-color-generator" className="text-pink-600 font-semibold hover:underline">Material Design Color Palette</Link>, which established the foundational 50-900 ramp and electric accent stops. Tailwind expanded this paradigm by introducing the ultra-dark 950 stop and tailoring saturation curves for modern desktop web minimalism.
         </p>
         <p className="mb-4 text-lg text-conv-gray">
           The `50` and `100` shades are almost entirely white, specifically engineered for subtle background fills (e.g., `bg-blue-50`). The `500` shade is the primary, vibrant anchor color, used for prominent UI elements like primary call-to-action buttons (`bg-blue-500`). The `600` shade is specifically calibrated to act as the hover state for that button (`hover:bg-blue-600`).
