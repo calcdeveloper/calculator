@@ -496,7 +496,7 @@ export default function Content() {
             </table>
           </div>
           <p className="text-xs text-gray-600 mt-3">
-            Finding: In this scenario, because the executive claimed ₹1.8L in HRA alongside ₹1.5L in 80C deductions, the tax differential between regimes is minimal (under ₹6,240). If the executive pays home loan interest under Section 24b, the Old Regime with ELSS yields substantial net savings. Model your overall debt capacity with our <a href="/calculator/finance/loan-affordability" className="text-blue-600 font-semibold underline hover:text-blue-800">Loan Affordability Calculator</a>.
+            Finding: In this scenario, because the executive claimed ₹1.8L in HRA (calculated accurately via our <a href="/calculator/finance/hra" className="text-emerald-700 font-semibold underline hover:text-emerald-800">HRA Exemption Calculator</a>) alongside ₹1.5L in 80C deductions, the tax differential between regimes is minimal (under ₹6,240). If the executive pays home loan interest under Section 24b, the Old Regime with ELSS yields substantial net savings. Model your overall debt capacity with our <a href="/calculator/finance/loan-affordability" className="text-blue-600 font-semibold underline hover:text-blue-800">Loan Affordability Calculator</a>.
           </p>
         </div>
       </section>

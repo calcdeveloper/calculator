@@ -124,7 +124,7 @@ export default function Content() {
 
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-4">House Rent Allowance (HRA)</h3>
         <p className="mb-4">
-          HRA is usually set at 50% of the Basic Salary for employees in metro cities (Delhi, Mumbai, Chennai, Kolkata) and 40% for non-metros. Under the old tax regime, HRA offers substantial tax benefits if you live in a rented accommodation.
+          HRA is usually set at 50% of the Basic Salary for employees in metro cities (Delhi, Mumbai, Chennai, Kolkata) and 40% for non-metros. Under the old tax regime, HRA offers substantial tax benefits if you live in a rented accommodation. You can model your exact exemption under Section 10(13A) using our <a href="/calculator/finance/hra" className="text-emerald-700 hover:text-emerald-800 font-medium underline decoration-emerald-300">HRA Exemption Calculator</a>.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-4">Special Allowance</h3>

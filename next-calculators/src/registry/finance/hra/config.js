@@ -5,8 +5,8 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'HRA Calculator | House Rent Allowance Exemption Calculator',
-  seoDescription: 'Free online HRA Calculator. Calculate your House Rent Allowance exemption and taxable HRA instantly for metro and non-metro cities in India.',
+  seoTitle: 'HRA Calculator - House Rent Allowance Exemption & Tax Savings',
+  seoDescription: 'Calculate House Rent Allowance (HRA) tax exemption under Section 10(13A). Compare metro vs non-metro rules and compute exempt vs taxable salary income.',
   seoKeywords: 'hra calculator, house rent allowance calculator, hra exemption calculator, taxable hra, rent calculator india',
   
   inputs: [

@@ -92,7 +92,7 @@ export default function Content() {
         
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">House Rent Allowance (HRA)</h3>
         <p className="mb-4">
-          HRA is given to meet the cost of renting a home. If you live in a rented accommodation and opt for the Old Tax Regime, you can claim significant tax exemptions on this component by submitting rent receipts. If you live in your own house or opt for the New Tax Regime, this amount is fully taxable.
+          HRA is given to meet the cost of renting a home. If you live in a rented accommodation and opt for the Old Tax Regime, you can claim significant tax exemptions on this component by submitting rent receipts. If you live in your own house or opt for the New Tax Regime, this amount is fully taxable. Use our <a href="/calculator/finance/hra" className="text-emerald-700 hover:text-emerald-800 font-medium underline decoration-emerald-300">HRA Tax Calculator</a> to determine your exact tax-free portion and monthly savings.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">Special Allowance</h3>

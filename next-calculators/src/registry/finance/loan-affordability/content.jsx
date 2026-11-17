@@ -241,6 +241,14 @@ export default function Content() {
 
       
 
+      {/* BALANCING RENT VS HOME LOAN COMMITMENTS */}
+      <section className="bg-emerald-50/60 p-6 rounded-2xl border border-emerald-100 mt-8">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Renting vs. Home Loan: Accounting for Tax Subsidies</h3>
+        <p className="text-gray-700 leading-relaxed">
+          When transitioning from a rented residence to homeownership, evaluate how your net disposable income changes. Rented accommodations often provide substantial tax relief under Section 10(13A). Before replacing your lease with monthly mortgage obligations, run our <Link href="/calculator/finance/hra" className="text-emerald-700 font-bold underline hover:text-emerald-800">HRA Exemption Calculator</Link> to accurately quantify the tax deductions you currently enjoy versus future loan interest write-offs.
+        </p>
+      </section>
+
       {/* CONNECT TO COMMERCIAL BUSINESS BORROWING */}
       <section className="bg-blue-50/60 p-6 rounded-2xl border border-blue-100 mt-8">
         <h3 className="text-xl font-bold text-gray-900 mb-2">Evaluating Commercial &amp; MSME Borrowing Affordability</h3>

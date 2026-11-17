@@ -180,6 +180,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'HRA Exemption Calculator',
+    desc: 'Calculate House Rent Allowance tax exemptions under Section 10(13A) for metro & non-metro cities.',
+    path: '/calculator/finance/hra',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
