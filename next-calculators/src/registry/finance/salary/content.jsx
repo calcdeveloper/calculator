@@ -149,7 +149,7 @@ export default function Content() {
             <strong>Employee's Provident Fund (EPF):</strong> By law, you contribute 12% of your Basic Salary to the EPF. This capital compounds monthly under sovereign EPFO guarantees; calculate your exact month-by-month earnings using our <a href="/calculator/finance/epf-interest" className="text-blue-600 font-semibold underline hover:text-blue-800">EPF Interest Calculator</a>. While it reduces current liquidity, it forms an invaluable tax-free retirement corpus.
           </li>
           <li>
-            <strong>Employer's Provident Fund (EPF):</strong> The employer matches your 12% contribution. Technically, 8.33% goes to the Employee Pension Scheme (EPS) and 3.67% goes to the EPF. Note that this 12% is usually deducted from your overall CTC during the offer negotiation phase.
+            <strong>Employer's Provident Fund (EPF):</strong> The employer matches your 12% contribution. Technically, 8.33% goes to the Employee Pension Scheme (EPS) and 3.67% goes to the EPF. Note that this 12% is usually deducted from your overall CTC during the offer negotiation phase; simulate your terminal retirement corpus with annual increments using our <a href="/calculator/finance/pf" className="text-blue-600 font-semibold underline hover:text-blue-800">PF Calculator</a>.
           </li>
           <li>
             <strong>Professional Tax (PT):</strong> This is a state government tax. Depending on the state where your company is registered (or where you work), a maximum of ₹2,500 per year can be deducted. This is usually broken down into ₹200 for 11 months and ₹300 for the final month of the financial year.

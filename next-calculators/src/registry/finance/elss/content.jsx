@@ -629,7 +629,7 @@ export default function Content() {
           </table>
         </div>
         <p className="text-sm text-gray-600 mt-3">
-          To model supplementary retirement allocations under Section 80CCD, check our <a href="/calculator/finance/nps" className="text-blue-600 font-semibold underline hover:text-blue-800">NPS Calculator</a> and evaluate mandatory statutory retirement savings with our <a href="/calculator/finance/epf-interest" className="text-blue-600 font-semibold underline hover:text-blue-800">EPF Interest Calculator</a> and <a href="/calculator/finance/pf" className="text-blue-600 font-semibold underline hover:text-blue-800">PF Calculator</a>.
+          To model supplementary retirement allocations under Section 80CCD, check our <Link href="/calculator/finance/nps" className="text-blue-600 font-semibold underline hover:text-blue-800">NPS Calculator</Link>, track your career provident fund accumulation with our <Link href="/calculator/finance/pf" className="text-blue-600 font-semibold underline hover:text-blue-800">PF Calculator</Link>, and audit your monthly running interest with our <Link href="/calculator/finance/epf-interest" className="text-blue-600 font-semibold underline hover:text-blue-800">EPF Interest Calculator</Link>.
         </p>
       </section>
 

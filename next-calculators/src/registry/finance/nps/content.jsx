@@ -521,7 +521,7 @@ export default function Content() {
           Financial planners recommend a synergistic three-tier retirement architecture:
         </p>
         <ol className="list-decimal pl-6 space-y-2 text-sm text-gray-700">
-          <li><strong>Pillar 1 (Sovereign Guaranteed Base):</strong> Mandatory EPF and PPF contributions provide a safe, risk-free bedrock guaranteeing zero capital loss.</li>
+          <li><strong>Pillar 1 (Sovereign Guaranteed Base):</strong> Mandatory EPF and PPF contributions provide a safe, risk-free bedrock guaranteeing zero capital loss; project your career provident fund balances with our <Link href="/calculator/finance/pf" className="text-blue-700 font-semibold underline hover:text-blue-800">PF Calculator</Link>.</li>
           <li><strong>Pillar 2 (Cost-Effective Market Pension):</strong> NPS Tier-I captures 10% to 12% equity growth at a negligible 0.05% fee while generating lifelong pension income via mandatory annuities.</li>
           <li><strong>Pillar 3 (Liquid Discretionary Wealth):</strong> Direct equity mutual funds (SIPs) provide high-liquidity multi-crore wealth accessible before age 60 without lock-ins or mandatory annuity conversions.</li>
         </ol>

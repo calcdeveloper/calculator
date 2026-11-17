@@ -216,6 +216,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'PF Calculator',
+    desc: 'Calculate Employee Provident Fund (EPF) maturity corpus, monthly interest compounding, and employer matching.',
+    path: '/calculator/finance/pf',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

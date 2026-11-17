@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'EPF Calculator | Calculate Provident Fund Maturity Amount',
-  seoDescription: 'Free EPF calculator. Estimate your total Provident Fund (PF) balance at retirement based on your basic salary, contribution rate, and annual increments.',
-  seoKeywords: 'pf calculator, epf calculator, provident fund calculator, epf maturity calculator, retirement calculator india',
+  seoTitle: 'PF Calculator - Provident Fund EPF Maturity Corpus Planner',
+  seoDescription: 'Calculate your Provident Fund (PF) maturity corpus, monthly EPF compounding interest, employer-employee splits, and annual salary increments up to age 58.',
+  seoKeywords: 'pf calculator, epf calculator, provident fund calculator, epf maturity calculator, pf retirement calculator india',
   
   inputs: [
     { id: 'currentAge', label: 'Current Age (Years)', min: 18, max: 55, step: 1, defaultValue: 25 },
