@@ -562,7 +562,9 @@ export default function Content() {
                 <td className="py-3 px-3 font-sans text-emerald-700 font-bold">100% Tax-Free (EEE)</td>
               </tr>
               <tr>
-                <td className="py-3 px-3 font-sans font-semibold text-gray-900">National Pension System (NPS)</td>
+                <td className="py-3 px-3 font-sans font-semibold text-gray-900">
+                  <Link href="/calculator/finance/nps" className="text-gray-900 hover:text-blue-700 underline decoration-gray-300">National Pension System (NPS)</Link>
+                </td>
                 <td className="py-3 px-3 text-emerald-700 font-bold">9.5% – 11.5%</td>
                 <td className="py-3 px-3 font-sans text-blue-700">Moderate (Auto-Rebalanced)</td>
                 <td className="py-3 px-3 font-sans text-red-600">Locked until Age 60</td>

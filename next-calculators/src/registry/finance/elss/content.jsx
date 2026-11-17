@@ -91,7 +91,7 @@ export default function Content() {
 
   return (
     <div className="space-y-12 text-gray-700 leading-relaxed mt-8 max-w-4xl mx-auto">
-      
+
       {/* SEO SCHEMA */}
       <script
         type="application/ld+json"
@@ -104,7 +104,7 @@ export default function Content() {
           ELSS Calculator: Calculate Equity Linked Savings Scheme Returns, Tax Deductions &amp; Wealth Growth
         </h1>
         <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-          For generations of Indian taxpayers, the annual ritual of Section 80C tax planning was synonymous with conservative, fixed-income capital preservation instruments. Salaried employees routinely locked substantial savings into Public Provident Fund (PPF) accounts, National Savings Certificates (NSC), or 5-year bank tax-saving fixed deposits. While these traditional vehicles provide sovereign safety and capital protection, their modest yields—consistently hovering between 6.5% and 7.5%—barely keep pace with real-world consumer inflation and lifestyle costs. 
+          For generations of Indian taxpayers, the annual ritual of Section 80C tax planning was synonymous with conservative, fixed-income capital preservation instruments. Salaried employees routinely locked substantial savings into Public Provident Fund (PPF) accounts, National Savings Certificates (NSC), or 5-year bank tax-saving fixed deposits. While these traditional vehicles provide sovereign safety and capital protection, their modest yields—consistently hovering between 6.5% and 7.5%—barely keep pace with real-world consumer inflation and lifestyle costs.
         </p>
         <p className="mb-5">
           The <strong>Equity Linked Savings Scheme (ELSS)</strong> fundamentally transformed retail tax planning in India by introducing the compounding power of the public equity markets to statutory tax deductions. Under Securities and Exchange Board of India (SEBI) mutual fund categorization rules, an ELSS fund is an open-ended, equity-oriented mutual fund mandated to invest a minimum of 80% of its total assets in equity shares and equity-related securities of publicly traded domestic companies. It represents the solitary mutual fund category in India that qualifies for an income tax deduction of up to ₹1,50,000 per financial year under Section 80C of the Income Tax Act, 1961.
@@ -600,12 +600,14 @@ export default function Content() {
                 <td className="py-3 px-4">Zero-risk conservative investors seeking guaranteed long-term debt savings.</td>
               </tr>
               <tr className="hover:bg-gray-50">
-                <td className="py-3 px-4 font-bold text-gray-900">National Pension System (NPS)</td>
+                <td className="py-3 px-4 font-bold text-gray-900">
+                  <Link href="/calculator/finance/nps" className="text-gray-900 hover:text-indigo-700 underline decoration-gray-300">National Pension System (NPS)</Link>
+                </td>
                 <td className="py-3 px-4 text-red-600 font-semibold">Until Age 60</td>
                 <td className="py-3 px-4">9% – 12% (Blended)</td>
                 <td className="py-3 px-4">Equity, Corporate Debt, G-Secs</td>
                 <td className="py-3 px-4">60% Tax-Free; 40% Annuity Taxed</td>
-                <td className="py-3 px-4">Retirement-focused savers utilizing additional ₹50,000 Section 80CCD(1B).</td>
+                <td className="py-3 px-4">Retirement-focused savers utilizing the exclusive ₹50,000 Section 80CCD(1B) deduction; model your pension with our <Link href="/calculator/finance/nps" className="text-indigo-700 font-semibold underline hover:text-indigo-800">NPS Calculator</Link>.</td>
               </tr>
               <tr className="hover:bg-gray-50">
                 <td className="py-3 px-4 font-bold text-gray-900">Tax-Saving Fixed Deposit</td>

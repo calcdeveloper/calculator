@@ -5,9 +5,9 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'NPS Calculator | National Pension System Pension Calculator',
-  seoDescription: 'Free NPS Calculator. Estimate your retirement corpus, tax-free lump sum withdrawal, and monthly annuity pension from the National Pension System (NPS) in India.',
-  seoKeywords: 'nps calculator, national pension scheme calculator, nps pension calculator, retirement calculator, nps maturity calculator',
+  seoTitle: 'NPS Calculator - Pension Corpus & Annuity Wealth Planner',
+  seoDescription: 'Calculate your National Pension System (NPS) corpus, 60% tax-free lump sum, and monthly annuity pension with Tier 1 & 2 tax deduction forecasting.',
+  seoKeywords: 'nps calculator, national pension system calculator, nps pension calculator, pfrda retirement calculator, nps lump sum and annuity calculator',
   
   inputs: [
     { id: 'currentAge', label: 'Current Age (Years)', min: 18, max: 65, step: 1, defaultValue: 30 },

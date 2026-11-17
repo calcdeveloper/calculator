@@ -148,6 +148,9 @@ export default function Content() {
           <li>
             <strong>Automate Wealth Creation on Payday:</strong> Treat your investments as a non-negotiable statutory deduction you pay to your future self. Channel 20% to 30% of your net monthly take-home salary directly into disciplined index and flexi-cap SIPs; model your long-term compounding milestones with our <a href="/calculator/finance/mutual-fund-returns" className="text-amber-800 font-semibold underline hover:text-amber-900">Mutual Fund Returns Calculator</a>.
           </li>
+          <li>
+            <strong>Leverage Section 80CCD(2) Corporate Pension Allocations:</strong> Check if your employer supports Corporate NPS contributions. Diverting 10% of your Basic Salary lowers your gross taxable income under both Old and New Tax Regimes; evaluate the projected maturity corpus and tax savings using our <a href="/calculator/finance/nps" className="text-amber-800 font-semibold underline hover:text-amber-900">NPS Calculator</a>.
+          </li>
         </ul>
       </section>
 

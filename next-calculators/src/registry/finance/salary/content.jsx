@@ -176,6 +176,9 @@ export default function Content() {
           <li>
             <strong>Including Reimbursements:</strong> Ask HR if they can convert parts of the Special Allowance into tax-exempt reimbursements like Meal Coupons (Sodexo/Zeta), Internet/Telephone Allowance, or Fuel/Car Maintenance Allowances.
           </li>
+          <li>
+            <strong>Enrolling in Corporate NPS (Section 80CCD(2)):</strong> Request HR to restructure your package so up to 10% of your Basic Salary is contributed directly to Corporate NPS. This exclusive deduction is available under both the Old and New Tax Regimes with zero upper rupee cap; forecast your retirement pension and tax-free lump sum with our <a href="/calculator/finance/nps" className="text-blue-600 font-semibold underline hover:text-blue-800">NPS Calculator</a>.
+          </li>
         </ol>
       </section>
       

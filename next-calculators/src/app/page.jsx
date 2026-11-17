@@ -210,6 +210,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'NPS Calculator',
+    desc: 'Calculate National Pension System corpus, 60% tax-free lump sum, and monthly annuity pension.',
+    path: '/calculator/finance/nps',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
