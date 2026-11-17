@@ -130,7 +130,7 @@ export default function GradientGeneratorSeo() {
           Automated accessibility auditing tools struggle immensely to calculate contrast ratios against CSS gradients. It is the sole responsibility of the frontend engineer to manually verify the lightest (or darkest) point of the gradient where text is rendered.
         </p>
         <p className="text-lg text-conv-gray">
-          The safest architectural pattern is to implement a strict "text protection" layer. By applying a secondary `linear-gradient(to top, rgba(0,0,0,0.8), transparent)` directly behind the text, the developer artificially forces the contrast ratio up, guaranteeing that the text remains perfectly legible for visually impaired users regardless of the underlying primary gradient colors.
+          The safest architectural pattern is to implement a strict "text protection" layer. By applying a secondary `linear-gradient(to top, rgba(0,0,0,0.8), transparent)` directly behind the text, the developer artificially forces the contrast ratio up, guaranteeing that the text remains perfectly legible for visually impaired users regardless of the underlying primary gradient colors. To verify the exact mathematical ratios across your gradient color stops, evaluate your color values with our <Link href="/tools/design/contrast-checker" className="text-pink-600 font-semibold hover:underline">WCAG Contrast Checker</Link>.
         </p>
       </section>
 

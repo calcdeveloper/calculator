@@ -250,6 +250,12 @@ const trendingTools = [
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',
     category: 'Design'
+  },
+  {
+    name: 'WCAG Contrast Checker',
+    desc: 'Verify color contrast ratios for WCAG 2.1 AA and AAA accessibility compliance on text and UI elements.',
+    path: '/tools/design/contrast-checker',
+    category: 'Design'
   }
 ];
 
