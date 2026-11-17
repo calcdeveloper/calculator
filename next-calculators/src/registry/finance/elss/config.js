@@ -5,8 +5,8 @@ export const config = {
   category: 'finance',
   
   // Technical SEO Metadata
-  seoTitle: 'ELSS Calculator | Calculate ELSS Mutual Fund Returns & Tax Savings',
-  seoDescription: 'Free ELSS Calculator. Estimate your Equity Linked Savings Scheme (ELSS) mutual fund returns and calculate your exact tax savings under Section 80C.',
+  seoTitle: 'ELSS Calculator - Tax Savings & Mutual Fund Returns',
+  seoDescription: 'Calculate ELSS mutual fund returns, Section 80C tax deductions, and wealth accumulation. Compare SIP vs lumpsum and evaluate 3-year lock-in rules.',
   seoKeywords: 'elss calculator, elss mutual fund calculator, tax saving mutual fund calculator, 80c tax saving calculator, elss sip calculator, elss lump sum',
   
   inputs: [

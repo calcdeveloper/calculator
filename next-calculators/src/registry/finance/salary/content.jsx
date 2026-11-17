@@ -155,7 +155,7 @@ export default function Content() {
             <strong>Professional Tax (PT):</strong> This is a state government tax. Depending on the state where your company is registered (or where you work), a maximum of ₹2,500 per year can be deducted. This is usually broken down into ₹200 for 11 months and ₹300 for the final month of the financial year.
           </li>
           <li>
-            <strong>Tax Deducted at Source (TDS):</strong> Your employer will estimate your annual income tax liability based on the tax regime you choose and deduct a proportionate amount every month. (To calculate this exact amount, use our dedicated Income Tax Calculator).
+            <strong>Tax Deducted at Source (TDS):</strong> Your employer will estimate your annual income tax liability based on the tax regime you choose and deduct a proportionate amount every month. If you are enrolled in the Old Tax Regime, you can substantially reduce monthly TDS deductions by submitting proofs for Section 80C investments like equity tax-savers; compute your potential tax savings and wealth projections using our <a href="/calculator/finance/elss" className="text-blue-600 font-semibold underline hover:text-blue-800">ELSS Calculator</a>.
           </li>
         </ul>
       </section>

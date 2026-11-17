@@ -168,6 +168,12 @@ const trendingTools = [
     category: 'Finance'
   },
   {
+    name: 'ELSS Tax Calculator',
+    desc: 'Calculate Section 80C tax deductions, mutual fund returns, and 3-year lock-in growth.',
+    path: '/calculator/finance/elss',
+    category: 'Finance'
+  },
+  {
     name: 'Color Palette Generator',
     desc: 'Generate harmonious color schemes with spacebar.',
     path: '/tools/design/color-palette-generator',

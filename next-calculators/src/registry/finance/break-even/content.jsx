@@ -747,7 +747,7 @@ export default function Content() {
         </div>
 
         <p>
-          While discounted cash flow approaches like NPV and IRR guide long-term capital allocation, Break-Even Analysis remains the definitive operational barometer for day-to-day solvency. For comprehensive portfolio modeling, investors also benchmark equity gains using our <Link href="/calculator/finance/stock-profit" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">Stock Profit Calculator</Link> and browse our full directory of <Link href="/calculator/finance" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">Finance Calculators</Link> to analyze commercial debt structures.
+          While discounted cash flow approaches like NPV and IRR guide long-term capital allocation, Break-Even Analysis remains the definitive operational barometer for day-to-day solvency. For comprehensive portfolio modeling, investors also benchmark equity gains using our <Link href="/calculator/finance/stock-profit" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">Stock Profit Calculator</Link>, model tax-optimized mutual fund returns with our <Link href="/calculator/finance/elss" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">ELSS Calculator</Link>, and browse our full directory of <Link href="/calculator/finance" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">Finance Calculators</Link> to analyze commercial debt structures.
         </p>
       </section>
 

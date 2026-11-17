@@ -189,7 +189,7 @@ export default function Content() {
           <details className="group bg-white border border-gray-200 rounded-lg open:shadow-md transition-all">
             <summary className="font-semibold px-5 py-4 cursor-pointer text-gray-900">How can I increase my Take Home Salary legally?</summary>
             <div className="px-5 pb-4 text-gray-700 border-t border-gray-100 pt-3 text-sm leading-relaxed">
-              You can optimize your tax planning by claiming deductions under Section 80C, 80D, and HRA (if in the old regime), which reduces your TDS deduction. Also, depending on your company policy, you can opt for tax-exempt reimbursements instead of taxable special allowances.
+              You can optimize your tax planning by claiming deductions under Section 80C (utilizing our <a href="/calculator/finance/elss" className="text-blue-600 font-semibold underline hover:text-blue-800">ELSS Calculator</a> to project tax savings up to ₹46,800), Section 80D for medical insurance, and HRA (if opting for the Old Tax Regime), which directly lowers your monthly TDS withholding. Also, depending on employer policies, you can opt for tax-exempt reimbursements instead of taxable special allowances.
             </div>
           </details>
         </div>
