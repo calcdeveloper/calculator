@@ -459,7 +459,7 @@ export default function AddImagesToPdfSeo() {
               <span className="text-xs font-mono text-pdf-primary">ESM / TypeScript</span>
             </div>
             <pre className="p-5 bg-slate-900 text-slate-100 text-xs font-mono overflow-x-auto m-0">
-{`import { PDFDocument } from 'pdf-lib';
+              {`import { PDFDocument } from 'pdf-lib';
 import fs from 'fs/promises';
 
 async function embedSignatureOnPdf(pdfPath, pngPath, outputPath) {
@@ -502,7 +502,7 @@ embedSignatureOnPdf('contract.pdf', 'signature.png', 'signed_contract.pdf');`}
               <span className="text-xs font-mono text-pdf-primary">Python 3.8+</span>
             </div>
             <pre className="p-5 bg-slate-900 text-slate-100 text-xs font-mono overflow-x-auto m-0">
-{`import fitz  # PyMuPDF
+              {`import fitz  # PyMuPDF
 
 def insert_image_pymupdf(pdf_file, img_file, output_file):
     doc = fitz.open(pdf_file)
@@ -529,7 +529,7 @@ insert_image_pymupdf("invoice.pdf", "logo.jpg", "branded_invoice.pdf")`}
               <span className="text-xs font-mono text-pdf-primary">Go 1.19+</span>
             </div>
             <pre className="p-5 bg-slate-900 text-slate-100 text-xs font-mono overflow-x-auto m-0">
-{`package main
+              {`package main
 
 import (
 	"github.com/pdfcpu/pdfcpu/pkg/api"
@@ -718,6 +718,13 @@ func stampImageGo(inFile, outFile, imgFile string) error {
           >
             <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Rotate PDF</div>
             <div className="text-xs text-pdf-gray">Permanently rotate inverted or landscape pages 90, 180, or 270 degrees.</div>
+          </Link>
+          <Link
+            href="/tools/pdf-tools/excel-to-pdf"
+            className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Excel to PDF</div>
+            <div className="text-xs text-pdf-gray">Convert spreadsheets (.xlsx, .xls, .csv) into clean PDF vector tables.</div>
           </Link>
           <Link
             href="/tools/pdf-tools/password-protect"

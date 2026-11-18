@@ -35,10 +35,13 @@ export default function MergePdfSeo() {
 
       <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
         <h4 className="text-base font-bold text-pdf-dark mb-2 flex items-center gap-2">
-          <Layers className="w-5 h-5 text-pdf-primary" /> Need to Add Photos or Scanned Signatures to Your Merged PDF?
+          <Layers className="w-5 h-5 text-pdf-primary" /> Need to Add Photos, Signatures, or Spreadsheets to Your Merged PDF?
         </h4>
-        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+        <p className="text-sm text-pdf-gray leading-relaxed mb-2">
           If you need to insert photographs, company logos, transparent PNG signatures, or receipts into your merged document, use our dedicated <Link href="/tools/pdf-tools/add-images" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Add Images to PDF</Link> tool for instant, zero-trust browser-side image embedding.
+        </p>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          Need to include corporate financial sheets or inventory audits in your merged packet? First compile your spreadsheets into clean PDF documents using our <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link> before combining them into a unified packet.
         </p>
       </div>
 

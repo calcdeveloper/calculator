@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import FAQAccordion from './FAQAccordion';
 
 const faqs = [
@@ -63,6 +64,15 @@ export default function WordToPdfSeo() {
 
       
       
+
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2">
+          Converting Financial Spreadsheets or Excel Workbooks?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          If your document contains tabular calculations, balance sheets, or accounting ledgers, use our companion <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link> to generate pristine vector tables directly in your browser.
+        </p>
+      </div>
 
       <h3 className="text-2xl font-bold mt-12 mb-6">Frequently Asked Questions</h3>
       <FAQAccordion faqs={faqs} />

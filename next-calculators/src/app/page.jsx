@@ -322,6 +322,12 @@ const trendingTools = [
     desc: 'Insert photos, company logos, and transparent PNG signatures directly into PDF documents in your browser.',
     path: '/tools/pdf-tools/add-images',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Excel to PDF Converter',
+    desc: 'Convert Excel spreadsheets (.xlsx, .xls, .csv) to high-quality PDF vector tables with zero-trust client privacy.',
+    path: '/tools/pdf-tools/excel-to-pdf',
+    category: 'PDF Tools'
   }
 ];
 
