@@ -334,6 +334,12 @@ const trendingTools = [
     desc: 'Convert Apple iPhone HEIC/HEIF photos to high-quality JPGs online with zero-trust in-browser processing.',
     path: '/tools/pdf-tools/heic-to-jpg',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Image Compressor',
+    desc: 'Compress JPEG, PNG, and WebP images to exact KB target sizes online with zero-trust client privacy.',
+    path: '/tools/pdf-tools/image-compressor',
+    category: 'PDF Tools'
   }
 ];
 

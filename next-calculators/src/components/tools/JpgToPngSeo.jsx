@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import FAQAccordion from './FAQAccordion';
 
 const faqs = [
@@ -98,7 +99,7 @@ export default function JpgToPngSeo() {
         Converting a JPG into a PNG <strong>does not improve the visual quality of the image</strong>. Because the original JPG already permanently deleted data through lossy compression, that data is gone forever. Our converter cannot magically restore the deleted pixels. Instead, what happens is the converter takes the degraded JPG pixels and mathematically "locks them in" using the rigid, lossless PNG architecture. Because the PNG format refuses to compress the data further, the file size balloons.
       </p>
       <p className="mb-4">
-        So, if the quality does not improve and the file size increases, why do millions of people use this tool every month? The answer lies entirely in <strong>software compatibility and workflow requirements.</strong>
+        So, if the quality does not improve and the file size increases, why do millions of people use this tool every month? The answer lies entirely in <strong>software compatibility and workflow requirements.</strong> If your primary goal is shrinking file size rather than changing container architectures, use our dedicated <Link href="/tools/pdf-tools/image-compressor" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Compressor</Link> to reduce JPG byte sizes directly.
       </p>
 
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">

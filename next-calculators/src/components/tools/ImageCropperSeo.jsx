@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import FAQAccordion from './FAQAccordion';
 
 const faqs = [
@@ -106,7 +107,7 @@ export default function ImageCropperSeo() {
         <li><strong>UPSC (Union Public Service Commission):</strong> When applying for civil services, your uploaded photograph must clearly show your face, occupying about 70-80% of the frame. If you take a photo from too far away, you can use our cropper to cut out the background, effectively "zooming in" on your face to meet the stringent visual requirements.</li>
         <li><strong>SSC (Staff Selection Commission):</strong> SSC examinations (CGL, CHSL, MTS, JE) are notorious for strict digital requirements. If you scan a physical photograph, the scanner often adds a thick white border around the image. You must use a cropper to slice off these white borders before uploading, or your application will be rejected for incorrect formatting.</li>
         <li><strong>GATE, NEET & JEE Main:</strong> Medical and engineering aspirants often need to upload thumb impressions. A raw photo of a thumb impression often includes the rest of the hand. Cropping allows you to isolate just the fingerprint patterns, making the file much cleaner and easier for the biometric verification systems to process.</li>
-        <li><strong>IBPS & SBI Banking Exams:</strong> Banking recruitment boards require handwritten declarations. Writing this on a large A4 sheet and taking a photo leaves massive amounts of blank paper. Cropping tightens the frame exactly around the text, which is vital before you compress the image to meet their strict 50KB-100KB limits.</li>
+        <li><strong>IBPS & SBI Banking Exams:</strong> Banking recruitment boards require handwritten declarations. Writing this on a large A4 sheet and taking a photo leaves massive amounts of blank paper. Cropping tightens the frame exactly around the text, which is vital before you use our companion <Link href="/tools/pdf-tools/image-compressor" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Compressor</Link> to meet strict 50KB–100KB portal limits.</li>
       </ul>
 
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
