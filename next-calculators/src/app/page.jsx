@@ -370,6 +370,12 @@ const trendingTools = [
     desc: 'Encrypt and lock confidential PDF documents online for free with enterprise AES security and zero server uploads.',
     path: '/tools/pdf-tools/password-protect',
     category: 'PDF Tools'
+  },
+  {
+    name: 'PDF Compressor',
+    desc: 'Compress and optimize PDF documents online to exact KB targets without quality loss with zero-trust in-browser processing.',
+    path: '/tools/pdf-tools/pdf-compress',
+    category: 'PDF Tools'
   }
 ];
 
