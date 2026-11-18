@@ -238,7 +238,7 @@ export default function ImageCompressorSeo() {
             <div>
               <h4 className="font-bold text-pdf-dark text-base">Staff Selection Commission (SSC CGL, CHSL, MTS)</h4>
               <p className="text-sm text-pdf-gray mt-1 leading-relaxed">
-                SSC application portals enforce strict, uncompromising constraints: photographs must be strictly between 20 KB and 50 KB, while scanned signatures must measure between 10 KB and 20 KB. Submitting a 51 KB photo or a 9 KB signature blocks candidate progression.
+                SSC application portals enforce strict, uncompromising constraints: photographs must be strictly between 20 KB and 50 KB (typically 200x230 px using our <Link href="/tools/pdf-tools/image-resizer" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Resizer</Link>), while scanned signatures must measure between 10 KB and 20 KB. Submitting a 51 KB photo or a 9 KB signature blocks candidate progression.
               </p>
             </div>
           </div>

@@ -352,6 +352,12 @@ const trendingTools = [
     desc: 'Crop photos, signatures, and documents online for free with precision framing and zero-trust browser privacy.',
     path: '/tools/pdf-tools/image-cropper',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Image Resizer',
+    desc: 'Resize photos to exact pixel dimensions instantly for exams, social media, and web with zero-trust privacy.',
+    path: '/tools/pdf-tools/image-resizer',
+    category: 'PDF Tools'
   }
 ];
 

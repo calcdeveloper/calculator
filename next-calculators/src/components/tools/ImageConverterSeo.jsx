@@ -533,11 +533,11 @@ export default function ImageConverterSeo() {
             <div className="text-xs text-pdf-gray">Convert Apple iPhone photos (.heic) into universally compatible JPGs.</div>
           </Link>
           <Link
-            href="/tools/pdf-tools/add-images"
+            href="/tools/pdf-tools/image-resizer"
             className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
           >
-            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Add Images to PDF</div>
-            <div className="text-xs text-pdf-gray">Insert converted JPG photos and digital signatures directly into PDF documents.</div>
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Image Resizer</div>
+            <div className="text-xs text-pdf-gray">Resize images to exact pixel dimensions with locked or unlocked aspect ratios.</div>
           </Link>
           <Link
             href="/tools/pdf-tools/image-cropper"
