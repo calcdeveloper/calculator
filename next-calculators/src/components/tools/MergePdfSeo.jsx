@@ -117,7 +117,7 @@ export default function MergePdfSeo() {
 
       <h4 className="text-xl font-bold text-pdf-dark mt-6 mb-3">Legal and Compliance Teams</h4>
       <p className="mb-4">
-        Legal professionals frequently receive hundreds of fragmented evidence files, emails saved as PDFs, and scanned affidavits. By merging these into a single, chronologically ordered "docket" or "binder," they ensure judges and opposing counsel can navigate the discovery process smoothly. Because our tool operates locally, lawyers do not violate client-attorney privilege by exposing documents to third-party cloud processors.
+        Legal professionals frequently receive hundreds of fragmented evidence files, emails saved as PDFs, and scanned affidavits. By merging these into a single, chronologically ordered "docket" or "binder," they ensure judges and opposing counsel can navigate the discovery process smoothly. If exhibits are non-selectable paper scans, extract full-text transcripts first using our <Link href="/tools/pdf-tools/pdf-ocr" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF OCR Tool</Link>. Because our tool operates locally, lawyers do not violate client-attorney privilege by exposing documents to third-party cloud processors.
       </p>
 
       <h4 className="text-xl font-bold text-pdf-dark mt-6 mb-3">Finance and Accounting</h4>

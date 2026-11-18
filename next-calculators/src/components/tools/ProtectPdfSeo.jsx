@@ -411,7 +411,7 @@ export default function ProtectPdfSeo() {
             </h4>
             <ol className="list-decimal pl-6 space-y-2 text-sm text-pdf-gray">
               <li>If you have multiple separate documents (such as an identity card, proof of address, and salary slip), first merge them into a single consolidated file using our companion <Link href="/tools/pdf-tools/merge-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Merge PDF Tool</Link>.</li>
-              <li>If the file size exceeds email gateway limits (typically 25MB), compress the merged asset using our <Link href="/tools/pdf-tools/pdf-compress" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Compress PDF Tool</Link>.</li>
+              <li>If the file size exceeds email gateway limits (typically 25MB), compress the merged asset using our <Link href="/tools/pdf-tools/pdf-compress" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Compress PDF Tool</Link>, or extract searchable text from unselectable physical scans using our <Link href="/tools/pdf-tools/pdf-ocr" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF OCR Extractor</Link>.</li>
               <li>Finally, upload the consolidated file to this Password Protect tool to apply enterprise AES encryption across the entire packet before transmission.</li>
             </ol>
           </div>

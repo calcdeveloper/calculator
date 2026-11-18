@@ -376,6 +376,12 @@ const trendingTools = [
     desc: 'Compress and optimize PDF documents online to exact KB targets without quality loss with zero-trust in-browser processing.',
     path: '/tools/pdf-tools/pdf-compress',
     category: 'PDF Tools'
+  },
+  {
+    name: 'PDF OCR Extractor',
+    desc: 'Extract text from scanned PDFs and images online using browser-based neural optical character recognition with zero server uploads.',
+    path: '/tools/pdf-tools/pdf-ocr',
+    category: 'PDF Tools'
   }
 ];
 

@@ -435,7 +435,7 @@ export default function ImageCropperSeo() {
               <li>Identify any sections revealing sensitive personally identifiable information (PII), secret tokens, or bank balances.</li>
               <li>Upload the screenshot to ToolsWizard Image Cropper.</li>
               <li>Rather than attempting to paint over credentials with awkward black marker lines, crop the frame tightly around only the relevant code block, table, or UI element required for documentation.</li>
-              <li>Click <strong>Crop Image</strong> and export. All surrounding confidential desktop elements are purged permanently from the binary file.</li>
+              <li>Click <strong>Crop Image</strong> and export. All surrounding confidential desktop elements are purged permanently from the binary file. If you need to extract selectable text from the cropped screenshot or document scan, pass it directly into our companion <Link href="/tools/pdf-tools/pdf-ocr" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF OCR Extractor</Link>.</li>
             </ol>
           </div>
         </div>

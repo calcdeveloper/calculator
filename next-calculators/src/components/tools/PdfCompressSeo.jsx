@@ -257,7 +257,7 @@ export default function PdfCompressSeo() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono bg-white p-4 rounded-xl border border-pdf-gray/20">
               <div><strong>Indian E-Courts:</strong> 5 MB to 10 MB per individual petition</div>
               <div><strong>US Federal CM/ECF:</strong> 25 MB to 35 MB per docket entry</div>
-              <div><strong>Compliance:</strong> Must maintain optical OCR text layer</div>
+              <div><strong>Compliance:</strong> Must maintain optical <Link href="/tools/pdf-tools/pdf-ocr" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">OCR text layer</Link></div>
             </div>
           </div>
 
