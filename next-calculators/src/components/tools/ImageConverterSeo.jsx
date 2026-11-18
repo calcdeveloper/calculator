@@ -135,7 +135,7 @@ export default function ImageConverterSeo() {
           </div>
         </div>
         <p>
-          <strong>The Photographic Entropy Bottleneck:</strong> Because PNG is strictly lossless, attempting to save high-resolution camera photographs as PNG files results in massive file size bloat. Natural photographs contain continuous optical sensor noise, microscopic dust particles, and organic gradients that exhibit near-maximum Shannon entropy. The predictive filters fail to find repeating patterns, leaving DEFLATE unable to compress the stream efficiently. Converting a photographic PNG into a modern JPEG or WebP typically yields a dramatic <strong>85% to 92% reduction in file size</strong> while preserving imperceptible visual variance.
+          <strong>The Photographic Entropy Bottleneck:</strong> Because PNG is strictly lossless, attempting to save high-resolution camera photographs as PNG files results in massive file size bloat. Natural photographs contain continuous optical sensor noise, microscopic dust particles, and organic gradients that exhibit near-maximum Shannon entropy. The predictive filters fail to find repeating patterns, leaving DEFLATE unable to compress the stream efficiently. Converting a photographic PNG into a modern JPEG or WebP typically yields a dramatic <strong>85% to 92% reduction in file size</strong> while preserving imperceptible visual variance. Conversely, when preparing flattened images for graphic editing or alpha transparency masking, creators rely on our dedicated <Link href="/tools/pdf-tools/jpg-to-png" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">JPG to PNG Converter</Link>.
         </p>
       </section>
 

@@ -592,7 +592,7 @@ export default function ImageResizerSeo() {
               <span className="text-pdf-primary text-xl font-light group-open:rotate-180 transition-transform duration-200">▾</span>
             </summary>
             <p className="mt-4 text-pdf-gray text-sm leading-relaxed border-t border-pdf-gray/20 pt-4">
-              ToolsWizard Image Resizer natively supports standard web raster formats including JPEG (.jpg, .jpeg), Portable Network Graphics (.png), and Google WebP (.webp). Transparency in PNG and WebP files is preserved losslessly during resampling. For format transcoding, visit our Image Converter or JPG to PNG Converter.
+              ToolsWizard Image Resizer natively supports standard web raster formats including JPEG (.jpg, .jpeg), Portable Network Graphics (.png), and Google WebP (.webp). Transparency in PNG and WebP files is preserved losslessly during resampling. For format transcoding, visit our <Link href="/tools/pdf-tools/image-converter" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Converter</Link> or <Link href="/tools/pdf-tools/jpg-to-png" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">JPG to PNG Converter</Link>.
             </p>
           </details>
         </div>

@@ -358,6 +358,12 @@ const trendingTools = [
     desc: 'Resize photos to exact pixel dimensions instantly for exams, social media, and web with zero-trust privacy.',
     path: '/tools/pdf-tools/image-resizer',
     category: 'PDF Tools'
+  },
+  {
+    name: 'JPG to PNG Converter',
+    desc: 'Convert JPG photos to lossless PNG format online with zero generational loss and 100% private processing.',
+    path: '/tools/pdf-tools/jpg-to-png',
+    category: 'PDF Tools'
   }
 ];
 
