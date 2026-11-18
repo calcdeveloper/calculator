@@ -310,6 +310,12 @@ const trendingTools = [
     desc: 'Convert text, ASCII, and binary strings into hexadecimal (Base16) machine code with custom byte delimiters.',
     path: '/tools/encoder-decoder/hex-encoder',
     category: 'Developer'
+  },
+  {
+    name: 'Unicode Decoder',
+    desc: 'Convert unreadable \\uXXXX Unicode escape sequences and surrogate pairs back into human text and emojis online.',
+    path: '/tools/encoder-decoder/unicode-decoder',
+    category: 'Developer'
   }
 ];
 

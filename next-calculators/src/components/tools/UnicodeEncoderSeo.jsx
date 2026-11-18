@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Shield, Zap, Code, Globe } from 'lucide-react';
 
 export default function UnicodeEncoderSeo() {
@@ -22,6 +23,15 @@ export default function UnicodeEncoderSeo() {
       <p>
         The exact mathematical encoding procedure consists of intelligently scanning a massive block of raw input text and systematically substituting every single character with a highly specific formatting sequence. In modern C-family languages (like JavaScript, JSON, and Java), this sequence universally strictly begins with a literal backslash and a lowercase 'u' (<code>\u</code>), immediately followed by exactly four highly specific hexadecimal digits that perfectly mathematically represent that exact character. For an incredibly common, highly practical example: if you attempt to actively transmit the Japanese character "あ" through a legacy system that completely lacks UTF-8 support, it will aggressively corrupt into unreadable garbage (like "ã‚"). However, if you rigorously apply mathematical Unicode encoding, the character is instantly and safely converted directly into <code>\u3042</code>. When the destination compiler or parser later actively reads this encoded string, it perfectly mathematically reconstructs the original Japanese character completely without any data loss.
       </p>
+
+      <div className="my-8 p-6 bg-enc-bg/40 rounded-2xl border border-enc-gray/30 not-prose">
+        <h4 className="text-base font-bold text-enc-dark mb-2 flex items-center gap-2">
+          <Globe className="w-5 h-5 text-enc-primary" /> Need to Convert Unicode Escape Sequences Back to Text?
+        </h4>
+        <p className="text-sm text-enc-gray leading-relaxed mb-0">
+          If you have serialized <code>\uXXXX</code> strings, surrogate pairs, or JSON payloads that you need to decode back into readable international text and emojis, use our companion <Link href="/tools/encoder-decoder/unicode-decoder" className="font-semibold text-enc-primary underline hover:text-enc-primary/80">Unicode Decoder</Link> for instant, zero-trust browser-side conversion.
+        </p>
+      </div>
 
       <h3 className="text-2xl font-bold mt-10">Why is Strict Unicode Encoding Absolutely Essential?</h3>
       <p>

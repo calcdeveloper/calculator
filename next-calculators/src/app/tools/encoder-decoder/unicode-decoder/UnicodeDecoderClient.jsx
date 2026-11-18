@@ -14,9 +14,17 @@ export default function UnicodeDecoderClient() {
   const handleDecode = () => {
     if (!input) return;
     try {
-      let decoded = input.replace(/\\u([\d\w]{4})/gi, (match, grp) => {
-        return String.fromCharCode(parseInt(grp, 16));
-      });
+      let decoded = input
+        .replace(/\\u\{([0-9a-fA-F]+)\}/g, (match, grp) => {
+          try {
+            return String.fromCodePoint(parseInt(grp, 16));
+          } catch {
+            return match;
+          }
+        })
+        .replace(/\\u([0-9a-fA-F]{4})/gi, (match, grp) => {
+          return String.fromCharCode(parseInt(grp, 16));
+        });
       setOutput(decoded);
     } catch (error) {
       setOutput("Error decoding Unicode sequence.");
