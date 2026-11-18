@@ -77,6 +77,15 @@ export default function ImageCompressorSeo() {
 
       
 
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2">
+          Captured Photos on an Apple iPhone (.HEIC)?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          If your photograph or signature was captured on an iPhone, it is likely stored in Apple proprietary HEIC format. Before compressing, convert it to a universally compliant JPG using our secure, browser-based <Link href="/tools/pdf-tools/heic-to-jpg" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">HEIC to JPG Converter</Link>.
+        </p>
+      </div>
+
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
         How to Use the Image Compressor to Exact Size?
       </h3>

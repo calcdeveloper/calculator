@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import FAQAccordion from './FAQAccordion';
 
 const faqs = [
@@ -93,7 +94,7 @@ export default function ImageConverterSeo() {
         Every year, millions of candidates apply for highly competitive examinations globally. A massive point of frustration is the stringent, uncompromising digital requirements of legacy government servers.
       </p>
       <ul className="list-disc pl-6 space-y-2 mb-4">
-        <li><strong>The Screenshot Dilemma:</strong> Today, if you take a screenshot on a modern smartphone, it might save as a PNG or a HEIC file. If you download an admit card preview from a browser, it might save as a WebP file. However, almost all legacy exam portals explicitly state: "Only .JPG or .JPEG files are allowed." If you try to rename the file extension manually, the portal will detect the fraud and reject it. You must fundamentally convert the pixel data architecture using our tool to generate a genuine JPG file.</li>
+        <li><strong>The Screenshot Dilemma:</strong> Today, if you take a screenshot on a modern smartphone, it might save as a PNG or a HEIC file. If you download an admit card preview from a browser, it might save as a WebP file. However, almost all legacy exam portals explicitly state: "Only .JPG or .JPEG files are allowed." If you try to rename the file extension manually, the portal will detect the fraud and reject it. You must fundamentally convert the pixel data architecture using our tool to generate a genuine JPG file. For Apple iPhone photos captured in .HEIC format, use our dedicated <Link href="/tools/pdf-tools/heic-to-jpg" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">HEIC to JPG Converter</Link> to decode H.265 intra-frames locally.</li>
         <li><strong>UPSC & SSC Applications:</strong> Commissions like the UPSC and SSC have strict guidelines for uploading passport photographs and signatures. These portals are built on older web technologies that exclusively accept the legacy JPEG format due to its widespread compatibility and predictable file size behavior. Our tool allows you to take any modern image and instantly downgrade its structural envelope to a compliant JPG format.</li>
         <li><strong>Transparency Issues:</strong> If you scan a signature as a PNG, it might have a transparent background. Some older PDF generation engines used by exam portals (like GATE or NEET) render transparency as solid black. If you upload a transparent PNG signature, the admit card will print a giant black rectangle where your signature should be. By converting that PNG to a JPG using our tool, the transparency is safely flattened into a solid white background, preventing catastrophic printing errors on exam day.</li>
       </ul>

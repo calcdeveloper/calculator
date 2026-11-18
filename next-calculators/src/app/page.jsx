@@ -328,6 +328,12 @@ const trendingTools = [
     desc: 'Convert Excel spreadsheets (.xlsx, .xls, .csv) to high-quality PDF vector tables with zero-trust client privacy.',
     path: '/tools/pdf-tools/excel-to-pdf',
     category: 'PDF Tools'
+  },
+  {
+    name: 'HEIC to JPG Converter',
+    desc: 'Convert Apple iPhone HEIC/HEIF photos to high-quality JPGs online with zero-trust in-browser processing.',
+    path: '/tools/pdf-tools/heic-to-jpg',
+    category: 'PDF Tools'
   }
 ];
 

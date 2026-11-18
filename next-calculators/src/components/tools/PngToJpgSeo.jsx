@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import FAQAccordion from './FAQAccordion';
 
 const faqs = [
@@ -75,6 +76,16 @@ export default function PngToJpgSeo() {
         <li><strong>Execute the Conversion:</strong> Click the "Convert to JPG" button. Because JPGs do not support transparency, our engine will automatically detect any transparent pixels in your PNG and seamlessly fill them with a solid white background to prevent rendering errors.</li>
         <li><strong>Save and Download:</strong> The mathematical conversion completes in milliseconds. A preview and a green download button will appear. Click "Download" to save the newly compressed, lightweight JPG directly to your device.</li>
       </ol>
+
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2">
+          Converting Apple iPhone Photos (.HEIC)?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          Dealing with modern iPhone photos rather than PNG screenshots? Use our dedicated <Link href="/tools/pdf-tools/heic-to-jpg" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">HEIC to JPG Converter</Link> to transcode Apple high-efficiency photos into universally supported JPGs directly inside your browser.
+        </p>
+      </div>
+
 <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
         Understanding the Formats: Why PNG is Often Too Big
       </h3>
