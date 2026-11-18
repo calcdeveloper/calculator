@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Shield, Zap, Hash, Database } from 'lucide-react';
 
 export default function HexDecoderSeo() {
@@ -22,6 +23,15 @@ export default function HexDecoderSeo() {
       <p>
         The exact mathematical decoding procedure consists of intelligently scanning a massive block of raw hex input, explicitly removing any messy whitespace or formatting colons, grouping the remaining characters strictly into perfect pairs of two, and mathematically calculating the exact corresponding visual character from the universal ASCII or UTF-8 table. For an incredibly common, highly practical example: if you encounter the deeply confusing string <code>48 65 6c 6c 6f</code> deeply embedded inside a captured network log, our decoder will instantly, mathematically parse those exact pairs. It explicitly knows that <code>48</code> perfectly corresponds to the decimal number 72 (which is the capital letter "H"), and perfectly reconstructs the entire original human word "Hello" completely without any data loss or weird character corruption.
       </p>
+
+      <div className="my-8 p-6 bg-enc-bg/40 rounded-2xl border border-enc-gray/30 not-prose">
+        <h4 className="text-base font-bold text-enc-dark mb-2 flex items-center gap-2">
+          <Hash className="w-5 h-5 text-enc-primary" /> Need to Convert Plain Text to Hexadecimal?
+        </h4>
+        <p className="text-sm text-enc-gray leading-relaxed mb-0">
+          If you need to encode plain text, ASCII strings, or Unicode emojis into hexadecimal machine bytes with customizable spacing delimiters, use our companion <Link href="/tools/encoder-decoder/hex-encoder" className="font-semibold text-enc-primary underline hover:text-enc-primary/80">Hex Encoder</Link> for instant, zero-trust browser-side conversion.
+        </p>
+      </div>
 
       <h3 className="text-2xl font-bold mt-10">Why is Strict Hexadecimal Decoding Absolutely Essential?</h3>
       <p>

@@ -304,6 +304,12 @@ const trendingTools = [
     desc: 'Generate cryptographically salted Bcrypt password hashes with configurable cost factors for secure authentication.',
     path: '/tools/encoder-decoder/bcrypt-hash-generator',
     category: 'Security'
+  },
+  {
+    name: 'Hex Encoder',
+    desc: 'Convert text, ASCII, and binary strings into hexadecimal (Base16) machine code with custom byte delimiters.',
+    path: '/tools/encoder-decoder/hex-encoder',
+    category: 'Developer'
   }
 ];
 
