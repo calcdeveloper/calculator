@@ -292,6 +292,12 @@ const trendingTools = [
     desc: 'Browse, search, and copy official Tailwind CSS HEX shades and utility classes from 50 to 950.',
     path: '/tools/design/tailwind-color-picker',
     category: 'Design'
+  },
+  {
+    name: 'YAML Validator',
+    desc: 'Validate and lint YAML configuration files online with strict syntax checking and line-by-line error reporting.',
+    path: '/tools/developer-tools/yaml-validator',
+    category: 'Developer'
   }
 ];
 

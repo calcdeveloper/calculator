@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function CodeDiffSeo() {
   const faqs = [
@@ -89,7 +90,7 @@ export default function CodeDiffSeo() {
           Because these characters are physically invisible in a standard text editor, debugging them manually is virtually impossible. The engineer will stare at two identical-looking strings, completely baffled as to why the cryptographic hash function is generating different signatures.
         </p>
         <p className="text-lg text-dev-dark/80">
-          Our strict diffing algorithm evaluates the raw byte-level composition of the string. If an invisible character is injected, the engine will immediately flag the entire line as mathematically modified (red/green highlight). This instantly alerts the developer that they are dealing with a hidden encoding or whitespace violation.
+          Our strict diffing algorithm evaluates the raw byte-level composition of the string. If an invisible character is injected, the engine will immediately flag the entire line as mathematically modified (red/green highlight). This instantly alerts the developer that they are dealing with a hidden encoding or whitespace violation. When tracking down whitespace or indentation regressions in Kubernetes manifests or CI workflows, validate syntax with our companion <Link href="/tools/developer-tools/yaml-validator" className="text-dev-primary font-semibold hover:underline">YAML Validator</Link>.
         </p>
       </section>
 

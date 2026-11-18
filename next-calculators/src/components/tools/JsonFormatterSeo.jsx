@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function JsonFormatterSeo() {
   const faqs = [
@@ -129,7 +130,7 @@ export default function JsonFormatterSeo() {
           Instead, elite teams integrate automated formatting engines (like Prettier) directly into their Continuous Integration (CI) pipelines via Git Pre-commit Hooks (using Husky or similar tools). When an engineer attempts to commit a modified `package.json`, the hook automatically intercepts the file, runs it through the AST formatter, and standardizes the whitespace before allowing the commit to proceed.
         </p>
         <p className="text-lg text-dev-dark/80">
-          However, despite advanced CI automation, our standalone browser-based JSON Formatter remains a critical daily utility. It allows engineers to instantly validate, format, and debug dynamic API responses intercepted from the Network tab or massive database dumps that cannot be pushed through a local IDE workflow.
+          However, despite advanced CI automation, our standalone browser-based JSON Formatter remains a critical daily utility. It allows engineers to instantly validate, format, and debug dynamic API responses intercepted from the Network tab or massive database dumps that cannot be pushed through a local IDE workflow. For cloud infrastructure and Kubernetes configurations authored in YAML, inspect syntax and catch indentation anomalies using our companion <Link href="/tools/developer-tools/yaml-validator" className="text-dev-primary font-semibold hover:underline">YAML Validator</Link>.
         </p>
       </section>
 

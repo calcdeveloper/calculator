@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function JsonYamlSeo() {
   const faqs = [
@@ -116,7 +117,7 @@ export default function JsonYamlSeo() {
           Because YAML relies entirely on whitespace to define object hierarchy, a single misplaced spacebar press can mathematically shift an array out of its parent object, completely destroying the logic of the configuration file. Furthermore, mixing tabs and spaces will cause the YAML parser to throw a fatal execution error.
         </p>
         <p className="text-lg text-dev-dark/80">
-          Our algorithmic converter mitigates this risk entirely. The engine mathematically calculates the Abstract Syntax Tree (AST) of your JSON and generates the YAML utilizing a mathematically perfect 2-space indentation matrix, completely eliminating the possibility of human spatial error.
+          Our algorithmic converter mitigates this risk entirely. The engine mathematically calculates the Abstract Syntax Tree (AST) of your JSON and generates the YAML utilizing a mathematically perfect 2-space indentation matrix, completely eliminating the possibility of human spatial error. Before deploying generated manifests to live Kubernetes clusters or production pipelines, verify syntax integrity and detect subtle typing traps with our companion <Link href="/tools/developer-tools/yaml-validator" className="text-dev-primary font-semibold hover:underline">YAML Validator</Link>.
         </p>
       </section>
 
