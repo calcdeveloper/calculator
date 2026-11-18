@@ -132,7 +132,7 @@ export default function MergePdfSeo() {
 
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">Best Practices for Merging PDFs</h3>
       <p className="mb-8">
-        To get the best results when merging files, ensure that your source documents are not heavily encrypted with owner passwords, as this will block the engine from reading the object graph. Use our drag-and-drop interface to visually reorder your files before hitting the merge button, ensuring the final output flows exactly as intended. By adopting a zero-trust, client-side workflow, you protect your data, save immense amounts of time, and maintain peak professional organization.
+        To get the best results when merging files, ensure that your source documents are not heavily encrypted with owner passwords, as this will block the engine from reading the object graph. Once your documents are merged, secure the final compiled portfolio with our companion <Link href="/tools/pdf-tools/password-protect" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Password Protect PDF</Link> tool. Use our drag-and-drop interface to visually reorder your files before hitting the merge button, ensuring the final output flows exactly as intended. By adopting a zero-trust, client-side workflow, you protect your data, save immense amounts of time, and maintain peak professional organization.
       </p>
       
 

@@ -364,6 +364,12 @@ const trendingTools = [
     desc: 'Convert JPG photos to lossless PNG format online with zero generational loss and 100% private processing.',
     path: '/tools/pdf-tools/jpg-to-png',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Password Protect PDF',
+    desc: 'Encrypt and lock confidential PDF documents online for free with enterprise AES security and zero server uploads.',
+    path: '/tools/pdf-tools/password-protect',
+    category: 'PDF Tools'
   }
 ];
 
