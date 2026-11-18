@@ -298,6 +298,12 @@ const trendingTools = [
     desc: 'Validate and lint YAML configuration files online with strict syntax checking and line-by-line error reporting.',
     path: '/tools/developer-tools/yaml-validator',
     category: 'Developer'
+  },
+  {
+    name: 'Bcrypt Hash Generator',
+    desc: 'Generate cryptographically salted Bcrypt password hashes with configurable cost factors for secure authentication.',
+    path: '/tools/encoder-decoder/bcrypt-hash-generator',
+    category: 'Security'
   }
 ];
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function PasswordGeneratorSeo() {
   const faqs = [
@@ -104,6 +105,7 @@ export default function PasswordGeneratorSeo() {
           <li><strong>Absolute Zero Reuse:</strong> You must absolutely never, under any circumstances, use the same generated password across multiple different websites. If one low-security forum is compromised, hackers will immediately inject those credentials into high-value banking and email portals via automated credential stuffing pipelines.</li>
           <li><strong>Mandatory Multi-Factor Authentication (MFA):</strong> A strong password provides incredible defense, but it can still be compromised via malware or sophisticated social engineering. You must heavily enforce hardware-based MFA (like YubiKeys) or time-based authenticator apps (TOTP) across all critical accounts.</li>
           <li><strong>Avoid Frequent Rotations:</strong> Legacy IT policies often forced employees to change passwords every 30 days. Modern NIST (National Institute of Standards and Technology) guidelines heavily advise against this. Forced rotations mathematically encourage humans to create weaker, predictable variations (like changing "Password123!" to "Password124!"). Generate one incredibly strong password and keep it permanently unless a confirmed data breach occurs.</li>
+          <li><strong>Mandatory Salted Hashing for Backend Storage:</strong> If you are collecting or storing user credentials in backend databases, never store raw plaintext passwords. Always process generated passwords through a dedicated <Link href="/tools/encoder-decoder/bcrypt-hash-generator" className="font-semibold text-gen-primary underline hover:text-gen-primary/80">Bcrypt Hash Generator</Link> using slow, adaptive cost factors and per-user salts to withstand database leaks.</li>
         </ul>
       </section>
 

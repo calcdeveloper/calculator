@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Shield, Zap, Hash, Database } from 'lucide-react';
 
 export default function MD5HashGeneratorSeo() {
@@ -29,7 +30,7 @@ export default function MD5HashGeneratorSeo() {
       </p>
       
       <p>
-        Furthermore, MD5 suffers from a highly documented mathematical vulnerability known as a "collision." A mathematical collision occurs when two completely different, totally separate input files mathematically result in the exact same identical MD5 hash footprint. Because of these incredibly severe cryptographic weaknesses, the global cybersecurity community, the United States Homeland Security, and every major tech company universally agree: <strong>You must absolutely never, under any circumstances, use MD5 to actively hash or store highly sensitive user passwords in a modern application.</strong> Instead, professional developers must explicitly use modern, highly secure algorithms like strictly salted Bcrypt, Argon2, or PBKDF2 for password storage.
+        Furthermore, MD5 suffers from a highly documented mathematical vulnerability known as a "collision." A mathematical collision occurs when two completely different, totally separate input files mathematically result in the exact same identical MD5 hash footprint. Because of these incredibly severe cryptographic weaknesses, the global cybersecurity community, the United States Homeland Security, and every major tech company universally agree: <strong>You must absolutely never, under any circumstances, use MD5 to actively hash or store highly sensitive user passwords in a modern application.</strong> Instead, professional developers must explicitly use modern, highly secure algorithms like strictly salted <Link href="/tools/encoder-decoder/bcrypt-hash-generator" className="font-semibold text-enc-primary underline hover:text-enc-primary/80">Bcrypt Hash Generator</Link>, Argon2, or PBKDF2 for password storage and identity verification.
       </p>
 
       <h3 className="text-2xl font-bold mt-10">The Massive Professional Advantages of Our Dedicated MD5 Generator</h3>

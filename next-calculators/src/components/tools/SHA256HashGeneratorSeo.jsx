@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Shield, Zap, Hash, Lock } from 'lucide-react';
 
 export default function SHA256HashGeneratorSeo() {
@@ -31,6 +32,15 @@ export default function SHA256HashGeneratorSeo() {
       <p>
         To put this incredible security into perspective, a 256-bit hash literally means there are 2^256 entirely possible unique hash footprints. That specific number is vastly, exponentially larger than the total number of physical atoms mathematically estimated to exist in the entire observable universe. Even if hackers utilized every single high-performance supercomputer currently existing on Earth to aggressively guess hashes for the next billion years, the mathematical probability of them successfully forcing a SHA-256 collision remains effectively zero. This absolute mathematical certainty is precisely why it is legally mandated for high-level federal security and forms the complete architectural foundation of the entire trillion-dollar Bitcoin cryptocurrency network.
       </p>
+
+      <div className="my-8 p-6 bg-amber-50/60 rounded-2xl border border-amber-200 not-prose">
+        <h4 className="text-lg font-bold text-amber-900 mb-2 flex items-center gap-2">
+          <Lock className="w-5 h-5 text-amber-600" /> Critical Distinction: Data Integrity vs. Password Storage
+        </h4>
+        <p className="text-amber-800 text-sm leading-relaxed mb-0">
+          While SHA-256 excels at data integrity verification, file checksums, and digital signatures, it is engineered for high throughput and should <strong>never</strong> be used directly for raw database password storage. Attackers with modern GPU rigs can compute billions of SHA-256 hashes per second. For password hashing and authentication architectures, always utilize our dedicated <Link href="/tools/encoder-decoder/bcrypt-hash-generator" className="font-semibold text-amber-950 underline hover:text-amber-700">Bcrypt Hash Generator</Link>, which enforces configurable computational work factors (rounds) and automatic 128-bit random salting to neutralize rainbow table and offline brute-force attacks.
+        </p>
+      </div>
 
       <h3 className="text-2xl font-bold mt-10">The Massive Professional Advantages of Our Dedicated SHA-256 Generator</h3>
       <p>
