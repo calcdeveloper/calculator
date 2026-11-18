@@ -346,6 +346,12 @@ const trendingTools = [
     desc: 'Convert images between JPG, PNG, and WebP formats instantly with custom quality and zero server uploads.',
     path: '/tools/pdf-tools/image-converter',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Image Cropper',
+    desc: 'Crop photos, signatures, and documents online for free with precision framing and zero-trust browser privacy.',
+    path: '/tools/pdf-tools/image-cropper',
+    category: 'PDF Tools'
   }
 ];
 

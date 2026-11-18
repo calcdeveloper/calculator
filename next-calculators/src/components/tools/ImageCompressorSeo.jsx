@@ -228,7 +228,7 @@ export default function ImageCompressorSeo() {
             <div>
               <h4 className="font-bold text-pdf-dark text-base">UPSC Civil Services &amp; NDA Portals</h4>
               <p className="text-sm text-pdf-gray mt-1 leading-relaxed">
-                The Union Public Service Commission mandates that candidate passport photographs and scanned signatures fall strictly within a 20 KB to 300 KB window, with specific pixel aspect ratios. Uploading an image below 20 KB or above 300 KB triggers an immediate form rejection script.
+                The Union Public Service Commission mandates that candidate passport photographs and scanned signatures fall strictly within a 20 KB to 300 KB window, with specific pixel aspect ratios. Prior to compressing, ensure your photo and signature are framed cleanly using our <Link href="/tools/pdf-tools/image-cropper" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Cropper</Link>. Uploading an image below 20 KB or above 300 KB triggers an immediate form rejection script.
               </p>
             </div>
           </div>

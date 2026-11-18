@@ -250,7 +250,7 @@ export default function ImageConverterSeo() {
             <div>
               <h4 className="font-bold text-pdf-dark text-base">Strict Database Storage Caps</h4>
               <p className="text-sm text-pdf-gray mt-1 leading-relaxed">
-                Institutional recruitment portals handle millions of concurrent applications. Storing uncompressed PNGs would overload SQL database BLOB tables. Portals strictly enforce JPEG compliance paired with file size ceilings (typically 20 KB to 50 KB). Our converter transforms PNGs into lightweight, compliant JPEGs in a fraction of a second.
+                Institutional recruitment portals handle millions of concurrent applications. Storing uncompressed PNGs would overload SQL database BLOB tables. Portals strictly enforce JPEG compliance paired with file size ceilings (typically 20 KB to 50 KB). Our converter transforms PNGs into lightweight, compliant JPEGs in a fraction of a second, perfectly complementing our <Link href="/tools/pdf-tools/image-cropper" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Cropper</Link> for preparing exam assets.
               </p>
             </div>
           </div>
@@ -540,11 +540,11 @@ export default function ImageConverterSeo() {
             <div className="text-xs text-pdf-gray">Insert converted JPG photos and digital signatures directly into PDF documents.</div>
           </Link>
           <Link
-            href="/tools/pdf-tools/pdf-compress"
+            href="/tools/pdf-tools/image-cropper"
             className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
           >
-            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Compress PDF</div>
-            <div className="text-xs text-pdf-gray">Optimize multi-page PDF documents and portfolio attachments for email.</div>
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Image Cropper</div>
+            <div className="text-xs text-pdf-gray">Crop photos, signatures, and documents with custom aspect ratios.</div>
           </Link>
         </div>
       </section>

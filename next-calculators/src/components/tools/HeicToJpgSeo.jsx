@@ -580,11 +580,11 @@ export default function HeicToJpgSeo() {
             <div className="text-xs text-pdf-gray">Insert converted JPG photos and digital signatures directly into PDF files.</div>
           </Link>
           <Link
-            href="/tools/pdf-tools/pdf-compress"
+            href="/tools/pdf-tools/image-cropper"
             className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
           >
-            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Compress PDF</div>
-            <div className="text-xs text-pdf-gray">Optimize large document packets and photo portfolios for email delivery.</div>
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Image Cropper</div>
+            <div className="text-xs text-pdf-gray">Crop photos, signatures, and documents with custom aspect ratios.</div>
           </Link>
         </div>
       </section>
