@@ -316,6 +316,12 @@ const trendingTools = [
     desc: 'Convert unreadable \\uXXXX Unicode escape sequences and surrogate pairs back into human text and emojis online.',
     path: '/tools/encoder-decoder/unicode-decoder',
     category: 'Developer'
+  },
+  {
+    name: 'Add Images to PDF',
+    desc: 'Insert photos, company logos, and transparent PNG signatures directly into PDF documents in your browser.',
+    path: '/tools/pdf-tools/add-images',
+    category: 'PDF Tools'
   }
 ];
 

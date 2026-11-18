@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import FAQAccordion from "./FAQAccordion";
 
 const faqs = [
@@ -100,6 +101,15 @@ export default function PdfCompressSeo() {
         uploaded to a remote server, ensuring absolute enterprise-grade data
         privacy.
       </p>
+
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2">
+          Need to Insert Images or Signatures into Your PDF?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          Before optimizing and compressing your final document, you can insert high-resolution photos, company stamps, or transparent PNG signatures using our dedicated <Link href="/tools/pdf-tools/add-images" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Add Images to PDF</Link> tool with zero-trust local browser execution.
+        </p>
+      </div>
 
       
 

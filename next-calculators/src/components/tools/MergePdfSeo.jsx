@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Link from 'next/link';
+import { Layers } from 'lucide-react';
 import FAQAccordion from './FAQAccordion';
 
 export default function MergePdfSeo() {
@@ -31,6 +32,15 @@ export default function MergePdfSeo() {
       <p className="mb-8">
         Our <strong>Merge PDF Tool</strong> is an advanced, enterprise-grade utility that solves these challenges natively within your web browser. Utilizing state-of-the-art client-side processing, it allows you to combine multiple PDF files securely, instantly, and without the massive security risks associated with traditional cloud-based document editors.
       </p>
+
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2 flex items-center gap-2">
+          <Layers className="w-5 h-5 text-pdf-primary" /> Need to Add Photos or Scanned Signatures to Your Merged PDF?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          If you need to insert photographs, company logos, transparent PNG signatures, or receipts into your merged document, use our dedicated <Link href="/tools/pdf-tools/add-images" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Add Images to PDF</Link> tool for instant, zero-trust browser-side image embedding.
+        </p>
+      </div>
 
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">
         How to Use the Merge PDF Tool
