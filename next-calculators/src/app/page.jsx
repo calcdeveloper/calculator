@@ -286,6 +286,12 @@ const trendingTools = [
     desc: 'Generate random HEX and HSL colors with customizable Hue, Saturation, and Lightness constraints.',
     path: '/tools/design/random-color-generator',
     category: 'Design'
+  },
+  {
+    name: 'Tailwind Color Picker',
+    desc: 'Browse, search, and copy official Tailwind CSS HEX shades and utility classes from 50 to 950.',
+    path: '/tools/design/tailwind-color-picker',
+    category: 'Design'
   }
 ];
 

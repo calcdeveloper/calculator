@@ -583,7 +583,7 @@ export default function ImageColorPickerSeo() {
           &#125;;
         </div>
         <p className="mb-4 text-lg text-conv-gray leading-relaxed">
-          By utilizing the <code>&lt;alpha-value&gt;</code> placeholder, Tailwind automatically supports full opacity utility classes (such as <code>bg-brand-primary/80</code>, <code>border-brand-primary/20</code>, or <code>text-brand-primary/90</code>) while retaining dynamic runtime theme switching.
+          By utilizing the <code>&lt;alpha-value&gt;</code> placeholder, Tailwind automatically supports full opacity utility classes (such as <code>bg-brand-primary/80</code>, <code>border-brand-primary/20</code>, or <code>text-brand-primary/90</code>) while retaining dynamic runtime theme switching. To match your sampled photo colors directly to standardized framework utility tokens, explore our companion <Link href="/tools/design/tailwind-color-picker" className="text-pink-600 font-semibold hover:underline">Tailwind Color Picker</Link>.
         </p>
       </section>
 
