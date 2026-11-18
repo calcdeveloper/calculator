@@ -274,6 +274,12 @@ const trendingTools = [
     desc: 'Browse, search, and copy official Google Material Design (M2) 50-900 and accent HEX codes for web & mobile.',
     path: '/tools/design/material-color-generator',
     category: 'Design'
+  },
+  {
+    name: 'CSS Opacity Calculator',
+    desc: 'Convert HEX colors to RGBA and 8-digit HEX alpha codes with live opacity slider and compositing preview.',
+    path: '/tools/design/opacity-calculator',
+    category: 'Design'
   }
 ];
 

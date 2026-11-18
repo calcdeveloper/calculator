@@ -152,7 +152,7 @@ export default function ImageColorPickerSeo() {
           offset = (Y &times; imageWidth + X) &times; 4
         </div>
         <p className="mb-4 text-lg text-conv-gray leading-relaxed">
-          To convert these raw 8-bit integers into the universal hexadecimal notation recognized by CSS and frontend design frameworks, our engine utilizes bitwise shift operators. The red integer is shifted left by 16 bits, the green integer is shifted left by 8 bits, and the blue integer is combined using a bitwise OR operation. The resulting 24-bit numeric value is converted to a base-16 string and zero-padded to ensure a strict 6-character hex representation:
+          To convert these raw 8-bit integers into the universal hexadecimal notation recognized by CSS and frontend design frameworks, our engine utilizes bitwise shift operators. The red integer is shifted left by 16 bits, the green integer is shifted left by 8 bits, and the blue integer is combined using a bitwise OR operation. The resulting 24-bit numeric value is converted to a base-16 string and zero-padded to ensure a strict 6-character hex representation. If you need to convert sampled colors into semi-transparent overlays or 8-digit hex alpha codes, pass the hex string into our <Link href="/tools/design/opacity-calculator" className="text-pink-600 font-semibold hover:underline">Opacity Calculator</Link>:
         </p>
         <div className="my-6 p-4 bg-slate-900 text-slate-100 rounded-xl font-mono text-sm overflow-x-auto leading-relaxed">
           <span className="text-slate-400">// High-performance integer-to-hex conversion</span><br />

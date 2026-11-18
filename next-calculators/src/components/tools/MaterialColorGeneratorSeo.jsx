@@ -362,7 +362,7 @@ export default function MaterialColorGeneratorSeo() {
               <h4 className="text-lg font-bold text-conv-dark">Construct Dark Theme Surface Elevations (1dp to 24dp)</h4>
             </div>
             <p className="text-sm text-conv-gray leading-relaxed">
-              In Material dark themes, elevation is communicated through surface lightness rather than drop shadows. Begin with a 0dp baseline of <code>#121212</code>, applying semi-transparent white overlays (5% at 1dp up to 16% at 24dp) to elevate modals and menus.
+              In Material dark themes, elevation is communicated through surface lightness rather than drop shadows. Begin with a 0dp baseline of <code>#121212</code>, applying semi-transparent white overlays (5% at 1dp up to 16% at 24dp) to elevate modals and menus. To convert exact overlay percentages into 8-digit hex codes, use our <Link href="/tools/design/opacity-calculator" className="text-pink-600 font-semibold hover:underline">Opacity Calculator</Link>.
             </p>
           </div>
 
