@@ -633,7 +633,7 @@ func stampImageGo(inFile, outFile, imgFile string) error {
               <span className="text-pdf-primary text-xl font-light group-open:rotate-180 transition-transform duration-200">▾</span>
             </summary>
             <p className="mt-4 text-pdf-gray text-sm leading-relaxed border-t border-pdf-gray/20 pt-4">
-              We natively support standard JPEG (.jpg, .jpeg) and Portable Network Graphics (.png) formats. JPEGs are embedded using native /DCTDecode stream passthrough to preserve original quality, while PNGs are embedded using lossless /FlateDecode compression with full alpha channel transparency. If you have Apple iPhone photos in .heic format, first convert them using our <Link href="/tools/pdf-tools/heic-to-jpg" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">HEIC to JPG Converter</Link> prior to embedding.
+              We natively support standard JPEG (.jpg, .jpeg) and Portable Network Graphics (.png) formats. JPEGs are embedded using native /DCTDecode stream passthrough to preserve original quality, while PNGs are embedded using lossless /FlateDecode compression with full alpha channel transparency. If you have Apple iPhone photos in .heic format, first convert them using our <Link href="/tools/pdf-tools/heic-to-jpg" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">HEIC to JPG Converter</Link> prior to embedding, or transcode WebP and other image formats with our <Link href="/tools/pdf-tools/image-converter" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Image Converter</Link>.
             </p>
           </details>
 

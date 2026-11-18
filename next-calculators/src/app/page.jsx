@@ -340,6 +340,12 @@ const trendingTools = [
     desc: 'Compress JPEG, PNG, and WebP images to exact KB target sizes online with zero-trust client privacy.',
     path: '/tools/pdf-tools/image-compressor',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Image Converter',
+    desc: 'Convert images between JPG, PNG, and WebP formats instantly with custom quality and zero server uploads.',
+    path: '/tools/pdf-tools/image-converter',
+    category: 'PDF Tools'
   }
 ];
 
