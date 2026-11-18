@@ -280,6 +280,12 @@ const trendingTools = [
     desc: 'Convert HEX colors to RGBA and 8-digit HEX alpha codes with live opacity slider and compositing preview.',
     path: '/tools/design/opacity-calculator',
     category: 'Design'
+  },
+  {
+    name: 'Random Color Generator',
+    desc: 'Generate random HEX and HSL colors with customizable Hue, Saturation, and Lightness constraints.',
+    path: '/tools/design/random-color-generator',
+    category: 'Design'
   }
 ];
 

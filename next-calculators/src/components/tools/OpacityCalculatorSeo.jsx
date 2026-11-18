@@ -297,7 +297,7 @@ export default function OpacityCalculatorSeo() {
           &#125;
         </div>
         <p className="mb-4 text-lg text-conv-gray leading-relaxed">
-          Our Opacity Calculator provides the exact tools required to prototype these intricate alpha ratios. If your frosted glass cards sit atop vibrant multi-stop linear or radial gradients, design your underlying backdrops using our companion <Link href="/tools/design/gradient-generator" className="text-pink-600 font-semibold hover:underline">CSS Gradient Generator</Link>.
+          Our Opacity Calculator provides the exact tools required to prototype these intricate alpha ratios. If your frosted glass cards sit atop vibrant multi-stop linear or radial gradients, design your underlying backdrops using our companion <Link href="/tools/design/gradient-generator" className="text-pink-600 font-semibold hover:underline">CSS Gradient Generator</Link>, or generate bounded chromatic canvases with our <Link href="/tools/design/random-color-generator" className="text-pink-600 font-semibold hover:underline">Random Color Generator</Link>.
         </p>
       </section>
 
