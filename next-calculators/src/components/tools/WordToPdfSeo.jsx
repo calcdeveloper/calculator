@@ -67,10 +67,10 @@ export default function WordToPdfSeo() {
 
       <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
         <h4 className="text-base font-bold text-pdf-dark mb-2">
-          Converting Financial Spreadsheets or Excel Workbooks?
+          Converting Spreadsheets or Presentation Slide Decks?
         </h4>
         <p className="text-sm text-pdf-gray leading-relaxed mb-0">
-          If your document contains tabular calculations, balance sheets, or accounting ledgers, use our companion <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link> to generate pristine vector tables directly in your browser.
+          If your document contains tabular calculations or balance sheets, use our companion <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link>. To convert Microsoft PowerPoint slides into clean, unformatted PDF documents with complete client-side privacy, use our <Link href="/tools/pdf-tools/powerpoint-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PowerPoint to PDF Converter</Link>.
         </p>
       </div>
 

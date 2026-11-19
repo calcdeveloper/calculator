@@ -71,6 +71,7 @@ const toolSuites = [
       { name: 'PDF OCR', path: '/tools/pdf-tools/pdf-ocr' },
       { name: 'PDF to Word', path: '/tools/pdf-tools/pdf-to-word' },
       { name: 'PNG to JPG', path: '/tools/pdf-tools/png-to-jpg' },
+      { name: 'PowerPoint to PDF', path: '/tools/pdf-tools/powerpoint-to-pdf' },
     ]
   },
   {

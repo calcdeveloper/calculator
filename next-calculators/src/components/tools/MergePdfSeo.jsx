@@ -41,7 +41,7 @@ export default function MergePdfSeo() {
           If you need to insert photographs, company logos, transparent PNG signatures, or receipts into your merged document, use our dedicated <Link href="/tools/pdf-tools/add-images" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Add Images to PDF</Link> tool for instant, zero-trust browser-side image embedding.
         </p>
         <p className="text-sm text-pdf-gray leading-relaxed mb-0">
-          Need to include corporate financial sheets or inventory audits in your merged packet? First compile your spreadsheets into clean PDF documents using our <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link> before combining them into a unified packet.
+          Need to include corporate financial sheets, inventory audits, or executive pitch decks in your merged packet? First compile your spreadsheets into clean PDF documents using our <Link href="/tools/pdf-tools/excel-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Excel to PDF Converter</Link>, or convert presentation decks using our <Link href="/tools/pdf-tools/powerpoint-to-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PowerPoint to PDF Converter</Link> before combining them into a unified packet.
         </p>
       </div>
 

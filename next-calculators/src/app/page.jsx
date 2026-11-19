@@ -394,6 +394,12 @@ const trendingTools = [
     desc: 'Convert PNG images to JPG format online for free with custom quality, white alpha flattening, and zero-trust privacy.',
     path: '/tools/pdf-tools/png-to-jpg',
     category: 'PDF Tools'
+  },
+  {
+    name: 'PowerPoint to PDF Converter',
+    desc: 'Convert PowerPoint presentations (.pptx) to PDF online for free with private client-side slide compilation and zero server uploads.',
+    path: '/tools/pdf-tools/powerpoint-to-pdf',
+    category: 'PDF Tools'
   }
 ];
 

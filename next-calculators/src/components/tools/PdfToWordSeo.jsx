@@ -651,6 +651,19 @@ export default function PdfToWordSeo() {
               Lock confidential PDF contracts with military-grade 256-bit AES encryption.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/powerpoint-to-pdf"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary transition-colors flex items-center justify-between">
+              PowerPoint to PDF
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert presentation slides (.pptx) into clean PDF documents locally in your browser.
+            </p>
+          </Link>
         </div>
       </section>
 

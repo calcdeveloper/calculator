@@ -622,6 +622,13 @@ export default function ExcelToPdfSeo() {
             <div className="text-xs text-pdf-gray">Convert Microsoft Word (.docx) documents into clean PDF files privately.</div>
           </Link>
           <Link
+            href="/tools/pdf-tools/powerpoint-to-pdf"
+            className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">PowerPoint to PDF</div>
+            <div className="text-xs text-pdf-gray">Convert PowerPoint presentation slides (.pptx) into clean PDF documents.</div>
+          </Link>
+          <Link
             href="/tools/pdf-tools/pdf-compress"
             className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
           >
