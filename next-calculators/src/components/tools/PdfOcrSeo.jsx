@@ -435,7 +435,7 @@ export default function PdfOcrSeo() {
               Tutorial: The Enterprise Complete Digitization Pipeline (OCR &rarr; Compress &rarr; Protect)
             </h4>
             <ol className="list-decimal pl-6 space-y-2 text-sm text-pdf-gray">
-              <li>First, extract textual data from your scanned legacy archives using this <strong>PDF OCR Tool</strong> to verify text completeness.</li>
+              <li>First, extract textual data from your scanned legacy archives using this <strong>PDF OCR Tool</strong> to verify text completeness. If your document already contains digital selectable text, you can convert it directly into an editable DOCX file using our companion <Link href="/tools/pdf-tools/pdf-to-word" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF to Word Converter</Link>.</li>
               <li>Next, pass your bulky scanned documents through our companion <Link href="/tools/pdf-tools/pdf-compress" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF Compressor</Link> to downsample heavy 300 DPI bitmaps down to web-friendly file sizes beneath strict 5MB or 25MB portal limits.</li>
               <li>Finally, apply military-grade AES-256 encryption using our <Link href="/tools/pdf-tools/password-protect" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Password Protect PDF Tool</Link> before emailing confidential documents to clients or regulatory agencies.</li>
             </ol>

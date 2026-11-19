@@ -69,6 +69,7 @@ const toolSuites = [
       { name: 'PDF Compressor', path: '/tools/pdf-tools/pdf-compress' },
       { name: 'Image Compressor', path: '/tools/pdf-tools/image-compressor' },
       { name: 'PDF OCR', path: '/tools/pdf-tools/pdf-ocr' },
+      { name: 'PDF to Word', path: '/tools/pdf-tools/pdf-to-word' },
     ]
   },
   {

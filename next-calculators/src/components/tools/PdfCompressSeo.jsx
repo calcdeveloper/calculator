@@ -428,7 +428,7 @@ export default function PdfCompressSeo() {
             <ol className="list-decimal pl-6 space-y-2 text-sm text-pdf-gray">
               <li>First, combine your individual chapter PDFs or contract exhibits into a single master document using our <Link href="/tools/pdf-tools/merge-pdf" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Merge PDF Tool</Link>.</li>
               <li>Next, pass the merged master file into this <strong>PDF Compressor</strong> to strip redundant duplicate objects and shrink overall byte weight.</li>
-              <li>Finally, apply military-grade AES encryption using our companion <Link href="/tools/pdf-tools/password-protect" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Password Protect PDF Tool</Link> before emailing the packet to your client.</li>
+              <li>Finally, apply military-grade AES encryption using our companion <Link href="/tools/pdf-tools/password-protect" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Password Protect PDF Tool</Link> before emailing the packet to your client. If your recipient requests an editable draft for redlining, convert the file directly using our <Link href="/tools/pdf-tools/pdf-to-word" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF to Word Converter</Link>.</li>
             </ol>
           </div>
         </div>

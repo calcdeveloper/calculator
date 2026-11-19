@@ -382,6 +382,12 @@ const trendingTools = [
     desc: 'Extract text from scanned PDFs and images online using browser-based neural optical character recognition with zero server uploads.',
     path: '/tools/pdf-tools/pdf-ocr',
     category: 'PDF Tools'
+  },
+  {
+    name: 'PDF to Word Converter',
+    desc: 'Convert PDF documents into editable Word DOCX files online for free with zero-trust in-browser processing and no server uploads.',
+    path: '/tools/pdf-tools/pdf-to-word',
+    category: 'PDF Tools'
   }
 ];
 
