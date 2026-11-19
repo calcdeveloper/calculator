@@ -388,6 +388,12 @@ const trendingTools = [
     desc: 'Convert PDF documents into editable Word DOCX files online for free with zero-trust in-browser processing and no server uploads.',
     path: '/tools/pdf-tools/pdf-to-word',
     category: 'PDF Tools'
+  },
+  {
+    name: 'PNG to JPG Converter',
+    desc: 'Convert PNG images to JPG format online for free with custom quality, white alpha flattening, and zero-trust privacy.',
+    path: '/tools/pdf-tools/png-to-jpg',
+    category: 'PDF Tools'
   }
 ];
 

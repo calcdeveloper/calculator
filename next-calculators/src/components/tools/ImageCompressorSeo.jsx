@@ -596,6 +596,13 @@ export default function ImageCompressorSeo() {
             <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Compress PDF</div>
             <div className="text-xs text-pdf-gray">Optimize multi-page PDF documents and portfolio attachments for email.</div>
           </Link>
+          <Link
+            href="/tools/pdf-tools/png-to-jpg"
+            className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">PNG to JPG</div>
+            <div className="text-xs text-pdf-gray">Convert lossless PNG graphics to lightweight JPGs with white alpha flattening.</div>
+          </Link>
         </div>
       </section>
     </article>

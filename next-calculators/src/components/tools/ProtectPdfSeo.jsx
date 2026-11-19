@@ -1,22 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Lock, 
-  ShieldCheck, 
-  KeyRound, 
-  FileCheck, 
-  AlertTriangle, 
-  Eye, 
-  ArrowRight, 
-  BookOpen, 
-  Sliders, 
-  Zap, 
-  Cpu, 
-  Layers, 
-  CheckCircle2, 
-  ServerOff, 
-  FileLock, 
-  Fingerprint, 
+import {
+  Lock,
+  ShieldCheck,
+  KeyRound,
+  FileCheck,
+  AlertTriangle,
+  Eye,
+  ArrowRight,
+  BookOpen,
+  Sliders,
+  Zap,
+  Cpu,
+  Layers,
+  CheckCircle2,
+  ServerOff,
+  FileLock,
+  Fingerprint,
   ShieldAlert,
   Binary
 } from 'lucide-react';
@@ -24,7 +24,7 @@ import {
 export default function ProtectPdfSeo() {
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-6 sm:p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12 text-pdf-dark leading-relaxed">
-      
+
       {/* HEADER SECTION */}
       <header className="border-b border-pdf-gray/30 pb-8 mb-10">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pdf-primary/10 text-pdf-primary text-xs font-bold uppercase tracking-wider mb-4">

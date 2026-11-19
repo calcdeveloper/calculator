@@ -62,7 +62,7 @@ export default function MergePdfSeo() {
           <strong>Download Result:</strong> Once processing is complete, your newly modified PDF will be immediately available for download to your local storage.
         </li>
       </ol>
-<h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Technical Reality of PDF Merging</h3>
+      <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-4">The Complex Technical Reality of PDF Merging</h3>
       <p className="mb-4">
         Why can't you just "append" the binary data of one PDF to the end of another? To understand why PDF merging requires a sophisticated engine, you must understand how the Portable Document Format is structured.
       </p>
@@ -134,7 +134,7 @@ export default function MergePdfSeo() {
       <p className="mb-8">
         To get the best results when merging files, ensure that your source documents are not heavily encrypted with owner passwords, as this will block the engine from reading the object graph. Once your documents are merged, secure the final compiled portfolio with our companion <Link href="/tools/pdf-tools/password-protect" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Password Protect PDF</Link> tool, or shrink oversized files beneath 25MB email gateways and portal limits with our <Link href="/tools/pdf-tools/pdf-compress" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF Compressor</Link>. If you need to export the consolidated text into an editable Word document for drafting or revision tracking, use our <Link href="/tools/pdf-tools/pdf-to-word" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">PDF to Word Converter</Link>. Use our drag-and-drop interface to visually reorder your files before hitting the merge button, ensuring the final output flows exactly as intended. By adopting a zero-trust, client-side workflow, you protect your data, save immense amounts of time, and maintain peak professional organization.
       </p>
-      
+
 
       <h3 className="text-2xl font-bold text-pdf-dark mt-8 mb-6 border-b border-pdf-gray/20 pb-4">
         Frequently Asked Questions

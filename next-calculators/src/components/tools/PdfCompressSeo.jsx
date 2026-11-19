@@ -1,25 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import { 
-  Minimize2, 
-  ShieldCheck, 
-  RefreshCw, 
-  Target, 
-  HelpCircle, 
-  Layers, 
-  FileCheck, 
-  Info, 
-  CheckCircle2, 
-  AlertTriangle, 
-  ArrowRight, 
-  BookOpen, 
-  Sliders, 
-  Lock, 
-  Zap, 
-  Cpu, 
-  ServerOff, 
-  FileText, 
-  FileDown, 
+import {
+  Minimize2,
+  ShieldCheck,
+  RefreshCw,
+  Target,
+  HelpCircle,
+  Layers,
+  FileCheck,
+  Info,
+  CheckCircle2,
+  AlertTriangle,
+  ArrowRight,
+  BookOpen,
+  Sliders,
+  Lock,
+  Zap,
+  Cpu,
+  ServerOff,
+  FileText,
+  FileDown,
   Scissors,
   Binary,
   Scale
@@ -28,7 +28,7 @@ import {
 export default function PdfCompressSeo() {
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-6 sm:p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12 text-pdf-dark leading-relaxed">
-      
+
       {/* HEADER SECTION */}
       <header className="border-b border-pdf-gray/30 pb-8 mb-10">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pdf-primary/10 text-pdf-primary text-xs font-bold uppercase tracking-wider mb-4">

@@ -546,6 +546,13 @@ export default function ImageConverterSeo() {
             <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">Image Cropper</div>
             <div className="text-xs text-pdf-gray">Crop photos, signatures, and documents with custom aspect ratios.</div>
           </Link>
+          <Link
+            href="/tools/pdf-tools/png-to-jpg"
+            className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">PNG to JPG</div>
+            <div className="text-xs text-pdf-gray">Convert lossless PNG graphics to lightweight JPGs with white alpha flattening.</div>
+          </Link>
         </div>
       </section>
     </article>
