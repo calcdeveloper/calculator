@@ -72,6 +72,7 @@ const toolSuites = [
       { name: 'PDF to Word', path: '/tools/pdf-tools/pdf-to-word' },
       { name: 'PNG to JPG', path: '/tools/pdf-tools/png-to-jpg' },
       { name: 'PowerPoint to PDF', path: '/tools/pdf-tools/powerpoint-to-pdf' },
+      { name: 'Rotate PDF', path: '/tools/pdf-tools/rotate-pdf' },
     ]
   },
   {

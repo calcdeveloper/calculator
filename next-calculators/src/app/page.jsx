@@ -400,6 +400,12 @@ const trendingTools = [
     desc: 'Convert PowerPoint presentations (.pptx) to PDF online for free with private client-side slide compilation and zero server uploads.',
     path: '/tools/pdf-tools/powerpoint-to-pdf',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Rotate PDF Tool',
+    desc: 'Rotate PDF pages permanently online for free. Fix upside-down or sideways pages with lossless quality and zero server uploads.',
+    path: '/tools/pdf-tools/rotate-pdf',
+    category: 'PDF Tools'
   }
 ];
 
