@@ -561,6 +561,19 @@ export default function JpgToPngSeo() {
               Frame portraits and isolate signatures with precision bounding box aspect ratios.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/svg-converter"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary transition-colors flex items-center justify-between">
+              SVG Converter
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert Scalable Vector Graphics into high-resolution PNG, JPG, or PDF images.
+            </p>
+          </Link>
         </div>
       </section>
 

@@ -1,21 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Maximize, 
-  ShieldCheck, 
-  RefreshCw, 
-  Target, 
-  HelpCircle, 
-  Layers, 
-  FileCheck, 
-  Info, 
-  CheckCircle2, 
-  AlertTriangle, 
-  ArrowRight, 
-  BookOpen, 
-  Sliders, 
-  Smartphone, 
-  Camera, 
+import {
+  Maximize,
+  ShieldCheck,
+  RefreshCw,
+  Target,
+  HelpCircle,
+  Layers,
+  FileCheck,
+  Info,
+  CheckCircle2,
+  AlertTriangle,
+  ArrowRight,
+  BookOpen,
+  Sliders,
+  Smartphone,
+  Camera,
   Lock,
   Unlock,
   Cpu,
@@ -26,7 +26,7 @@ import {
 export default function ImageResizerSeo() {
   return (
     <article className="prose prose-slate max-w-none bg-pdf-white p-6 sm:p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-pdf-gray mt-12 text-pdf-dark leading-relaxed">
-      
+
       {/* HEADER SECTION */}
       <header className="border-b border-pdf-gray/30 pb-8 mb-10">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pdf-primary/10 text-pdf-primary text-xs font-bold uppercase tracking-wider mb-4">
@@ -656,6 +656,19 @@ export default function ImageResizerSeo() {
             </div>
             <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
               Convert Apple iPhone HEIC pictures to standard JPEG directly in your browser.
+            </p>
+          </Link>
+
+          <Link
+            href="/tools/pdf-tools/svg-converter"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary transition-colors flex items-center justify-between">
+              SVG Converter
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert Scalable Vector Graphics into high-resolution PNG, JPG, or PDF images.
             </p>
           </Link>
         </div>

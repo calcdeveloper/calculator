@@ -73,6 +73,7 @@ const toolSuites = [
       { name: 'PNG to JPG', path: '/tools/pdf-tools/png-to-jpg' },
       { name: 'PowerPoint to PDF', path: '/tools/pdf-tools/powerpoint-to-pdf' },
       { name: 'Rotate PDF', path: '/tools/pdf-tools/rotate-pdf' },
+      { name: 'SVG Converter', path: '/tools/pdf-tools/svg-converter' },
     ]
   },
   {

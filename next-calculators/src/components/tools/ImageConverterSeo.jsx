@@ -553,6 +553,13 @@ export default function ImageConverterSeo() {
             <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">PNG to JPG</div>
             <div className="text-xs text-pdf-gray">Convert lossless PNG graphics to lightweight JPGs with white alpha flattening.</div>
           </Link>
+          <Link
+            href="/tools/pdf-tools/svg-converter"
+            className="p-4 bg-white rounded-xl border border-pdf-gray/30 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary mb-1">SVG Converter</div>
+            <div className="text-xs text-pdf-gray">Convert Scalable Vector Graphics into high-resolution PNG, JPG, or PDF images.</div>
+          </Link>
         </div>
       </section>
     </article>

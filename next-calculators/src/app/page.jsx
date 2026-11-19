@@ -406,6 +406,12 @@ const trendingTools = [
     desc: 'Rotate PDF pages permanently online for free. Fix upside-down or sideways pages with lossless quality and zero server uploads.',
     path: '/tools/pdf-tools/rotate-pdf',
     category: 'PDF Tools'
+  },
+  {
+    name: 'SVG Converter',
+    desc: 'Convert SVG vector graphics to high-resolution PNG, JPG, WebP, and PDF online for free with supersampled scaling and zero server uploads.',
+    path: '/tools/pdf-tools/svg-converter',
+    category: 'PDF Tools'
   }
 ];
 
