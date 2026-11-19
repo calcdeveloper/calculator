@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function PdfHubSeo() {
   return (
@@ -104,6 +105,15 @@ export default function PdfHubSeo() {
       <p className="mb-8">
         The Portable Document Format is the bedrock of global digital administration. Mastering its manipulation is a superpower in the modern workplace. By utilizing our suite of locally-executed, high-performance PDF tools, you completely bypass the need for expensive desktop licenses and dangerous server-side uploads. You retain absolute sovereignty over your confidential data while effortlessly customizing your documents to meet your exact specifications. Dive into the toolkit above and experience frictionless, secure document editing.
       </p>
+
+      <div className="my-8 p-6 bg-pdf-bg/40 rounded-2xl border border-pdf-gray/30 not-prose">
+        <h4 className="text-base font-bold text-pdf-dark mb-2">
+          Looking for Quantitative &amp; Financial Calculators?
+        </h4>
+        <p className="text-sm text-pdf-gray leading-relaxed mb-0">
+          In addition to our PDF and document manipulation suite, ToolsWizard hosts over 150 specialized calculation engines for financial planning, loan amortizations, health metrics, and civil engineering. Visit our <Link href="/calculator" className="font-semibold text-pdf-primary underline hover:text-pdf-primary/80">Calculators Directory</Link> to explore all computational tools.
+        </p>
+      </div>
     </article>
   );
 }
