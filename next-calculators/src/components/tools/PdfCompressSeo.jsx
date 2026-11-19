@@ -704,6 +704,19 @@ export default function PdfCompressSeo() {
               Convert presentation slides (.pptx) into clean PDF documents before compressing.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/word-to-pdf"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary transition-colors flex items-center justify-between">
+              Word to PDF
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert Word documents (.docx) to PDF format privately before optimizing size.
+            </p>
+          </Link>
         </div>
       </section>
 

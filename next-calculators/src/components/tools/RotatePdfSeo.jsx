@@ -702,6 +702,19 @@ export default function RotatePdfSeo() {
               Convert presentation slides (.pptx) into clean PDF documents before rotating.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/word-to-pdf"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-blue-500 hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-blue-600 transition-colors flex items-center justify-between">
+              Word to PDF
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert Word DOCX documents into clean, immutable PDF files with zero cloud uploads.
+            </p>
+          </Link>
         </div>
       </section>
 

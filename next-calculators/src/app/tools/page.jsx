@@ -75,6 +75,7 @@ const toolSuites = [
       { name: 'Rotate PDF', path: '/tools/pdf-tools/rotate-pdf' },
       { name: 'SVG Converter', path: '/tools/pdf-tools/svg-converter' },
       { name: 'WebP to PNG', path: '/tools/pdf-tools/webp-to-png' },
+      { name: 'Word to PDF', path: '/tools/pdf-tools/word-to-pdf' },
     ]
   },
   {

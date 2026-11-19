@@ -1,21 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  FileImage, 
+import {
+  FileImage,
   FileCode,
-  Layers, 
-  Sparkles, 
-  ShieldCheck, 
-  CheckCircle2, 
-  AlertTriangle, 
-  Cpu, 
-  Eye, 
-  ArrowRight, 
-  BookOpen, 
-  Settings, 
-  HelpCircle, 
-  HardDrive, 
-  FileCheck, 
+  Layers,
+  Sparkles,
+  ShieldCheck,
+  CheckCircle2,
+  AlertTriangle,
+  Cpu,
+  Eye,
+  ArrowRight,
+  BookOpen,
+  Settings,
+  HelpCircle,
+  HardDrive,
+  FileCheck,
   ShieldAlert,
   Zap,
   Palette,
@@ -25,7 +25,7 @@ import {
 export default function WebpToPngSeo() {
   return (
     <article className="prose prose-lg max-w-none text-pdf-dark mt-16 bg-pdf-white p-6 sm:p-10 md:p-14 rounded-3xl shadow-sm border border-pdf-gray/30">
-      
+
       {/* SECTION 1: HEADER & EXECUTIVE SUMMARY */}
       <section className="mb-12">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs sm:text-sm font-semibold mb-4 border border-emerald-200">

@@ -418,6 +418,12 @@ const trendingTools = [
     desc: 'Convert WebP images to lossless PNG format online for free. Preserve alpha transparency, full 32-bit color depth, and privacy with zero server uploads.',
     path: '/tools/pdf-tools/webp-to-png',
     category: 'PDF Tools'
+  },
+  {
+    name: 'Word to PDF Converter',
+    desc: 'Convert Word DOCX documents to standard PDF files online for free. Pure browser-based compilation with zero server uploads and 100% data privacy.',
+    path: '/tools/pdf-tools/word-to-pdf',
+    category: 'PDF Tools'
   }
 ];
 

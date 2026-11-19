@@ -677,6 +677,19 @@ export default function PdfToWordSeo() {
               Permanently orient sideways or upside-down pages before converting documents to Word.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/word-to-pdf"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-pdf-primary hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-pdf-primary transition-colors flex items-center justify-between">
+              Word to PDF
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert Microsoft Word DOCX files into standard PDF documents in your browser.
+            </p>
+          </Link>
         </div>
       </section>
 
