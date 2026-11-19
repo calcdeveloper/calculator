@@ -693,6 +693,19 @@ export default function SvgConverterSeo() {
               Reduce large raster image file sizes by up to 80% without degrading visual clarity.
             </p>
           </Link>
+
+          <Link
+            href="/tools/pdf-tools/webp-to-png"
+            className="p-4 bg-white rounded-2xl border border-pdf-gray/40 hover:border-indigo-500 hover:shadow-md transition-all group"
+          >
+            <div className="font-bold text-sm text-pdf-dark group-hover:text-indigo-600 transition-colors flex items-center justify-between">
+              WebP to PNG
+              <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <p className="text-xs text-pdf-gray mt-1 leading-relaxed">
+              Convert modern WebP graphics to lossless 32-bit PNG format preserving alpha channels.
+            </p>
+          </Link>
         </div>
       </section>
 

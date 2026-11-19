@@ -412,6 +412,12 @@ const trendingTools = [
     desc: 'Convert SVG vector graphics to high-resolution PNG, JPG, WebP, and PDF online for free with supersampled scaling and zero server uploads.',
     path: '/tools/pdf-tools/svg-converter',
     category: 'PDF Tools'
+  },
+  {
+    name: 'WebP to PNG Converter',
+    desc: 'Convert WebP images to lossless PNG format online for free. Preserve alpha transparency, full 32-bit color depth, and privacy with zero server uploads.',
+    path: '/tools/pdf-tools/webp-to-png',
+    category: 'PDF Tools'
   }
 ];
 
