@@ -27,7 +27,7 @@ import {
   Table,
   Eraser,
 } from 'lucide-react';
-import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema, createFaqSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
@@ -237,13 +237,56 @@ const breadcrumbSchema = createBreadcrumbSchema([
   { name: 'Developer Tools', path: '/tools/developer-tools' }
 ]);
 
+const faqSchema = createFaqSchema([
+  {
+    question: "Are these developer tools truly secure for proprietary enterprise source code?",
+    answer: "Yes, 100% secure. ToolsWizard operates on a strict zero-trust client architecture. All code formatting, minification, obfuscation, SQL parsing, and JSON validation run entirely inside your browser's local V8 JavaScript engine and volatile memory heap. No source code, database dumps, or API tokens are ever transmitted across external networks or stored on remote cloud servers. You can inspect the browser Network tab or use all tools completely offline in Airplane Mode."
+  },
+  {
+    question: "What is the fundamental algorithmic difference between code minification and code obfuscation?",
+    answer: "Code minification optimizes for execution performance and network transfer size by stripping whitespace, removing comments, shortening identifiers, and eliminating dead code. Minified code remains structurally identical and can be easily reverse-engineered using a code beautifier. Conversely, code obfuscation optimizes for intellectual property defense: it intentionally scrambles control flow into state machines, encrypts strings into hexadecimal lookup tables, and injects decoy logic, making reverse engineering computationally prohibitive."
+  },
+  {
+    question: "How does AST parsing prevent JavaScript minifiers from breaking code logic?",
+    answer: "Rather than blindly replacing text with regex, an Abstract Syntax Tree (AST) parser evaluates language grammar to understand the semantic meaning of every token. The compiler builds a complete symbol table that tracks lexical scope boundaries, variable hoisting, closure references, and global variables. When the minifier shortens variable names, it renames symbols only within their safe local scope, preventing accidental collisions with outer variables or window globals."
+  },
+  {
+    question: "What causes catastrophic backtracking in Regular Expressions, and how do I prevent it?",
+    answer: "Catastrophic backtracking occurs in Non-Deterministic Finite Automaton (NFA) regex engines when nested, overlapping quantifiers (e.g., (a+)+$) evaluate non-matching strings. The engine attempts every exponential permutation of character groupings, resulting in O(2^N) time complexity that locks up the CPU. You can prevent this by eliminating nested quantifiers, utilizing atomic groupings, anchoring prefixes, or using the ToolsWizard Regex Tester to inspect matching step counts safely."
+  },
+  {
+    question: "Why does my in-browser API Tester encounter Cross-Origin Resource Sharing (CORS) errors?",
+    answer: "Because our API Tester runs client-side inside your browser, it is strictly bound by the W3C Same-Origin Policy (SOP). When you dispatch requests to an external API endpoint that lacks the Access-Control-Allow-Origin header (or fails preflight OPTIONS checks), the browser blocks the response to protect user sessions. To test internal APIs, ensure your development backend enables CORS for local origins or utilize a local development reverse proxy."
+  },
+  {
+    question: "How does the JSON to CSV engine handle deeply nested object hierarchies and arrays?",
+    answer: "Our JSON to CSV converter executes a recursive depth-first traversal (DFS) that accumulates dot-notation key paths (e.g., user.address.city). Primitive arrays are serialized into delimited string cells (e.g., 'admin; billing'), while arrays of objects can be flattened using numerical index notation (e.g., items.0.sku, items.1.sku) or unrolled across multiple relational rows, ensuring full data fidelity in spreadsheet viewers."
+  },
+  {
+    question: "Can JavaScript obfuscation be reversed by automated code beautifiers?",
+    answer: "A code beautifier can reformat whitespace and indentation, but it cannot restore original variable names, decrypt shuffled string tables, or untangle flattened control-flow state machines. Obfuscation fundamentally destroys semantic naming and procedural structure at the AST level, requiring tedious manual reverse-engineering to reconstruct the original architectural intent."
+  },
+  {
+    question: "Why should I use YAML instead of JSON for Kubernetes and DevOps configurations?",
+    answer: "YAML is engineered specifically for human maintainability in infrastructure-as-code (IaC). It supports inline comments, clean indentation-based hierarchy without delimiter noise, multi-line string blocks, and anchor/alias references (&anchor and *alias) for reusing boilerplate definitions. JSON remains superior for high-throughput machine-to-machine API transmission, but YAML dominates cloud configurations."
+  },
+  {
+    question: "How does code minification improve Core Web Vitals and Google SEO rankings?",
+    answer: "Minification reduces JavaScript and CSS transfer payloads by 50% to 70%. Smaller files download faster across mobile networks, fit cleanly within the initial 14 KB TCP transmission window, and minimize browser main-thread parsing time. This directly improves Largest Contentful Paint (LCP) and reduces Interaction to Next Paint (INP) input latency, boosting Google SEO performance scores."
+  },
+  {
+    question: "Are all ToolsWizard developer tools 100% free with no hidden query quotas or accounts?",
+    answer: "Yes. Every single utility across the ToolsWizard Developer Tools Hub is 100% free and open for software engineers, students, and enterprise teams. There are no daily conversion quotas, no premium subscriptions, no account signups, and no telemetry tracking. All AST engines and formatters execute freely within your browser forever."
+  }
+]);
+
 export default function DeveloperToolsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema, faqSchema]),
         }}
       />
       <div className="min-h-screen bg-dev-bg">

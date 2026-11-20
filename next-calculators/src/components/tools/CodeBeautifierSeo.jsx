@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function CodeBeautifierSeo() {
   const faqs = [
@@ -166,6 +167,13 @@ export default function CodeBeautifierSeo() {
           ))}
         </div>
       </section>
+
+      <div className="mt-8 p-6 bg-blue-50/60 rounded-2xl border border-blue-200 not-prose">
+        <h4 className="text-lg font-bold text-blue-950 mb-2">Explore the Developer Tools Hub</h4>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Need additional code minification, obfuscation, or API testing utilities? Discover our complete collection of fast, private tools in the <Link href="/tools/developer-tools" className="text-blue-700 underline font-semibold hover:text-blue-800">Developer Tools Directory</Link>, featuring JavaScript Obfuscator, Regex Tester, and JSON Formatter.
+        </p>
+      </div>
     </article>
   );
 }
