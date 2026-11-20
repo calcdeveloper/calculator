@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Base64ToFileSeo() {
   return (
@@ -78,6 +79,13 @@ export default function Base64ToFileSeo() {
       <p className="mb-8">
         While Base64 is incredibly useful for transmission, processing massive Base64 strings (like a 50MB encoded video file) requires significant browser memory. When pasting extremely large strings into the converter, you may experience brief browser latency as the JavaScript engine constructs the massive byte array. Our tool is highly optimized to handle these memory loads, but for gigabyte-scale decoding, dedicated command-line utilities are generally recommended over browser-based solutions.
       </p>
+
+      <div className="mt-8 p-6 bg-blue-50/60 rounded-2xl border border-blue-200 not-prose">
+        <h4 className="text-lg font-bold text-blue-950 mb-2">Explore the Converter Tools Suite</h4>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Need additional client-side data transformers? Access our complete collection of fast, private file utilities in the <Link href="/tools/converter" className="text-blue-700 underline font-semibold hover:text-blue-800">Converter Tools Hub</Link>, including Image to Base64, Decimal to Binary, and CSV to JSON converters.
+        </p>
+      </div>
     </article>
   );
 }

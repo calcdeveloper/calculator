@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ImageToBase64Seo() {
   return (
@@ -84,6 +85,13 @@ export default function ImageToBase64Seo() {
       <p className="mb-8">
         <strong>The Golden Rule:</strong> Only use Base64 encoding for micro-assets. Icons, tiny logos, and loading spinners (generally under 10 Kilobytes) are perfect candidates. For anything larger than 10KB, such as hero banners or user photographs, you should rely on standard URL linking to leverage browser caching and Content Delivery Networks (CDNs).
       </p>
+
+      <div className="mt-8 p-6 bg-blue-50/60 rounded-2xl border border-blue-200 not-prose">
+        <h4 className="text-lg font-bold text-blue-950 mb-2">Explore the Converter Tools Collection</h4>
+        <p className="text-sm text-blue-900 leading-relaxed">
+          Need to decode Base64 back into raw files or convert between data formats? Check out our complete array of zero-trust tools in the <Link href="/tools/converter" className="text-blue-700 underline font-semibold hover:text-blue-800">Converter Tools Hub</Link>, including Base64 to File, Markdown to HTML, and JSON to CSV converters.
+        </p>
+      </div>
     </article>
   );
 }

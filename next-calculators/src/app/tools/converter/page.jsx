@@ -19,14 +19,14 @@ import {
   CodeXml,
   Languages
 } from 'lucide-react';
-import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema, createFaqSchema } from '@/utils/seo';
 
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
   title: 'Converter Tools - Free Online Format Transformers',
   description:
-    'Convert between JSON, CSV, XML, Markdown, Base64, and more. Fast, secure, and private browser-side conversion tools for developers and creators.',
+    'Convert between JSON, CSV, XML, Markdown, Base64, and binary formats online for free. 100% private in-browser conversion with zero server data uploads.',
   path: '/tools/converter',
   keywords: ['json to csv', 'csv to json', 'html to markdown', 'image to base64', 'timestamp converter', 'unit converter online'],
 });
@@ -154,13 +154,56 @@ const breadcrumbSchema = createBreadcrumbSchema([
   { name: 'Converter Tools', path: '/tools/converter' }
 ]);
 
+const faqSchema = createFaqSchema([
+  {
+    question: "Why does Base64 encoding increase file size by approximately 33%?",
+    answer: "Base64 maps binary data using an alphabet of 64 printable ASCII characters. Because each Base64 character represents only 6 bits of information (2^6 = 64), encoding three 8-bit bytes (24 bits) requires four Base64 characters (4 × 6 = 24 bits). This mathematical 4/3 ratio results in an exact 33.3% increase in data volume, not factoring optional MIME newline characters."
+  },
+  {
+    question: "Is my confidential database export or CSV customer list uploaded to any server?",
+    answer: "No. ToolsWizard operates on an absolute zero-trust client architecture. All CSV parsing, JSON formatting, Base64 encoding, and timestamp math execute purely inside your browser's local JavaScript runtime. Your data never transmits across external networks, touches remote servers, or enters cloud databases. You can verify this by inspecting the browser Network tab or using our tools offline in Airplane Mode."
+  },
+  {
+    question: "How does the converter handle nested arrays when converting JSON to CSV?",
+    answer: "When converting complex JSON structures to flat CSV rows, primitive arrays (such as lists of tags or roles) are serialized into a single table cell using semicolon delimiters (e.g., 'admin; billing'). Arrays of nested objects can either be unrolled across multiple relational rows or flattened using index-path notation (e.g., 'items.0.sku', 'items.1.sku'), preserving full relational context in spreadsheet viewers."
+  },
+  {
+    question: "What is the difference between Unix timestamp seconds and milliseconds?",
+    answer: "Standard POSIX timestamps count elapsed seconds since January 1, 1970 (resulting in a 10-digit integer in modern dates, e.g., 1732049000). Modern programming environments like JavaScript (Date.now()) and Java count elapsed milliseconds, producing a 13-digit integer (e.g., 1732049000000). The ToolsWizard Timestamp converter automatically detects the integer digit length and applies appropriate scaling to render the exact date."
+  },
+  {
+    question: "How does the XML to JSON converter handle XML attributes versus child elements?",
+    answer: "XML allows nodes to contain both tag attributes (e.g., <item id='5'>) and child text elements (<name>Product</name>). In standard JSON mapping, attributes are prefixed with an '@' symbol (e.g., '@id': 5) while child text content is stored in a '#text' property, completely eliminating namespace collisions and preserving attribute metadata."
+  },
+  {
+    question: "Can I use ToolsWizard converter tools without an active internet connection?",
+    answer: "Yes. All converter utilities are compiled into static client-side JavaScript bundles and cached in your browser. Once the web page loads, you can sever your internet connection or activate Airplane Mode, and all text conversions, Base64 encodings, and spreadsheet transformations execute flawlessly offline."
+  },
+  {
+    question: "Is there a file size limit on client-side data conversions?",
+    answer: "Because conversions execute in browser RAM rather than on paid cloud servers, ToolsWizard imposes zero artificial file size caps or query quotas. Practical limits depend solely on your computer's available system memory. Modern laptops comfortably process 50 MB to 100 MB CSV and JSON datasets directly in browser memory without crashing."
+  },
+  {
+    question: "What is the Year 2038 Problem (Y2K38), and does it affect timestamps?",
+    answer: "The Year 2038 Problem occurs when signed 32-bit integers storing Unix epoch seconds reach their maximum value (2,147,483,647) at 03:14:07 UTC on January 19, 2038, and overflow to -2,147,483,648 (December 13, 1901). ToolsWizard utilizes modern 64-bit IEEE 754 JavaScript floating-point integers (supporting safe integers up to 9 quadrillion), ensuring full compatibility for dates far beyond 2038."
+  },
+  {
+    question: "Why should I avoid embedding large Base64 images directly in CSS or HTML?",
+    answer: "Base64 expands binary image weight by 33.3% and prevents the browser from caching individual image files independently of the parent HTML/CSS stylesheet. Embedding images larger than 10-15 KB bloats DOM parse times, blocking initial page rendering and severely damaging Google Core Web Vitals (specifically Largest Contentful Paint). Base64 Data URIs should be reserved strictly for small vector icons and loading spinners."
+  },
+  {
+    question: "Are all converter utilities 100% free with no subscription paywalls?",
+    answer: "Yes. Every single tool across the ToolsWizard platform is 100% free for developers, students, and enterprises. We require no user accounts, no credit cards, no premium subscriptions, and no artificial daily limits. All transformation engines are openly accessible to all users forever."
+  }
+]);
+
 export default function ConverterToolsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema, faqSchema]),
         }}
       />
       <div className="min-h-screen bg-conv-bg font-sans text-conv-dark">
