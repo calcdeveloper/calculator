@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ShieldCheck, Zap, Lock, Palette, Droplets } from 'lucide-react';
 
 export default function RGBHexSeo() {
@@ -132,6 +133,13 @@ export default function RGBHexSeo() {
       <p className="text-lg text-design-dark/80">
         With its focus on privacy, speed, and user experience, our RGB to Hex converter stands out as the ideal choice for all your color conversion needs. Experience the convenience of instant, secure conversion without any installation or registration. Try our tool today and see how simple color conversion can be.
       </p>
+
+      <div className="mt-8 p-6 bg-pink-50/60 rounded-2xl border border-pink-200 not-prose">
+        <h4 className="text-lg font-bold text-pink-950 mb-2">Explore the Master Design Tools Directory</h4>
+        <p className="text-sm text-pink-900 leading-relaxed">
+          Need to convert other color models or test contrast ratios? Discover our complete collection of fast, private tools in the <Link href="/tools/design" className="text-pink-700 underline font-semibold hover:text-pink-800">Design Tools Hub</Link>, including HSL to Hex, Hex to HSL, and WCAG Contrast Checker.
+        </p>
+      </div>
     </article>
   );
 }

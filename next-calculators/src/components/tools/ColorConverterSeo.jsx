@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ColorConverterSeo() {
   const faqs = [
@@ -166,6 +167,13 @@ export default function ColorConverterSeo() {
           ))}
         </div>
       </section>
+
+      <div className="mt-8 p-6 bg-pink-50/60 rounded-2xl border border-pink-200 not-prose">
+        <h4 className="text-lg font-bold text-pink-950 mb-2">Explore the Master Design Tools Directory</h4>
+        <p className="text-sm text-pink-900 leading-relaxed">
+          Need additional color generation, palette harmony, or contrast tools? Browse our full suite of 14 zero-trust utilities in the <Link href="/tools/design" className="text-pink-700 underline font-semibold hover:text-pink-800">Design Tools Hub</Link>, including Contrast Checker, Color Mixer, and Tailwind Color Picker.
+        </p>
+      </div>
     </article>
   );
 }

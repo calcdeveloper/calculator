@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function CssColorGeneratorSeo() {
   const faqs = [
@@ -153,6 +154,13 @@ export default function CssColorGeneratorSeo() {
           ))}
         </div>
       </section>
+
+      <div className="mt-8 p-6 bg-pink-50/60 rounded-2xl border border-pink-200 not-prose">
+        <h4 className="text-lg font-bold text-pink-950 mb-2">Explore the Master Design Tools Suite</h4>
+        <p className="text-sm text-pink-900 leading-relaxed">
+          Need additional design utilities, color spaces, or palette tools? Discover our complete collection of fast, private tools in the <Link href="/tools/design" className="text-pink-700 underline font-semibold hover:text-pink-800">Design Tools Hub</Link>, featuring Gradient Generator, WCAG Contrast Checker, and Image Color Picker.
+        </p>
+      </div>
     </article>
   );
 }
