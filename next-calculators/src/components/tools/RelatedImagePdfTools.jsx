@@ -154,7 +154,15 @@ export default function RelatedImagePdfTools(props) {
 
   return (
     <div className="mt-16 bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Image & PDF Tools</h3>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <h3 className="text-2xl font-bold text-gray-900">Related Image &amp; PDF Tools</h3>
+        <Link 
+          href="/tools/pdf-tools" 
+          className="text-sm font-semibold text-pdf-primary hover:text-pdf-primaryDark flex items-center gap-1 group"
+        >
+          Browse All 20+ PDF &amp; Image Tools <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+        </Link>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {tools.map((tool, index) => {
           const Icon = tool.icon;

@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import { FileText, RotateCw, Trash2, Download, Image, Lock, Hash, ChevronRight, FileDown, Shield, Layers } from 'lucide-react';
-import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema, createFaqSchema } from '@/utils/seo';
 
 import PdfHubSeo from '@/components/tools/PdfHubSeo';
 
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
-  title: 'Image and PDF Tool - Free Online Image & PDF Editor & Manipulation',
+  title: 'PDF Tools - Free Online PDF Editor, Converter & Compressor',
   description:
-    'Compress, resize, convert images, rotate, extract, protect, and manipulate PDF files with our free online tools. Secure, fast, and private browser-side processing.',
+    'Free online PDF tools to merge, compress, rotate, protect, and convert PDFs and images. 100% private, client-side processing with zero server uploads.',
   path: '/tools/pdf-tools',
-  keywords: ['image editor', 'compress image', 'convert image', 'pdf editor', 'rotate pdf', 'delete pdf pages', 'extract pdf pages', 'password protect pdf', 'image and pdf tools free'],
+  keywords: ['pdf tools', 'pdf editor', 'compress pdf', 'merge pdf', 'convert pdf', 'rotate pdf', 'delete pdf pages', 'extract pdf pages', 'password protect pdf', 'image converter'],
 });
 
 const pdfTools = [
@@ -206,7 +206,50 @@ const softwareSchema = createSoftwareAppSchema({
 const breadcrumbSchema = createBreadcrumbSchema([
   { name: 'Home', path: '/' },
   { name: 'Tools', path: '/tools' },
-  { name: 'Image & PDF Tools', path: '/tools/pdf-tools' }
+  { name: 'PDF Tools', path: '/tools/pdf-tools' }
+]);
+
+const faqSchema = createFaqSchema([
+  {
+    question: "Are my confidential PDF documents safe from third-party server uploads on ToolsWizard?",
+    answer: "Yes, 100% safe. ToolsWizard operates on a strict zero-trust client-side architecture. When you select a PDF to merge, split, compress, or rotate, the document is loaded directly into your local browser RAM via WebAssembly and JavaScript byte buffers. The file is never transmitted across the internet, never stored in cloud storage, and never logged on remote servers. It is physically impossible for anyone to intercept your documents."
+  },
+  {
+    question: "Why is editing text in a PDF fundamentally different from editing a Word document?",
+    answer: "Word documents utilize dynamic flow layout where text wraps automatically and reflows upward when sentences are deleted. A PDF uses absolute geometric coordinate metrology: every character, line, and image is painted onto fixed (X, Y) coordinates relative to the bottom-left corner of the page. Deleting words in a raw PDF does not cause the remaining text to reflow, requiring specialized tools to restructure page content streams."
+  },
+  {
+    question: "What is a PDF Cross-Reference (xref) table, and why does deleting pages corrupt it?",
+    answer: "The xref table is an index at the end of a PDF that maps every indirect object to its exact byte offset from the start of the file. This allows PDF viewers to render arbitrary pages instantly without reading the entire document into memory. If you manually cut pages or alter bytes without recalculating object positions, the xref offsets point to corrupt byte locations, causing the entire file to fail rendering. ToolsWizard surgically updates the page tree and perfectly reconstructs the xref table."
+  },
+  {
+    question: "How does PDF OCR work, and why is an invisible text layer used?",
+    answer: "Scanned PDFs contain only a flat raster photograph of paper with zero machine-readable text. Our OCR tool processes the image via a WebAssembly neural network to identify text strings and exact bounding box coordinates. It then injects an invisible text layer (using Text Rendering Mode 3) directly underneath the visible scan. This preserves handwritten annotations, signatures, and stamps visually while making the entire document selectable and searchable."
+  },
+  {
+    question: "What is the difference between a PDF User Password and an Owner Password?",
+    answer: "A User Password (or Document Open Password) encrypts the underlying content streams using AES-256; anyone without this password cannot view or decrypt the document. An Owner Password sets administrative permissions via an integer bitmask (/P), restricting actions like printing, text copying, page extraction, or form modification while allowing users to view the file."
+  },
+  {
+    question: "Why does Apple use HEIC photo format, and why do I need to convert it to JPG?",
+    answer: "Apple utilizes High Efficiency Image Container (HEIC / H.265 intra-frame encoding) because it provides approximately 50% better compression efficiency than legacy JPEG at identical visual quality. However, many Windows applications, government submission portals, and web browsers cannot natively decode HEIC files. Our HEIC to JPG converter demuxes the HEIF container and transcodes it to standard universal JPG directly in your browser."
+  },
+  {
+    question: "How does PDF page garbage collection work when deleting extraneous pages?",
+    answer: "When a page is deleted, naive tools simply detach its pointer from the page tree, leaving high-resolution images and embedded font streams orphaned in the file body. ToolsWizard executes comprehensive garbage collection: it scans the document object graph to identify orphaned XObjects and font dictionaries that are no longer referenced by any remaining page, stripping them to dramatically reduce document file size."
+  },
+  {
+    question: "What is the standard measurement unit in PDF documents?",
+    answer: "The PDF specification defines default user space coordinates in standard PostScript points, where 1 point equals exactly 1/72 of an inch (approximately 0.3528 mm). A standard North American Letter page measures 612 by 792 points (8.5 x 11 inches), while an international ISO A4 page measures 595.28 by 841.89 points (210 x 297 mm)."
+  },
+  {
+    question: "Can I convert office documents (Word, Excel, PowerPoint) to PDF without Microsoft Office?",
+    answer: "Yes. Our conversion utilities parse open XML standards (.docx, .xlsx, .pptx) directly within the browser runtime, extracting formatting structures, table matrices, and slide layouts, and synthesizing standards-compliant vector PDF documents without requiring a Microsoft Office installation or cloud software subscription."
+  },
+  {
+    question: "Are all ToolsWizard PDF and image utilities free for commercial and legal enterprise use?",
+    answer: "Yes. All twenty PDF and image manipulation utilities across ToolsWizard are 100% free forever for legal professionals, enterprise teams, students, and developers. There are no daily conversion limits, no file size paywalls, no hidden watermarks, and no mandatory account signups."
+  }
 ]);
 
 export default function PDFToolsPage() {
@@ -215,21 +258,21 @@ export default function PDFToolsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema, faqSchema]),
         }}
       />
       <div className="min-h-screen bg-pdf-bg font-sans text-pdf-dark">
       {/* Hero Header */}
       <header className="bg-gradient-to-r from-pdf-primary to-pdf-primaryDark pt-16 pb-32 px-4">
         <nav className="flex justify-center space-x-2 text-pdf-white/70 text-sm mb-6 max-w-4xl mx-auto">
-          <span>Tools</span> <ChevronRight size={14} /> <span>Image and PDF Tool</span>
+          <span>Tools</span> <ChevronRight size={14} /> <span>PDF Tools</span>
         </nav>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold text-pdf-white mb-6 tracking-tight">
-            Image and PDF Tool
+            PDF &amp; Image Tools
           </h1>
           <p className="text-xl text-pdf-white/90 max-w-2xl mx-auto leading-relaxed">
-            Professional Image and PDF manipulation tools for all your needs - secure, fast, and private
+            Professional PDF and Image manipulation tools for all your needs - secure, fast, and private
           </p>
         </div>
       </header>
