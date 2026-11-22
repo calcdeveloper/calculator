@@ -84,7 +84,7 @@ export default function Contact() {
           <div className="max-w-2xl mb-8">
             <h2 className="text-2xl font-bold text-text-dark mb-2">Send an Engineering Dispatch</h2>
             <p className="text-text-gray text-sm leading-relaxed">
-              Submit your algorithmic feedback, bug report, or enterprise integration inquiry below. Messages are routed directly to our on-call domain engineers.
+              Submit your algorithmic feedback, bug report, or enterprise integration inquiry below. Messages are routed directly to our on-call domain engineers. For self-service walkthroughs and FAQs, visit our <Link href="/help" className="text-emerald-600 font-semibold underline hover:text-emerald-700">Help Center &amp; User Guides</Link>.
             </p>
           </div>
 

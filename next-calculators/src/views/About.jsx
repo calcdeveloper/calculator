@@ -42,7 +42,7 @@ export default function About() {
 
         <h2 className="text-2xl font-bold text-calc-black mt-8">Corporate Engagement</h2>
         <p>
-          We continuously adapt and grow our technical assets. For integration requests, functional enhancements, algorithmic bug disclosures, or platform support, connect directly with our engineering panel at <strong>support@toolswizard.in</strong> or dispatch a direct inquiry through our <Link href="/contact" className="text-calc-green font-semibold underline hover:opacity-80 transition-opacity">Engineering Contact &amp; Escalation Portal</Link>.
+          We continuously adapt and grow our technical assets. For integration requests, functional enhancements, algorithmic bug disclosures, or platform support, connect directly with our engineering panel at <strong>support@toolswizard.in</strong> or dispatch a direct inquiry through our <Link href="/contact" className="text-calc-green font-semibold underline hover:opacity-80 transition-opacity">Engineering Contact &amp; Escalation Portal</Link>. You can also consult our comprehensive <Link href="/help" className="text-calc-green font-semibold underline hover:opacity-80 transition-opacity">Help Center &amp; User Manuals</Link> for step-by-step guidance.
         </p>
       </div>
     </main>
