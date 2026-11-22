@@ -23,17 +23,17 @@ import {
   Rows3,
   ChevronRight
 } from 'lucide-react';
-import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema } from '@/utils/seo';
+import { createPageMetadata, createSoftwareAppSchema, createBreadcrumbSchema, createFaqSchema } from '@/utils/seo';
 import TextToolsMainSeo from '@/components/tools/TextToolsMainSeo';
 
 export const dynamic = "force-static";
 
 export const metadata = createPageMetadata({
-  title: 'Text Tools - Free Online Text Processing Utilities',
+  title: 'Text Tools - Free Online Text Formatter, Cleaner & Diff',
   description:
-    'A comprehensive suite of free text tools including word counters, case converters, text cleaners, and generators. Process your text instantly and securely in your browser.',
+    'Free online text tools to clean, format, count words, sort, diff, and convert text cases. 100% private, client-side processing with zero server uploads.',
   path: '/tools/text-tools',
-  keywords: ['word counter', 'character counter', 'case converter', 'text diff checker', 'remove duplicate lines', 'lorem ipsum generator', 'text tools online'],
+  keywords: ['text tools', 'word counter', 'character counter', 'case converter', 'text diff checker', 'remove duplicate lines', 'lorem ipsum generator', 'slug generator', 'text cleaner', 'whitespace remover', 'text sorter'],
 });
 
 const textTools = [
@@ -142,13 +142,56 @@ const breadcrumbSchema = createBreadcrumbSchema([
   { name: 'Text Tools', path: '/tools/text-tools' }
 ]);
 
+const faqSchema = createFaqSchema([
+  {
+    question: "Is it safe to paste confidential business documents and source code into ToolsWizard text tools?",
+    answer: "Yes, 100% safe. ToolsWizard operates on a pure zero-trust client-side architecture. Every string manipulation, regex replacement, deduplication, and diff calculation executes locally inside your web browser sandbox using JavaScript and Web APIs. Your text is never transmitted over the internet, stored in cloud databases, or logged on remote servers. You can safely disconnect your computer from Wi-Fi and every tool will continue to execute seamlessly."
+  },
+  {
+    question: "Why does JavaScript string.length report incorrect character counts for emojis?",
+    answer: "JavaScript represents strings internally using UTF-16 code units (16-bit blocks). Emojis and supplementary characters have code points above U+FFFF and require two 16-bit units (a surrogate pair) to be stored. Standard string.length counts these storage units rather than user-perceived characters, reporting a length of 2 for a single emoji. Complex emojis with skin tones or Zero-Width Joiners (like the family emoji) can report lengths of 7 to 11. Our Character Counter uses Intl.Segmenter to count true human-perceived grapheme clusters."
+  },
+  {
+    question: "How does Eugene Myers' Diff Algorithm find changes between two text files?",
+    answer: "Myers' algorithm models text comparison as a graph search across a 2D Edit Grid, where horizontal steps represent deletions, vertical steps represent insertions, and diagonal steps represent matching characters. Because matching characters cost zero edits, Myers traverses diagonals greedily, achieving an optimal time complexity of O(ND), where N is document length and D is the number of differences. This enables near-instantaneous comparison of massive documents."
+  },
+  {
+    question: "What is an SEO URL slug, and why are clean slugs important for rankings?",
+    answer: "An SEO URL slug is the human-readable portion of a web address that identifies a specific page (e.g., 'text-processing-guide'). Our Slug Generator converts article titles into clean, lowercase strings, strips dangerous punctuation, and replaces spaces with hyphens. Clean slugs improve Google crawl efficiency, provide positive keyword relevance signals, and boost click-through rates (CTR) on Search Engine Result Pages (SERPs)."
+  },
+  {
+    question: "What is the difference between Natural Sort and Standard Alphabetical Sort?",
+    answer: "Standard alphabetical (ASCII) sort compares characters purely by their byte code values, causing 'item10' to sort before 'item2' because '1' comes before '2'. Natural Sort recognizes numerical digit sequences within strings and compares them by numerical magnitude, correctly placing 'item2' before 'item10'. Our Text Sorter defaults to Natural Collation for human-friendly list organization."
+  },
+  {
+    question: "What are Zero-Width Spaces, and why does my text fail database validation?",
+    answer: "Zero-Width Spaces (U+200B), Zero-Width Joiners (U+200D), and Byte Order Marks (U+FEFF) are invisible Unicode control characters. When text is copied from formatted PDFs or rich text editors, these invisible bytes hitchhike into forms and usernames. They render invisibly on screen but alter character counts and string hashes, causing database unique-constraint and login failures. Our Text Cleaner strips all invisible Unicode artifacts instantly."
+  },
+  {
+    question: "How does Flesch Reading Ease score calculate document readability?",
+    answer: "The Flesch Reading Ease formula computes a score from 0 to 100 based on Average Sentence Length (words per sentence) and Average Syllables per Word. Longer sentences with multi-syllabic vocabulary yield lower scores, indicating dense academic or technical text. Scores between 60 and 70 correspond to standard conversational English easily understood by an 8th-grade student."
+  },
+  {
+    question: "Can I deduplicate massive lists of 50,000+ email addresses without crashing my browser?",
+    answer: "Yes. Our Duplicate Line Remover utilizes high-performance hash sets with linear O(N) time complexity. Unlike naive quadratic O(N^2) algorithms that freeze the browser, our engine processes 50,000+ lines in under 30 milliseconds in local RAM without consuming excessive memory or locking the user interface."
+  },
+  {
+    question: "What is Catastrophic Backtracking (ReDoS) in Regular Expressions?",
+    answer: "Catastrophic Backtracking occurs in non-deterministic finite automata (NFA) regex engines when nested quantifiers (like (a+)+$) evaluate ambiguous non-matching inputs. The engine tests an exponential number of possible branching combinations, consuming 100% CPU and hanging the application thread. ToolsWizard's Find and Replace incorporates execution guards to prevent browser lockups."
+  },
+  {
+    question: "Are all ToolsWizard text tools free for unlimited commercial and enterprise use?",
+    answer: "Yes. Every single utility in the ToolsWizard Text Tools directory is 100% free forever for software engineers, writers, students, and businesses. There are no daily conversion caps, no character paywalls, no mandatory account signups, and no advertising watermarks."
+  }
+]);
+
 export default function TextToolsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([softwareSchema, breadcrumbSchema]),
+          __html: JSON.stringify([softwareSchema, breadcrumbSchema, faqSchema]),
         }}
       />
       <div className="min-h-screen bg-text-bg font-sans text-text-dark">
