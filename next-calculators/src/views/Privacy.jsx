@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Privacy() {
   const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
@@ -61,7 +62,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl font-bold text-calc-black mt-6">7. Contact Infrastructure</h2>
         <p>
-          If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through our official support channel at <strong>support@toolswizard.in</strong>.
+          If you have additional questions, require regulatory data protection officer (DPO) correspondence, or wish to exercise your statutory rights under GDPR or CCPA, do not hesitate to contact us through our official support channel at <strong>support@toolswizard.in</strong> or dispatch an inquiry through our <Link href="/contact" className="text-calc-green underline font-semibold hover:opacity-80 transition-opacity">Official Contact &amp; Compliance Desk</Link>.
         </p>
       </div>
     </main>

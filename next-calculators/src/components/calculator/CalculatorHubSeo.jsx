@@ -602,7 +602,7 @@ export default function CalculatorHubSeo() {
               <span className="text-xl font-bold text-calc-gray group-open:rotate-45 transition-transform duration-200">+</span>
             </summary>
             <p className="text-sm text-calc-gray mt-4 leading-relaxed">
-              In addition to our 150+ calculators, ToolsWizard hosts an extensive suite of over 130 browser-based web utilities, including PDF compressors, image converters, Base64 encoders, JSON formatters, and password generators. You can explore the complete catalog directly on our <Link href="/tools" className="text-emerald-600 underline font-semibold hover:text-emerald-700">Tools Directory</Link>.
+              In addition to our 150+ calculators, ToolsWizard hosts an extensive suite of over 130 browser-based web utilities, including PDF compressors, image converters, Base64 encoders, JSON formatters, and password generators. You can explore the complete catalog directly on our <Link href="/tools" className="text-emerald-600 underline font-semibold hover:text-emerald-700">Tools Directory</Link>. If you need custom formula adaptations or encounter an algorithmic discrepancy, contact our <Link href="/contact" className="text-emerald-600 underline font-semibold hover:text-emerald-700">Engineering Support Desk</Link>.
             </p>
           </details>
         </div>
