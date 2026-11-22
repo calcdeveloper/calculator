@@ -37,7 +37,7 @@ export default function About() {
 
         <h2 className="text-2xl font-bold text-calc-black mt-8">The Privacy and Engineering Advantage</h2>
         <p>
-          Unlike legacy utility hubs, ToolsWizard prioritizes privacy and structural scale. By keeping processing models client-side whenever possible, your inputs never leave your computer. This architecture enables optimal performance for millions of concurrent users, keeping our systems efficient, safe, and lightning fast.
+          Unlike legacy utility hubs, ToolsWizard prioritizes privacy and structural scale. By keeping processing models client-side whenever possible, your inputs never leave your computer. This architecture enables optimal performance for millions of concurrent users, keeping our systems efficient, safe, and lightning fast. Read our comprehensive <Link href="/privacy" className="text-calc-green font-semibold underline hover:opacity-80 transition-opacity">Privacy Architecture &amp; Zero-Data Charter</Link> for technical audits and compliance specifications.
         </p>
 
         <h2 className="text-2xl font-bold text-calc-black mt-8">Corporate Engagement</h2>
